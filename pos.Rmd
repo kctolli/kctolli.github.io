@@ -6,6 +6,7 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 ## Software Engineering Core
 
+* Intro to Computer Engineering and Science
 * Intro to Software Development using C++
 * Object-Oriented Development using C++
 * Object-Oriented Programming with Data Structures using Python
@@ -34,6 +35,8 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 ## Computer Engineering Minor
 
+* Introduction to Engineering
+* Introduction to Electrical and Computer Engineering 
 * Electric Circuit Analysis I
 * Electronic Devices and Circuits
 * Fundamentals of Digital Systems

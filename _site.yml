@@ -20,6 +20,8 @@ navbar:
           href: ./stuff.html   
     - text: "Resume"
       href: ./Resume.pdf
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/kctolli/  
           
 output_dir: '.'
 

@@ -1,5 +1,6 @@
 ---
-title: "Kyle Tolliver"
+title: "About Me"
+author: "Kyle Tolliver"
 ---
 
 ```{r load_libraries, include=FALSE}
@@ -11,9 +12,7 @@ me <- 'https://media-exp1.licdn.com/dms/image/C5603AQH6x5MaoFUa7g/profile-displa
 knitr::include_graphics(me)
 ```
 
-## About Me
-
-Experienced Laboratory Assistant with a demonstrated history of working in the computer hardware industry. Skilled in Python, C++, Assembly, Verilog and more. Working on Bachelor's degree focused in Computer Engineering and Computer Science from BYU - Idaho. 
+BYU-Idaho Senior studying software and computer engineering. Expected graduation in July of 2020. I enjoy many different disciples of software engineering. My emphasis though is Embedded Systems. I am also working on Data Science certifaction. I love to learn new things and solve problems. 
 
 <br> <br> 
 
