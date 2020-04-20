@@ -1,0 +1,36 @@
+name: "Eportfolio"
+navbar:
+  title: "EPortfolio"
+  left:
+    - text: "Program of Study"
+      href: ./pos.html 
+    - text: "Skills"
+      href: ./skills.html 
+    - text: "Work"
+      href: ./work.html          
+    - text: "Projects"
+      menu:
+        - text: "things"
+          href: ./stuff.html 
+        - text: "---------------"  
+        - text: "and"
+          href: ./stuff.html 
+        - text: "---------------"
+        - text: "stuff"
+          href: ./stuff.html   
+    - text: "Resume"
+      href: ./Resume.pdf
+          
+output_dir: '.'
+
+output: 
+  html_document:
+    css: styles.css
+    highlight: tango
+    theme: readable
+    toc: true
+    toc_float: true
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'  
+    code_folding: hide 

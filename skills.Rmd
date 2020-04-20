@@ -1,0 +1,111 @@
+---
+title: "Skills"
+---
+
+## Data Science
+
+* R and RStudio     
+  Packages include:
+  + tidyverse
+    - ggplot 2 
+    - dplyr
+    - tidyr
+    - readr
+    - purr 
+    - tibble
+    - stringr
+    - forcats
+  + knitr
+  + reticulate
+  + sf (simple features)
+  + leaflet
+  + devtools
+  + downloader
+* Python     
+  Libraries include:
+  + Pandas
+  + Matplotlib
+  + Numpy
+  + Scipy
+  + Plotly
+* SQL (Oracle)
+* Tableau
+* Plotly
+  + Chart Studio
+* Excel
+  + Google Sheets
+* Data Intuition and Insight    
+  Topics including:
+  + Numerical and Graphical Summaries
+  + Measures of Spread
+  + Normal Distribution and Z-scores
+  + Probability  
+
+## Computer Engineering
+
+* Embedded Systems
+  + C 
+  + Python
+* Digital Systems
+  + Verilog
+  + FPGA 
+    - Artix 7
+    - Kintex-7
+  + Simulation
+    - Verilog Test Bench
+    - Logisim
+* Real Time Operating Systems
+  + ROS (Robot Operating System)
+  + VxWorks
+  + FreeRTOS
+* Assembly and Register-level C 
+* Circuit Analysis
+  + LTspice Software
+  + Transistors, Diodes, and Op-Amps
+    - MOSFETS
+    - BJT
+  + Basic Ciruits
+    - Inductors
+    - Capacitors 
+    - Resistors
+
+## Web Development
+
+* HTML
+* CSS
+* Javascript
+* YAML and Rmd     
+  Basic building blocks:
+  + knitr R package
+  + _site.yml
+  + index.Rmd
+  
+## Mathematics
+
+* MATLAB
+* Mathematica
+* Python
+  + Functional
+  + Mathematical
+* Discrete Math 
+  + Elisp
+  + Erlang
+* Calculus and Linear Algebra  
+
+## Programming
+
+* Python
+* C/C++
+* Java
+  
+## Operating Systems
+
+* Linux
+* Microsoft Windows
+  + Active Directory
+* Command lines 
+  + Bash
+  + Batch
+  + Powershell
+* Github
+  + Git Bash   

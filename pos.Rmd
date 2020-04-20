@@ -1,0 +1,54 @@
+---
+title: "Program of Study"
+---
+
+I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studing to get my Bachelors of Science in Software Engineering with an Emphasis in Embedded Systems. I am minoring in Computer Engineering and working on Data Science certification.  
+
+## Software Engineering Core
+
+* Intro to Software Development using C++
+* Object-Oriented Development using C++
+* Object-Oriented Programming with Data Structures using Python
+* Software Design and Development using Java
+  + Mobile App Development using Android Studio
+  + Version Control Github --- Team work
+* Project Management
+  + Agile, Scrum and Waterfall
+* System Security 
+* Web Design & Development
+* Introduction to Databases
+
+### Math Core 
+
+* PreCalculus
+* Calculus 1
+* Linear Algebra 
+* Discrete Math 
+
+### Embedded Systems Emphasis
+
+* Fundamentals of Digital Systems
+* Microprocessor Based-System Design
+* Computer Architecture
+* Embedded Systems
+
+## Computer Engineering Minor
+
+* Electric Circuit Analysis I
+* Electronic Devices and Circuits
+* Fundamentals of Digital Systems
+* Digital Systems Lab
+* Digital Systems Design
+* Microprocessor System Design
+* Computer Architecture
+* Embedded Systems
+* Advanced Embedded Systems
+
+## Data Science Certificate
+
+* Introduction to Programming using Python
+* Object-Oriented Programming with Data Structures using Python
+* Introduction to Databases
+* Database Design and Development
+* Data Intuition and Insight
+* Data Wrangling and Visualization
