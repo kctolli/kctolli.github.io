@@ -5,6 +5,7 @@ title: "Work Experience"
 ## Digital Systems Teaching Assistant  
 
 BYUI CSEE September 2018 – Present --- Rexburg, ID
+
 *	Lead students to increase their knowledge of Digital Systems
 *	Guide students to improvement by giving feedback
 *	Help students with programming Verilog 
@@ -12,6 +13,7 @@ BYUI CSEE September 2018 – Present --- Rexburg, ID
 ## Intro Engineering Teaching Assistant 
 
 BYUI CSEE September 2018 – Present --- Rexburg, ID
+
 * Mentor new students in Engineering and Computer Science
 * Help students with basic circuit analysis
 * Lead them in learning arduino skills
@@ -19,12 +21,14 @@ BYUI CSEE September 2018 – Present --- Rexburg, ID
 ## Discrete Math Teaching Assistant 
 
 Discrete Math Lab April 2019 - July 2019 --- Rexburg, ID
+
 * Solved example problems to assist students with Discrete Math
 * Assisted students in learning Elisp and Erlang
 
 ## Tutor
 
 CS Help Lab April 2018 - August 2018 --- Rexburg, ID
+
 * Tutored many classes    
   Including:
   + Object-Oriented Programming with Data Structures using Python
@@ -32,6 +36,7 @@ CS Help Lab April 2018 - August 2018 --- Rexburg, ID
   + Digital Systems Lab
   + Introduction to Engineering
   + Introduction to Electrical and Computer Engineering 
+  
 * Taught students topics from these classes
 * Lead group and individual appointments and discussions
 
