@@ -26,7 +26,7 @@ Spent 40 Hours on the project
 
 Spent 20 Hours on the project    
 
-*	Used R and the Tidyverse Package to Wrangle and Visualize Data
+*	Used R and the Tidyverse package to wrangle and visualize data
 *	Allowed Professors to help Improve Curriculum  
 * See [Exam Data Webpage](https://mcs335.glitch.me/Semester_project.html)
 
@@ -41,7 +41,7 @@ Spent 20 Hours on the project
 
 * Calculated the value of components of the power supply
 * Designed a power supply that convert 20V AC/DC to 5V DC
-* Soldered the whole thing together
+* Soldered the Circuit together
 
 ## FPGA (Verilog) Multifunction Calculator
 
@@ -70,7 +70,7 @@ Spent 15 Hours on the project
 
 * Hyperthreaded and Pipelined a C++ Calendar 
   + Used Tomohiko Sakamoto's Algorithm 
-    - Adjusted for leap year adjust
+    - To adjust for leap year 
     - To find the day of the week
 * Spead up the program by about 25 times
   + About a 150 ms run time
