@@ -12,7 +12,7 @@ me <- './images/me.png'
 knitr::include_graphics(me)
 ```
 
-BYU-Idaho Senior studying software and computer engineering. Expected graduation in July of 2020. I enjoy many different disciples in software engineering. My emphasis though is Embedded Systems. I am also working on Data Science certification. I love to learn new things and solve problems. 
+BYU-Idaho Senior studying software and computer engineering. Expected graduation in July of 2020. I enjoy many different disciplines in software engineering. My emphasis though is Embedded Systems. I am also working on Data Science certification. I love to learn new things and solve problems. 
 
 <br> <br> 
 
