@@ -1,0 +1,76 @@
+---
+title: "Projects"
+---
+
+```{r load_libraries, include=FALSE}
+library(tidyverse)
+```
+
+## Self Driving Car                       		
+
+Spent 30 Hours on the project  
+
+* Designed Circuits and Assembled the Electronics
+*	Programmed the Arduino in Embedded C
+*	Setup Raspberry Pi for Deep Learning and Computer Vision
+
+## Calendaring App		
+
+Spent 40 Hours on the project   
+
+*	Used Github to develop the Java code while working with a Team 
+*	Presented to the Eastern Idaho Innovator's Challenge
+* See [Github for code](https://github.com/natgrimm/GitTest)
+
+## Biology Exam Data Analysis 		
+
+Spent 20 Hours on the project    
+
+*	Used R and the Tidyverse Package to Wrangle and Visualize Data
+*	Allowed Professors to help Improve Curriculum  
+* See [Exam Data Webpage](https://mcs335.glitch.me/Semester_project.html)
+
+## Current-limited (BJT and OP-AMP) DC Power Supply		
+
+```{r PSU, fig.align='center', out.width='75%'}
+psu <- './images/schematic.png'
+knitr::include_graphics(psu)
+```
+
+Spent 20 Hours on the project   
+
+* Calculated the value of components of the power supply
+* Designed a power supply that convert 20V AC/DC to 5V DC
+* Soldered the whole thing together
+
+## FPGA (Verilog) Multifunction Calculator
+
+Spent 30 Hours on the project 
+
+* Created new AVR commands 
+* Used Basys 3 (Artix 7) FPGA Board
+* See [Multifunction Calculator Webpage](https://ecen-340.glitch.me/final-project.html)
+
+## Electric Skateboard                          		
+
+```{r skate, fig.align='center', out.width='50%'}
+skate <- './images/skateboard.jpg'
+knitr::include_graphics(skate)
+```
+
+Spent 40 Hours on the project
+
+* Selected and assembled the components 
+* Programmed the VESC in Embedded C
+* Setup a Wii remote as the skateboard controller
+
+## Optimizing Calendar C++ Program		
+
+Spent 15 Hours on the project  
+
+* Hyperthreaded and Pipelined a C++ Calendar 
+  + Used Tomohiko Sakamoto's Algorithm 
+    - Adjusted for leap year adjust
+    - To find the day of the week
+* Spead up the program by about 25 times
+  + About a 150 ms run time

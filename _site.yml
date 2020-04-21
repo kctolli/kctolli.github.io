@@ -9,17 +9,9 @@ navbar:
     - text: "Work"
       href: ./work.html          
     - text: "Projects"
-      menu:
-        - text: "things"
-          href: ./stuff.html 
-        - text: "---------------"  
-        - text: "and"
-          href: ./stuff.html 
-        - text: "---------------"
-        - text: "stuff"
-          href: ./stuff.html   
+      href: ./projects.html   
     - text: "Resume"
-      href: ./Resume.pdf
+      href: ./images/Resume.pdf
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/kctolli/  
           
