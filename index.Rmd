@@ -7,8 +7,8 @@ author: "Kyle Tolliver"
 library(tidyverse)
 ```
 
-```{r pic, fig.align='left', out.width='25%'}
-me <- 'https://media-exp1.licdn.com/dms/image/C5603AQH6x5MaoFUa7g/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=B6pWn21WAljSgIUqCLGL0b6V4-z44jfKZpO6mmxwaIQ'
+```{r pic, fig.align='left', out.width='30%'}
+me <- './images/me.png'
 knitr::include_graphics(me)
 ```
 
