@@ -4,15 +4,22 @@ title: "Projects"
 
 ```{r load_libraries, include=FALSE}
 library(tidyverse)
+library(knitr)
 ```
 
 ## Self Driving Car      
 
-```{r Car, fig.align='center', out.width='75%', eval = FALSE}
-car_circuit <- './images/car_circuit.png'
-knitr::include_graphics(car_circuit)
-car <- './images/car.png'
-knitr::include_graphics(car)
+```{r}
+car <- './images/car.jpg'
+car_circuit <- './images/car_cir.jpg'
+```
+
+```{r Car1, fig.align='center', out.width='25%'}
+include_graphics(car)
+```
+
+```{r Car2, fig.align='center', out.width='25%'}
+include_graphics(car_circuit)
 ```
 
 Spent 30 Hours on the project  
@@ -41,7 +48,7 @@ Spent 20 Hours on the project
 
 ```{r PSU, fig.align='center', out.width='75%'}
 psu <- './images/circuit.png'
-knitr::include_graphics(psu)
+include_graphics(psu)
 ```
 
 Spent 20 Hours on the project   
@@ -62,7 +69,7 @@ Spent 30 Hours on the project
 
 ```{r skate, fig.align='center', out.width='50%'}
 skate <- './images/skateboard.jpg'
-knitr::include_graphics(skate)
+include_graphics(skate)
 ```
 
 Spent 40 Hours on the project
