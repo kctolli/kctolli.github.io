@@ -30,8 +30,7 @@ title: "Skills"
   + Plotly
 * SQL (Oracle)
 * Tableau
-* Plotly
-  + Chart Studio
+* Chart Studio by Plotly
 * Excel
   + Google Sheets
 * Data Intuition and Insight    
