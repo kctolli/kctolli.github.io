@@ -88,3 +88,18 @@ Spent 15 Hours on the project
     - To find the day of the week
 * Spead up the program by about 25 times
   + About a 150 ms run time
+  
+## ePortfolio
+
+Spent 10 Hours on the project
+
+* This is one place to show:
+  + About Me
+  + Skills
+  + Program of Study
+  + Projects
+  + Resume
+  + LinkedIn
+* Hosted on [github](https://github.com/kctolli/kctolli.github.io)
+  + [This website](https://kctolli.github.io/index.html)
+* Used Rmd and YML files to create
