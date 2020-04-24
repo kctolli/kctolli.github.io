@@ -91,7 +91,8 @@ Spent 15 Hours on the project
   
 ## ePortfolio
 
-Spent 10 Hours on the project
+Spent 10 Hours on the project - On going
+
 
 * This is one place to show:
   + About Me
@@ -103,3 +104,16 @@ Spent 10 Hours on the project
 * Hosted on [github](https://github.com/kctolli/kctolli.github.io)
   + [This website](https://kctolli.github.io/index.html)
 * Used Rmd and YML files to create
+
+## PolarFire Design Project
+
+This project is on going 
+
+* Sponsored by NASA
+* Done in VHDL
+* Implement RISC-V core on the PolarFire dev kit
+
+## COVID-19 Analytics
+
+This project is on going 
+  
