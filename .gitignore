@@ -27,5 +27,6 @@ rsconnect/
 # R Project
 .Rproj
 .Rproj.user
+eportfolio.Rproj
 
 .DS_Store
