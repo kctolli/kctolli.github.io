@@ -91,7 +91,7 @@ Spent 15 Hours on the project
   
 ## ePortfolio
 
-Spent 10 Hours on the project - On going
+Spent 15 Hours on the project - On going
 
 
 * This is one place to show:
@@ -110,10 +110,18 @@ Spent 10 Hours on the project - On going
 This project is on going 
 
 * Sponsored by NASA
-* Done in VHDL
+* Done in VHDL and Embedded C
 * Implement RISC-V core on the PolarFire dev kit
 
 ## COVID-19 Analytics
 
 This project is on going 
-  
+
+* Done in R
+* Website created with Rmd and Yaml
+
+## Lineage Logistics
+
+This project is on going   
+
+* Done in Python
