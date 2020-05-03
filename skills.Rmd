@@ -28,11 +28,11 @@ title: "Skills"
   + Numpy
   + Scipy
   + Plotly
-* SQL (Oracle)
+* SQL 
+  + Oracle
+  + MySQL
 * Tableau
-* Chart Studio by Plotly
-* Excel
-  + Google Sheets
+* Excel / Google Sheets
 * Data Intuition and Insight    
   Topics including:
   + Numerical and Graphical Summaries
@@ -75,7 +75,7 @@ title: "Skills"
 * Javascript
 * YAML and Rmd     
   Basic building blocks:
-  + knitr R package
+  + knitr (R package)
   + _site.yml
   + index.Rmd
   

@@ -4,7 +4,7 @@ title: "Program of Study"
 
 I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studing to get my Bachelors of Science in Software Engineering with an Emphasis in Embedded Systems. I am minoring in Computer Engineering and working on Data Science certification.  
 
-## Software Engineering Core
+## Software Engineering Core 
 
 * Intro to Computer Engineering and Science
 * Intro to Software Development using C++
@@ -18,6 +18,8 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * System Security 
 * Web Design & Development
 * Introduction to Databases
+* Technical Communication 
+* Introduction to Chemistry
 
 ### Math Core 
 
@@ -55,3 +57,24 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Database Design and Development
 * Data Intuition and Insight
 * Data Wrangling and Visualization
+
+<!--
+
+## General Education Core
+
+* Religion Courses
+  + The Eternal Family 
+  + Restoration Foundations
+  + Gospel of Jesus Christ 
+  + Teachings & Doctrine of the Book of Mormon 
+  + Intro to Family History 
+  + Old Testament
+  + Pearl of Great Price
+* College Success
+* Family Relations
+* Preparation for Marriage 
+* Introduction to Visual Art 
+* Writing Foundations
+* Technical Communication 
+* Intro to Chemistry
+* Science Foundations  -->
