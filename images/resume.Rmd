@@ -3,7 +3,9 @@ title: "Kyle Tolliver's resume"
 author: Kyle Tolliver
 output: pagedown::html_resume
 ---
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 Aside
 ====================================
 
