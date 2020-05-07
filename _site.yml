@@ -16,7 +16,7 @@ navbar:
       href: ./projects.html   
     - text: "Resume"
       icon: fa-file-text
-      href: ./images/Resume.pdf
+      href: ./images/Resume.html
     - text: "LinkedIn"
       icon: fa-linkedin
       href: https://www.linkedin.com/in/kctolli/  
@@ -33,4 +33,3 @@ output:
     fig_height: 6
     fig_width: 12
     fig_align: 'center'  
-    code_folding: hide 

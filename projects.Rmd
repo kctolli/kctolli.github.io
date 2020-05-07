@@ -9,16 +9,16 @@ library(knitr)
 
 ## Self Driving Car      
 
-```{r}
+```{r, echo = FALSE}
 car <- './images/car.jpg'
 car_circuit <- './images/car_cir.jpg'
 ```
 
-```{r Car1, fig.align='center', out.width='25%'}
+```{r Car1, fig.align='center', out.width='25%', echo = FALSE}
 include_graphics(car)
 ```
 
-```{r Car2, fig.align='center', out.width='25%'}
+```{r Car2, fig.align='center', out.width='25%', echo = FALSE}
 include_graphics(car_circuit)
 ```
 
@@ -46,7 +46,7 @@ Spent 20 Hours on the project
 
 ## Current-limited (BJT and OP-AMP) DC Power Supply		
 
-```{r PSU, fig.align='center', out.width='75%'}
+```{r PSU, fig.align='center', out.width='75%', echo = FALSE}
 psu <- './images/circuit.png'
 include_graphics(psu)
 ```
@@ -67,7 +67,7 @@ Spent 30 Hours on the project
 
 ## Electric Skateboard                          		
 
-```{r skate, fig.align='center', out.width='50%'}
+```{r skate, fig.align='center', out.width='50%', echo = FALSE}
 skate <- './images/skateboard.jpg'
 include_graphics(skate)
 ```

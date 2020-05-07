@@ -1,0 +1,132 @@
+---
+title: "Kyle Tolliver's resume"
+author: Kyle Tolliver
+output: pagedown::html_resume
+---
+
+Aside
+====================================
+
+Contact info
+------------------------------------
+
+Email: kyle@tollivers.org
+
+Phone: (805)367-6723
+
+ePortfolio: https://kctolli.github.io/
+
+LinkedIn: [kctolli](https://www.linkedin.com/in/kctolli/)
+
+Skills
+------------------------------------
+
+- R 
+- YAML
+- Python
+- C/C++
+- Tableau
+- Excel
+- SQL
+- HTML 
+- CSS
+- Java
+- Verilog
+- Embedded C
+- Assembly
+- Github
+
+Disclaimer
+------------------------------------
+
+This resume was made with the R package [pagedown](https://github.com/rstudio/pagedown).
+
+Kyle Tolliver --- Resume
+
+
+Main
+====================================
+
+Kyle Tolliver {#title}
+------------------------------------
+
+Education {data-icon=graduation-cap}
+------------------------------------
+
+### BYU-Idaho
+
+Bachelor of Science in Software Engineering
+
+Rexburg, ID
+
+2017 <br> | <br> 2020
+
++ Emphasis: Computer Systems
++ Minor: Computer Engineering
++ Certificates: Data Science
++ Coursework: Database Development, Data Intuition, Data Wrangling, Data Structures, System Security, Project Management, Digital Design, Advanced Embedded Systems, Electronic Devices and Circuits
+
+Experience {data-icon=briefcase}
+------------------------------------
+
+### Teaching Assistant and Tutor
+
+BYU - Idaho, Computer Science and Engineering 
+
+Rexburg, ID
+
+2018  <br> | <br>  2020
+
++ Lead students to increase their knowledge
++ Guide students to improvement by giving feedback
++ Help students with programming Verilog, Embedded C and Erlang
+
+Projects {data-icon=laptop}
+------------------------------------
+
+### Biology Exam Data Analysis
+
+Spent 20 Hours on the project
+
+Rexburg, ID
+
+2020
+
++ Used R and the Tidyverse package to wrangle and visualize data
++ Allowed Professors to help Improve Curriculum
+
+### Self Driving Car
+
+Spent 30 Hours on the project
+
+Rexburg, ID
+
+2020
+
++ Designed Circuits and Assembled the Electronics
++ Programmed the Arduino in Embedded C
++ Setup Raspberry Pi for Deep Learning and Computer Vision
+
+### FPGA Multifunction Calculator
+
+Spent 30 Hours on the project
+
+Rexburg, ID
+
+2019
+
++ Created new AVR commands
++ Used Basys 3 (Artix 7) FPGA Board
++ Developed in Verilog
+
+### Calendaring App
+
+Spent 40 Hours on the project
+
+Rexburg, ID
+
+2018
+
++ Used Github to develop the Java code while working with a Team
++ Presented to the Eastern Idaho Innovator’s Challenge
+

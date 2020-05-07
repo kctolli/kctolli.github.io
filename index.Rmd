@@ -7,7 +7,7 @@ author: "Kyle Tolliver"
 library(tidyverse)
 ```
 
-```{r pic, fig.align='left', out.width='30%'}
+```{r pic, fig.align='left', out.width='30%', echo = FALSE}
 me <- './images/me.png'
 knitr::include_graphics(me)
 ```
