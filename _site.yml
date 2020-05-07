@@ -16,7 +16,7 @@ navbar:
       href: ./projects.html   
     - text: "Resume"
       icon: fa-file-text
-      href: ./images/Resume.html
+      href: ./images/resume.html
     - text: "LinkedIn"
       icon: fa-linkedin
       href: https://www.linkedin.com/in/kctolli/  
