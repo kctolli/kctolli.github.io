@@ -17,6 +17,8 @@ title: "Skills"
     - forcats
   + knitr
   + reticulate
+  + lubridate
+  + dygraphs
   + sf (simple features)
   + leaflet
   + devtools
