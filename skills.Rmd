@@ -108,5 +108,6 @@ title: "Skills"
   + Bash
   + Batch
   + Powershell
-* Github
-  + Git Bash   
+* Git
+  + Github
+  + Bash
