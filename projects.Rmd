@@ -42,7 +42,7 @@ Spent 20 Hours on the project
 
 *	Used R and the Tidyverse package to wrangle and visualize data
 *	Allowed Professors to help Improve Curriculum  
-* See [Exam Data Webpage](https://mcs335.glitch.me/Semester_project.html)
+* See [Exam Data Webpage](https://kctolli.github.io/MATH335/Semester_project.html)
 
 ## Current-limited (BJT and OP-AMP) DC Power Supply		
 
@@ -124,3 +124,9 @@ This project is on going
 This project is on going   
 
 * Done in Python
+
+## Farm Bureau 
+
+This project is on going   
+
+* Webscraping
