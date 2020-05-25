@@ -38,13 +38,10 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Database Design and Development
 * Data Intuition and Insight
 * Data Wrangling and Visualization
-* Data Science Programming
-* Machine Learning and Data Mining
-* Calculus 1
-* Linear Algebra 
-* Discrete Math 
-* Intermediate Statistics
-* Design Thinking
+<!-- * Data Science Programming -->
+<!-- * Machine Learning and Data Mining -->
+<!-- * Intermediate Statistics -->
+<!-- * Design Thinking -->
 * Technical Communication 
 * Web Design & Development
 
