@@ -16,7 +16,7 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 
 <br> 
 
-##### *--- Licensed under [GNU General Public License v3.0](./LICENSE) *
+##### *--- Licensed under [GNU General Public License v3.0](./LICENSE.txt) *
 
 #####  *--- Website is made with [Rmd files](https://rmarkdown.rstudio.com/index.html) and [Rstudio](https://rstudio.com/)*
 
