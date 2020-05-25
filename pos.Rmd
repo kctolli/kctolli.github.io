@@ -2,7 +2,7 @@
 title: "Program of Study"
 ---
 
-I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studying to get my Bachelors of Science in Software Engineering and an Associates in Data Science. I am minoring in Computer Engineering and working on Data Science certification.  
+I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studying to get my Bachelors of Science in Software Engineering and an Associates in Data Science. I am minoring in Computer Engineering.  
 
 ## Software Engineering (BS)
 
