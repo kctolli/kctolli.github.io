@@ -3,9 +3,11 @@ title: "Kyle Tolliver's resume"
 author: Kyle Tolliver
 output: pagedown::html_resume
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 Aside
 ====================================
 
@@ -55,7 +57,7 @@ Kyle Tolliver {#title}
 Education {data-icon=graduation-cap}
 ------------------------------------
 
-### BYU-Idaho
+### Brigham Young University-Idaho
 
 Bachelor of Science in Software Engineering
 
@@ -63,10 +65,20 @@ Rexburg, ID
 
 2017 <br> | <br> 2020
 
-+ Emphasis: Computer Systems
 + Minor: Computer Engineering
-+ Certificates: Data Science
-+ Coursework: Database Development, Data Intuition, Data Wrangling, Data Structures, System Security, Project Management, Digital Design, Advanced Embedded Systems, Electronic Devices and Circuits
++ Honors: Tau Beta Pi and LDS Academic Scholarship
++ Coursework: Data Structures, Software Design and Development,  System Security, Project Management, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Electronic Devices and Circuits
+
+### Brigham Young University-Idaho
+
+Associate of Applied Science in Data Science
+
+Rexburg, ID
+
+2017 <br> | <br> 2020
+
++ Societies: Data Science Society
++ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Data Structures, Web Design and Development, Technical Writing, Linear Algebra, Discrete Math, Calculus 1 
 
 Experience {data-icon=briefcase}
 ------------------------------------
@@ -86,9 +98,9 @@ Rexburg, ID
 Projects {data-icon=laptop}
 ------------------------------------
 
-### Biology Exam Data Analysis
+### Exam Data Analysis
 
-Spent 20 Hours on the project
+BYU - Idaho, Biology
 
 Rexburg, ID
 
@@ -99,31 +111,29 @@ Rexburg, ID
 
 ### Self Driving Car
 
-Spent 30 Hours on the project
+BYU - Idaho, Computer Science and Engineering 
 
 Rexburg, ID
 
 2020
 
-+ Designed Circuits and Assembled the Electronics
 + Programmed the Arduino in Embedded C
 + Setup Raspberry Pi for Deep Learning and Computer Vision
 
 ### FPGA Multifunction Calculator
 
-Spent 30 Hours on the project
+BYU - Idaho, Computer Science and Engineering 
 
 Rexburg, ID
 
 2019
 
 + Created new AVR commands
-+ Used Basys 3 (Artix 7) FPGA Board
-+ Developed in Verilog
++ Used Basys 3 (Artix 7) FPGA Board and developed in Verilog code
 
 ### Calendaring App
 
-Spent 40 Hours on the project
+BYU - Idaho, Computer Science and Engineering 
 
 Rexburg, ID
 
