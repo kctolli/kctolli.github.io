@@ -88,10 +88,10 @@ Spent 15 Hours on the project
     - To find the day of the week
 * Spead up the program by about 25 times
   + About a 150 ms run time
-  
-## ePortfolio
 
-On going
+## On-going Projects
+  
+### ePortfolio
 
 * This is one place to show:
   + About Me
@@ -104,29 +104,25 @@ On going
   + [This website](https://kctolli.github.io/index.html)
 * Used Rmd and YML files to create
 
-## PolarFire Design Project
+### PolarFire Design Project 
 
-This project is on going 
+Senior Project 
 
 * Sponsored by NASA
 * Done in VHDL and Embedded C
 * Implement RISC-V core on the PolarFire dev kit
 
-## COVID-19 Analytics
+### COVID-19 Analytics
 
-This project is on going 
+Senior Thesis
 
 * Done in R
 * Website created with Rmd and Yaml
 
-## Lineage Logistics
+### Lineage Logistics
+  
+* BYUI Data Science Society
 
-This project is on going   
+### Farm Bureau 
 
-* Done in Python
-
-## Farm Bureau 
-
-This project is on going   
-
-* Webscraping
+* BYUI Data Science Society

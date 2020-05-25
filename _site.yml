@@ -14,6 +14,9 @@ navbar:
     - text: "Projects"
       icon: fa-tasks
       href: ./projects.html   
+    - text: "Data Science"
+      icon: fa-table
+      href: https://kctolli.github.io/Data-Science/ 
     - text: "Resume"
       icon: fa-file-text
       href: ./images/resume.pdf
