@@ -16,7 +16,7 @@ navbar:
       href: ./projects.html   
     - text: "Data Science"
       icon: fa-table
-      href: ./data-science/index.html
+      href: ./Data-Science/index.html
     - text: "Resume"
       icon: fa-file-text
       href: ./images/resume.html
