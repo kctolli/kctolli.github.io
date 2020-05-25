@@ -1,5 +1,5 @@
 ---
-title: "Kyle Tolliver's resume"
+title: "resume"
 author: Kyle Tolliver
 output: pagedown::html_resume
 ---
@@ -16,7 +16,7 @@ Contact info
 
 Email: kyle@tollivers.org
 
-Phone: (805)367-6723
+Phone: [(805)367-6723](tel: 18053676723)
 
 ePortfolio: https://kctolli.github.io/
 
@@ -67,7 +67,7 @@ Rexburg, ID
 
 + Minor: Computer Engineering
 + Honors: Tau Beta Pi and LDS Academic Scholarship
-+ Coursework: Data Structures, Software Design and Development,  System Security, Project Management, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Electronic Devices and Circuits
++ Coursework: Data Structures, Software Design and Development,  Web Design and Development, System Security, Project Management, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Electronic Devices and Circuits
 
 ### Brigham Young University-Idaho
 
@@ -78,7 +78,7 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Societies: Data Science Society
-+ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Data Structures, Web Design and Development, Technical Writing, Linear Algebra, Discrete Math, Calculus 1 
++ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Programming with Classes, Technical Communication, Linear Algebra, Discrete Math, Calculus 1 
 
 Experience {data-icon=briefcase}
 ------------------------------------
