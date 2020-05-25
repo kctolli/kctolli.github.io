@@ -1,0 +1,43 @@
+---
+title: "UVU-MS"
+output: 
+  html_document:
+    keep_md: true
+    toc: true
+    toc_float: true
+---
+
+```{r library, include=FALSE}
+library(tidyverse)
+library(knitr)
+```
+
+## Degree Requirements
+
+1. Completion of all courses with a grade of B- or better.  
+2. Graduate Project Option: Graduate project proposal presented to and accepted by the student's Advisory Committee.
+3. Graduate Project Option: Completion and defense of graduate project (CS 6600 and CS 6610); defense must be accepted by the student's Advisory Committee.  
+4. Graduate Project Option: Completion of all required courses and elective courses for a total of 30 credit hours with an average GPA of 3.0 or higher.  
+5. Graduate Coursework Option: Completion of all required courses and elective courses (CS 6600 and CS 6610 do not count toward this option) for a total of 30 credit hours with an average GPA of 3.0 or higher.
+
+### Required Courses (18 Crds)
+
+* CS 6100:	Database Management System Construction
+*	CS 6150:	Advanced Algorithms 	
+*	CS 6300:	Software Engineering Leadership 	
+*	CS 6470:	Machine Learning	 
+* CS 6500:	Software Architecture 
+* CS 6700:	Advanced Mathematics for Computer Science 
+
+### Elective Courses (12 Crds)
+
+* CS 6400:	Modern Databases   	 
+*	CS 6480:	Advanced Machine Learning       	 
+*	CS 6510:	Design and Simulation of Operating Systems
+*	CS 6600:	Graduate Project I 
+*	CS 6610:	Graduate Project II 
+*	CS 6620:	Advanced Data Mining and Visualization
+*	CS 6730:	Advanced Embedded Systems Engineering 	 
+*	CS 6800:	Computer Graphics and Mixed Realities
+* STAT 6010: Theory of Statistics I
+* STAT 6020: Theory of Statistics II

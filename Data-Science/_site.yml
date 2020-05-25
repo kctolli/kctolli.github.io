@@ -1,0 +1,119 @@
+name: "Data-Science"
+navbar:
+  title: "Data Science"
+  left:
+    - text: "Data Intuition"  
+      menu:
+        - text: "Personal Work"
+        - text: "Website"
+          href: https://kctolli.github.io/CSE150/            
+        - text: "Github"
+          href: https://github.com/kctolli/CSE150  
+        - text: "---------------"  
+        - text: "Course Material"
+        - text: "Website"
+          href: https://byuistats.github.io/CSE150/
+        - text: "Good Charts"    
+          href: https://www.amazon.com/gp/product/1633690709/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+        - text: "Supplemental Book"
+          href: https://byuistats.github.io/BYUI_CSE150_StatBook/
+        - text: "---------------"   
+        - text: "Additional Resources"  
+        - text: "Visualization Catalog"
+          href: https://datavizcatalogue.com/
+        - text: "Communicating Data"
+          href: https://dataremixed.com/books/cdwt/  
+        - text: "Tableau"
+          href: https://public.tableau.com/en-us/s/          
+    - text: "Data Wrangling"  
+      menu:
+        - text: "Personal Work"
+        - text: "Website"
+          href: https://kctolli.github.io/MATH335/            
+        - text: "Github"
+          href: https://github.com/kctolli/MATH335
+        - text: "---------------"  
+        - text: "Course Material"
+        - text: "Website"
+          href: https://byuistats.github.io/M335/
+        - text: "R for Data Science"    
+          href: https://r4ds.had.co.nz/
+        - text: "---------------"   
+        - text: "Additional Resources"  
+        - text: "Git and Github"
+          href: https://byuistats.github.io/M335/git_335.html
+        - text: "Git and R" 
+          href: https://cfss.uchicago.edu/setup/
+        - text: "R Markdown Guide"
+          href: https://bookdown.org/yihui/rmarkdown/  
+    - text: "Machine Learning"  
+      menu:
+        - text: "Personal Work"
+        - text: "Website"
+          href: https://kctolli.github.io/CSE450/           
+        - text: "Github"
+          href: https://github.com/kctolli/CSE450
+        - text: "---------------"  
+        - text: "Course Material"
+        - text: "Github"
+          href: https://github.com/byui-cs/cs450-course
+        - text: "Algorthmic Prospective"
+          href: https://kctolli.github.io/CSE450/course/Machine_Learning.pdf
+        - text: "Machine Learning - R"
+          href: https://kctolli.github.io/CSE450/course/Machine_Learning_R.pdf       
+    - text: "Intermediate Stats"  
+      menu:
+        - text: "Personal Work"
+        - text: "Website"
+          href: https://kctolli.github.io/MATH325/           
+        - text: "Github"
+          href: https://github.com/kctolli/MATH325
+        - text: "---------------"  
+        - text: "Course Material"
+        - text: "Website"
+          href: https://byuistats.github.io/Statistics-Notebook/ 
+        - text: "Github"
+          href: https://github.com/saundersg/Statistics-Notebook
+        - text: "---------------" 
+        - text: "Additional Resources"
+        - text: "M221 Book"
+          href: http://statistics.byuimath.com/index.php?title=Main_Page
+        - text: "R Help"
+          href: http://byuistats.github.io/M330/r_help.html  
+    - text: "Senior Thesis"  
+      menu:
+        - text: "COVID-19 Research"
+        - text: "Main"
+          href: https://byui-covid.github.io/  
+        - text: "Reports"
+          href: https://byui-covid.github.io/Project-Reports/  
+        - text: "Github"
+          href: https://github.com/BYUI-COVID
+        - text: "---------------" 
+        - text: "Additional Resources"
+        - text: "Consulting Articles" 
+          href: https://byuistats.github.io/M488/readings.html
+        - text: "Tidy Evaluation"
+          href: https://tidyeval.tidyverse.org/
+        - text: "Data Visualization"
+          href: https://serialmentor.com/dataviz/    
+        - text: "Happy Git with R" 
+          href: https://happygitwithr.com/
+        - text: "Plotly and Shiny - R"  
+          href: https://plotly-r.com/index.html
+        - text: "Advanced R"  
+          href: https://adv-r.hadley.nz/
+        - text: "R Packages"
+          href: https://r-pkgs.org/
+        - text: "R Visualization"  
+          href: https://byuistats.github.io/M335/r_visualization.html      
+    - text: "ePortfolio"
+      href: https://kctolli.github.io/index.html
+
+output_dir: '.'
+
+output: 
+  html_document:
+    css: ./site_libs/styles.css
+    highlight: tango
+    theme: readable

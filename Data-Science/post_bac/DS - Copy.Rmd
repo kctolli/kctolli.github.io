@@ -1,0 +1,164 @@
+---
+title: "BYUI Data Science"
+output: 
+  html_document: 
+    keep_md: true
+    toc: true
+    toc_float: true
+---
+
+```{r library, include=FALSE}
+library(knitr)
+library(tidyverse)
+
+post_bac <- read.csv("./Post.csv")
+```
+
+## Fall 2020
+
+```{r table, echo=FALSE}
+kable(post_bac)
+```
+
+```{r distinct, include=FALSE}
+bac <- post_bac %>% unique() %>% 
+  group_by(Code, Name) %>%
+  summarise(min_crds = min(Crds)) %>% 
+  summarise(sum_crds = sum(min_crds))
+
+str <- str_split(bac$sum_crds, pattern = "")
+
+num_str <- as.numeric(str)
+
+sum <- sum(num_str)
+
+sent <- "total credits ="
+```
+
+```{r display, echo=FALSE}
+print(paste(sent, sum))
+```
+
+## Associates (AAS)
+
+### Programming Fundamentals    
+
+Take the following: 
+
+* [X] CIT111 - Introduction to Databases (3)
+* [X] CSE110 - Programming Building Blocks (2)
+* [X] CSE111 - Programming with Functions (2)
+* [ ] CSE250 - Data Science Programming (2) - 
+
+### Mathematical Foundations 
+
+Take 1 of the following:
+
+* [X] MATH112 - Calculus I (4)
+* [ ] MATH119 - Applied Calculus for Data Analysis (4)
+
+### Stat. & Vis.   
+  
+Complete all of the following    
+
+Take 1 of the following: 
+
+* [X] CSE150 - Data Intuition and Insight (2)
+* [ ] MATH221 - Statistics (3)    
+
+Take the following: 
+
+* [ ] MATH325 - Intermediate Statistics (3) - 
+* [X] MATH335 - Data Wrangling, Exploration, and Visualization (3)
+
+### Technical Direction    
+
+Take 1 of the following: 
+
+* [ ] BA315 - Business Analytics (3)
+* [X] CIT225 - Database Design & Development (3)
+* [X] CSE210 - Programming with Classes (2)
+* [X] MATH341 - Linear Algebra (3)
+
+### Design & Comm    
+
+Take 6 credit(s) from: 
+
+* [ ] ART231 - Design Thinking: Inquiry and Innovation (3) - 
+* [ ] ART432R - Design Thinking: Customer Experience (3)
+* [ ] ART434R - Design Thinking: Agile Product Management (3)
+* [ ] BA211 - Business Fundamentals (3)
+* [X] BUS301 - Advanced Writing in Professional Contexts (3)
+
+### Technical Depth    
+  
+Take 7 credit(s) from: 
+
+* [ ] BA215 - Spreadsheet Analysis for Business (3)
+* [ ] BA315 - Business Analytics (3)
+* [X] CIT225 - Database Design & Development (3)
+* [ ] CIT326 - Database Administration (3)
+* [X] CSE150 - Data Intuition and Insight (2)
+* [X] CSE210 - Programming with Classes (2)
+* [X] CSE280 - Discrete Mathematics I (2)
+* [X] CSE310 - Applied Programming (4)
+* [ ] CSE450 - Machine Learning and Data Mining (3) -
+* [ ] CSE471 - User Interface Evaluation & Design (3)
+* [X] MATH112 - Calculus I (4)
+* [ ] MATH113 - Calculus II (3)
+* [ ] MATH119 - Applied Calculus for Data Analysis (4)
+* [ ] MATH221 - Statistics (3)   
+* [ ] MATH214 - Multivariable and Vector Calculus (3)
+* [ ] MATH215 - Multivariable Calculus (4)
+* [ ] MATH326 - Experimental Design (3)
+* [X] MATH341 - Linear Algebra (3)
+* [ ] MATH423 - Probability and Statistics (3)
+* [ ] MATH424 - Mathematical and Bayesian Statistics (3)
+* [ ] MATH425 - Applied Linear Regression (3)
+* [ ] MATH488 - Statistical and Data Science Consulting (3)
+* [X] WDD130 - Web Fundamentals (2)
+* [ ] WDD230 - Web Frontend Development I (3)
+
+## BYUI Programs 
+
+* [Data Science](https://www.byui.edu/mathematics/student-resources/data-science)
+  + [BS](https://www.byui.edu/catalog#/programs/41PwqJ9RZ?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs) 
+  + [AAS](https://www.byui.edu/catalog/#/programs/Ey-19J50W?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+  + [Minor](https://www.byui.edu/catalog/#/programs/NyV_tJqAW?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+  + [Certificate](https://www.byui.edu/catalog/#/programs/N1ltkrR3Z?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+* [Computer Science](https://www.byui.edu/catalog#/programs/NyW7f7-nsZ?bc=true&bcCurrent=Computer%20Science&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs) - [Machine Learning Fundamentals Certificate](https://www.byui.edu/catalog#/programs/SkBbD40Y4/none?bc=true&bcCurrent=Machine%20Learning%20Fundamentals&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
+* [Business Analytics](https://www.byui.edu/catalog#/programs/EkbQmWnob/none?bc=true&bcCurrent=Business%20Analytics&bcGroup=Department%20of%20Finance%20&bcItemType=programs)
+* [Mathematical Sciences](https://www.byui.edu/catalog#/programs/By1hDTDCx/none?bc=true&bcCurrent=Mathematical%20Sciences&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+  + [Applied Statistics](https://www.byui.edu/catalog#/programs/By1hDTDCx/4y5W50eRZ?bc=true&bcCurrent=Applied%20Mathematics&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+    - [Statistics Concentration](https://www.byui.edu/catalog/#/programs/EJgKm7-3oW/NJ5dQ-hjZ?bc=true&bcCurrent=Software%20Management&bcGroup=Department%20of%20Interdisciplinary%20Studies&bcItemType=programs)
+  + [Applied Mathematics](https://www.byui.edu/catalog#/programs/By1hDTDCx/4y8HAAeCZ?bc=true&bcCurrent=Applied%20Mathematics&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+* [Biostatistics](https://www.byui.edu/catalog/#/programs/Vyl0fmZ2o-?bc=true&bcCurrent=Biostatistics&bcGroup=Department%20of%20Mathematics&bcItemType=programs) 
+* [Biology](https://www.byui.edu/catalog/#/programs/V1ZfQQbhjb?bc=true&bcCurrent=Biology&bcGroup=Department%20of%20Biology&bcItemType=programs) - [Bioinformatics](https://www.byui.edu/catalog/#/programs/V1ZfQQbhjb/S1bp9GTkx?bc=true&bcCurrent=Bioinformatics&bcGroup=Department%20of%20Biology&bcItemType=programs)
+
+<!-- ### Completed Courses -->
+<!-- * CS 101: Intro to Programming  -->
+<!-- * CS 241: Object-Oriented w/ Data Structures  -->
+<!-- * CIT 111: Intro to Databases  -->
+<!-- * CIT 225: Database Design and Development  -->
+<!-- * CSE 150: Data Intuition and Insight  -->
+<!-- * MATH 335: Data Wrangling and Visualization  -->
+
+<!-- ### ¿Winter 2021? -->
+
+<!-- * MATH 113 -->
+<!-- * MATH 214 -->
+<!-- * MATH 215 -->
+<!-- * MATH 326 -->
+<!-- * MATH 425 -->
+<!-- * MATH 488 -->
+<!-- * BA 211 -->
+<!-- * BA 215 -->
+<!-- * BA 315 -->
+<!-- * CIT 325 -->
+<!-- * CIT 326 -->
+<!-- * CIT 327 -->
+<!-- * CIT 361 -->
+<!-- * CIT 381 -->
+<!-- * CSE 130 -->
+<!-- * CSE 180 -->
+<!-- * CSE 270 -->

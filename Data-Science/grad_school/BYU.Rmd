@@ -1,0 +1,196 @@
+---
+title: "BYU-MS"
+output: 
+  html_document:
+    keep_md: true
+    toc: true
+    toc_float: true
+---
+
+## Requirements for Degree
+
+### Thesis Option
+
+* Credit hours (30): minimum 24 course work hours plus 6 thesis hours (CS 699R)
+* Required courses: CS 674 as well as other courses determined in consultation with graduate committee
+* Examinations: oral defense of thesis
+* While in the MS program, students are expected to make steady and satisfactory progress toward their degree 
+  + Progress reviews take place twice each year
+  + Students who fail to make appropriate progress will be dropped from the program
+
+### Project Option
+
+* Credit hours (33): minimum 30 course work hours plus 3 project hours (CS 698R)
+* Project: 3 credit hours of CS 698R; present project and write up (10 pages) to MS Committee
+
+### Stats Option
+
+* Credit hours: 
+  + Thesis option (33): minimum 27 course work plus 6 thesis hours (Stat 699R)
+  + Project option (33): minimum 30 course work plus 3 project hours (Stat 698R)
+* Required courses: Stat 535, 536, 537, 624, 637, 641, 642, 651, and 666 
+* Examinations: 
+  + Comprehensive written examination covering Stat 535, 624, 641, and 642 
+  + Oral defense of project or thesis
+
+### Information Systems Management
+
+* Required courses: IS 531, 550, 551, 552; 555, 560, GSCM 530, HRM 540, STRAT 560, MSB 572 
+* 21 elective hours from any approved MSM courses 
+ 
+### General Technology
+
+* Credit hours: 24 minimum approved course hours plus 6 thesis hours (Tech 699R)
+* Required courses: Tech 638, 699R
+* Specialization: minimum 21 hours from approved courses in the area of study. An approved study list is required
+* Examination: Oral defense of thesis
+
+### Notes
+
+* No more than three 400-level courses
+* C+ or better in each class, with an overall cumulative 3.0 GPA in MS degree classes
+
+## Admission Requirements
+
+* Required Test: GRE
+* Bachelors GPA: 3.3
+* Bachelors Major: Computer Science, Data Science, Statistics, Mathematics or related field
+
+## Possible Courses
+
+### Computer Science
+
+* [CS 502: Job Search Strategies](https://gradstudies.byu.edu/course/job-search-strategies)  (Also [STAT](https://gradstudies.byu.edu/course/job-search-strategies-4))
+* [CS 611: Theoretical Foundations of Computing](https://gradstudies.byu.edu/course/theoretical-foundations-computing)
+  + [CS 252 - Introduction to Computational Theory](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-computational-theory)
+  + [CS 312 - Algorithm Design and Analysis](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/algorithm-design-and-analysis)
+* [CS 651: Computational Inference and Recognition in Visual Domains](https://gradstudies.byu.edu/course/computational-inference-and-recognition-visual-domains)  
+  + [CS 450 - Computer Vision](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/computer-vision)
+* [CS 673: Computational Creativity](https://gradstudies.byu.edu/course/computational-creativity)    
+  (1 of the following)
+  + [CS 470 - Introduction to Artificial Intelligence](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-artificial-intelligence)
+  + [CS 472 - Introduction to Machine Learning](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-machine-learning)
+* [CS 674: Advanced Deep Learning](https://gradstudies.byu.edu/course/advanced-deep-learning)    
+  + [CS 474 - Introduction to Deep Learning](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-deep-learning)
+* [CS 676: Advanced Topics in Data Mining](https://gradstudies.byu.edu/course/advanced-topics-data-mining)
+* [CS 677: Bayesian Methods in Computer Science](https://gradstudies.byu.edu/course/bayesian-methods-computer-science)
+  + [CS 470 - Introduction to Artificial Intelligence](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-artificial-intelligence)
+* [CS 678: Advanced Machine Learning Models](https://gradstudies.byu.edu/course/advanced-machine-learning-models)    
+  + [CS 472 - Introduction to Machine Learning](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-machine-learning)
+
+### Statistics
+
+* [STAT 511: Statistical Methods for Research](https://gradstudies.byu.edu/course/statistical-methods-research-1)    
+  (1 of the following)
+  + [STAT 121 - Principles of Statistics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/principles-of-statistics)
+  + [STAT 201 - Statistics for Engineers and Scientists](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-engineers-and-scientists)
+* [STAT 531: Experimental Design](https://gradstudies.byu.edu/course/experimental-design)
+   + [MATH 213 - Elementary Linear Algebra](https://catalog.byu.edu/physical-and-mathematical-sciences/mathematics/elementary-linear-algebra-0)
+   + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)    
+     (1 of the following)
+   + [STAT 123 - Introduction to R Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-r-programming)
+   + [CS 142 - Introduction to Computer Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-computer-programming)
+   + [IS 303 - Introduction to Computer Programming](https://catalog.byu.edu/business/information-systems/introduction-computer-programming)
+* [STAT 535: Linear Models](https://gradstudies.byu.edu/course/linear-models)    
+  (2 of the following)
+  + [MATH 213 - Elementary Linear Algebra](https://catalog.byu.edu/physical-and-mathematical-sciences/mathematics/elementary-linear-algebra-0)
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)
+  + [STAT 340 - Probability and Inference 2](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/probability-and-inference-2)
+* [STAT 536: Statistical Learning and Data Mining](https://gradstudies.byu.edu/course/statistical-learning-and-data-mining)
+  + [STAT 535: Linear Models](https://gradstudies.byu.edu/course/linear-models) 
+  + [STAT 624: Statistical Computation](https://gradstudies.byu.edu/course/statistical-computation)
+* [STAT 590R: Statistical Consulting](https://gradstudies.byu.edu/course/statistical-consulting)
+* [STAT 624: Statistical Computation](https://gradstudies.byu.edu/course/statistical-computation)
+* [STAT 641: Probability Theory and Mathematical Statistics](https://gradstudies.byu.edu/course/probability-theory-and-mathematical-statistics-1)
+
+### Information Systems and Technology
+
+* [IS 505: Programming for Data Science](https://gradstudies.byu.edu/course/programming-data-science)
+* [IS 515: Spreadsheets for Business Analysis](https://catalog.byu.edu/business/information-systems/spreadsheets-business-analysis)
+  + [IS 201 - Introduction to Management Information Systems](https://catalog.byu.edu/business/information-systems/introduction-management-information-systems) 
+* [IS 520: Business Programming and Spreadsheet Automation](https://gradstudies.byu.edu/course/business-programming-and-spreadsheet-automation)
+  + [IS 201 - Introduction to Management Information Systems](https://catalog.byu.edu/business/information-systems/introduction-management-information-systems)
+* [IS 537: Data Structures and Algorithms](https://catalog.byu.edu/business/information-systems/data-structures-and-algorithms)  
+  + [IS 403 - Principles of Business Programming](https://catalog.byu.edu/business/information-systems/principles-of-business-programming)
+* [IS 540: Spreadsheet and Database Automation Programming](https://gradstudies.byu.edu/course/spreadsheet-and-database-automation-programming)    
+  (1 of the following)
+  + [IS 303 - Introduction to Computer Programming](https://catalog.byu.edu/business/information-systems/introduction-computer-programming)
+  + [STAT 123 - Introduction to R Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-r-programming)
+  + [CS 142 - Introduction to Computer Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-computer-programming)
+* [IS 555: Advanced Data Analytics for Organizations](https://gradstudies.byu.edu/course/advanced-data-analytics-organizations)
+  + [IS 402 - Database Systems](https://catalog.byu.edu/business/information-systems/database-systems)
+
+### Business (MBA/MPA)
+
+* [MBA 510: Management and Information Technology](https://gradstudies.byu.edu/course/management-and-information-technology)
+* [MBA 560: Business Analytics](https://gradstudies.byu.edu/course/business-analytics)
+* [MBA 580: Business Strategy](https://gradstudies.byu.edu/course/business-strategy)
+* [MBA 581: Competitive Strategy and Analysis](https://gradstudies.byu.edu/course/competitive-strategy-and-analysis)
+* [MBA 614: Spreadsheet Automation and Modeling](https://gradstudies.byu.edu/course/spreadsheet-automation-and-modeling)
+* [MBA 615: Spreadsheets for Business Analysis](https://gradstudies.byu.edu/course/spreadsheets-business-analysis-0)
+* [MBA 653: Introduction to Marketing Analytics](https://gradstudies.byu.edu/course/introduction-marketing-analytics)
+* [MPA 634: Data Science for Managers](https://gradstudies.byu.edu/course/data-science-managers)
+
+### Other
+
+* [ECEN 521: Introduction to Algorithm Design](https://gradstudies.byu.edu/course/introduction-algorithm-design)
+  + [ECEN 330 - Introduction to Embedded System Programming](https://catalog.byu.edu/engineering/electrical-and-computer-engineering/introduction-embedded-system-programming)
+  + [CS 235 - Data Structures and Algorithms](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/data-structures-and-algorithms)
+  + [CS 236 - Discrete Structures](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/discrete-structures)
+* [TECH 601: Research and Development in Technology](https://gradstudies.byu.edu/course/research-and-development-technology)
+* [MEEN 575 - (Me En-CE En) Optimization Techniques in Engineering](https://gradstudies.byu.edu/course/me-ence-en-optimization-techniques-engineering)
+
+## Data Science (Undergrad)
+
+* [Computer Science: Data Science](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/computer-science-data-science-bs)
+* [Statistics:]((https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-statistical-science-bs))
+  + [Data Science](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-data-science-bs) 
+  + [Applied Statistics & Analytics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-applied-statistics-analytics-bs)
+* [Mathematics: Applied and Computational Mathematics](https://catalog.byu.edu/physical-and-mathematical-sciences/mathematics/mathematics-applied-and-computational-mathematics-bs)
+  + [Computer Science](http://acme.byu.edu/emphases/#nine)
+  + [Data Science](http://acme.byu.edu/emphases/#cryptography)
+  + [Machine Learning](http://acme.byu.edu/emphases/#machine_learning)
+  + [Statistics](http://acme.byu.edu/emphases/#twentyseven)
+
+### 400-level
+
+* [CS 412 - Linear Programming and Convex Optimization](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/linear-programming-and-convex-optimization)
+  + [CS 312 - Algorithm Design and Analysis](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/algorithm-design-and-analysis)
+* [CS 450 - Computer Vision](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/computer-vision)
+  + [CS 312 - Algorithm Design and Analysis](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/algorithm-design-and-analysis)
+* [CS 470 - Introduction to Artificial Intelligence](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-artificial-intelligence)  
+  + [CS 312 - Algorithm Design and Analysis](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/algorithm-design-and-analysis)
+  + [STAT 121 - Principles of Statistics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/principles-of-statistics) 
+  + [MATH 215 - Computational Linear Algebra](https://catalog.byu.edu/physical-and-mathematical-sciences/mathematics/computational-linear-algebra)  
+* [CS 474 - Introduction to Deep Learning](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-deep-learning)
+  + [CS 312 - Algorithm Design and Analysis](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/algorithm-design-and-analysis)
+  + [STAT 121 - Principles of Statistics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/principles-of-statistics)
+  + [MATH 215 - Computational Linear Algebra](https://catalog.byu.edu/physical-and-mathematical-sciences/mathematics/computational-linear-algebra)
+* [STAT 420 - Big Data Science 1](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/big-data-science-1)
+  + [STAT 123 - Introduction to R Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-r-programming)
+  + [STAT 223 - Applied R Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/applied-r-programming)
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)
+* [STAT 421 - Big Data Science 2](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/big-data-science-2)
+  + [STAT 420 - Big Data Science 1](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/big-data-science-1)
+* [STAT 426 - Data Science Methods and Applications in Statistics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/data-science-methods-and-applications-statistics)
+  + [STAT 126 - Introduction to Python Programming](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-python-programming)
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)
+  + [STAT 340 - Probability and Inference 2](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/probability-and-inference-2)
+* [STAT 435 - Nonparametric Statistical Methods](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/nonparametric-statistical-methods)
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)
+* [STAT 462 - Quality Control and Industrial Statistics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/quality-control-and-industrial-statistics)  
+  + [STAT 240 - Probability and Inference 1](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/probability-and-inference-1)
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)
+  + [STAT 201 - Statistics for Engineers and Scientists](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-engineers-and-scientists)  
+* [STAT 466 - Introduction to Reliability](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-reliability)  
+  (1 of the following)
+  + [STAT 340 - Probability and Inference 2](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/probability-and-inference-2)
+  + [STAT 201 - Statistics for Engineers and Scientists](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistics-engineers-and-scientists)  
+* [STAT 469 - Analysis of Correlated Data](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/analysis-of-correlated-data)  
+  + [STAT 330 - Introduction to Regression](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/introduction-regression)  
+* [STAT 477 - Statistical Distributions for Actuarial Modeling and Data Analytics](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/statistical-distributions-actuarial-modeling-and-data)  
+  + [STAT 340 - Probability and Inference 2](https://catalog.byu.edu/physical-and-mathematical-sciences/statistics/probability-and-inference-2)
+* [IS 455 - Predictive Data Analytics](https://catalog.byu.edu/business/information-systems/predictive-data-analytics-0)    
+  (1 of the following)
+  + [IS 415 - Machine Learning](https://catalog.byu.edu/business/information-systems/machine-learning)
+  + [CS 472 - Introduction to Machine Learning](https://catalog.byu.edu/physical-and-mathematical-sciences/computer-science/introduction-machine-learning)
