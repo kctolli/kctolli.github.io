@@ -108,7 +108,7 @@ navbar:
         - text: "R Visualization"  
           href: https://byuistats.github.io/M335/r_visualization.html      
     - text: "ePortfolio"
-      href: https://kctolli.github.io/index.html
+      href: ../index.html
 
 output_dir: '.'
 
