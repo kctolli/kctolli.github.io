@@ -1,4 +1,6 @@
 Department,Code,Name,Room,Day,Time,Instructor,Crds
+CSE,130,Algorithm Design,STC 215,MW,02:00-03:00,Helfrich,2
+CSE,180,Algorithmic Thinking,STC 398,MWF,11:30-12:30,Barney,3
 CSE,250,Data Programming,STC 385,TR,12:45-1:45,Hathaway,2
 CSE,450,Machine Learning,STC 231,MWF,11:30-12:30,Burton,3
 CSE,450,Machine Learning,STC 398,MWF,03:15-04:15,Falin,3
@@ -9,3 +11,7 @@ MATH,325,Intermediate Stats,BEN 124,MWF,10:15-11:15,Palmer,3
 MATH,326,Experimental Design,Rks 180,MWF,11:30-12:30,Morring,3
 MATH,113,Calc 2,Rks 180,MTRF,09:00-10:00,Johanson,3
 MATH,113,Calc 2,Rks 180,MTRF,10:15-11:15,Johanson,3
+CIT,325,Database Programming,STC 341,MWF,09:00-10:00,McLaughlin,3
+CIT,326,Database Administration,STC 347,MWF,11:30-12:30,Miller,3
+CIT,327,Data Warehousing,STC 367,MWF,02:00-03:00,McLaughlin,3
+CIT,381,Business Intel and Analytics,STC 361,MWF,02:00-03:00,Godfrey,3
