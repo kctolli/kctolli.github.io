@@ -97,21 +97,21 @@ Take at least 7 credits from:
 ## Fall 2020
 
 
-Department    Code  Name                 Building   Room    Day   Time          Instructor    Crds
------------  -----  -------------------  ---------  ------  ----  ------------  -----------  -----
-CSE            250  Data Programming     STC        385     TR    12:45-1:45    Hathaway         2
-CSE            450  Machine Learning     STC        231     MWF   11:30-12:30   Burton           3
-CSE            450  Machine Learning     STC        398     MWF   03:15-04:15   Falin            3
-ART            231  Design Thinking      Rig        1stFF   MWF   09:00-10:00   Abegglen         3
-ART            231  Design Thinking      Rig        1stFF   MWF   10:15-11:15   Randal           3
-MATH           325  Intermediate Stats   Rks        229     MWF   02:00-03:00   Saunders         3
-MATH           325  Intermediate Stats   BEN        124     MWF   10:15-11:15   Palmer           3
+Department   Code       Name                 Building    Room        Day       Time          Instructor    Crds
+-----------  ---------  -------------------  ----------  ----------  --------  ------------  -----------  -----
+CSE          450        Machine Learning     STC         231         MWF       11:30-12:30   Burton           3
+CSE          450        Machine Learning     STC         398         MWF       03:15-04:15   Falin            3
+ART          231        Design Thinking      Rig         1stFF       MWF       09:00-10:00   Abegglen         3
+ART          231        Design Thinking      Rig         1stFF       MWF       10:15-11:15   Randal           3
+MATH         325        Intermediate Stats   Rks         229         MWF       02:00-03:00   Saunders         3
+MATH         325        Intermediate Stats   BEN         124         MWF       10:15-11:15   Palmer           3
+Tech         Elective   Something            Somewhere   Somewhere   Someday   Sometime      Someone          3
 
 
 
 
 ```
-## [1] "total credits = 11"
+## [1] "total credits = 12"
 ```
 
 ### Technical Elective 
@@ -119,7 +119,6 @@ MATH           325  Intermediate Stats   BEN        124     MWF   10:15-11:15   
 
 Department    Code  Name                         Crds
 -----------  -----  --------------------------  -----
-BUS            115  Data Management                 3
 CIT            112  Intro to Linux                  2
 CIT            151  OS Fund                         3
 CIT            325  Database Programming            3
@@ -141,7 +140,7 @@ MATH           283  Modeling with Probability       2
 MATH           301  Foundations of Analysis         3
 MATH           326  Experimental Design             3
 MATH           411  Numerical Analysis I            3
-MATH           480  Statistical Consulting          3
+MATH           488  Statistical Consulting          3
 ME             142  Engineering Comp 1              3
 WDD            230  Web Engineering 1               3
 
