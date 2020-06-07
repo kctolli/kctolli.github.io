@@ -1,15 +1,15 @@
 Department,Code,Name,Crds
 CIT,112,Intro to Linux,2
-CIT,151,OS Fund,3
+CIT,151,OS Fundamentals,3
 CIT,325,Database Programming,3
 CIT,326,Database Administration,3
 CIT,327,Data Warehousing,3
-CIT ,361,Advanced Scripting,3
+CIT,361,Advanced Scripting,3
 CIT,381,Bus Intel & Analytics,3
-CSE,121,Intro to Scripting,2
+CSE,121,Intro to Scripting,4 (2 complete)
 CSE,130,Algorithm Design,2
-CSE ,180,Algorithmic Thinking,3
-CSE,471,User Interface ,3
+CSE,180,Algorithmic Thinking,3
+CSE,471,User Interface,3
 MATH,113,Calc 2,3
 MATH,119,Data Calc,4
 MATH,215,Multivariable Calc,4

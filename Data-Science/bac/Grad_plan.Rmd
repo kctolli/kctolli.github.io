@@ -17,7 +17,9 @@ tech <- read_csv("./Tech.csv")
 semester <- read_csv("./Semester.csv")
 ```
 
-## Software Engineering (BS)
+## Software Engineering 
+
+#### [(BS)](https://www.byui.edu/catalog#/programs/4kNfm-2oZ?bc=true&bcCurrent=Software%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
 
 ### Computing Fundamentals
 
@@ -59,25 +61,31 @@ Take the following:
 * [X] ECEN 324 - Computer Architecture (3)
 * [X] ECEN 361 - Embedded Systems (3)
 
-## Data Science (AAS)
+## Data Science 
 
-### Programming & Mathematical Fundamentals    
+#### [(AAS)](https://www.byui.edu/catalog#/programs/Ey-19J50W?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+
+### Programming Fundamentals    
 
 Take the following: 
 
 * [X] CIT 111 - Introduction to Databases (3)
 * [X] CSE 110 - Programming Building Blocks (2)
 * [X] CSE 111 - Programming with Functions (2)
-* [X] CSE 150 - Data Intuition and Insight (2)
 * [X] CSE 210 - Programming with Classes (2)
-* [X] MATH 112 - Calculus I (4)
-* [ ] MATH 325 - Intermediate Statistics (3) 
-* [X] MATH 335 - Data Wrangling, Exploration, and Visualization (3)
+* [X] CSE 310 - Applied Programming (4)
 
 Take 1 of following:
 
 * [ ] CSE 250 - Data Science Programming (2)
 * [ ] CSE 450 - Machine Learning and Data Mining (3)
+
+### Mathematical Foundations
+
+* [X] CSE 150 - Data Intuition and Insight (2)
+* [X] MATH 112 - Calculus I (4)
+* [ ] MATH 325 - Intermediate Statistics (3) 
+* [X] MATH 335 - Data Wrangling, Exploration, and Visualization (3)
 
 ### Design & Communication   
 
@@ -97,7 +105,6 @@ Take at least 7 credits from:
 
 * [X] CIT 225 - Database Design & Development (3)
 * [X] CSE 280 - Discrete Mathematics I (2)
-* [X] CSE 310 - Applied Programming (4)
 * [X] MATH 341 - Linear Algebra (3)
 * [X] WDD 130 - Web Fundamentals (2)
 
@@ -186,7 +193,7 @@ kable(tech)
 <!-- kable(semester) -->
 <!-- ``` -->
 
-## BYUI Programs 
+## BYUI Data Science Programs 
 
 * [Data Science](https://www.byui.edu/mathematics/student-resources/data-science)
   + [BS](https://www.byui.edu/catalog#/programs/41PwqJ9RZ?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs) 

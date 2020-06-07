@@ -10,7 +10,9 @@ output:
 
 
 
-## Software Engineering (BS)
+## Software Engineering 
+
+#### [(BS)](https://www.byui.edu/catalog#/programs/4kNfm-2oZ?bc=true&bcCurrent=Software%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
 
 ### Computing Fundamentals
 
@@ -52,25 +54,31 @@ Take the following:
 * [X] ECEN 324 - Computer Architecture (3)
 * [X] ECEN 361 - Embedded Systems (3)
 
-## Data Science (AAS)
+## Data Science 
 
-### Programming & Mathematical Fundamentals    
+#### [(AAS)](https://www.byui.edu/catalog#/programs/Ey-19J50W?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs)
+
+### Programming Fundamentals    
 
 Take the following: 
 
 * [X] CIT 111 - Introduction to Databases (3)
 * [X] CSE 110 - Programming Building Blocks (2)
 * [X] CSE 111 - Programming with Functions (2)
-* [X] CSE 150 - Data Intuition and Insight (2)
 * [X] CSE 210 - Programming with Classes (2)
-* [X] MATH 112 - Calculus I (4)
-* [ ] MATH 325 - Intermediate Statistics (3) 
-* [X] MATH 335 - Data Wrangling, Exploration, and Visualization (3)
+* [X] CSE 310 - Applied Programming (4)
 
 Take 1 of following:
 
 * [ ] CSE 250 - Data Science Programming (2)
 * [ ] CSE 450 - Machine Learning and Data Mining (3)
+
+### Mathematical Foundations
+
+* [X] CSE 150 - Data Intuition and Insight (2)
+* [X] MATH 112 - Calculus I (4)
+* [ ] MATH 325 - Intermediate Statistics (3) 
+* [X] MATH 335 - Data Wrangling, Exploration, and Visualization (3)
 
 ### Design & Communication   
 
@@ -90,7 +98,6 @@ Take at least 7 credits from:
 
 * [X] CIT 225 - Database Design & Development (3)
 * [X] CSE 280 - Discrete Mathematics I (2)
-* [X] CSE 310 - Applied Programming (4)
 * [X] MATH 341 - Linear Algebra (3)
 * [X] WDD 130 - Web Fundamentals (2)
 
@@ -117,32 +124,32 @@ Tech         Elective   Something            Somewhere   Somewhere   Someday   S
 ### Technical Elective 
 
 
-Department    Code  Name                         Crds
------------  -----  --------------------------  -----
-CIT            112  Intro to Linux                  2
-CIT            151  OS Fund                         3
-CIT            325  Database Programming            3
-CIT            326  Database Administration         3
-CIT            327  Data Warehousing                3
-CIT            361  Advanced Scripting              3
-CIT            381  Bus Intel & Analytics           3
-CSE            121  Intro to Scripting              2
-CSE            130  Algorithm Design                2
-CSE            180  Algorithmic Thinking            3
-CSE            471  User Interface                  3
-MATH           113  Calc 2                          3
-MATH           119  Data Calc                       4
-MATH           215  Multivariable Calc              4
-MATH           275  Mathematics Connections         3
-MATH           280  Problem Solving                 3
-MATH           282  Mathematical Modeling           2
-MATH           283  Modeling with Probability       2
-MATH           301  Foundations of Analysis         3
-MATH           326  Experimental Design             3
-MATH           411  Numerical Analysis I            3
-MATH           488  Statistical Consulting          3
-ME             142  Engineering Comp 1              3
-WDD            230  Web Engineering 1               3
+Department    Code  Name                        Crds           
+-----------  -----  --------------------------  ---------------
+CIT            112  Intro to Linux              2              
+CIT            151  OS Fundamentals             3              
+CIT            325  Database Programming        3              
+CIT            326  Database Administration     3              
+CIT            327  Data Warehousing            3              
+CIT            361  Advanced Scripting          3              
+CIT            381  Bus Intel & Analytics       3              
+CSE            121  Intro to Scripting          4 (2 complete) 
+CSE            130  Algorithm Design            2              
+CSE            180  Algorithmic Thinking        3              
+CSE            471  User Interface              3              
+MATH           113  Calc 2                      3              
+MATH           119  Data Calc                   4              
+MATH           215  Multivariable Calc          4              
+MATH           275  Mathematics Connections     3              
+MATH           280  Problem Solving             3              
+MATH           282  Mathematical Modeling       2              
+MATH           283  Modeling with Probability   2              
+MATH           301  Foundations of Analysis     3              
+MATH           326  Experimental Design         3              
+MATH           411  Numerical Analysis I        3              
+MATH           488  Statistical Consulting      3              
+ME             142  Engineering Comp 1          3              
+WDD            230  Web Engineering 1           3              
 
 <!-- ## Completed/In Progress -->
 
@@ -198,7 +205,7 @@ WDD            230  Web Engineering 1               3
 <!-- kable(semester) -->
 <!-- ``` -->
 
-## BYUI Programs 
+## BYUI Data Science Programs 
 
 * [Data Science](https://www.byui.edu/mathematics/student-resources/data-science)
   + [BS](https://www.byui.edu/catalog#/programs/41PwqJ9RZ?bc=true&bcCurrent=Data%20Science&bcGroup=Department%20of%20Mathematics&bcItemType=programs) 
