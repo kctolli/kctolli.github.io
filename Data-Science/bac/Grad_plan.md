@@ -138,6 +138,7 @@ CIT            381  Bus Intel & Analytics       3
 CSE            121  Intro to Scripting          4 (2 complete) 
 CSE            130  Algorithm Design            2              
 CSE            180  Algorithmic Thinking        3              
+CSE            270  Software Testing            3              
 CSE            471  User Interface              3              
 MATH           113  Calc 2                      3              
 MATH           119  Data Calc                   4              
