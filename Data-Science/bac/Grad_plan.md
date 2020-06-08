@@ -95,9 +95,9 @@ Take 1 of following:
 Take 1 of following:
 
 * [X] CSE 150 - Data Intuition and Insight (2)
-* [X] MATH 221A - Business Statistics (3)
-* [X] MATH 221B - Biostatistics (3)
-* [X] MATH 221C - Social Science Statistics (3)
+* [ ] MATH 221A - Business Statistics (3)
+* [ ] MATH 221B - Biostatistics (3)
+* [ ] MATH 221C - Social Science Statistics (3)
 
 Take the following:
 
