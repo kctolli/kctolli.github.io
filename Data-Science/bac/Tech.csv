@@ -1,6 +1,7 @@
 Department,Code,Name,Crds
 CIT,112,Intro to Linux,2
 CIT,151,OS Fundamentals,3
+CIT,240,Networking,3
 CIT,325,Database Programming,3
 CIT,326,Database Administration,3
 CIT,327,Data Warehousing,3
@@ -12,8 +13,6 @@ CSE,180,Algorithmic Thinking,3
 CSE,270,Software Testing,3
 CSE,471,User Interface,3
 MATH,113,Calc 2,3
-MATH,119,Data Calc,4
-MATH,215,Multivariable Calc,4
 MATH,275,Mathematics Connections,3
 MATH,280,Problem Solving,3
 MATH,282,Mathematical Modeling,2

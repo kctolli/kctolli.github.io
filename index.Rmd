@@ -14,7 +14,7 @@ knitr::include_graphics(me)
 
 BYU-Idaho Senior studying Software Engineering and Data Science. Expected graduation in December of 2020. I enjoy several different disciplines in software engineering. I am also working toward a Computer Engineering minor. I love to learn new things and solve problems.
 
-<br> 
+<br /><br />
 
 © Copyright Kyle Tolliver, 2020
 
