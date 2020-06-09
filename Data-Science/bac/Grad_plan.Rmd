@@ -151,7 +151,7 @@ Take at least 7 credits:
 * [X] MATH 341 - Linear Algebra (3)
 * [X] WDD 130 - Web Fundamentals (2) [^5]
 
-## Computer Engineering 
+## Computer & Electrical Engineering 
 
 #### [Minor](https://www.byui.edu/catalog/#/programs/VyZmIXbnjb?bc=true&bcCurrent=Electrical%20and%20Computer%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
 

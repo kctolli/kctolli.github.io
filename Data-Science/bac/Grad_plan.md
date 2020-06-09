@@ -142,7 +142,7 @@ Take at least 7 credits:
 * [X] MATH 341 - Linear Algebra (3)
 * [X] WDD 130 - Web Fundamentals (2) [^5]
 
-## Computer Engineering 
+## Computer & Electrical Engineering 
 
 #### [Minor](https://www.byui.edu/catalog/#/programs/VyZmIXbnjb?bc=true&bcCurrent=Electrical%20and%20Computer%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
 
@@ -183,9 +183,7 @@ Tech         Elective   Something            Somewhere   Somewhere   Someday   S
 
 Department    Code  Name                        Crds           
 -----------  -----  --------------------------  ---------------
-CIT            112  Intro to Linux              2              
 CIT            151  OS Fundamentals             3              
-CIT            240  Networking                  3              
 CIT            325  Database Programming        3              
 CIT            326  Database Administration     3              
 CIT            327  Data Warehousing            3              
@@ -195,18 +193,9 @@ CSE            121  Intro to Scripting          4 (2 complete)
 CSE            130  Algorithm Design            2              
 CSE            180  Algorithmic Thinking        3              
 CSE            270  Software Testing            3              
-CSE            471  User Interface              3              
-MATH           113  Calc 2                      3              
-MATH           275  Mathematics Connections     3              
-MATH           280  Problem Solving             3              
-MATH           282  Mathematical Modeling       2              
 MATH           283  Modeling with Probability   2              
-MATH           301  Foundations of Analysis     3              
 MATH           326  Experimental Design         3              
-MATH           411  Numerical Analysis I        3              
-MATH           488  Statistical Consulting      3              
-ME             142  Engineering Comp 1          3              
-WDD            230  Web Engineering 1           3              
+WDD            230  Web Frontend 1              3              
 
 <br /> <br />
 
