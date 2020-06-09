@@ -1,14 +1,8 @@
 Department,Code,Name,Crds
-CIT,151,OS Fundamentals,3
-CIT,325,Database Programming,3
 CIT,326,Database Administration,3
 CIT,327,Data Warehousing,3
 CIT,361,Advanced Scripting,3
-CIT,381,Bus Intel & Analytics,3
-CSE,121,Intro to Scripting,4 (2 complete)
 CSE,130,Algorithm Design,2
 CSE,180,Algorithmic Thinking,3
-CSE,270,Software Testing,3
-MATH,283,Modeling with Probability,2
 MATH,326,Experimental Design,3
 WDD,230,Web Frontend 1,3

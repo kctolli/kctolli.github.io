@@ -104,9 +104,7 @@ Take 1 of following:
 Take 1 of following:
 
 * [X] CSE 150 - Data Intuition and Insight (2)
-* [ ] MATH 221A - Business Statistics (3)
-* [ ] MATH 221B - Biostatistics (3)
-* [ ] MATH 221C - Social Science Statistics (3)
+* [ ] MATH 221 - Statistics (3)
 
 Take the following:
 
@@ -142,7 +140,7 @@ Take 1 of following (Design Thinking):
 
 ### Technical Depth    
   
-Take at least 7 credits: 
+Take at least 9 credits: 
 
 * [X] CIT 225 - Database Design & Development (3)
 * [X] CSE 210 - Programming with Classes (2)

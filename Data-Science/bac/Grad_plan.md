@@ -95,9 +95,7 @@ Take 1 of following:
 Take 1 of following:
 
 * [X] CSE 150 - Data Intuition and Insight (2)
-* [ ] MATH 221A - Business Statistics (3)
-* [ ] MATH 221B - Biostatistics (3)
-* [ ] MATH 221C - Social Science Statistics (3)
+* [ ] MATH 221 - Statistics (3)
 
 Take the following:
 
@@ -133,7 +131,7 @@ Take 1 of following (Design Thinking):
 
 ### Technical Depth    
   
-Take at least 7 credits: 
+Take at least 9 credits: 
 
 * [X] CIT 225 - Database Design & Development (3)
 * [X] CSE 210 - Programming with Classes (2)
@@ -181,21 +179,15 @@ Tech         Elective   Something            Somewhere   Somewhere   Someday   S
 ### Technical Elective 
 
 
-Department    Code  Name                        Crds           
------------  -----  --------------------------  ---------------
-CIT            151  OS Fundamentals             3              
-CIT            325  Database Programming        3              
-CIT            326  Database Administration     3              
-CIT            327  Data Warehousing            3              
-CIT            361  Advanced Scripting          3              
-CIT            381  Bus Intel & Analytics       3              
-CSE            121  Intro to Scripting          4 (2 complete) 
-CSE            130  Algorithm Design            2              
-CSE            180  Algorithmic Thinking        3              
-CSE            270  Software Testing            3              
-MATH           283  Modeling with Probability   2              
-MATH           326  Experimental Design         3              
-WDD            230  Web Frontend 1              3              
+Department    Code  Name                       Crds
+-----------  -----  ------------------------  -----
+CIT            326  Database Administration       3
+CIT            327  Data Warehousing              3
+CIT            361  Advanced Scripting            3
+CSE            130  Algorithm Design              2
+CSE            180  Algorithmic Thinking          3
+MATH           326  Experimental Design           3
+WDD            230  Web Frontend 1                3
 
 <br /> <br />
 
