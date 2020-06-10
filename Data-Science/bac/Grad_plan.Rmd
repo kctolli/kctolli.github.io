@@ -189,11 +189,11 @@ sent <- "total credits ="
 print(paste(sent, sum))
 ```
 
-<!-- ### Technical Elective  -->
+### Technical Elective
 
-<!-- ```{r tech, echo=FALSE} -->
-<!-- kable(tech) -->
-<!-- ``` -->
+```{r tech, echo=FALSE}
+kable(tech)
+```
 
 <br /> <br />
 

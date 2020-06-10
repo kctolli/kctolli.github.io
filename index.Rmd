@@ -18,7 +18,7 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 
 © Copyright Kyle Tolliver, 2020
 
-###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./LICENSE.txt) *
+###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
 ######  *--- Website is made with [Rmd files](https://rmarkdown.rstudio.com/index.html) and [Rstudio](https://rstudio.com/)*
 

@@ -1,8 +1,8 @@
 Department,Code,Name,Building,Room,Day,Time,Instructor,Crds
-CSE,450,Machine Learning,STC,231,MWF,11:30-12:30,Burton,3
-CSE,450,Machine Learning,STC,398,MWF,03:15-04:15,Falin,3
 ART,231,Design Thinking,Rig,1stFF,MWF,09:00-10:00,Abegglen,3
 ART,231,Design Thinking,Rig,1stFF,MWF,10:15-11:15,Randal,3
 MATH,325,Intermediate Stats,Rks,229,MWF,02:00-03:00,Saunders,3
 MATH,325,Intermediate Stats,BEN,124,MWF,10:15-11:15,Palmer,3
-Tech,Elective,Something,Somewhere,Somewhere,Someday,Sometime,Someone,3
+CSE,450,Machine Learning,STC,231,MWF,11:30-12:30,Burton,3
+CSE,450,Machine Learning,STC,398,MWF,03:15-04:15,Falin,3
+
