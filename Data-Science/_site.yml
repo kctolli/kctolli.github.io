@@ -83,10 +83,8 @@ navbar:
     - text: "Senior Thesis"  
       menu:
         - text: "COVID-19 Research"
-        - text: "Main"
-          href: https://byui-covid.github.io/  
-        - text: "Reports"
-          href: https://byui-covid.github.io/Project-Reports/  
+        - text: "Website"
+          href: https://byui-covid.github.io/   
         - text: "Github"
           href: https://github.com/BYUI-COVID
         - text: "---------------" 
