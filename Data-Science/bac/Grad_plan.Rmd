@@ -16,7 +16,6 @@ setwd("D:/Portfolio/Data-Science/bac")
 
 post_bac <- read_csv("./Post.csv")
 tech <- read_csv("./Tech.csv")
-semester <- read_csv("./Semester.csv")
 ```
 
 [GPA Calculator](https://docs.google.com/spreadsheets/d/17MqEXr2rU52hgKAC0EaDHCsJDcDCpSD8Tjf-FzIeY3Y/edit?usp=sharing)
@@ -190,11 +189,11 @@ sent <- "total credits ="
 print(paste(sent, sum))
 ```
 
-### Technical Elective 
+<!-- ### Technical Elective  -->
 
-```{r tech, echo=FALSE}
-kable(tech)
-```
+<!-- ```{r tech, echo=FALSE} -->
+<!-- kable(tech) -->
+<!-- ``` -->
 
 <br /> <br />
 

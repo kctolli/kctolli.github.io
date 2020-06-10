@@ -176,18 +176,11 @@ Tech         Elective   Something            Somewhere   Somewhere   Someday   S
 ## [1] "total credits = 12"
 ```
 
-### Technical Elective 
+<!-- ### Technical Elective  -->
 
-
-Department    Code  Name                       Crds
------------  -----  ------------------------  -----
-CIT            326  Database Administration       3
-CIT            327  Data Warehousing              3
-CIT            361  Advanced Scripting            3
-CSE            130  Algorithm Design              2
-CSE            180  Algorithmic Thinking          3
-MATH           326  Experimental Design           3
-WDD            230  Web Frontend 1                3
+<!-- ```{r tech, echo=FALSE} -->
+<!-- kable(tech) -->
+<!-- ``` -->
 
 <br /> <br />
 

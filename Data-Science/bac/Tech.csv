@@ -1,8 +1,9 @@
 Department,Code,Name,Crds
 CIT,326,Database Administration,3
 CIT,327,Data Warehousing,3
-CIT,361,Advanced Scripting,3
+CSE,121,Intro to Scripting (2 Complete),4
 CSE,130,Algorithm Design,2
 CSE,180,Algorithmic Thinking,3
+CSE,250,Data Science Programming,3
 MATH,326,Experimental Design,3
 WDD,230,Web Frontend 1,3
