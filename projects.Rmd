@@ -10,8 +10,8 @@ library(knitr)
 ## Self Driving Car      
 
 ```{r, echo = FALSE}
-car <- './images/car.jpg'
-car_circuit <- './images/car_cir.jpg'
+car <- './site_libs/images/car.jpg'
+car_circuit <- './site_libs/images/car_cir.jpg'
 ```
 
 ```{r Car1, fig.align='center', out.width='25%', echo = FALSE}
@@ -47,7 +47,7 @@ Spent 20 Hours on the project
 ## Current-limited (BJT and OP-AMP) DC Power Supply		
 
 ```{r PSU, fig.align='center', out.width='75%', echo = FALSE}
-psu <- './images/circuit.png'
+psu <- './site_libs/images/circuit.png'
 include_graphics(psu)
 ```
 
@@ -68,7 +68,7 @@ Spent 30 Hours on the project
 ## Electric Skateboard                          		
 
 ```{r skate, fig.align='center', out.width='50%', echo = FALSE}
-skate <- './images/skateboard.jpg'
+skate <- './site_libs/images/skateboard.jpg'
 include_graphics(skate)
 ```
 

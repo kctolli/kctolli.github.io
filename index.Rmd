@@ -8,7 +8,7 @@ library(tidyverse)
 ```
 
 ```{r pic, fig.align='left', out.width='30%', echo = FALSE}
-me <- './images/me.png'
+me <- './site_libs/images/me.png'
 knitr::include_graphics(me)
 ```
 
