@@ -180,12 +180,10 @@ CSE            450  Machine Learning     STC        398     MWF   03:15-04:15   
 
 Department   Code   Name                     Building   Room     Day    Time          Instructor    Crds
 -----------  -----  -----------------------  ---------  -------  -----  ------------  -----------  -----
-CIT          151    OS Fundamentals          STC        367      TR     12:45-2:15    Lindstrom        3
 CIT          325    Database Programming     STC        341      MWF    9:00-10:00    McLaughlin       3
 CIT          326    Database Admin           STC        347      MWF    11:30-12:30   Miller           3
 CIT          327    Data Warehousing         STC        367      MWF    2:00-3:00     McLaughlin       3
-CIT          361    Adv Scripting            STC        367      TR     2:30-4:00     Lindstrom        3
-CSE          121a   Clojure                  STC        385      MW     12:45-1:45    Neff             1
+CSE          121a   Clojure Script           STC        385      MW     12:45-1:45    Neff             1
 CSE          121b   JavaScript               Virtual    Remote   TR     10:15-11:15   Barney           1
 CSE          121b   JavaScript               STC        353      TR     12:45-1:45    Anderson         1
 CSE          130    Algorithm Design         STC        215      MW     2:00-3:00     Helfrich         2
@@ -198,7 +196,7 @@ MATH         113    Calc 2                   Rks        180      MTRF   10:15-11
 MATH         119    Data Calc                Rks        180      MTRF   12:45-1:45    Johnson          4
 MATH         283    Modeling Probability     Rks        226      TR     10:15-11:15   Cox              2
 MATH         326    Experimental Design      Rks        180      MWF    11:30-12:30   Morring          3
-ME           142    Engineering Comp 1       AUS        009      MWF    12:45-1:45    Laney            3
+ME           142    Engineering Comp 1       AUS        9        MWF    12:45-1:45    Laney            3
 WDD          230    Frontend Development I   STC        385      MWF    2:00-3:00     Hayes            3
 WDD          230    Frontend Development I   STC        347      MWF    12:45-1:45    Phillips         3
 
