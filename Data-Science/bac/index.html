@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Degree Check List</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Grad Plan</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="./fall.html">Fall 2020</a>
+</li>
+<li>
+  <a href="./elective.html">Elective Depth</a>
+</li>
+<li>
+  <a href="https://docs.google.com/spreadsheets/d/17MqEXr2rU52hgKAC0EaDHCsJDcDCpSD8Tjf-FzIeY3Y/edit?usp=sharing">GPA Calculator</a>
+</li>
+<li>
+  <a href="https://www.byui.edu/catalog#/home">Catalog</a>
+</li>
+<li>
+  <a href="../index.html">Data Science</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Degree Check List</h1>
+
+</div>
+
+
+<div id="software-engineering" class="section level2">
+<h2>Software Engineering</h2>
+<div id="bs" class="section level4">
+<h4><a href="https://www.byui.edu/catalog#/programs/4kNfm-2oZ?bc=true&amp;bcCurrent=Software%20Engineering&amp;bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&amp;bcItemType=programs">(BS)</a></h4>
+</div>
+<div id="computing-fundamentals" class="section level3">
+<h3>Computing Fundamentals</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 100 - Introduction to Computing (1) <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 170 - Introduction to Technical Teamwork (2) <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 171 - Introduction to Cybersecurity (2) <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 106 - Computer Systems (2) <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+WDD 130 - Web Fundamentals (2) <a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></li>
+</ul>
+<p>Take 1 of following:</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+BUS 115 - Business Applications (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 111 - Introduction to Databases (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 150 - Data Intuition and Insight (2)</li>
+<li><input type="checkbox" disabled="" />
+GEOL 141 - GIS Basics (2)</li>
+</ul>
+</div>
+<div id="computer-programming" class="section level3">
+<h3>Computer Programming</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 110 - Programming Building Blocks (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 111 - Programming with Functions (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 121B - JavaScript Language (1) <a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 210 - Programming with Classes (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 212 - Programming with Data Structures (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 310 - Applied Programming (4)</li>
+</ul>
+</div>
+<div id="capstone" class="section level3">
+<h3>Capstone</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 398 - Internship (1-4) <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 499 - Senior Project (3) <a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></li>
+</ul>
+</div>
+<div id="embedded-systems-certificate" class="section level3">
+<h3>Embedded Systems Certificate</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 121C - C Language (1)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 240 - Fundamentals of Digital Systems (3) <a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 260 - Microprocessor Based-System Design (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 324 - Computer Architecture (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 361 - Embedded Systems (3)</li>
+</ul>
+</div>
+<div id="technical-depth" class="section level3">
+<h3>Technical Depth</h3>
+<p>Take at least 12 credits:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 225 - Database Design &amp; Development (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 220C - C++ Language (1)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 280 - Discrete Mathematics I (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 150 - Electric Circuit Analysis I (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 350 - Electronic Devices and Circuits (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 461 - Advanced Embedded Systems (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+MATH 350 - Data Wrangling, Exploration, and Visualization (3)</li>
+</ul>
+</div>
+</div>
+<div id="data-science" class="section level2">
+<h2>Data Science</h2>
+<div id="aas" class="section level4">
+<h4><a href="https://www.byui.edu/catalog#/programs/Ey-19J50W?bc=true&amp;bcCurrent=Data%20Science&amp;bcGroup=Department%20of%20Mathematics&amp;bcItemType=programs">(AAS)</a></h4>
+</div>
+<div id="programming-fundamentals" class="section level3">
+<h3>Programming Fundamentals</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 111 - Introduction to Databases (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 110 - Programming Building Blocks (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 111 - Programming with Functions (2)</li>
+</ul>
+<p>Take 1 of following:</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+CSE 250 - Data Science Programming (2)</li>
+<li><input type="checkbox" disabled="" />
+CSE 450 - Machine Learning and Data Mining (3)</li>
+</ul>
+</div>
+<div id="math-stats-foundations" class="section level3">
+<h3>Math &amp; Stats Foundations</h3>
+<p>Take 1 of following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 150 - Data Intuition and Insight (2)</li>
+<li><input type="checkbox" disabled="" />
+MATH 221 - Statistics (3)</li>
+</ul>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+MATH 325 - Intermediate Statistics (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+MATH 335 - Data Wrangling, Exploration, and Visualization (3)</li>
+</ul>
+<p>Take 1 of following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+MATH 112 - Calculus 1 (4)</li>
+<li><input type="checkbox" disabled="" />
+MATH 119 - Applied Calculus for Data Analysis (4)</li>
+</ul>
+</div>
+<div id="technical-direction" class="section level3">
+<h3>Technical Direction</h3>
+<p>Take 1 of following:</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+BA 315 - Business Analytics (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 225 - Database Design &amp; Development (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 210 - Programming with Classes (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+MATH 341 - Linear Algebra (3)</li>
+</ul>
+</div>
+<div id="design-communication" class="section level3">
+<h3>Design &amp; Communication</h3>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+BUS 301 - Advanced Writing in Professional Contexts (3) <a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></li>
+</ul>
+<p>Take 1 of following (Design Thinking):</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+ART 231 - Inquiry and Innovation (3)</li>
+<li><input type="checkbox" disabled="" />
+ART 432 - Customer Experience (3)</li>
+<li><input type="checkbox" disabled="" />
+ART 434 - Agile Product Management (3)</li>
+<li><input type="checkbox" disabled="" />
+BA 211 - Business Fundamentals (3)</li>
+</ul>
+</div>
+<div id="technical-depth-1" class="section level3">
+<h3>Technical Depth</h3>
+<p>Take at least 9 credits:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+CIT 225 - Database Design &amp; Development (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 210 - Programming with Classes (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 280 - Discrete Mathematics I (2)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CSE 310 - Applied Programming (4)</li>
+<li><input type="checkbox" disabled="" checked="" />
+MATH 341 - Linear Algebra (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+WDD 130 - Web Fundamentals (2) <a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></li>
+</ul>
+</div>
+</div>
+<div id="computer-electrical-engineering" class="section level2">
+<h2>Computer &amp; Electrical Engineering</h2>
+<div id="minor" class="section level4">
+<h4><a href="https://www.byui.edu/catalog/#/programs/VyZmIXbnjb?bc=true&amp;bcCurrent=Electrical%20and%20Computer%20Engineering&amp;bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&amp;bcItemType=programs">Minor</a></h4>
+<p>Take the following:</p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 150 - Electric Circuit Analysis I (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 160 - Fundamentals of Digital Systems (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 160L - Fundamentals of Digital Systems Lab (1)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 260 - Microprocessor Based-System Design (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 324 - Computer Architecture (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 340 - Digital Systems Design (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+ECEN 350 - Electronic Devices and Circuits (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CS 124 - Introduction to Software Development (3)</li>
+<li><input type="checkbox" disabled="" checked="" />
+CS 165 - Object-Oriented Software Development (3)</li>
+</ul>
+<p><br /> <br /></p>
+<hr />
+</div>
+<div id="substitutions" class="section level4">
+<h4>Substitutions</h4>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>ECEN 101 - Introduction to ECEN (1)<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>CIT 380 - Project Management (3)<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>CIT 270 - System Security 1 (3)<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>ECEN 160 - Fundamentals of Digital Systems w/ Lab (4)<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>WDD 100 - Introduction to Web Development (1)<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>CIT 160 - Introduction to Programming using Javascript (3)<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>ECEN 490 - Special Topics (3)<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>ECEN 499 - Senior Project (3)<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>ECEN 160 - Fundamentals of Digital Systems w/ Lab (4)<a href="#fnref9" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p>CS 308 - Technical Communication (3)<a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p>WDD 100 - Introduction to Web Development (1)<a href="#fnref11" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

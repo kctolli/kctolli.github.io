@@ -1,6 +1,5 @@
 ---
-title: "BYUI"
-subtitle: "Grad Plan"
+title: "Degree Check List"
 output: 
   html_document: 
     keep_md: true
@@ -8,15 +7,7 @@ output:
     toc_float: true
 ---
 
-```{r library, include=FALSE}
-library(knitr)
-library(tidyverse)
 
-setwd("D:/Portfolio/Data-Science/bac")
-
-post_bac <- read_csv("./Post.csv")
-tech <- read_csv("./Tech.csv")
-```
 
 [GPA Calculator](https://docs.google.com/spreadsheets/d/17MqEXr2rU52hgKAC0EaDHCsJDcDCpSD8Tjf-FzIeY3Y/edit?usp=sharing)
 
@@ -166,34 +157,45 @@ Take the following:
 
 ## Fall 2020
 
-```{r table, echo=FALSE}
-kable(post_bac)
+
+Department    Code  Name                 Building   Room    Day   Time          Instructor    Crds
+-----------  -----  -------------------  ---------  ------  ----  ------------  -----------  -----
+ART            231  Design Thinking      Rig        1stFF   MWF   09:00-10:00   Abegglen         3
+ART            231  Design Thinking      Rig        1stFF   MWF   10:15-11:15   Randal           3
+MATH           325  Intermediate Stats   Rks        229     MWF   02:00-03:00   Saunders         3
+MATH           325  Intermediate Stats   BEN        124     MWF   10:15-11:15   Palmer           3
+CSE            450  Machine Learning     STC        231     MWF   11:30-12:30   Burton           3
+CSE            450  Machine Learning     STC        398     MWF   03:15-04:15   Falin            3
+
+
+
+
 ```
-
-```{r distinct, include=FALSE}
-bac <- post_bac %>% unique() %>% 
-  group_by(Code, Name, Department, Crds) %>%
-  summarise(min_crds = min(Crds)) %>% 
-  summarise(sum_crds = sum(min_crds))
-
-str <- str_split(bac$sum_crds, pattern = "")
-
-num_str <- as.numeric(str)
-
-sum <- sum(num_str)
-
-sent <- "total credits ="
-```
-
-```{r display, echo=FALSE}
-print(paste(sent, sum))
+## [1] "total credits = 9"
 ```
 
 ### Technical Elective
 
-```{r tech, echo=FALSE}
-kable(tech)
-```
+
+Depart   Code   Name                      Building   Room     Day   Time          Instructor    Crds
+-------  -----  ------------------------  ---------  -------  ----  ------------  -----------  -----
+CIT      325    Database Programming      STC        341      MWF   9:00-10:00    McLaughlin       3
+CIT      326    Database Admin            STC        347      MWF   11:30-12:30   Miller           3
+CIT      327    Data Warehousing          STC        367      MWF   2:00-3:00     McLaughlin       3
+CSE      121a   Clojure Script            STC        385      MW    12:45-1:45    Neff             1
+CSE      130    Algorithm Design          STC        215      MW    2:00-3:00     Helfrich         2
+CSE      180    Algorithmic Thinking      STC        215      MWF   11:30-12:30   Barney           3
+CSE      250    Data Programming          STC        243      TR    12:45-1:45    Hathaway         2
+CSE      270    Software Testing          STC        375      MWF   9:00-10:00    Clements         3
+CSE      381    Algorithm Analysis        STC        394      MW    3:15-4:45     Barney           3
+MATH     283    Modeling Probability      Rks        226      TR    10:15-11:15   Cox              2
+MATH     326    Experimental Design       Rks        180      MWF   11:30-12:30   Morring          3
+ME       142    Engineering Comp 1        AUS        9        MWF   12:45-1:45    Laney            3
+PH       101    Fundamentals of Physics   ROM        131      MWF   11:30-12:30   Croasmun         3
+PH       101    Fundamentals of Physics   ROM        171      TR    12:45-2:15    Pyper            3
+WDD      230    Frontend Development I    STC        385      MWF   2:00-3:00     Hayes            3
+WDD      230    Frontend Development I    STC        347      MWF   12:45-1:45    Phillips         3
+DANCE    180M   Country Social Dance      HNK        Hall A   TR    9:00-10:00    Summers          1
 
 <br /> <br />
 

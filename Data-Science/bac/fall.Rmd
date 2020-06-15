@@ -1,0 +1,44 @@
+---
+title: "Fall 2020"
+---
+
+```{r library, include=FALSE}
+library(knitr)
+library(tidyverse)
+
+setwd("D:/Portfolio/Data-Science/bac")
+
+post_bac <- read_csv("./Post.csv")
+tech <- read_csv("./Tech.csv")
+```
+
+## Classes
+
+* ART 231 - Design Thinking (3)
+* MATH 325 - Intermediate Stats (3)
+* CSE 450 - Machine Learning (3)
+
+```{r distinct, include=FALSE}
+bac <- post_bac %>% unique() %>% 
+  group_by(Code, Department, Crds) %>%
+  summarise(min_crds = min(Crds)) %>% 
+  summarise(sum_crds = sum(min_crds))
+
+str <- str_split(bac$sum_crds, pattern = "")
+
+num_str <- as.numeric(str)
+
+sum <- sum(num_str)
+
+sent <- "total credits ="
+```
+
+```{r display, echo=FALSE}
+print(paste(sent, sum))
+```
+
+## Times
+
+```{r table, echo=FALSE}
+kable(post_bac)
+```
