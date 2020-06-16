@@ -18,13 +18,15 @@ tech <- read_csv("./Tech.csv")
 * MATH 325 - Intermediate Stats (3)
 * CSE 450 - Machine Learning (3)
 
+## Times
+
 ```{r distinct, include=FALSE}
 bac <- post_bac %>% unique() %>% 
   group_by(Code, Department, Crds) %>%
   summarise(min_crds = min(Crds)) %>% 
-  summarise(sum_crds = sum(min_crds))
+  summarise(Crds = sum(min_crds))
 
-str <- str_split(bac$sum_crds, pattern = "")
+str <- str_split(bac$Crds, pattern = "")
 
 num_str <- as.numeric(str)
 
@@ -33,12 +35,7 @@ sum <- sum(num_str)
 sent <- "total credits ="
 ```
 
-```{r display, echo=FALSE}
-print(paste(sent, sum))
-```
-
-## Times
-
 ```{r table, echo=FALSE}
 kable(post_bac)
+print(paste(sent, sum))
 ```
