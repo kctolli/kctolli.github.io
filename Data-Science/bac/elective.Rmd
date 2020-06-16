@@ -42,10 +42,10 @@ tech <- read_csv("./Tech.csv")
 
 ### Algorithms
 
-* [ ] CSE 121a - Clojure Language
-* [ ] CSE 180 - Algorithmic Thinking
-* [ ] CSE 381 - Algorithms and Complexity
-* [ ] CSE 480 - Computational Theory
+* [ ] CSE 121a - Clojure Language (3)
+* [ ] CSE 180 - Algorithmic Thinking (3)
+* [ ] CSE 381 - Algorithms and Complexity (3)
+* [ ] CSE 480 - Computational Theory (3)
 
 ### Design
 
