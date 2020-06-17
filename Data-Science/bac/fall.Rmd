@@ -14,28 +14,36 @@ tech <- read_csv("./Tech.csv")
 
 ## Classes
 
-* ART 231 - Design Thinking (3)
 * MATH 325 - Intermediate Stats (3)
 * CSE 450 - Machine Learning (3)
+
+### Design Thinking
+
+One of following:
+
++ ART 231 - Inquiry and Innovation (3)
++ ART 432 - Customer Experience (3)
++ ART 434 - Agile Product Management (3)
++ BA 211 - Business Fundamentals (3)
 
 ## Times
 
 ```{r distinct, include=FALSE}
-bac <- post_bac %>% unique() %>% 
-  group_by(Code, Department, Crds) %>%
-  summarise(min_crds = min(Crds)) %>% 
-  summarise(Crds = sum(min_crds))
-
-str <- str_split(bac$Crds, pattern = "")
-
-num_str <- as.numeric(str)
-
-sum <- sum(num_str)
-
-sent <- "total credits ="
+# bac <- post_bac %>% unique() %>%
+#   group_by(Code, Department, Crds) %>%
+#   summarise(min_crds = min(Crds)) %>%
+#   summarise(Crds = sum(min_crds))
+ 
+# str <- str_split(bac$Crds, pattern = "")
+ 
+# num_str <- as.numeric(str)
+ 
+# sum <- sum(num_str)
+ 
+# sent <- "total credits ="
 ```
 
 ```{r table, echo=FALSE}
 kable(post_bac)
-print(paste(sent, sum))
+#print(paste(sent, sum))
 ```

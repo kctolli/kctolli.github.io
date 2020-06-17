@@ -6,11 +6,15 @@ navbar:
       href: ./fall.html 
     - text: "Elective Depth"
       href: ./elective.html 
+    - text: "BYUI Data Science"
+      href: https://byuidatascience.github.io/development.html  
     - text: "GPA Calculator"
-      href: https://docs.google.com/spreadsheets/d/17MqEXr2rU52hgKAC0EaDHCsJDcDCpSD8Tjf-FzIeY3Y/edit?usp=sharing          
+      href: https://docs.google.com/spreadsheets/d/17MqEXr2rU52hgKAC0EaDHCsJDcDCpSD8Tjf-FzIeY3Y/edit?usp=sharing      
+    - text: "CS 2020 Changes"      
+      href: https://byui-cse.github.io/department/2020-program-changes/
     - text: "Catalog"
-      href: https://www.byui.edu/catalog#/home
-    - text: "Data Science"
+      href: https://www.byui.edu/catalog#/home      
+    - text: "Home"
       href: ../index.html   
           
 output_dir: '.'
