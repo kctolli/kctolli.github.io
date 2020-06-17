@@ -63,16 +63,16 @@ tech <- read_csv("./Tech.csv")
 
 ### General
 
-* [X] CSE 121C - C Language
+* [X] CSE 121C - C Language (1)
 * [X] CSE 210 - Programming with Classes (3)
 * [X] CSE 212 - Programming with Data Structures (3)
-* [X] CSE 220C - C++ Language
+* [X] CSE 220C - C++ Language (1)
 * [X] CSE 310 - Applied Programming (3)
 * [ ] CSE 471 - Human Computer Interaction (3)
 
 ### Algorithms
 
-* [ ] CSE 121a - Clojure Language (3)
+* [ ] CSE 121a - Clojure Language (1)
 * [ ] CSE 180 - Algorithmic Thinking (3)
 * [ ] CSE 251 - Parallelism and Concurrency (3)
 * [ ] CSE 381 - Algorithms and Complexity (3)
