@@ -67,7 +67,7 @@ Rexburg, ID
 
 + Minor: Computer Engineering
 + Honors: Tau Beta Pi and LDS Academic Scholarship
-+ Coursework: Data Structures, Software Design and Development,  Web Design and Development, System Security, Project Management, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Electronic Devices and Circuits
++ Coursework: Data Structures, Software Design and Development, Web Development, System Security, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Circuit Theory and Analysis
 
 ### Brigham Young University-Idaho
 
@@ -78,10 +78,21 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Societies: Data Science Society
-+ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Programming with Classes, Technical Communication, Linear Algebra, Discrete Math, Calculus 1 
++ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Programming with Classes, Technical Communication, Project Management, Linear Algebra, Discrete Math, Calculus 1 
 
 Experience {data-icon=briefcase}
 ------------------------------------
+
+### Student Design Project
+
+NASA - National Aeronautics and Space Administration
+
+Rexburg, ID
+
+2020
+
++ Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
++ Designed an open-source RISC-V processor using a PolarFire FPGA
 
 ### Teaching Assistant and Tutor
 
@@ -122,7 +133,7 @@ Rexburg, ID
 
 ### FPGA Multifunction Calculator
 
-BYU - Idaho, Computer Science and Engineering 
+BYU - Idaho, Computer Science and Engineering
 
 Rexburg, ID
 
@@ -131,14 +142,14 @@ Rexburg, ID
 + Created new AVR commands
 + Used Basys 3 (Artix 7) FPGA Board and developed in Verilog code
 
-### Calendaring App
+<!-- ### Calendaring App -->
 
-BYU - Idaho, Computer Science and Engineering 
+<!-- BYU - Idaho, Computer Science and Engineering  -->
 
-Rexburg, ID
+<!-- Rexburg, ID -->
 
-2018
+<!-- 2018 -->
 
-+ Used Github to develop the Java code while working with a Team
-+ Presented to the Eastern Idaho Innovator’s Challenge
+<!-- + Used Github to develop the Java code while working with a Team -->
+<!-- + Presented to the Eastern Idaho Innovator’s Challenge -->
 
