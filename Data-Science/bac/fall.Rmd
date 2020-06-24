@@ -14,17 +14,10 @@ tech <- read_csv("./Tech.csv")
 
 ## Classes
 
+* WDD 230 - Web Frontend 1 (3)
 * MATH 325 - Intermediate Stats (3)
 * CSE 450 - Machine Learning (3)
 
-### Design Thinking
-
-One of following:
-
-+ ART 231 - Inquiry and Innovation (3)
-+ ART 432 - Customer Experience (3)
-+ ART 434 - Agile Product Management (3)
-+ BA 211 - Business Fundamentals (3)
 
 ## Times
 

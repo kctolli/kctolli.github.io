@@ -1,14 +1,8 @@
 Department,Code,Building,Room,Day,Time,Instructor,Crds
-ART,231,Rig,1stFF,MWF,09:00-10:00,Abegglen,3
-ART,231,Rig,1stFF,MWF,10:15-11:15,Randal,3
-ART,432,Rig,1stFF,MTWRF,12:45-1:45,Julander,3
-BA,211,SMT,220,MW,9:45-11:15,Harris,3
-BA,211,SMT,220,MW,1:15-2:45,Ward ,3
-BA,211,SMT,220,MW,3:15-4:45,Chapman,3
-BA,211,Virtual,Remote,TR,9:45-11:15,Rhoton,3
-BA,211,SMT,220,TR,9:45-11:15,Nye,3
-BA,211,SMT,220,TR,12:45-02:15,Page,3
+CSE,121a,Virtual,Remote,MW,12:45-1:45,Neff,1
 CSE,450,Virtual,Remote,MWF,11:30-12:30,Burton,3
 CSE,450,STC,398,MWF,03:15-04:15,Falin,3
-MATH,325,Rks,229,MWF,02:00-03:00,Saunders,3
-MATH,325,BEN,124,MWF,10:15-11:15,Palmer,3
+MATH,325,Virtual,Remote,MWF,02:00-03:00,Saunders,3
+MATH,325,Virtual,Remote,MWF,10:15-11:15,Palmer,3
+WDD,230,Virtual,Remote,MWF,9:00-10:00,Robertson,3
+WDD,230,STC,341,MWF,02:00-03:00,Hayes,3

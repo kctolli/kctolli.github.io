@@ -121,13 +121,7 @@ Take 1 of following:
 Take the following: 
 
 * [X] BUS 301 - Advanced Writing in Professional Contexts (3) [^9]
-
-Take 1 of following (Design Thinking):
-
-* [ ] ART 231 - Inquiry and Innovation (3)
-* [ ] ART 432 - Customer Experience (3)
-* [ ] ART 434 - Agile Product Management (3)
-* [ ] BA 211 - Business Fundamentals (3)
+* [X] BA 211 - Business Fundamentals (3) [^2]
 
 ### Technical Depth    
   
@@ -142,7 +136,7 @@ Take at least 9 credits:
 
 ## Computer & Electrical Engineering 
 
-#### [Minor](https://www.byui.edu/catalog/#/programs/VyZmIXbnjb?bc=true&bcCurrent=Electrical%20and%20Computer%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
+#### [(Minor)](https://www.byui.edu/catalog/#/programs/VyZmIXbnjb?bc=true&bcCurrent=Electrical%20and%20Computer%20Engineering&bcGroup=Department%20of%20Computer%20Science%20and%20Electrical%20Engineering&bcItemType=programs)
 
 Take the following: 
 
