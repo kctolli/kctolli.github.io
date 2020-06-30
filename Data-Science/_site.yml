@@ -84,9 +84,9 @@ navbar:
       menu:
         - text: "COVID-19 Research"
         - text: "Website"
-          href: https://byui-covid.github.io/   
+          href: https://kctolli.github.io/COVID-19/index.html  
         - text: "Github"
-          href: https://github.com/BYUI-COVID
+          href: https://github.com/kctolli/COVID-19
         - text: "---------------" 
         - text: "Additional Resources"
         - text: "Consulting Articles" 
