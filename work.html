@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -399,35 +400,48 @@ div.tocify {
 </div>
 
 
-<div id="digital-systems-teaching-assistant" class="section level2">
-<h2>Digital Systems Teaching Assistant</h2>
-<p>BYUI CSEE September 2018 – Present — Rexburg, ID</p>
+<div id="nasa" class="section level2">
+<h2>NASA</h2>
+<div id="student-design-project---contract" class="section level3">
+<h3>Student Design Project - Contract</h3>
+<ul>
+<li><p>There is a new radiation-tolerant version of the Microsemi PolarFire FPGA that might enable a system on chip (SoC) approach to something like the xEMU Caution and Warning Computer</p></li>
+<li><p>The open-source RISC-V processor has been gaining a lot of traction in the industry</p></li>
+<li><p><a href="https://ecen499-nasa.github.io/">Project Website</a></p></li>
+</ul>
+</div>
+</div>
+<div id="brigham-young-university---idaho" class="section level2">
+<h2>Brigham Young University - Idaho</h2>
+<div id="digital-systems-teaching-assistant" class="section level3">
+<h3>Digital Systems Teaching Assistant</h3>
+<p>September 2018 – Present — Rexburg, ID</p>
 <ul>
 <li>Lead students to increase their knowledge of Digital Systems</li>
 <li>Guide students to improvement by giving feedback</li>
 <li>Help students with programming Verilog</li>
 </ul>
 </div>
-<div id="intro-engineering-teaching-assistant" class="section level2">
-<h2>Intro Engineering Teaching Assistant</h2>
-<p>BYUI CSEE December 2020 – Present — Rexburg, ID</p>
+<div id="intro-engineering-teaching-assistant" class="section level3">
+<h3>Intro Engineering Teaching Assistant</h3>
+<p>December 2020 – Present — Rexburg, ID</p>
 <ul>
 <li>Mentor new students in Engineering and Computer Science</li>
 <li>Help students with basic circuit analysis</li>
 <li>Lead them in learning arduino skills</li>
 </ul>
 </div>
-<div id="discrete-math-teaching-assistant" class="section level2">
-<h2>Discrete Math Teaching Assistant</h2>
-<p>Discrete Math Lab April 2019 - July 2019 — Rexburg, ID</p>
+<div id="discrete-math-teaching-assistant" class="section level3">
+<h3>Discrete Math Teaching Assistant</h3>
+<p>April 2019 - July 2019 — Rexburg, ID</p>
 <ul>
 <li>Solved example problems to assist students with Discrete Math</li>
 <li>Assisted students in learning Elisp and Erlang</li>
 </ul>
 </div>
-<div id="tutor" class="section level2">
-<h2>Tutor</h2>
-<p>CS Help Lab April 2018 - August 2018 — Rexburg, ID</p>
+<div id="tutor" class="section level3">
+<h3>Tutor</h3>
+<p>April 2018 - August 2018 — Rexburg, ID</p>
 <ul>
 <li>Tutored many classes<br />
 Including:
@@ -441,6 +455,7 @@ Including:
 <li>Taught students topics from these classes</li>
 <li>Lead group and individual appointments and discussions</li>
 </ul>
+</div>
 </div>
 
 
@@ -493,7 +508,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

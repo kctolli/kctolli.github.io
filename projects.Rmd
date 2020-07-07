@@ -7,6 +7,16 @@ library(tidyverse)
 library(knitr)
 ```
 
+### COVID-19 Analytics
+
+Over 125 hours -- 2020
+
+Senior Thesis/Practicum
+
+* Done in R
+* Website created with Rmd and Yaml
+* See [COVID-19 Website](https://kctolli.github.io/COVID-19/)
+
 ## Self Driving Car      
 
 ```{r, echo = FALSE}
@@ -22,23 +32,15 @@ include_graphics(car)
 include_graphics(car_circuit)
 ```
 
-Spent 30 Hours on the project  
+Spent 30 Hours on the project -- 2020  
 
 * Designed Circuits and Assembled the Electronics
 *	Programmed the Arduino in Embedded C
 *	Setup Raspberry Pi for Deep Learning and Computer Vision
 
-## Calendaring App		
-
-Spent 40 Hours on the project   
-
-*	Used Github to develop the Java code while working with a Team 
-*	Presented to the Eastern Idaho Innovator's Challenge
-* See [Github for code](https://github.com/natgrimm/GitTest)
-
 ## Biology Exam Data Analysis 		
 
-Spent 20 Hours on the project    
+Spent 20 Hours on the project -- 2020    
 
 *	Used R and the Tidyverse package to wrangle and visualize data
 *	Allowed Professors to help Improve Curriculum  
@@ -51,7 +53,7 @@ psu <- './site_libs/images/circuit.png'
 include_graphics(psu)
 ```
 
-Spent 20 Hours on the project   
+Spent 20 Hours on the project -- 2019   
 
 * Calculated the value of components of the power supply
 * Designed a power supply that convert 20V AC/DC to 5V DC
@@ -59,28 +61,15 @@ Spent 20 Hours on the project
 
 ## FPGA (Verilog) Multifunction Calculator
 
-Spent 30 Hours on the project 
+Spent 30 Hours on the project -- 2019
 
 * Created new AVR commands 
 * Used Basys 3 (Artix 7) FPGA Board
 * See [Multifunction Calculator Webpage](https://ecen-340.glitch.me/final-project.html)
 
-## Electric Skateboard                          		
-
-```{r skate, fig.align='center', out.width='50%', echo = FALSE}
-skate <- './site_libs/images/skateboard.jpg'
-include_graphics(skate)
-```
-
-Spent 40 Hours on the project
-
-* Selected and assembled the components 
-* Programmed the VESC in Embedded C
-* Setup a Wii remote as the skateboard controller
-
 ## Optimizing Calendar C++ Program		
 
-Spent 15 Hours on the project  
+Spent 15 Hours on the project -- 2019  
 
 * Hyperthreaded and Pipelined a C++ Calendar 
   + Used Tomohiko Sakamoto's Algorithm 
@@ -89,10 +78,30 @@ Spent 15 Hours on the project
 * Spead up the program by about 25 times
   + About a 150 ms run time
 
-## On-going Projects
-  
-### ePortfolio
+## Electric Skateboard                          		
 
+```{r skate, fig.align='center', out.width='50%', echo = FALSE}
+skate <- './site_libs/images/skateboard.jpg'
+include_graphics(skate)
+```
+
+Spent 40 Hours on the project -- 2018
+
+* Selected and assembled the components 
+* Programmed the VESC in Embedded C
+* Setup a Wii remote as the skateboard controller
+
+## Calendaring App		
+
+Spent 40 Hours on the project -- 2018  
+
+*	Used Github to develop the Java code while working with a Team 
+*	Presented to the Eastern Idaho Innovator's Challenge
+* See [Github for code](https://github.com/natgrimm/GitTest)
+
+## ePortfolio
+
+* Ongoing Project
 * This is one place to show:
   + About Me
   + Skills
@@ -104,25 +113,4 @@ Spent 15 Hours on the project
   + [This website](https://kctolli.github.io/index.html)
 * Used Rmd and YML files to create
 
-### PolarFire Design Project 
 
-Senior Project 
-
-* Sponsored by NASA
-* Done in VHDL and Embedded C
-* Implement RISC-V core on the PolarFire dev kit
-
-### COVID-19 Analytics
-
-Senior Thesis
-
-* Done in R
-* Website created with Rmd and Yaml
-
-### Lineage Logistics
-  
-* BYUI Data Science Society
-
-### Farm Bureau 
-
-* BYUI Data Science Society

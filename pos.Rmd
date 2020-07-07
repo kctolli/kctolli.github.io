@@ -17,7 +17,10 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
   + Agile, Scrum and Waterfall
 * System Security 
 * Web Design & Development
+<!-- * Web Backend Development -->
 * Introduction to Databases
+  + MySQL
+  + Oracle SQL
 * Technical Communication 
 
 ### Math and Science Core 
@@ -40,7 +43,6 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Data Wrangling and Visualization
 <!-- * Machine Learning and Data Mining -->
 <!-- * Intermediate Statistics -->
-<!-- * Design Thinking -->
 * Technical Communication 
 * Web Design & Development
 
