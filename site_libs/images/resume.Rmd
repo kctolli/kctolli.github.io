@@ -92,7 +92,7 @@ Remote
 2020
 
 + Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
-+ Used embedded C to interface with sensors to monitor human vitals in space
++ Used embedded C to interface with sensors to monitor human vitals while in space
 + Using C++ to benchmark test the CPU
 + Setup the webpage using Rmds, CSS and Yaml
 
