@@ -9,7 +9,7 @@ library(knitr)
 
 ### COVID-19 Analytics
 
-Over 125 hours -- 2020
+2020 -- Over 125 hours 
 
 Senior Thesis/Practicum
 
@@ -18,6 +18,8 @@ Senior Thesis/Practicum
 * See [COVID-19 Website](https://kctolli.github.io/COVID-19/)
 
 ## Self Driving Car      
+
+2020 -- Spent 30 Hours on the project 
 
 ```{r, echo = FALSE}
 car <- './site_libs/images/car.jpg'
@@ -32,15 +34,13 @@ include_graphics(car)
 include_graphics(car_circuit)
 ```
 
-Spent 30 Hours on the project -- 2020  
-
 * Designed Circuits and Assembled the Electronics
 *	Programmed the Arduino in Embedded C
 *	Setup Raspberry Pi for Deep Learning and Computer Vision
 
 ## Biology Exam Data Analysis 		
 
-Spent 20 Hours on the project -- 2020    
+2020 -- Spent 20 Hours on the project   
 
 *	Used R and the Tidyverse package to wrangle and visualize data
 *	Allowed Professors to help Improve Curriculum  
@@ -48,12 +48,12 @@ Spent 20 Hours on the project -- 2020
 
 ## Current-limited (BJT and OP-AMP) DC Power Supply		
 
+2019 -- Spent 20 Hours on the project
+
 ```{r PSU, fig.align='center', out.width='75%', echo = FALSE}
 psu <- './site_libs/images/circuit.png'
 include_graphics(psu)
 ```
-
-Spent 20 Hours on the project -- 2019   
 
 * Calculated the value of components of the power supply
 * Designed a power supply that convert 20V AC/DC to 5V DC
@@ -61,7 +61,7 @@ Spent 20 Hours on the project -- 2019
 
 ## FPGA (Verilog) Multifunction Calculator
 
-Spent 30 Hours on the project -- 2019
+2019 -- Spent 30 Hours on the project 
 
 * Created new AVR commands 
 * Used Basys 3 (Artix 7) FPGA Board
@@ -69,7 +69,7 @@ Spent 30 Hours on the project -- 2019
 
 ## Optimizing Calendar C++ Program		
 
-Spent 15 Hours on the project -- 2019  
+2019 -- Spent 15 Hours on the project  
 
 * Hyperthreaded and Pipelined a C++ Calendar 
   + Used Tomohiko Sakamoto's Algorithm 
@@ -80,12 +80,12 @@ Spent 15 Hours on the project -- 2019
 
 ## Electric Skateboard                          		
 
+2018 -- Spent 40 Hours on the project
+
 ```{r skate, fig.align='center', out.width='50%', echo = FALSE}
 skate <- './site_libs/images/skateboard.jpg'
 include_graphics(skate)
 ```
-
-Spent 40 Hours on the project -- 2018
 
 * Selected and assembled the components 
 * Programmed the VESC in Embedded C
@@ -93,7 +93,7 @@ Spent 40 Hours on the project -- 2018
 
 ## Calendaring App		
 
-Spent 40 Hours on the project -- 2018  
+2018 -- Spent 40 Hours on the project  
 
 *	Used Github to develop the Java code while working with a Team 
 *	Presented to the Eastern Idaho Innovator's Challenge

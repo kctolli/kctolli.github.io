@@ -87,12 +87,14 @@ Experience {data-icon=briefcase}
 
 NASA - National Aeronautics and Space Administration
 
-Rexburg, ID
+Remote
 
 2020
 
 + Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
-+ Designed an open-source RISC-V processor using a PolarFire FPGA
++ Used embedded C to interface with sensors to monitor human vitals in space
++ Using C++ to benchmark test the CPU
++ Setup the webpage using Rmds, CSS and Yaml
 
 ### Teaching Assistant and Tutor
 
@@ -118,7 +120,7 @@ Rexburg, ID
 2020
 
 + Used R and the Tidyverse package to wrangle and visualize data
-+ Allowed Professors to help Improve Curriculum
++ Allowed Professors to help improve curriculum
 
 ### Self Driving Car
 
@@ -128,19 +130,20 @@ Rexburg, ID
 
 2020
 
++ Designed Circuits and Assembled the Electronics
 + Programmed the Arduino in Embedded C
 + Setup Raspberry Pi for Deep Learning and Computer Vision
 
-### FPGA Multifunction Calculator
+<!-- ### FPGA Multifunction Calculator -->
 
-BYU - Idaho, Computer Science and Engineering
+<!-- BYU - Idaho, Computer Science and Engineering -->
 
-Rexburg, ID
+<!-- Rexburg, ID -->
 
-2019
+<!-- 2019 -->
 
-+ Created new AVR commands
-+ Used Basys 3 (Artix 7) FPGA Board and developed in Verilog code
+<!-- + Created new AVR commands -->
+<!-- + Used Basys 3 (Artix 7) FPGA Board and developed in Verilog code -->
 
 <!-- ### Calendaring App -->
 
