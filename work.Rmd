@@ -6,16 +6,17 @@ title: "Work Experience"
 
 ### Student Design Project - Contract
 
+April 2020 – July 2020 --- Rexburg, ID
+
 * There is a new radiation-tolerant version of the Microsemi PolarFire FPGA that might enable a system on chip (SoC) approach to something like the xEMU Caution and Warning Computer
 * The open-source RISC-V processor has been gaining a lot of traction in the industry
-
 * [Project Website](https://ecen499-nasa.github.io/)
 
 ## Brigham Young University - Idaho
 
-###  Assistant  
+###  C Programming Teaching Assistant 
 
-Sept – Present --- Rexburg, ID
+July 2020 – Present --- Rexburg, ID
 
 ### Digital Systems Teaching Assistant  
 
