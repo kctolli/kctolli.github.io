@@ -8,8 +8,7 @@ title: "Work Experience"
 
 April 2020 – July 2020 --- Rexburg, ID
 
-* There is a new radiation-tolerant version of the Microsemi PolarFire FPGA that might enable a system on chip (SoC) approach to something like the xEMU Caution and Warning Computer
-* The open-source RISC-V processor has been gaining a lot of traction in the industry
+* Designed an open-source RISC-V processor using a PolarFire FPGA
 * [Project Website](https://ecen499-nasa.github.io/)
 
 ## Brigham Young University - Idaho
@@ -18,13 +17,9 @@ April 2020 – July 2020 --- Rexburg, ID
 
 July 2020 – Present --- Rexburg, ID
 
-### Digital Systems Teaching Assistant  
-
-September 2018 – Present --- Rexburg, ID
-
-*	Lead students to increase their knowledge of Digital Systems
-*	Guide students to improvement by giving feedback
-*	Help students with programming Verilog 
+* Help students learn C and C++ programming language 
+* Assist the professor create new material
+<!-- * Gain feedback from students to continuously improve the course -->
 
 ### Intro Engineering Teaching Assistant 
 
@@ -33,6 +28,14 @@ December 2020 – Present --- Rexburg, ID
 * Mentor new students in Engineering and Computer Science
 * Help students with basic circuit analysis
 * Lead them in learning arduino skills
+
+### Digital Systems Teaching Assistant  
+
+September 2018 – Present --- Rexburg, ID
+
+*	Lead students to increase their knowledge of Digital Systems
+*	Guide students to improvement by giving feedback
+*	Help students with programming Verilog 
 
 ### Discrete Math Teaching Assistant 
 
