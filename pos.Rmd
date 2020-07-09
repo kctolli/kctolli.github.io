@@ -2,11 +2,13 @@
 title: "Program of Study"
 ---
 
+## Brigham Young University - Idaho
+
 I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studying to get my Bachelors of Science in Software Engineering and an Associates in Data Science. I am minoring in Computer Engineering.  
 
-## Software Engineering (BS)
+### Software Engineering (BS)
 
-* Intro to Computer Engineering and Science
+* Intro to Computer Science and Engineering
 * Intro to Software Development using C++
 * Object-Oriented Development using C++
 * Object-Oriented Programming with Data Structures using Python
@@ -17,13 +19,23 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
   + Agile, Scrum and Waterfall
 * System Security 
 * Web Design & Development
+<!-- * Web Frontend Development -->
 <!-- * Web Backend Development -->
+  <!-- + APIs -->
+  <!-- + Amazon Web Services (AWS) -->
+  <!-- + Database (Server-side) -->
+  <!--   - NoSQL -->
+  <!--   - MongoDB -->
+  <!--   - Mongoose -->
+  <!-- + JavaScript -->
+  <!--   - Express -->
+  <!--   - Node -->
 * Introduction to Databases
   + MySQL
   + Oracle SQL
 * Technical Communication 
 
-### Math and Science Core 
+#### Math and Science Core 
 
 * PreCalculus
 * Calculus 1
@@ -31,7 +43,7 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Discrete Math 
 * Introduction to Chemistry
 
-## Data Science (AAS)
+### Data Science (AAS)
 
 * Programming Building Blocks 
 * Programming with Functions
@@ -44,11 +56,11 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 <!-- * Machine Learning and Data Mining -->
 <!-- * Intermediate Statistics -->
 * Technical Communication 
+* Project Management
 * Web Design & Development
 
-## Computer Engineering Minor
+### Computer Engineering Minor
 
-* Introduction to Engineering
 * Introduction to Electrical and Computer Engineering 
 * Intro to Software Development using C++
 * Object-Oriented Development using C++
@@ -61,3 +73,15 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Computer Architecture
 * Embedded Systems
 * Advanced Embedded Systems
+
+## Moorpark High School
+
+I was able to take some college level courses in the process of getting my High School Diploma. 
+
+* PreCalculus Honors
+* AP Calculus
+* AP Chemistry
+* AP Physics 1 & 2
+* AP Photography
+* Introduction to Computer Science using C++
+* Introduction to Engineering
