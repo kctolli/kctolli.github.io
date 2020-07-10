@@ -8,6 +8,7 @@ title: "Work Experience"
 
 April 2020 – July 2020 --- Remote
 
+* Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
 * Worked in a 4 person team, as a team, our goal was:
   + Develop an FPGA (PolarFire) based RISC-V processor 
   + Associate software to monitor vitals in space
@@ -16,7 +17,6 @@ April 2020 – July 2020 --- Remote
   + Using embedded C to interface with sensors 
   + Using C++ to benchmark test the CPU
   + Setup the website using Rmds, CSS and Yaml
-* Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
 
 ## Brigham Young University - Idaho
 
