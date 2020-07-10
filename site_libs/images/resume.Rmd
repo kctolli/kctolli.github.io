@@ -83,7 +83,7 @@ Rexburg, ID
 Experience {data-icon=briefcase}
 ------------------------------------
 
-### Student Design Project
+### Student Senior Design Project
 
 NASA - National Aeronautics and Space Administration
 
@@ -91,7 +91,7 @@ Remote
 
 2020
 
-+ Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
++ Was contracted by NASA for my Senior Project
 + Used embedded C to interface with sensors to monitor human vitals while in space
 + Using C++ to benchmark test the CPU
 + Setup the webpage using Rmds, CSS and Yaml

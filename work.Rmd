@@ -4,7 +4,7 @@ title: "Work Experience"
 
 ## NASA
 
-### Student Design Project - Contract
+### Student Senior Design Project - Contract
 
 April 2020 – July 2020 --- Remote
 
@@ -16,7 +16,7 @@ April 2020 – July 2020 --- Remote
   + Using embedded C to interface with sensors 
   + Using C++ to benchmark test the CPU
   + Setup the website using Rmds, CSS and Yaml
-* [Project Website](https://ecen499-nasa.github.io/)
+* Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
 
 ## Brigham Young University - Idaho
 
