@@ -3,6 +3,8 @@ title: "Data Science"
 ---
 
 ```{r pic, fig.align='center', out.width='75%', echo=FALSE}
+pacman::p_load(pacman, knitr, tidyverse)
+opts_chunk$set(echo = TRUE)
 pic <- 'https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg'
 knitr::include_graphics(pic)
 ```
