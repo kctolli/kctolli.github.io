@@ -105,6 +105,7 @@ navbar:
           href: https://r-pkgs.org/
         - text: "R Visualization"  
           href: https://byuistats.github.io/M335/r_visualization.html      
+  right:  
     - text: "ePortfolio"
       href: ../index.html
 
