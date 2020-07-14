@@ -7,9 +7,9 @@ library(tidyverse)
 library(knitr)
 ```
 
-### COVID-19 Analytics
+## COVID-19 Analytics
 
-2020 -- Over 125 hours 
+2020 -- Over 145 hours 
 
 Senior Thesis/Practicum
 
@@ -99,18 +99,18 @@ include_graphics(skate)
 *	Presented to the Eastern Idaho Innovator's Challenge
 * See [Github for code](https://github.com/natgrimm/GitTest)
 
-## ePortfolio
+<!-- ## ePortfolio -->
 
-* Ongoing Project
-* This is one place to show:
-  + About Me
-  + Skills
-  + Program of Study
-  + Projects
-  + Resume
-  + LinkedIn
-* Hosted on [github](https://github.com/kctolli/kctolli.github.io)
-  + [This website](https://kctolli.github.io/index.html)
-* Used Rmd and YML files to create
+<!-- * Ongoing Project -->
+<!-- * This is one place to show: -->
+<!--   + About Me -->
+<!--   + Skills -->
+<!--   + Program of Study -->
+<!--   + Projects -->
+<!--   + Resume -->
+<!--   + LinkedIn -->
+<!-- * Hosted on [github](https://github.com/kctolli/kctolli.github.io) -->
+<!--   + [This website](https://kctolli.github.io/index.html) -->
+<!-- * Used Rmd and YML files to create -->
 
 
