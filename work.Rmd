@@ -17,6 +17,10 @@ April 2020 – July 2020 --- Remote
   + Using embedded C to interface with sensors 
   + Using C++ to benchmark test the CPU
   + Setup the website using Rmds, CSS and Yaml
+  
+#### Mission Statement
+
+Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU.   
 
 ## Brigham Young University - Idaho
 
