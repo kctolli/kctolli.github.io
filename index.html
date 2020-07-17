@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -403,7 +404,7 @@ div.tocify {
 
 <p><img src="site_libs/images/me.png" width="30%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>BYU-Idaho Senior studying Software Engineering and Data Science. Expected graduation in December of 2020. I enjoy several different disciplines in software engineering. I am also working toward a Computer Engineering minor. I love to learn new things and solve problems.</p>
-<p><br /><br /></p>
+<p><br /> <br /></p>
 <p>© Copyright Kyle Tolliver, 2020</p>
 <div id="licensed-under-gnu-general-public-license-v3.0" class="section level6">
 <h6><em>— <a href="https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE">Licensed</a> under <a href="./site_libs/LICENSE.txt">GNU General Public License v3.0</a></em></h6>
@@ -465,7 +466,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

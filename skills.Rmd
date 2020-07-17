@@ -65,7 +65,7 @@ title: "Skills"
   + Transistors, Diodes, and Op-Amps
     - MOSFETS
     - BJT
-  + Basic Ciruits
+  + Basic Circuits
     - Inductors
     - Capacitors 
     - Resistors
@@ -95,7 +95,6 @@ title: "Skills"
 
 ## Programming
 
-* Python
 * C/C++
 * Java
   
@@ -111,3 +110,8 @@ title: "Skills"
 * Git
   + Github
   + Bash
+* Security  
+  + Social Engineering
+  + Cryptography
+  + Data and Networks 
+  + Authentication, Access and Accounts

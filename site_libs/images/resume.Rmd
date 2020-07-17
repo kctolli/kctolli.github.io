@@ -11,20 +11,20 @@ knitr::opts_chunk$set(echo = TRUE)
 Aside
 ====================================
 
-Contact info
+Contact Info {#contact}
 ------------------------------------
 
-Email: kyle@tollivers.org
+- <i class="fa fa-envelope"></i> kyle@tollivers.org
 
-Phone: [(805)367-6723](tel: 18053676723)
+- <i class="fa fa-phone"></i> [(805)367-6723](tel: 18053676723)
 
-ePortfolio: https://kctolli.github.io/
+- <i class="fa fa-linkedin"></i> [kctolli](https://www.linkedin.com/in/kctolli/)
 
-LinkedIn: [kctolli](https://www.linkedin.com/in/kctolli/)
+- <i class="fas fa-globe-americas"></i> https://kctolli.github.io/
 
-Github: https://github.com/kctolli
+- <i class="fa fa-github"></i> https://github.com/kctolli
 
-Skills
+Skills {#skills}
 ------------------------------------
 
 - R 
@@ -42,10 +42,12 @@ Skills
 - Assembly
 - Github
 
-Disclaimer
+Disclaimer {#disclaimer}
 ------------------------------------
 
-This resume was made with the R package [pagedown](https://github.com/rstudio/pagedown).
+This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
 
 Kyle Tolliver --- Resume
 
@@ -93,7 +95,7 @@ Remote
 
 2020
 
-+ Was contracted by NASA for my Senior Project
++ Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
 + Used embedded C to interface with sensors to monitor human vitals while in space
 + Using C++ to benchmark test the CPU
 + Setup the webpage using Rmds, CSS and Yaml
