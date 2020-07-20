@@ -13,8 +13,10 @@ library(knitr)
 
 Senior Thesis/Practicum
 
-* Done in R
-* Website created with Rmd and Yaml
+* Developed a data website using R, Rmds and Yaml
+* Explored different datasets to determine viable information
+* Wrote my own COVID-19 R package to wrangle data
+* Visualized the data to make the data easily understood
 * See [COVID-19 Website](https://kctolli.github.io/COVID-19/)
 
 ## Self Driving Car      

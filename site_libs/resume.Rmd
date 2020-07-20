@@ -45,7 +45,7 @@ Disclaimer {#disclaimer}
 
 This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
 
-Last updated on `r Sys.Date()`.
+Last updated on `r format(Sys.Date(), format="%B %d %Y")`.
 
 Kyle Tolliver --- Resume
 
@@ -59,7 +59,7 @@ Kyle Tolliver {#title}
 Education {data-icon=graduation-cap}
 ------------------------------------
 
-### Brigham Young University-Idaho
+### Brigham Young University - Idaho
 
 Bachelor of Science in Software Engineering
 
@@ -68,10 +68,10 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Minor: Computer Engineering
-+ Honors: Tau Beta Pi and LDS Academic Scholarship
++ Honors: Tau Beta Pi
 + Coursework: Data Structures, Software Design and Development, Web Development, System Security, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Circuit Theory and Analysis
 
-### Brigham Young University-Idaho
+### Brigham Young University - Idaho
 
 Associate of Applied Science in Data Science
 
@@ -93,10 +93,9 @@ Remote
 
 2020
 
-+ Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
-+ Used embedded C to interface with sensors to monitor human vitals while in space
-+ Using C++ to benchmark test the CPU
-+ Setup the webpage using Rmds, CSS and Yaml
++ Used C to interface with sensors in NASA’s Caution and Warning System
++ Using C++ to benchmark test the microcontroller
++ Setup a [website](https://ecen499-nasa.github.io/) using Rmds, CSS and Yaml
 
 ### Teaching Assistant and Tutor
 
@@ -113,16 +112,29 @@ Rexburg, ID
 Projects {data-icon=laptop}
 ------------------------------------
 
-### Exam Data Analysis
+### COVID-19 Data Consulting
 
-BYU - Idaho, Biology
+BYU - Idaho, Computer Science and Engineering 
 
-Rexburg, ID
+Remote
 
 2020
 
-+ Used R and the Tidyverse package to wrangle and visualize data
-+ Allowed Professors to help improve curriculum
++ Developed a [data website](https://kctolli.github.io/COVID-19/) using R, Rmds and Yaml
++ Explored different datasets to determine viable information
++ Wrote my own COVID-19 R package to wrangle data
++ Visualized the data to make the data easily understood
+
+<!-- ### Exam Data Analysis -->
+
+<!-- BYU - Idaho, Biology -->
+
+<!-- Rexburg, ID -->
+
+<!-- 2020 -->
+
+<!-- + Used R and the Tidyverse package to wrangle and visualize data -->
+<!-- + Allowed Professors to help improve curriculum -->
 
 ### Self Driving Car
 
@@ -135,26 +147,3 @@ Rexburg, ID
 + Designed Circuits and Assembled the Electronics
 + Programmed the Arduino in Embedded C
 + Setup Raspberry Pi for Deep Learning and Computer Vision
-
-<!-- ### FPGA Multifunction Calculator -->
-
-<!-- BYU - Idaho, Computer Science and Engineering -->
-
-<!-- Rexburg, ID -->
-
-<!-- 2019 -->
-
-<!-- + Created new AVR commands -->
-<!-- + Used Basys 3 (Artix 7) FPGA Board and developed in Verilog code -->
-
-<!-- ### Calendaring App -->
-
-<!-- BYU - Idaho, Computer Science and Engineering  -->
-
-<!-- Rexburg, ID -->
-
-<!-- 2018 -->
-
-<!-- + Used Github to develop the Java code while working with a Team -->
-<!-- + Presented to the Eastern Idaho Innovator’s Challenge -->
-
