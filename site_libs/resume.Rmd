@@ -20,12 +20,12 @@ Contact Info {#contact}
 
 - <i class="fa fa-linkedin"></i> [kctolli](https://www.linkedin.com/in/kctolli/)
 
-- <i class="fas fa-globe-americas"></i> https://kctolli.github.io/
+- <i class="fas fa-globe-americas"></i> [kctolli.github.io](https://kctolli.github.io/)
 
 Skills {#skills}
 ------------------------------------
 
-- R 
+- R/Rmd 
 - YAML
 - Python
 - C/C++
@@ -45,9 +45,9 @@ Disclaimer {#disclaimer}
 
 This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
 
-Last updated on `r format(Sys.Date(), format="%B %d %Y")`.
+<!-- Last updated on `r format(Sys.Date(), format="%B %d %Y")`. -->
 
-Kyle Tolliver --- Resume
+<!-- Kyle Tolliver --- Resume -->
 
 
 Main
@@ -93,8 +93,8 @@ Remote
 
 2020
 
-+ Used C to interface with sensors in NASA’s Caution and Warning System
-+ Using C++ to benchmark test the microcontroller
++ Developed embedded C interface to the sensors in NASA's Spacesuit 
++ Benchmark tested the microprocessor in C++
 + Setup a [website](https://ecen499-nasa.github.io/) using Rmds, CSS and Yaml
 
 ### Teaching Assistant and Tutor
@@ -107,7 +107,7 @@ Rexburg, ID
 
 + Lead students to increase their knowledge
 + Guide students to improvement by giving feedback
-+ Help students with programming Verilog, Embedded C and Erlang
++ Help students with programming Verilog, C/C++ and Embedded C
 
 Projects {data-icon=laptop}
 ------------------------------------
@@ -120,21 +120,10 @@ Remote
 
 2020
 
-+ Developed a [data website](https://kctolli.github.io/COVID-19/) using R, Rmds and Yaml
++ Developed a data [website](https://kctolli.github.io/COVID-19/) using R, Rmds and Yaml
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
-
-<!-- ### Exam Data Analysis -->
-
-<!-- BYU - Idaho, Biology -->
-
-<!-- Rexburg, ID -->
-
-<!-- 2020 -->
-
-<!-- + Used R and the Tidyverse package to wrangle and visualize data -->
-<!-- + Allowed Professors to help improve curriculum -->
 
 ### Self Driving Car
 

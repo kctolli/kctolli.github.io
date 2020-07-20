@@ -98,7 +98,7 @@ title: "Skills"
 * C/C++
 * Java
   
-## Systems
+## Operating Systems
 
 * Linux
 * Microsoft Windows
@@ -106,7 +106,14 @@ title: "Skills"
 * Command lines 
   + Bash
   + Batch
-  + Powershell
+
+## Industry Knowledge
+
+* Technical Communication
+* Project Management
+  + Agile
+  + Scrum
+  + Waterfall
 * Git
   + Github
   + Bash

@@ -14,8 +14,8 @@ April 2020 – July 2020 --- Remote
   + Associate software to monitor vitals in space
   + Design, Assemble, and Solder a PCB to interface with sensors  
 * My contribution was: 
-  + Using embedded C to interface with sensors 
-  + Using C++ to benchmark test the CPU
+  + Developed embedded C interface to the sensors in NASA's Spacesuit 
+  + Benchmark tested the microprocessor in C++
   + Setup the website using Rmds, CSS and Yaml
   
 #### Mission Statement
