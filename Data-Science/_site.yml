@@ -16,15 +16,7 @@ navbar:
         - text: "Good Charts"    
           href: https://www.amazon.com/gp/product/1633690709/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
         - text: "Supplemental Book"
-          href: https://byuistats.github.io/BYUI_CSE150_StatBook/
-        - text: "---------------"   
-        - text: "Additional Resources"  
-        - text: "Visualization Catalog"
-          href: https://datavizcatalogue.com/
-        - text: "Communicating Data"
-          href: https://dataremixed.com/books/cdwt/  
-        - text: "Tableau"
-          href: https://public.tableau.com/en-us/s/          
+          href: https://byuistats.github.io/BYUI_CSE150_StatBook/          
     - text: "Data Wrangling"  
       menu:
         - text: "Personal Work"
@@ -37,15 +29,7 @@ navbar:
         - text: "Website"
           href: https://byuistats.github.io/M335/
         - text: "R for Data Science"    
-          href: https://r4ds.had.co.nz/
-        - text: "---------------"   
-        - text: "Additional Resources"  
-        - text: "Git and Github"
-          href: https://byuistats.github.io/M335/git_335.html
-        - text: "Git and R" 
-          href: https://cfss.uchicago.edu/setup/
-        - text: "R Markdown Guide"
-          href: https://bookdown.org/yihui/rmarkdown/  
+          href: https://r4ds.had.co.nz/ 
     - text: "Machine Learning"  
       menu:
         - text: "Personal Work"
@@ -74,12 +58,8 @@ navbar:
           href: https://byuistats.github.io/Statistics-Notebook/ 
         - text: "Github"
           href: https://github.com/saundersg/Statistics-Notebook
-        - text: "---------------" 
-        - text: "Additional Resources"
-        - text: "M221 Book"
-          href: http://statistics.byuimath.com/index.php?title=Main_Page
-        - text: "R Help"
-          href: http://byuistats.github.io/M330/r_help.html       
+        - text: "Math 221 Book"
+          href: http://statistics.byuimath.com/index.php?title=Main_Page     
   right:  
     - text: "ePortfolio"
       href: ../index.html

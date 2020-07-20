@@ -9,7 +9,7 @@ library(knitr)
 
 ## COVID-19 Analytics
 
-2020 -- Over 145 hours 
+2020 -- Over 150 hours 
 
 Senior Thesis/Practicum
 
@@ -57,7 +57,8 @@ include_graphics(psu)
 
 * Calculated the value of components of the power supply
 * Designed a power supply that convert 20V AC/DC to 5V DC
-* Soldered the Circuit together
+* Soldered the circuit together
+* See [Final Project Report](./site_libs/ECEN350-report.pdf)
 
 ## FPGA (Verilog) Multifunction Calculator
 

@@ -1,18 +1,18 @@
-name: "WDD"
+name: "Web Development"
 navbar:
-  title: "WDD"
+  title: "Web Development"
   left:
     - text: "Intro to Web Development"
-      href: ./WDD100/index.html
+      href: https://wdd-100-dry.glitch.me/
     - text: "Intro to JavaScript"
-      href: ./CSE121b/index.html    
+      href: ../CSE121b/index.html    
     - text: "Frontend Development 2"
-      href: ./WDD330/index.html 
+      href: https://kctolli.github.io/WDD330/
     - text: "Backend Development 2"
-      href: ./CSE341/index.html  
+      href: https://kctolli.github.io/CSE341/ 
   right:  
     - text: "ePortfolio"
-      href: https://kctolli.github.io/ 
+      href: ../index.html 
           
 output_dir: '.'
 
@@ -21,9 +21,3 @@ output:
     css: ./site_libs/styles.css
     highlight: tango
     theme: readable
-    #toc: true
-    #toc_float: true
-    fig_height: 6
-    fig_width: 12
-    fig_align: 'center'  
-    code_folding: hide 
