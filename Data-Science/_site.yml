@@ -79,32 +79,7 @@ navbar:
         - text: "M221 Book"
           href: http://statistics.byuimath.com/index.php?title=Main_Page
         - text: "R Help"
-          href: http://byuistats.github.io/M330/r_help.html  
-    - text: "Senior Thesis"  
-      menu:
-        - text: "COVID-19 Research"
-        - text: "Website"
-          href: https://kctolli.github.io/COVID-19/index.html  
-        - text: "Github"
-          href: https://github.com/kctolli/COVID-19
-        - text: "---------------" 
-        - text: "Additional Resources"
-        - text: "Consulting Articles" 
-          href: https://byuistats.github.io/M488/readings.html
-        - text: "Tidy Evaluation"
-          href: https://tidyeval.tidyverse.org/
-        - text: "Data Visualization"
-          href: https://serialmentor.com/dataviz/    
-        - text: "Happy Git with R" 
-          href: https://happygitwithr.com/
-        - text: "Plotly and Shiny - R"  
-          href: https://plotly-r.com/index.html
-        - text: "Advanced R"  
-          href: https://adv-r.hadley.nz/
-        - text: "R Packages"
-          href: https://r-pkgs.org/
-        - text: "R Visualization"  
-          href: https://byuistats.github.io/M335/r_visualization.html      
+          href: http://byuistats.github.io/M330/r_help.html       
   right:  
     - text: "ePortfolio"
       href: ../index.html

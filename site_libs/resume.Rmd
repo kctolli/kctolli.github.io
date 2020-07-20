@@ -22,8 +22,6 @@ Contact Info {#contact}
 
 - <i class="fas fa-globe-americas"></i> https://kctolli.github.io/
 
-- <i class="fa fa-github"></i> https://github.com/kctolli
-
 Skills {#skills}
 ------------------------------------
 

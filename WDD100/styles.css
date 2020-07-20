@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Dosis|Rock+Salt|Shadows+Into+Light&display=swap");
+
+/*body {
+  background-size: 250%;
+  background-color: #ffffff;
+} for sub pages
+*/
+body {
+  background: url(https://cdn.glitch.com/6aec7f94-0601-44b8-a120-a4c133147bf9%2F4436513-river-wallpapers.jpg);
+  background-size: 250%;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leftcol,
+.rightcol {
+  max-width: 48%;
+  flex: 1 0 15em;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rock Salt", "Comic Sans MS", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.1em;
+  color: #0099ff;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-family: "Annie Use Your Telescope", "Shadows Into Light", "Trebuchet MS",
+    sans-serif;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  color: #0099ff;
+  padding: 10px;
+}
+
+nav {
+  background-color: #0099ff;
+  padding: 1em;
+  margin-top: -145px;
+}
+
+nav a {
+  color: #cce6ff;
+  line-height: 3.5em;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+
+nav li {
+  font-family: "Shadows Into Light", "Trebuchet MS", Helvetica;
+  font-size: 1.75em;
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 150px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav a:hover {
+  background-color: #00ff00;
+  color: #ff4000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #09203F;
+}
+
+.sec1,
+.sec2,
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.sec2 {
+  background-color: #00bfff;
+}
+
+.sec3 {
+  text-align: center;
+  height: 150px;
+  padding-top: 15px;
+}
+
+.sec1,
+.sec3 {
+  background-color: black;
+}
+
+footer {
+  background-color: white;
+  margin-bottom: -12px;
+}
+
+.pspec,
+.hspec {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+#logo {
+  width: 150px;
+  position: relative;
+  background-color: #cce6ff;
+  border: 2px black solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #09203F;
+  left: 10px;
+  top: 10px;
+}
+.banner {
+  width: 100%;
+}
+.img1,
+.img2 {
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #09203F;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #09203F;
+}
+
+.socialmedia {
+  padding: 15px;
+  float: right;
+}
+
+#info {
+  font-family: "Amatic SC", verbana, serif;
+  font-size: 14px;
+  color: black;
+}
+
+/*main{display: flex; flex-flow: column;}
+
+dt{font-size: 20px; font-style: bold;}*/
+
+.sec4 {
+  color: black;
+  background-color: white;
+}

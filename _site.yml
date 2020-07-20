@@ -14,9 +14,6 @@ navbar:
     - text: "Projects"
       icon: fa-tasks
       href: ./projects.html   
-    - text: "Data Science"
-      icon: fa-table
-      href: ./Data-Science/index.html
     - text: "Resume"
       icon: fa-file-text
       href: ./site_libs/resume.html

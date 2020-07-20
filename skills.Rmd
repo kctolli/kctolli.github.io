@@ -98,7 +98,7 @@ title: "Skills"
 * C/C++
 * Java
   
-## Operating Systems
+## Systems
 
 * Linux
 * Microsoft Windows

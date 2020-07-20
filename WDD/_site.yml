@@ -1,0 +1,29 @@
+name: "WDD"
+navbar:
+  title: "WDD"
+  left:
+    - text: "Intro to Web Development"
+      href: ./WDD100/index.html
+    - text: "Intro to JavaScript"
+      href: ./CSE121b/index.html    
+    - text: "Frontend Development 2"
+      href: ./WDD330/index.html 
+    - text: "Backend Development 2"
+      href: ./CSE341/index.html  
+  right:  
+    - text: "ePortfolio"
+      href: https://kctolli.github.io/ 
+          
+output_dir: '.'
+
+output: 
+  html_document:
+    css: ./site_libs/styles.css
+    highlight: tango
+    theme: readable
+    #toc: true
+    #toc_float: true
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'  
+    code_folding: hide 

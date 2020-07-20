@@ -1,6 +1,5 @@
 ---
-title: "About Me"
-author: "Kyle Tolliver"
+title: "Kyle Tolliver"
 ---
 
 ```{r load_libraries, include=FALSE}
@@ -12,7 +11,25 @@ me <- './site_libs/images/me.png'
 knitr::include_graphics(me)
 ```
 
+## About Me
+
 BYU-Idaho Senior studying Software Engineering and Data Science. Expected graduation in December of 2020. I enjoy several different disciplines in software engineering. I am also working toward a Computer Engineering minor. I love to learn new things and solve problems.
+
+## Contact Me
+
+Email: kyle@tollivers.org
+
+Phone: [(805) 367-6723](tel:18053676723)
+
+<br /> <br />
+
+## Posts
+
+[Data Science Coursework](./Data-Science/index.html)
+
+[COVID-19 Research and Consulting](https://kctolli.github.io/COVID-19/index.html)
+
+[Web Design and Development Coursework](https://kctolli.github.io/WDD/)
 
 <br /> <br />
 
