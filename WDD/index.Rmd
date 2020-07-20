@@ -5,7 +5,7 @@ title: "Web Development"
 ```{r pic, fig.align='center', out.width='50%', echo=FALSE}
 pacman::p_load(pacman, knitr, tidyverse)
 opts_chunk$set(echo = TRUE)
-pic <- 'https://hackernoon.com/hn-images/1*NhiqpOHe8jptZ4M95GkEMA.png'
+pic <- './site_libs/WDD.png'
 include_graphics(pic)
 ```
 

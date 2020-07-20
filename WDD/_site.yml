@@ -4,7 +4,7 @@ navbar:
   left:
     - text: "Intro to Web Development"
       href: https://wdd-100-dry.glitch.me/
-    - text: "Intro to JavaScript"
+    - text: "JavaScript"
       href: ../CSE121b/index.html    
     - text: "Frontend Development 2"
       href: https://kctolli.github.io/WDD330/
