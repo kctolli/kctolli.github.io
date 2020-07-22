@@ -9,7 +9,7 @@ library(knitr)
 
 ## COVID-19 Analytics
 
-2020 -- Over 150 hours 
+2020 -- Over 165 hours 
 
 Senior Thesis/Practicum
 
