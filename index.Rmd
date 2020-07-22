@@ -27,6 +27,7 @@ Phone: [(805) 367-6723](tel:18053676723)
 
 * [Data Science Coursework](./Data-Science/index.html)
 * [COVID-19 Research and Consulting](https://kctolli.github.io/COVID-19/index.html)
+* [Useful R Package](https://github.com/kctolli/Useful-R)
 * [Web Design and Development](https://wdd-100-dry.glitch.me/)
 * [Digital System Design Coursework](https://ecen-340.glitch.me/)
 * [Senior Design Project](https://ecen499-nasa.github.io/)
