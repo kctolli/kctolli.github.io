@@ -15,11 +15,11 @@ knitr::include_graphics(me)
 
 BYU-Idaho Senior studying Software Engineering and Data Science. Expected graduation in December of 2020. I enjoy several different disciplines in software engineering. I am also working toward a Computer Engineering minor. I love to learn new things and solve problems.
 
-<!-- ## Contact Me -->
+## Contact Me
 
-<!-- Email: kyle@tollivers.org -->
+Email: kyle@tollivers.org
 
-<!-- Phone: [(805) 367-6723](tel:18053676723) -->
+Phone: [(805) 367-6723](tel:18053676723)
 
 <br /> <br />
 
