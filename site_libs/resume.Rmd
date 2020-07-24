@@ -85,6 +85,17 @@ Rexburg, ID
 Experience {data-icon=briefcase}
 ------------------------------------
 
+### Research Specialist Intern
+
+LLNL - Lawrence Livermore National Labs
+
+Remote
+
+2020
+
++ Worked with Research & Business Development Center 
++ FPGA Development and Cybersecurity for Department of Defense 
+
 ### Student Senior Design Project
 
 NASA - National Aeronautics and Space Administration
@@ -124,15 +135,3 @@ Remote
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
-
-### Self Driving Car
-
-BYU - Idaho, Computer Science and Engineering 
-
-Rexburg, ID
-
-2020
-
-+ Designed Circuits and Assembled the Electronics
-+ Programmed the Arduino in Embedded C
-+ Setup Raspberry Pi for Deep Learning and Computer Vision

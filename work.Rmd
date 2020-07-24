@@ -2,6 +2,15 @@
 title: "Work Experience"
 ---
 
+## Lawrence Livermore National Labs
+
+### Research Specialist - Intern
+
+July 2020 - September 2020 --- Remote
+
+* Worked with Research & Business Development Center 
+* FPGA Development and Cybersecurity for Department of Defense
+
 ## NASA
 
 ### Student Senior Design Project - Contract
