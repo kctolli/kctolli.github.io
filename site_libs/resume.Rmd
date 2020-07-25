@@ -84,7 +84,7 @@ Remote
 2020
 
 <!-- + Research & Business Development Center Advanced Applied Learning Project -->
-+ FPGA Development and Cybersecurity for Department of Defense 
+<!-- + FPGA Development and Cybersecurity for Department of Defense  -->
 
 ### Student Senior Design Project
 
@@ -135,4 +135,4 @@ Rexburg, ID
 2020 
 
 + Used R and the Tidyverse package to wrangle and visualize data
-+ Allowed Professors to help Improve Curriculum
++ Allowed professors to help improve curriculum
