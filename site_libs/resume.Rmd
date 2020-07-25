@@ -70,7 +70,7 @@ Rexburg, ID
 + Minor: Computer Engineering
 + Honors: Tau Beta Pi
 + Societies: Data Science Society
-+ Coursework: Data Intuition, Data Wrangling, Data Structures, Software Development, Web Development, System Security, Digital Systems Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Database Development, Project Management, Linear Algebra, Discrete Math, Calculus 1 
++ Coursework: <!-- Machine Learning, Intermediate Stats, --> Data Intuition, Data Wrangling, Data Structures, Software Development, Web Development, Database Development, System Security, Digital Systems Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
 
 Experience {data-icon=briefcase}
 ------------------------------------

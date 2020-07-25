@@ -18,7 +18,9 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Project Management
   + Agile, Scrum and Waterfall
 * System Security 
+<!-- * Machine Learning and Data Mining -->
 * Web Design & Development
+<!-- * JavaScript Language  -->
 * Introduction to Databases
   + MySQL
   + Oracle SQL
@@ -27,14 +29,16 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 #### Math and Science Core 
 
 * PreCalculus
-* Calculus 1
+* Differential Calculus
 * Linear Algebra 
 * Discrete Math 
+<!-- * Intermediate Statistics  -->
 * Introduction to Chemistry
 
 #### Capstone
 
-<!-- * Advanced Applied Learning Project -->
+* ALPS Internship 
+  + [Advanced Applied Learning Project](./work.html#Lawrence_Livermore_National_Labs)
 * Senior Practicum 
   + [COVID-19](./projects.html#COVID-19_Analytics)
 * Senior Project 
@@ -42,10 +46,9 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 ### Data Science (AAS)
 
-* Programming Building Blocks 
-* Programming with Functions
-* Programming with Classes
-* Applied Programming 
+* Intro to Programming
+* Object-Oriented Programming
+* Software Design and Development
 * Introduction to Databases
 * Database Design and Development
 * Data Intuition and Insight
@@ -80,6 +83,6 @@ I was able to take some college level courses in the process of getting my High 
 * AP Calculus
 * AP Chemistry
 * AP Physics 1 & 2
-* AP Photography
+* AP Art 2-D Design (Photography)
 * Introduction to Computer Science using C++
 * Introduction to Engineering
