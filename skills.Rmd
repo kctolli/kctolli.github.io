@@ -52,6 +52,7 @@ title: "Skills"
   + FPGA 
     - Artix 7
     - Kintex-7
+    - PolarFire
   + Simulation
     - Verilog Test Bench
     - Logisim
@@ -74,7 +75,7 @@ title: "Skills"
 
 * HTML
 * CSS
-* Javascript
+<!-- * Javascript -->
 * YAML and Rmd     
   Basic building blocks:
   + knitr (R package)
@@ -96,8 +97,7 @@ title: "Skills"
 ## Programming
 
 * C/C++
-* Java
-  + Android Studio
+* Java - Android Studio
   
 ## Operating Systems
 
