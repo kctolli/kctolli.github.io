@@ -83,8 +83,8 @@ Remote
 
 2020
 
-<!-- + Research & Business Development Center Advanced Applied Learning Project -->
-<!-- + FPGA Development and Cybersecurity for Department of Defense  -->
++ Research & Business Development Center's Applied Learning Project
++ FPGA Development and Cybersecurity for Department of Defense
 
 ### Student Senior Design Project
 
