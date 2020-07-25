@@ -23,12 +23,12 @@ title: "Skills"
   + leaflet
   + devtools
   + downloader
+  + pagedown
 * Python     
   Libraries include:
   + Pandas
   + Matplotlib
   + Numpy
-  + Scipy
   + Plotly
 * SQL 
   + Oracle
@@ -45,10 +45,13 @@ title: "Skills"
 ## Computer Engineering
 
 * Embedded Programming and Systems
-  + C 
+  + C/C++ 
   + Python
+  + Assembly
+  + Register-level C 
 * Digital Systems
   + Verilog
+  + VHDL
   + FPGA 
     - Artix 7
     - Kintex-7
@@ -59,8 +62,12 @@ title: "Skills"
 * Real Time Operating Systems
   + ROS (Robot Operating System)
   + VxWorks
-  + FreeRTOS
-* Assembly and Register-level C 
+  + FreeRTOS 
+* Internet of Things
+  + Communications
+  + Information
+  + Fourier Series and Transform
+  + Filters
 * Circuit Analysis
   + LTspice Software
   + Transistors, Diodes, and Op-Amps
@@ -111,6 +118,7 @@ title: "Skills"
 ## Industry Knowledge
 
 * Technical Communication
+* Human Relations
 * Project Management
   + Agile
   + Scrum

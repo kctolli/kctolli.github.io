@@ -8,7 +8,7 @@ title: "Work Experience"
 
 July 2020 - September 2020 --- Remote
 
-* Worked with Research & Business Development Center 
+<!-- * Worked with Research & Business Development Center  -->
 * FPGA Development and Cybersecurity for Department of Defense
 
 ## NASA

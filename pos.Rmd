@@ -34,6 +34,7 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 #### Capstone
 
+<!-- * Advanced Applied Learning Project -->
 * Senior Practicum 
   + [COVID-19](./projects.html#COVID-19_Analytics)
 * Senior Project 

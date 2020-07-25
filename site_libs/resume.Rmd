@@ -61,7 +61,7 @@ Education {data-icon=graduation-cap}
 
 ### Brigham Young University - Idaho
 
-Bachelor of Science in Software Engineering
+Bachelor of Science in Software Engineering <br/> Associate of Applied Science in Data Science
 
 Rexburg, ID
 
@@ -69,18 +69,8 @@ Rexburg, ID
 
 + Minor: Computer Engineering
 + Honors: Tau Beta Pi
-+ Coursework: Data Structures, Software Design and Development, Web Development, System Security, Digital Systems Design, Computer Architecture, Advanced Embedded Systems, Circuit Theory and Analysis
-
-### Brigham Young University - Idaho
-
-Associate of Applied Science in Data Science
-
-Rexburg, ID
-
-2017 <br> | <br> 2020
-
 + Societies: Data Science Society
-+ Coursework: Database Development, Data Intuition and Insight, Data Wrangling, Programming with Classes, Technical Communication, Project Management, Linear Algebra, Discrete Math, Calculus 1 
++ Coursework: Data Intuition, Data Wrangling, Data Structures, Software Development, Web Development, System Security, Digital Systems Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Database Development, Project Management, Linear Algebra, Discrete Math, Calculus 1 
 
 Experience {data-icon=briefcase}
 ------------------------------------
@@ -93,7 +83,7 @@ Remote
 
 2020
 
-+ Worked with Research & Business Development Center 
+<!-- + Research & Business Development Center Advanced Applied Learning Project -->
 + FPGA Development and Cybersecurity for Department of Defense 
 
 ### Student Senior Design Project
@@ -135,3 +125,14 @@ Remote
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
+
+### Biology Exam Data Analysis
+
+BYU - Idaho, Biology
+
+Rexburg, ID
+
+2020 
+
++ Used R and the Tidyverse package to wrangle and visualize data
++ Allowed Professors to help Improve Curriculum
