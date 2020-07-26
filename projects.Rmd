@@ -60,7 +60,7 @@ include_graphics(psu)
 * Calculated the value of components of the power supply
 * Designed a power supply that convert 20V AC/DC to 5V DC
 * Soldered the circuit together
-* See [Final Project Report](./site_libs/ECEN350-report.pdf)
+* See [Final Project Report](./site_libs/images/ECEN350-report.pdf)
 
 ## FPGA (Verilog) Multifunction Calculator
 
@@ -102,6 +102,48 @@ include_graphics(skate)
 *	Presented to the Eastern Idaho Innovator's Challenge
 * See [Github for code](https://github.com/natgrimm/GitTest)
 
+## Obstacle Avoiding Car
+
+2018 -- Spent 30 Hours on the project 
+
+* Designed and assembled electronics
+* Programmed MSP 432 using Register-level C
+* Developed a working prototype
+
+## Asteroids Game 
+
+2017-2018 -- Spent 40 Hours on the project 
+
+* Used C++ and Python to recreate this [classic game](https://arcade.ly/games/asteroids/)
+* Created and followed a UML class Diagram
+* Added addition features and graphics 
+  Such as:
+    + Made a Thor themed game
+    + Added machine gun mode
+    
+## 4-Bit Microprocessor
+
+2017 -- Spent 30 Hours on the project
+
+* Created in both Verilog and simulation tools
+* Development required many different components
+  + Binary Counter 
+  + Two Read Only Memories (ROM)    
+  + Multiplexer (MUX) 
+  + Register File
+  + Arithmetic Logic Unit (ALU)
+  + ASCII display
+* Wrote Machine code to control the CPU  
+  
+## Toolbox Power Supply
+
+2017 -- Spent 30 Hours on the project
+
+* Selected and Assembled the electronics
+* Wired both AC and DC electronics 
+* Designed a method to convert voltages
+  + 120V AC to 12V DC and 5V DC
+
 <!-- ## ePortfolio -->
 
 <!-- * Ongoing Project -->
@@ -115,5 +157,3 @@ include_graphics(skate)
 <!-- * Hosted on [github](https://github.com/kctolli/kctolli.github.io) -->
 <!--   + [This website](https://kctolli.github.io/index.html) -->
 <!-- * Used Rmd and YML files to create -->
-
-
