@@ -9,7 +9,7 @@ title: "Work Experience"
 July 2020 - September 2020 --- Remote
 
 * Research & Business Development Center's Applied Learning Project
-* FPGA Development and Cybersecurity for Department of Defense
+* FPGA Development and Cybersecurity 
 
 ## NASA
 
