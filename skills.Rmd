@@ -35,12 +35,13 @@ title: "Skills"
   + MySQL
 * Tableau
 * Excel / Google Sheets
-* Data Intuition and Insight    
-  Topics including:
-  + Numerical and Graphical Summaries
-  + Measures of Spread
-  + Normal Distribution and Z-scores
-  + Probability  
+* Data Intuition and Insight 
+* Statistics
+  <!-- Topics including: -->
+  <!-- + Numerical and Graphical Summaries -->
+  <!-- + Measures of Spread -->
+  <!-- + Normal Distribution and Z-scores -->
+  <!-- + Probability   -->
 
 ## Computer Engineering
 
@@ -99,7 +100,8 @@ title: "Skills"
 * Discrete Math 
   + Elisp
   + Erlang
-* Calculus and Linear Algebra  
+* Differential Calculus 
+* Linear Algebra  
 
 ## Programming
 
