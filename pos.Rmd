@@ -37,8 +37,9 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 #### Capstone
 
-* ALPS Internship 
-  + [Advanced Applied Learning Project](./work.html#Lawrence_Livermore_National_Labs)
+* ALPS Internship
+  + Advanced Applied Learning Project
+  + [Lawrence Livermore National Labs](./work.html#Lawrence_Livermore_National_Labs)
 * Senior Practicum 
   + [COVID-19](./projects.html#COVID-19_Analytics)
 * Senior Project 
