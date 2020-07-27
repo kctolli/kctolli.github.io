@@ -4,42 +4,13 @@ title: "Program of Study"
 
 ## Brigham Young University - Idaho
 
-I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am studying to get my Bachelors of Science in Software Engineering and an Associates in Data Science. I am minoring in Computer Engineering.
+I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I am studying Software Engineering and Data Science, with a minor in Computer Engineering.
 
 ### Software Engineering (BS)
 
-* Intro to Computer Science and Engineering
-* Intro to Software Development using C++
 * Object-Oriented Development using C++
-* Object-Oriented Programming with Data Structures using Python
-* Software Design and Development using Java
-  + Mobile App Development using Android Studio
-  + Github Version Control --- Team work
-* Project Management
-  + Agile, Scrum and Waterfall
 * System Security 
-<!-- * Machine Learning and Data Mining -->
-* Web Design & Development
 <!-- * JavaScript Language  -->
-* Introduction to Databases
-  + MySQL
-  + Oracle SQL
-* Technical Communication 
-
-#### Math and Science Core 
-
-* PreCalculus
-* Differential Calculus
-* Linear Algebra 
-* Discrete Math 
-<!-- * Intermediate Statistics  -->
-* Introduction to Chemistry
-
-#### Capstone
-
-* ALPS Internship
-  + Advanced Applied Learning Project
-  + [Lawrence Livermore National Labs](./work.html#Lawrence_Livermore_National_Labs)
 * Senior Practicum 
   + [COVID-19](./projects.html#COVID-19_Analytics)
 * Senior Project 
@@ -47,25 +18,14 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 
 ### Data Science (AAS)
 
-* Intro to Programming
-* Object-Oriented Programming
-* Software Design and Development
-* Introduction to Databases
 * Database Design and Development
 * Data Intuition and Insight
 * Data Wrangling and Visualization
 <!-- * Machine Learning and Data Mining -->
-<!-- * Intermediate Statistics -->
 <!-- * Statistical Consulting -->
-* Technical Communication 
-* Project Management
-* Web Design & Development
 
 ### Computer Engineering Minor
 
-* Introduction to Electrical and Computer Engineering 
-* Intro to Software Development using C++
-* Object-Oriented Development using C++
 * Electric Circuit Analysis I
 * Electronic Devices and Circuits
 * Fundamentals of Digital Systems
@@ -75,6 +35,35 @@ I'm a Senior at BYU-Idaho with an expected graduation date of July, 2020. I am s
 * Computer Architecture
 * Embedded Systems
 * Advanced Embedded Systems
+
+### Core
+
+#### Math and Science
+
+* PreCalculus
+* Differential Calculus
+* Linear Algebra 
+* Discrete Math 
+<!-- * Intermediate Statistics  -->
+* Introduction to Chemistry
+* Foundations of Science
+
+#### Programming
+
+* Intro to Computer Science and Engineering
+* Intro to Software Development using C++
+* Object-Oriented Programming with Data Structures using Python
+* Introduction to Databases using SQL
+* Software Design and Development using Java
+* Web Design & Development
+* Project Management
+
+#### General
+
+* Family and Human Relations
+* Writing and Reasoning
+* Introduction to the Visual Arts 
+* Technical Communication
 
 ## Moorpark High School
 
