@@ -28,7 +28,6 @@ I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I 
 
 * Electric Circuit Analysis I
 * Electronic Devices and Circuits
-* Fundamentals of Digital Systems
 * Digital Systems Lab
 * Digital Systems Design
 * Microprocessor System Design
@@ -55,6 +54,7 @@ I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I 
 * Object-Oriented Programming with Data Structures using Python
 * Introduction to Databases using SQL
 * Software Design and Development using Java
+* Fundamentals of Digital Systems
 * Web Design & Development
 * Project Management
 
