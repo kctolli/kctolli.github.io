@@ -50,6 +50,7 @@ title: "Skills"
   + Python
   + Assembly
   + Register-level C 
+  + Simulink
 * Digital Systems
   + Verilog
   + VHDL

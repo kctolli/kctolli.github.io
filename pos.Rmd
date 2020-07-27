@@ -4,17 +4,16 @@ title: "Program of Study"
 
 ## Brigham Young University - Idaho
 
-I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I am studying Software Engineering and Data Science, with a minor in Computer Engineering.
+I am senior at BYU-Idaho, with an expected graduation date of December, 2020. <br/> I am studying Software Engineering and Data Science, with a minor in Computer Engineering.
 
 ### Software Engineering (BS)
 
+* Intro to Software Development using C++
 * Object-Oriented Development using C++
 * System Security 
 <!-- * JavaScript Language  -->
 * Senior Practicum 
-  + [COVID-19](./projects.html#COVID-19_Analytics)
 * Senior Project 
-  + [NASA](./work.html#NASA)
 
 ### Data Science (AAS)
 
@@ -26,10 +25,9 @@ I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I 
 
 ### Computer Engineering Minor
 
-* Electric Circuit Analysis I
+* Electric Circuit Analysis 
 * Electronic Devices and Circuits
-* Digital Systems Lab
-* Digital Systems Design
+* Digital System Design
 * Microprocessor System Design
 * Computer Architecture
 * Embedded Systems
@@ -50,11 +48,11 @@ I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I 
 #### Programming
 
 * Intro to Computer Science and Engineering
-* Intro to Software Development using C++
+* Intro to Programming using Python
 * Object-Oriented Programming with Data Structures using Python
 * Introduction to Databases using SQL
 * Software Design and Development using Java
-* Fundamentals of Digital Systems
+* Fundamentals of Digital Systems with Lab
 * Web Design & Development
 * Project Management
 
@@ -69,6 +67,8 @@ I am senior at BYU-Idaho, with an expected graduation date of December, 2020. I 
 
 I was able to take some college level courses in the process of getting my High School Diploma. 
 
+* Geometry Honors
+* Algebra 2 Accelerated 
 * PreCalculus Honors
 * AP Calculus
 * AP Chemistry
