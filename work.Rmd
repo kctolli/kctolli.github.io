@@ -10,6 +10,7 @@ July 2020 - September 2020 --- Remote
 
 * Research & Business Development Center's Applied Learning Project
 * FPGA Development and Cybersecurity 
+<!-- * Scrum methodology   -->
 
 ## NASA
 
@@ -46,7 +47,7 @@ January 2020 – Present --- Rexburg, ID
 
 * Mentor new students in Engineering and Computer Science
 * Help students with basic circuit analysis
-* Lead them in learning arduino skills
+* Lead students in learning arduino skills
 
 ### Digital Systems Teaching Assistant  
 
