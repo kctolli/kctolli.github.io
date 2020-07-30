@@ -9,8 +9,9 @@ title: "Work Experience"
 July 2020 - September 2020 --- Remote
 
 * Research & Business Development Center's Applied Learning Project
-* FPGA Development and Cybersecurity 
-<!-- * Scrum methodology   -->
+* Tested security technologies using binary analysis and FPGA development
+* Conducted market research on security techniques
+* Followed Scrum methodology 
 
 ## NASA
 

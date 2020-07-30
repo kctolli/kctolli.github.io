@@ -85,7 +85,9 @@ Remote
 2020
 
 + Research & Business Development Center's Applied Learning Project
-+ FPGA Development and Cybersecurity 
++ Tested security technologies using binary analysis and FPGA development
++ Conducted market research on security techniques
++ Followed Scrum methodology  
 
 ### Student Senior Design Project
 
