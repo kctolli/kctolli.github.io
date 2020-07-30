@@ -62,6 +62,12 @@ include_graphics(psu)
 * Soldered the circuit together
 * See [Final Project Report](./site_libs/images/ECEN350-report.pdf)
 
+## Project Life
+
+* Used Trello (Kanban board) to plan life goals 
+* Broke goals into time segments 
+* Followed Agile methodology
+
 ## FPGA (Verilog) Multifunction Calculator
 
 2019 -- Spent 30 Hours on the project 

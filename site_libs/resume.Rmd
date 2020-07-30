@@ -92,7 +92,7 @@ Remote
 2020
 
 + Research & Business Development Center's Applied Learning Project
-+ Tested security technologies using binary and FPGA analysis
++ Tested security technologies using binary analysis
 + Conducted market research on security techniques
 + Followed Scrum methodology  
 

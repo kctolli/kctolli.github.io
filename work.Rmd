@@ -9,7 +9,7 @@ title: "Work Experience"
 July 2020 - September 2020 --- Remote
 
 * Research & Business Development Center's Applied Learning Project
-* Tested security technologies using binary analysis and FPGA development
+* Tested security technologies using binary analysis
 * Conducted market research on security techniques
 * Followed Scrum methodology 
 
