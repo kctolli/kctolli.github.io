@@ -134,3 +134,14 @@ Remote
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
+
+<!-- ### Biology Exam Data Analysis 		 -->
+
+<!-- BYU - Idaho, Biology  -->
+
+<!-- Rexburg, ID -->
+
+<!-- 2020    -->
+
+<!-- *	Used R and the Tidyverse package to wrangle and visualize data -->
+<!-- *	Allowed professors to help improve curriculum   -->
