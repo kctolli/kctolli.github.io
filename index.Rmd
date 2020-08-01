@@ -25,7 +25,9 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 * LinkedIn: https://www.linkedin.com/in/kctolli/  
 * Github: https://github.com/kctolli
 
-<br /> <hr />
+<!-- <br />  -->
+
+<hr />
 
 ## Posts
 
@@ -35,7 +37,9 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 * [Digital System Design Coursework](https://ecen-340.glitch.me/)
 * [Senior Design Project](https://ecen499-nasa.github.io/)
 
-<br /> <hr />
+<!-- <br />  -->
+
+<hr />
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
