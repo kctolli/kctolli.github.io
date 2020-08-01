@@ -43,7 +43,7 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
-######  *--- Website is made with [Rmd files](https://rmarkdown.rstudio.com/index.html) and [Rstudio](https://rstudio.com/)*
+######  *--- Website is made with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](./_site.yml) files using [Rstudio](https://rstudio.com/)*
 
 ######  *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io)*
 
