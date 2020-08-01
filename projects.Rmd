@@ -64,6 +64,8 @@ include_graphics(psu)
 
 ## Project Life
 
+2019 -- Spent 10 Hours on the project 
+
 * Used Trello (Kanban board) to plan life goals 
 * Broke goals into time segments 
 * Followed Agile methodology

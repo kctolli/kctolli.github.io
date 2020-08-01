@@ -30,6 +30,8 @@ Contact Info {#contact}
 
 - <i class="fa fa-globe-americas"></i> [kctolli.github.io](../index.html)
 
+- <i class="fa fa-github"></i> https://github.com/kctolli
+
 Skills {#skills}
 ------------------------------------
 

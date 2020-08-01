@@ -16,13 +16,7 @@ navbar:
       href: ./projects.html   
     - text: "Resume"
       icon: fa-file-text
-      href: ./site_libs/resume.html
-    - text: "LinkedIn"
-      icon: fa-linkedin
-      href: https://www.linkedin.com/in/kctolli/  
-    - text: "GitHub"
-      icon: fa-github
-      href: https://github.com/kctolli   
+      href: ./site_libs/resume.html 
           
 output_dir: '.'
 

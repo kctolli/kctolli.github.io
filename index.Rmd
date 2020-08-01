@@ -21,8 +21,9 @@ BYU-Idaho Senior studying Software Engineering and Data Science. Expected gradua
 ## Contact Me
 
 * Email: [kyle@tollivers.org](mailto:kyle@tollivers.org?subject=Portfolio)
-
 * Phone: [(805) 367-6723](tel:18053676723)
+* LinkedIn: https://www.linkedin.com/in/kctolli/  
+* Github: https://github.com/kctolli
 
 <br /> <hr />
 
