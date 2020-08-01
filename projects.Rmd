@@ -19,6 +19,14 @@ Senior Thesis/Practicum
 * Visualized the data to make the data easily understood
 * See [COVID-19 Website](https://kctolli.github.io/COVID-19/)
 
+## Biology Exam Data Analysis 		
+
+2020 -- Spent 20 Hours on the project   
+
+*	Used R and the Tidyverse package to wrangle and visualize data
+*	Allowed professors to help improve curriculum  
+* See [Exam Data Webpage](https://kctolli.github.io/MATH335/Semester_project.html)
+
 ## Self Driving Car      
 
 2020 -- Spent 30 Hours on the project 
@@ -32,21 +40,13 @@ car_circuit <- './site_libs/images/car_cir.jpg'
 include_graphics(car)
 ```
 
-```{r Car2, fig.align='center', out.width='25%', echo = FALSE}
+```{r Car2, fig.align='center', out.width='25%', echo = FALSE, eval=FALSE}
 include_graphics(car_circuit)
 ```
 
 * Designed Circuits and Assembled the Electronics
 *	Programmed the Arduino in Embedded C
 *	Setup Raspberry Pi for Deep Learning and Computer Vision
-
-## Biology Exam Data Analysis 		
-
-2020 -- Spent 20 Hours on the project   
-
-*	Used R and the Tidyverse package to wrangle and visualize data
-*	Allowed professors to help improve curriculum  
-* See [Exam Data Webpage](https://kctolli.github.io/MATH335/Semester_project.html)
 
 ## Current-limited (BJT and OP-AMP) DC Power Supply		
 
@@ -91,7 +91,7 @@ include_graphics(psu)
 
 2018 -- Spent 40 Hours on the project
 
-```{r skate, fig.align='center', out.width='50%', echo = FALSE}
+```{r skate, fig.align='center', out.width='40%', echo = FALSE}
 skate <- './site_libs/images/skateboard.jpg'
 include_graphics(skate)
 ```
@@ -139,7 +139,7 @@ include_graphics(skate)
   + Register File
   + Arithmetic Logic Unit (ALU)
   + ASCII display
-* Wrote Machine code to control the CPU  
+* Wrote Machine code on the ROMs to control the CPU  
   
 ## Toolbox Power Supply
 
@@ -149,17 +149,3 @@ include_graphics(skate)
 * Wired both AC and DC electronics 
 * Designed a method to convert voltages
   + 120V AC to 12V DC and 5V DC
-
-<!-- ## ePortfolio -->
-
-<!-- * Ongoing Project -->
-<!-- * This is one place to show: -->
-<!--   + About Me -->
-<!--   + Skills -->
-<!--   + Program of Study -->
-<!--   + Projects -->
-<!--   + Resume -->
-<!--   + LinkedIn -->
-<!-- * Hosted on [github](https://github.com/kctolli/kctolli.github.io) -->
-<!--   + [This website](https://kctolli.github.io/index.html) -->
-<!-- * Used Rmd and YML files to create -->
