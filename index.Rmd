@@ -12,11 +12,17 @@ library(tidyverse)
 
 BYU-Idaho Senior studying Software Engineering and Data Science. Expected graduation in December of 2020. I enjoy several different disciplines in software engineering. I am also working toward a Computer Engineering minor. I love to learn new things and solve problems.
 
+<!-- ### Quick Facts -->
+
+<!-- * [Research Specialist Intern at Lawrence Livermore National Labs](./work.html#Research_Specialist_-_Intern) -->
+<!-- *  -->
+<!-- * Eagle Scout  -->
+
 ## Contact Me
 
-Email: [kyle@tollivers.org](mailto:kyle@tollivers.org?subject=Portfolio)
+* Email: [kyle@tollivers.org](mailto:kyle@tollivers.org?subject=Portfolio)
 
-Phone: [(805) 367-6723](tel:18053676723)
+* Phone: [(805) 367-6723](tel:18053676723)
 
 <br /> <hr />
 
@@ -29,8 +35,6 @@ Phone: [(805) 367-6723](tel:18053676723)
 * [Senior Design Project](https://ecen499-nasa.github.io/)
 
 <br /> <hr />
-
-© Copyright Kyle Tolliver, 2020
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
