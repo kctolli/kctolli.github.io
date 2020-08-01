@@ -65,7 +65,7 @@ April 2019 - July 2019 --- Rexburg, ID
 * Solved example problems to assist students with Discrete Math
 * Assisted students in learning Elisp and Erlang
 
-### Tutor
+### Computer Science Tutor
 
 April 2018 - August 2018 --- Rexburg, ID
 
