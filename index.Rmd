@@ -3,7 +3,7 @@ title: "Kyle Tolliver"
 ---
 
 ```{r load_libraries, include=FALSE}
-library(tidyverse)
+library(tidyverse, knitr)
 ```
 
 ![](./site_libs/images/me.png)
