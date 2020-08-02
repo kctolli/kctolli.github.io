@@ -24,6 +24,8 @@ title: "Skills"
   + devtools
   + downloader
   + pagedown
+  + pacman
+  + installer
 * Python     
   Libraries include:
   + Pandas
@@ -56,7 +58,7 @@ title: "Skills"
   + VHDL
   + FPGA 
     - Artix 7
-    - Kintex-7
+    - Kintex 7
     - PolarFire
   + Simulation
     - Verilog Test Bench

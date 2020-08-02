@@ -2,24 +2,24 @@
 title: "Work Experience"
 ---
 
-## Lawrence Livermore National Labs
+## LLNL - Lawrence Livermore National Labs
 
 ### Research Specialist - Intern
 
 July 2020 - September 2020 --- Remote
 
-* Research & Business Development Center's Applied Learning Project
 * Tested security technologies using binary analysis
-* Conducted market research on security techniques
+* Conducted market research on new security techniques
 * Followed Scrum methodology 
+* [Research & Business Development Center's](http://alps.rbdcenter.org/) Advanced Applied Learning Projects
 
-## NASA
+## NASA - National Aeronautics and Space Administration
 
 ### Student Senior Design Project - Contract
 
 April 2020 – July 2020 --- Remote
 
-* Was contracted by NASA for my [Senior Project](https://ecen499-nasa.github.io/)
+* Was contracted by NASA for my Senior Project
 * Worked in a 4 person team, as a team, our goal was:
   + Develop an FPGA (PolarFire) based RISC-V processor 
   + Associate software to monitor vitals in space
@@ -27,7 +27,7 @@ April 2020 – July 2020 --- Remote
 * My contribution was: 
   + Developed embedded C interface to the sensors in NASA's Spacesuit 
   + Benchmark tested the microprocessor in C++
-  + Setup the website using Rmds, CSS and Yaml
+  + Setup the [website](https://ecen499-nasa.github.io/) using Rmds, CSS and Yaml
   
 #### Mission Statement
 
