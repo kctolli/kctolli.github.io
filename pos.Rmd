@@ -19,6 +19,12 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
  }
 </script>
 
+<style>
+
+a:link {color: black;}
+
+</style>
+
 ## Brigham Young University - Idaho
 
 <div style="padding-left:15px;">
@@ -30,7 +36,7 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
 <div id="hovertobegin" style="display:none;padding-left:20px;">
 
 ```{r display, echo=FALSE}
-pander(grade, caption = "Applicable Coursework Grades")
+pander(grade, caption = "Applicable Coursework - Grades")
 ```
 
 </div>
