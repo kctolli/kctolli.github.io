@@ -1,8 +1,8 @@
 ﻿Semester,Course,Name,Crds,Grade
-Transfer,CS 124,Intro to Software Development,4,P
-Transfer,ME 101,Intro to Engineering,2,P
-Transfer,CHEM 101,Introduction to Chemistry,3,P
 Transfer,ART 101,Introduction to the Visual Arts and Design,3,P
+Transfer,CHEM 101,Introduction to Chemistry,3,P
+Transfer,ME 101,Intro to Engineering,2,P
+Transfer,CS 124,Intro to Software Development,4,P
 Vertical,CS 101,Intro to Programming ,2,P
 Vertical,CIT 111,Introduction to Databases,3,P
 Vertical,CIT 160,Introduction to Programming,3,P
