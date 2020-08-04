@@ -29,7 +29,7 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 
 <hr />
 
-## Posts
+## Highlights
 
 * [Data Science Coursework](./Data-Science/index.html)
 * [COVID-19 Research and Consulting](https://kctolli.github.io/COVID-19/index.html)
