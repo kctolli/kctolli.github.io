@@ -63,10 +63,13 @@ title: "Skills"
   + Simulation
     - Verilog Test Bench
     - Logisim
-* Real Time Operating Systems
+* Embedded Operating Systems
   + ROS (Robot Operating System)
   + VxWorks
   + FreeRTOS 
+  + Real-Time Linux
+  + Embedded Linux
+  + Raspbian OS
 * Internet of Things
   + Communications
   + Information

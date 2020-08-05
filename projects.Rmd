@@ -23,7 +23,7 @@ Senior Thesis/Practicum
 
 2020 -- Spent 20 Hours on the project   
 
-*	Used R and the Tidyverse package to wrangle and visualize data
+*	Used R and the [Tidyverse package](https://tidyverse.tidyverse.org/) to wrangle and visualize data
 *	Allowed professors to help improve curriculum  
 * See [Exam Data Webpage](https://kctolli.github.io/MATH335/Semester_project.html)
 

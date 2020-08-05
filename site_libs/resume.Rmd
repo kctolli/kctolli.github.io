@@ -54,6 +54,8 @@ Skills {#skills}
 Disclaimer {#disclaimer}
 ------------------------------------
 
+Member of Tau Beta Pi <br /> Engineering Honor Society <br />Idaho Delta chapter at [BYU-Idaho](https://www.byui.edu/academic-societies/tau-beta-pi).
+
 This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
 
 <!-- Last updated on `r format(Sys.Date(), format="%B %d %Y")`. -->
@@ -78,8 +80,8 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Minor: Computer Engineering
-+ Honors: Tau Beta Pi
-+ Societies: Data Science Society
+<!-- + Honors: Tau Beta Pi -->
++ Societies: Data Science Society, IEEE, and ACM
 + Coursework: <!-- Machine Learning, Intermediate Stats, Statistical Consulting, --> Data Intuition, Data Wrangling, Data Structures, Database Development, Software Development, Web Development, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
 
 Experience {data-icon=briefcase}
@@ -136,3 +138,14 @@ Remote
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
+
+### Biology Exam Data Analysis 		
+
+BYU - Idaho, Computer Science and Engineering 
+
+Rexburg, ID
+
+2020 
+
+*	Used R and the [Tidyverse package](https://tidyverse.tidyverse.org/) to wrangle and visualize data
+*	Allowed professors to help improve curriculum 
