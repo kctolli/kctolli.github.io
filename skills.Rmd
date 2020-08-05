@@ -128,6 +128,9 @@ title: "Skills"
 
 * Technical Communication
 * Human Relations
+* Teaching
+* Research
+* Market Research
 * Project Management
   + Agile
   + Scrum
