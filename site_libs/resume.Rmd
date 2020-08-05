@@ -26,11 +26,11 @@ Contact Info {#contact}
 
 - <i class="fa fa-phone"></i> [(805)367-6723](tel: 18053676723)
 
-- <i class="fa fa-linkedin"></i> [kctolli](https://www.linkedin.com/in/kctolli/)
+- <i class="fa fa-linkedin"></i> [linkedin.com/in/kctolli/](https://www.linkedin.com/in/kctolli/)
 
 - <i class="fa fa-globe-americas"></i> [kctolli.github.io](../index.html)
 
-- <i class="fa fa-github"></i> https://github.com/kctolli
+- <i class="fa fa-github"></i> [github.com/kctolli](https://github.com/kctolli)
 
 Skills {#skills}
 ------------------------------------
