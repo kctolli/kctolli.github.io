@@ -2,6 +2,19 @@
 title: "Skills"
 ---
 
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+<style>
+
+a:link {color: black;}
+
+</style>
+
 ## Data Science
 
 * R and RStudio     
@@ -26,6 +39,7 @@ title: "Skills"
   + pagedown
   + pacman
   + installer
+  + blogdown
 * Python     
   Libraries include:
   + Pandas
@@ -36,7 +50,9 @@ title: "Skills"
   + Oracle
   + MySQL
 * Tableau
-* Excel / Google Sheets
+* Spreadsheets
+  + Excel 
+  + Google Sheets
 * Data Intuition and Insight 
 * Statistics
   <!-- Topics including: -->
@@ -70,6 +86,7 @@ title: "Skills"
   + Real-Time Linux
   + Embedded Linux
   + Raspbian OS
+  + Windows IOT
 * Internet of Things
   + Communications
   + Information
@@ -84,53 +101,73 @@ title: "Skills"
     - Inductors
     - Capacitors 
     - Resistors
+  + Methods and Techniques
+    - Node
+    - Mesh
 
 ## Web Development
 
 * HTML
 * CSS
-<!-- * Javascript -->
-* YAML and Rmd     
-  Basic building blocks:
-  + knitr (R package)
-  + _site.yml
-  + index.Rmd
+* Javascript
+<!-- * Node.JS -->
+<!-- * Express.JS -->
+<!-- * PHP -->
+* R-based webpages
+  + YAML and Rmd     
+    Basic building blocks:
+    - knitr (R package)
+    - _site.yml
+    - index.Rmd
+  + TOML and Rmd     
+    Basic building blocks:
+    - blogdown (R package)
+    - config.toml
+    - index.Rmd
   
 ## Mathematics
 
-* MATLAB
-* Mathematica
-* Python
-  + Functional
-  + Mathematical
-* Discrete Math 
+* Functional Programming
+  + MATLAB
+  + Mathematica
   + Elisp
   + Erlang
+  <!-- + Clojure -->
+  + Python
+* Discrete Math 
 * Differential Calculus 
 * Linear Algebra  
 
-## Programming
+## General Programming
 
-* C/C++
+* C/C++ 
 * Java - Android Studio
-* Python - Arcade Library 
+* Python 
+  + Arcade Library 
+  + Data Structures
   
 ## Operating Systems
 
 * Linux
+* Chrome OS
 * Microsoft Windows
+  + Office 365
   + Active Directory
 * Command lines 
   + Bash
   + Batch
+  <!-- + Powershell -->
 
 ## Industry Knowledge
 
 * Technical Communication
 * Human Relations
-* Teaching
+* Teaching 
 * Research
-* Market Research
+  + Scientific 
+  + Computational
+  + Market 
+  + Data Exploration
 * Project Management
   + Agile
   + Scrum

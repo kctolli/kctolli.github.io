@@ -386,6 +386,17 @@ div.tocify {
 </div>
 
 
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+<style>
+
+a:link {color: black;}
+
+</style>
 <div id="data-science" class="section level2">
 <h2>Data Science</h2>
 <ul>
@@ -414,6 +425,7 @@ Packages include:
 <li>pagedown</li>
 <li>pacman</li>
 <li>installer</li>
+<li>blogdown</li>
 </ul></li>
 <li>Python<br />
 Libraries include:
@@ -429,7 +441,11 @@ Libraries include:
 <li>MySQL</li>
 </ul></li>
 <li>Tableau</li>
-<li>Excel / Google Sheets</li>
+<li>Spreadsheets
+<ul>
+<li>Excel</li>
+<li>Google Sheets</li>
+</ul></li>
 <li>Data Intuition and Insight</li>
 <li>Statistics <!-- Topics including: --> <!-- + Numerical and Graphical Summaries --> <!-- + Measures of Spread --> <!-- + Normal Distribution and Z-scores --> <!-- + Probability   --></li>
 </ul>
@@ -469,6 +485,7 @@ Libraries include:
 <li>Real-Time Linux</li>
 <li>Embedded Linux</li>
 <li>Raspbian OS</li>
+<li>Windows IOT</li>
 </ul></li>
 <li>Internet of Things
 <ul>
@@ -491,6 +508,11 @@ Libraries include:
 <li>Capacitors</li>
 <li>Resistors</li>
 </ul></li>
+<li>Methods and Techniques
+<ul>
+<li>Node</li>
+<li>Mesh</li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
@@ -498,7 +520,10 @@ Libraries include:
 <h2>Web Development</h2>
 <ul>
 <li>HTML</li>
-<li>CSS <!-- * Javascript --></li>
+<li>CSS</li>
+<li>Javascript <!-- * Node.JS --> <!-- * Express.JS --> <!-- * PHP --></li>
+<li>R-based webpages
+<ul>
 <li>YAML and Rmd<br />
 Basic building blocks:
 <ul>
@@ -506,47 +531,58 @@ Basic building blocks:
 <li>_site.yml</li>
 <li>index.Rmd</li>
 </ul></li>
+<li>TOML and Rmd<br />
+Basic building blocks:
+<ul>
+<li>blogdown (R package)</li>
+<li>config.toml</li>
+<li>index.Rmd</li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 <div id="mathematics" class="section level2">
 <h2>Mathematics</h2>
 <ul>
+<li>Functional Programming
+<ul>
 <li>MATLAB</li>
 <li>Mathematica</li>
-<li>Python
-<ul>
-<li>Functional</li>
-<li>Mathematical</li>
-</ul></li>
-<li>Discrete Math
-<ul>
 <li>Elisp</li>
-<li>Erlang</li>
+<li>Erlang <!-- + Clojure --></li>
+<li>Python</li>
 </ul></li>
+<li>Discrete Math</li>
 <li>Differential Calculus</li>
 <li>Linear Algebra</li>
 </ul>
 </div>
-<div id="programming" class="section level2">
-<h2>Programming</h2>
+<div id="general-programming" class="section level2">
+<h2>General Programming</h2>
 <ul>
 <li>C/C++</li>
 <li>Java - Android Studio</li>
-<li>Python - Arcade Library</li>
+<li>Python
+<ul>
+<li>Arcade Library</li>
+<li>Data Structures</li>
+</ul></li>
 </ul>
 </div>
 <div id="operating-systems" class="section level2">
 <h2>Operating Systems</h2>
 <ul>
 <li>Linux</li>
+<li>Chrome OS</li>
 <li>Microsoft Windows
 <ul>
+<li>Office 365</li>
 <li>Active Directory</li>
 </ul></li>
 <li>Command lines
 <ul>
 <li>Bash</li>
-<li>Batch</li>
+<li>Batch <!-- + Powershell --></li>
 </ul></li>
 </ul>
 </div>
@@ -556,8 +592,13 @@ Basic building blocks:
 <li>Technical Communication</li>
 <li>Human Relations</li>
 <li>Teaching</li>
-<li>Research</li>
-<li>Market Research</li>
+<li>Research
+<ul>
+<li>Scientific</li>
+<li>Computational</li>
+<li>Market</li>
+<li>Data Exploration</li>
+</ul></li>
 <li>Project Management
 <ul>
 <li>Agile</li>
