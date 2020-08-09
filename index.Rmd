@@ -6,13 +6,32 @@ title: "Kyle Tolliver"
 library(tidyverse, knitr)
 ```
 
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+
 ![](./site_libs/images/me.png)
 
 ## About Me
 
 BYU-Idaho Senior studying Software Engineering and Data Science. I am also working toward a Computer Engineering minor. Expected graduation in December of 2020. I love to learn new things and solve problems.
 
-<!-- ### Quick Facts -->
+<!-- <div style="padding-left:15px;"> -->
+
+<!-- <span class="tooltipr"> -->
+<!-- <a href="javascript:showhide('hovertobegin')">A little more about me</a> -->
+<!--   <span class="tooltipRtext">Quick Fact</span> -->
+<!-- </span> -->
+<!-- <div id="hovertobegin" style="display:none;padding-left:20px;"> -->
+
+
+<!-- </div> -->
+<!-- </div> -->
+
 
 <!-- * [Research Specialist Intern at Lawrence Livermore National Labs](./work.html#Research_Specialist_-_Intern) -->
 <!-- *  -->
