@@ -1,11 +1,11 @@
-﻿Semester,Course,Name,Crds,Grade
+Semester,Course,Name,Crds,Grade
 Transfer,ART 101,Introduction to the Visual Arts and Design,3,P
 Transfer,CHEM 101,Introduction to Chemistry,3,P
 Transfer,ME 101,Intro to Engineering,2,P
 Transfer,CS 124,Intro to Software Development,4,P
 Vertical,CS 101,Intro to Programming ,2,P
 Vertical,CIT 111,Introduction to Databases,3,P
-Vertical,CIT 160,Introduction to Programming,3,P
+Vertical,CIT 160,Introduction to Programming for IT,3,P
 Fall 2017,FDSCI 101,Foundations of Science,2,B-
 Fall 2017,ECEN 101,Intro to Computer Science and Engineering,1,A
 Fall 2017,ECEN 160,Fundamentals of Digital Systems with Lab,4,A

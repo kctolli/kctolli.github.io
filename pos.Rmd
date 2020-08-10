@@ -25,10 +25,14 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
 
 ## Brigham Young University - Idaho
 
+I am senior at BYU-Idaho, with an expected graduation date of December, 2020. <br/> 
+I am studying to get my Bachelor's of Science in Software Engineering with a minor in Computer Engineering. 
+<br/> I am also working on Applied Associates of Science in Data Science.
+
 <div style="padding-left:5px;">
 
 <span class="tooltipr">
-<a href="javascript:showhide('hovertobegin')"><p style="color:black;">I am senior at BYU-Idaho, with an expected graduation date of December, 2020. <br/> I am studying Software Engineering and Data Science, with a minor in Computer Engineering.</p><p style="color:blue;">Grades</p></a>
+<a href="javascript:showhide('hovertobegin')"><p style="color:blue;">Grades</p></a>
   <span class="tooltipRtext">My cumulative GPA is 3.66 out of 4 </span>
 </span>
 <div id="hovertobegin" style="display:none;padding-left:20px;">
@@ -45,6 +49,7 @@ pander(grade, caption = "Applicable Coursework - Grades")
 * Intro to Software Development using C++
 * Object-Oriented Development using C++
 * Software Design and Development using Java
+* Introduction to Programming for IT
 * System Security 
 <!-- * JavaScript Language  -->
 * Senior Practicum 

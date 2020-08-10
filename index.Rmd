@@ -23,7 +23,7 @@ library(tidyverse, knitr)
 
 BYU-Idaho Senior studying Software Engineering and Data Science. I am also working toward a Computer Engineering minor. Expected graduation in December of 2020. I love to learn new things and solve problems.
 
-<div style="padding-left:15px;">
+<div style="padding-left:5px;">
 
 <span class="tooltipr">
 <a href="javascript:showhide('hovertobegin')">A little more about me</a>
