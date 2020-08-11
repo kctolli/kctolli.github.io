@@ -124,7 +124,7 @@ include_graphics(skate)
 
 * Used C++ and Python to recreate this [classic game](https://arcade.ly/games/asteroids/)
 * Created and followed a UML class Diagram
-* Added addition features and graphics 
+* Added additional features and graphics 
   Such as:
     + Made a Thor themed game
     + Added machine gun mode

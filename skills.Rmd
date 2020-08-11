@@ -11,8 +11,6 @@ title: "Skills"
 
 <style>
 
-a:link {color: black;}
-
 </style>
 
 ## Data Science
@@ -46,6 +44,7 @@ a:link {color: black;}
   + Matplotlib
   + Numpy
   + Plotly
+  + Math
 * SQL 
   + Oracle
   + MySQL
@@ -53,13 +52,16 @@ a:link {color: black;}
 * Spreadsheets
   + Excel 
   + Google Sheets
-* Data Intuition and Insight 
+* Data Management
+  + Intuition
+  + Insight 
+  + Wrangling 
+  + Visualization
+  + Exploration
+  + Consulting
+  <!-- + Mining -->
 * Statistics
-  <!-- Topics including: -->
-  <!-- + Numerical and Graphical Summaries -->
-  <!-- + Measures of Spread -->
-  <!-- + Normal Distribution and Z-scores -->
-  <!-- + Probability   -->
+<!-- * Machine Learning -->
 
 ## Computer Engineering
 
@@ -69,9 +71,18 @@ a:link {color: black;}
   + Assembly
   + Register-level C 
   + Simulink
+* Embedded Operating Systems
+  + ROS (Robot Operating System)
+  + VxWorks
+  + FreeRTOS 
+  + Real-Time Linux
+  + Embedded Linux
+  + Raspberry OS (Raspian)
+  + Windows IOT
 * Digital Systems
-  + Verilog
-  + VHDL
+  + HDL 
+    - Verilog
+    - VHDL
   + FPGA 
     - Artix 7
     - Kintex 7
@@ -79,14 +90,7 @@ a:link {color: black;}
   + Simulation
     - Verilog Test Bench
     - Logisim
-* Embedded Operating Systems
-  + ROS (Robot Operating System)
-  + VxWorks
-  + FreeRTOS 
-  + Real-Time Linux
-  + Embedded Linux
-  + Raspbian OS
-  + Windows IOT
+  + Logic Integrated Circuits  
 * Internet of Things
   + Communications
   + Information
@@ -113,16 +117,28 @@ a:link {color: black;}
 <!-- * Node.JS -->
 <!-- * Express.JS -->
 <!-- * PHP -->
+<!-- * NoSQL -->
+<!-- * APIs -->
 * R-based webpages
-  + YAML and Rmd     
+  + Basic knitr    
     Basic building blocks:
     - knitr (R package)
     - _site.yml
     - index.Rmd
-  + TOML and Rmd     
+  + Blogdown    
     Basic building blocks:
     - blogdown (R package)
     - config.toml
+    - index.Rmd
+  <!-- + Bookdown     -->
+  <!--   Basic building blocks: -->
+  <!--   - bookdown (R package) -->
+  <!--   - config.toml -->
+  <!--   - index.Rmd   -->
+  + Pagedown    
+    Basic building blocks:
+    - pagedown (R package and templates)
+    - knitr (R package)
     - index.Rmd
   
 ## Mathematics
@@ -143,8 +159,14 @@ a:link {color: black;}
 * C/C++ 
 * Java - Android Studio
 * Python 
-  + Arcade Library 
+  + Arcade  
+  + Random 
+* Methods
+  + Procedural
+  + Object-Oriented
   + Data Structures
+  + Sorts
+  + Algorithms 
   
 ## Operating Systems
 
@@ -157,6 +179,7 @@ a:link {color: black;}
   + Bash
   + Batch
   <!-- + Powershell -->
+  <!-- + Task Scheduler -->
 
 ## Industry Knowledge
 
@@ -172,6 +195,9 @@ a:link {color: black;}
   + Agile
   + Scrum
   + Waterfall
+  + Kanban Board
+    - Trello
+    - Jira
 * Git
   + Github
   + Bash

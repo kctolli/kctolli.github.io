@@ -26,8 +26,8 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
 ## Brigham Young University - Idaho
 
 I am senior at BYU-Idaho, with an expected graduation date of December, 2020. <br/> 
-I am studying to get my Bachelor's of Science in Software Engineering with a minor in Computer Engineering. 
-<br/> I am also working on Applied Associates of Science in Data Science.
+I am studying to get my Bachelor's of Science in Software Engineering with a minor in Computer Engineering. <br/> 
+I am also working towards an Applied Associates of Science in Data Science.
 
 <div style="padding-left:5px;">
 
@@ -98,13 +98,14 @@ pander(grade, caption = "Applicable Coursework - Grades")
 #### General
 
 * Family and Human Relations
-* Writing and Reasoning
 * Introduction to the Visual Arts and Design
+* Writing and Reasoning
 * Technical Communication
 
 ## Moorpark High School
 
-I was able to take some college level courses in the process of getting my High School Diploma. 
+I was able to take some college level courses in the process of getting my High School Diploma. <br/> 
+Moorpark High School graduating class of 2017.  
 
 * Geometry Honors
 * Algebra 2 Accelerated 

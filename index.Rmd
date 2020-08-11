@@ -35,15 +35,28 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 
 * [Research Specialist Intern at Lawrence Livermore National Labs](./work.html#Research_Specialist_-_Intern)
 * Member of Tau Beta Pi - Idaho Delta Chapter
-* Inquisitive and Motivated
+* Inquisitive, Motivated and Driven
 
-#### My Family
+<!-- #### My Family -->
 
-* Youngest of 5 children, with 1 girl and 4 boys
-* Being the youngest I have many siblings to look up (metaphorically because I'm physically the tallest) as role models and learn from
-* Now there are 13 members of my family including in-laws as well as nieces and nephews
-* Born and raised in California near Ventura and Santa Barbara
-<!-- * Parents now live in Utah  -->
+<!-- * Youngest of 5 children, with 1 girl and 4 boys -->
+<!-- * Being the youngest I have many siblings to look up (metaphorically because I'm physically the tallest) as role models and learn from -->
+<!-- * Now there are 13 members of my family including in-laws as well as nieces and nephews -->
+<!-- * Born and raised in California near Ventura and Santa Barbara -->
+<!-- * Parents now live in Utah -->
+
+#### Volunteer Experience  
+
+* Tau Beta Pi - Idaho Delta Chapter Secretary
+* Held many different positions in Church
+* Moorpark Teaching Zoo (EATM) Fence
+  + Eagle Scout Project
+  + Lead 10 to 15 youth in building the fence
+  + Created a project report
+  + What I learned
+    - Leadership
+    - Communication
+    - Delegation 
 
 </div></div>
 
@@ -62,11 +75,11 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 
 ## Highlights
 
-* [Data Science Coursework](./Data-Science/index.html)
 * [COVID-19 Research and Consulting](https://kctolli.github.io/COVID-19/index.html)
+* [Senior Design Project](https://ecen499-nasa.github.io/)
+* [Data Science Coursework](./Data-Science/index.html)
 * [Web Design and Development](https://wdd-100-dry.glitch.me/)
 * [Digital System Design Coursework](https://ecen-340.glitch.me/)
-* [Senior Design Project](https://ecen499-nasa.github.io/)
 
 <!-- <br />  -->
 
