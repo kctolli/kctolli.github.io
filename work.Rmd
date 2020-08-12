@@ -10,7 +10,7 @@ July 2020 - September 2020 --- Remote
 
 * Tested security technologies using binary analysis
 * Conducted market research on new security techniques
-* Followed Scrum methodology 
+* Followed Scrum methodology and Kanban (Trello) board
 * [Research & Business Development Center's](http://alps.rbdcenter.org/) Advanced Applied Learning Projects
 
 ## NASA - National Aeronautics and Space Administration

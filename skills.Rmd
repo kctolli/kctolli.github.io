@@ -165,8 +165,7 @@ title: "Skills"
   + Procedural
   + Object-Oriented
   + Data Structures
-  + Sorts
-  + Algorithms 
+  + Algorithms and Sorts
   
 ## Operating Systems
 

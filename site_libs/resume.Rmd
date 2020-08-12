@@ -97,7 +97,7 @@ Remote
 
 + Tested security technologies using binary analysis
 + Conducted market research on new security techniques
-+ Followed Scrum methodology  
++ Followed Scrum methodology and Kanban (Trello) board  
 
 ### Student Senior Design Project
 
