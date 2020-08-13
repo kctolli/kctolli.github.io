@@ -7,6 +7,13 @@ library(tidyverse)
 library(knitr)
 ```
 
+<!-- ## Blogdown Cookbook -->
+
+<!-- Ongoing -->
+
+<!-- * Used R-package Blogdown to create blog -->
+<!-- *      -->
+
 ## COVID-19 Analytics
 
 2020 -- Over 165 hours 

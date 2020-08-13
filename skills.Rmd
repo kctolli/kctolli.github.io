@@ -69,6 +69,7 @@ title: "Skills"
   + C/C++ 
   + Python
   + Assembly
+  + Machine code
   + Register-level C 
   + Simulink
 * Embedded Operating Systems
@@ -139,7 +140,7 @@ title: "Skills"
     Basic building blocks:
     - pagedown (R package and templates)
     - knitr (R package)
-    - index.Rmd
+    - Rmarkdown
   
 ## Mathematics
 
@@ -178,7 +179,7 @@ title: "Skills"
   + Bash
   + Batch
   <!-- + Powershell -->
-  <!-- + Task Scheduler -->
+  + Windows Task Scheduler
 
 ## Industry Knowledge
 
@@ -188,8 +189,9 @@ title: "Skills"
 * Research
   + Scientific 
   + Computational
+  + Security
   + Market 
-  + Data Exploration
+  + Data
 * Project Management
   + Agile
   + Scrum
