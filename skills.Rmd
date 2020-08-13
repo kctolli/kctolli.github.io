@@ -15,7 +15,7 @@ title: "Skills"
 
 ## Data Science
 
-* R and RStudio     
+* R, Rmd and RStudio     
   Packages include:
   + tidyverse
     - ggplot 2 
@@ -38,7 +38,7 @@ title: "Skills"
   + pacman
   + installer
   + blogdown
-* Python     
+* Python and Jupyter Notebook     
   Libraries include:
   + Pandas
   + Matplotlib

@@ -37,9 +37,21 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 * Member of Tau Beta Pi - Idaho Delta Chapter
 * Inquisitive, Motivated and Driven
 
+#### Top Skills
+
+* R/Rmd
+* Python 
+* C/C++
+* Embedded C
+* Verilog
+* HTML
+* CSS
+* Github
+
 #### Volunteer Experience  
 
 * Tau Beta Pi - Idaho Delta Chapter Secretary
+* BYU-Idaho Data Science Society Assistant Project Manager
 * Held many different positions in Church
 * [Moorpark Teaching Zoo (EATM)](https://www.moorparkcollege.edu/departments/administrative/institutional-research-and-planning/student-learning-outcomes/program-15) Fence
   + Eagle Scout Project
