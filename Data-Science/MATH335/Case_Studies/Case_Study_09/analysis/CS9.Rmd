@@ -1,0 +1,85 @@
+---
+title: "CASE STUDY 9"
+subtitle: "Interacting with time"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    code_folding: hide
+    fig_align: center
+    fig_height: 6
+    fig_width: 12
+    keep_md: yes
+    toc: yes
+    toc_float: yes
+editor_options:
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+library(tidyverse)
+library(dygraphs)
+library(timetk)
+library(tidyquant)
+library(lubridate)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+tickers_today <- c("CXW", "F", "GM", "JCP", "KR", "WDC", "NKE","T", "WDAY", "WFC", "WMT")
+stocks <- tq_get(tickers_today) %>% select(date, symbol, adjusted)
+stock <- stocks %>% pivot_wider(names_from = symbol, values_from = adjusted)
+stk <- tk_xts(stock, date_var = date)
+
+sys_now <- now() - ddays(x = 1)
+sys_minus_5yr <- sys_now - dyears(x = 5)
+```
+
+## Background
+
+Your data science income has ballooned, and you need to find somewhere to invest $25,000 that you have saved over the last year. You have a savvy investment friend that is kind enough to tell you ten stocks he has been watching during the last year. You will need to visualize the last five years performance to help in the in the conversation with your friend.
+
+Your friend is going to give you his tickers at the beginning of your half-hour meeting with him (he is a busy friend). You will need to build an .Rmd file that will build a suite of visualizations rapidly for your conversation. You will need a series of stock performance graphics using library(dygraphs) and library(ggplot2). In real life, you might use one or the other, but this task is built to help you move from ts and xts to tidy objects for visualization.
+
+Specifically, in class the Tuesday following this case study you will get 5 - 10 ticker symbols and will need to build visualizations quickly that allows you to answer questions about the stocks in a few seconds.
+
+## Tasks
+
+### Before Class
+
+* [X] For your coding development use these tickers - tickers_today <- c("CXW", "F", "GM", "JCP", "KR", "WDC", "NKE","T", "WDAY", "WFC", "WMT")
+* [X] Use library(dygraphs) to build interactive visualizations of the stock performances over the last 5 years.
+* [X] Make a library(ggplot2) graphic that helps you build a solid question around how an investor would use volume in their trading strategy
+* [X] Create an .Rmd file with 1-2 paragraphs summarizing your graphics and the choices you made in your visualization
+* [X] Compile your .md and .html file into your git repository
+
+### After Class
+
+* [ ] Find two other student’s compiled files in their repository and provide feedback using the issues feature in GitHub (If they already have three issues find a different student to critique)
+* [ ] Address 1-2 of the issues posted on your project and push the updates to GitHub
+* [X] Publish your case study to Rstudio Connect at shiny.byui.edu
+
+## Data Wrangling & Visualization
+
+```{r tidy_plot}
+dygraph(stk) %>% 
+  dyRangeSelector(dateWindow = c(sys_minus_5yr, sys_now))
+
+stocks %>% filter(date >= sys_minus_5yr) %>% 
+ggplot(aes(x = date, y = adjusted, color = symbol)) + 
+  geom_line() +
+  labs(color = "Company") + 
+  theme_bw()
+
+```
+
+## Conclusions
+
+I plotted a interactive line with dygraphs and tried to implement the same with ggplot. 
+
+[RStudio connect](https://shiny.byui.edu/connect/#/apps/928/access)

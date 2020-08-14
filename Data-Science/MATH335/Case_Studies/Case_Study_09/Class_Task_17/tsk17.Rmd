@@ -1,0 +1,86 @@
+---
+title: "Task 17"
+subtitle: "My investment is better than yours"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(tidyquant)
+```
+
+## Background
+
+The stock market is overflowing with data. There are many packages in R that allow us to get quick access to information on publicly traded companies. Imagine that you and a friend each purchased about $1,000 of stock in three different stocks at the start of October last year, and you want to compare your performance up to this week. Use the stock shares purchased and share prices to demonstrate how each of you fared over the period you were competing (assuming that you did not change your allocations).
+
+## Reading
+
+* [tidyquants R package](https://github.com/business-science/tidyquant)
+
+## Tasks
+
+* [X] Take notes on your reading of the new R package in the README.md or in a ‘.R’ script in the class task folder
+* [X] List the three stocks that your friend picks and the three that you pick
+* [X] Pull the price performance data using library(tidyquant) or library(quantmod)
+* [X] Build a visualization that shows who is winning each day of the competition
+* [X] In the previous visualization or with another visualization show which stock is helping the winner of the competition
+* [X] Create an .Rmd file with 1-2 paragraphs summarizing your graphics and the choices you made in the data presentation
+* [X] Compile your .md and .html file into your git repository
+
+## Data Wrangling and Visualization
+
+```{r tidy_data}
+# Use this R-Chunk to clean & wrangle your data!
+index <- tq_index_options()
+dow <- tq_index("DOW")
+
+stock_price <- tq_get(c("AAPL", "MSFT", "DIS", "WMT", "JNJ", "MCD"), get = "stock.prices") %>% 
+  select(symbol, date, adjusted)
+
+# Use this R-Chunk to plot & visualize your data!
+stock_price %>% 
+ggplot(aes(x = date, y = adjusted, color = symbol)) +
+  geom_smooth(se = FALSE) + 
+  facet_wrap(~ symbol) +
+  scale_color_manual(values = c("blue", "blue", "red", "red", "blue", "red")) + 
+  theme_bw() +
+  theme(legend.position = "none")
+```
+
+## Conclusions
+
+From the graph you can tell that the blue won. Apples stock has grown rapidly in the 10 years. McDonalds is the second highest growth giving red a fighting chance with the blue. 
+
+## Class Notes
+
+```{r dt}
+library(DT)
+datatable(iris)
+
+datatable(head(iris), class = 'cell-border stripe') ## Mod 1
+
+datatable(head(iris), editable = 'cell') ## Mod 2
+```
+
+## Reading Notes
+
+* tidyquant integrates the best resources for collecting and analyzing financial data, zoo, xts, quantmod, TTR, and PerformanceAnalytics, with the tidy data infrastructure of the tidyverse allowing for seamless interaction between each. 
+  + You can now perform complete financial analyses in the tidyverse.

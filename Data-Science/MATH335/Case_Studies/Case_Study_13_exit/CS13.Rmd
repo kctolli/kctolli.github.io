@@ -1,0 +1,40 @@
+---
+title: "CASE STUDY 13"
+subtitle: "Finish Well"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+## Background
+
+Your case study and weekly tasks will provide time to makes sure you have wrapped up the class and get set for a great future in data science. Make sure you have address all the end of semester items.
+
+Please write your cover letter to me about the class that uses the syllabus to justify your grade. Your resume would be in the format you would provide to a job or internship.
+
+## Tasks
+
+* [X] Join the BYUI LinkedIn, GitHub, Slack groups 
+  + Make sure your picture is placed in your profile.
+* [ ] A cover letter 
+  + Stating the key concepts and techniques 
+    - Your learning during projects 
+    - Your goals to continue learning in this area 
+  + Include a grade request that represents your knowledge and task completion
+* [X] A current resume that includes the skills you have learned during our projects which you would submit to any future jobs
+* [X] A semester task form that records your completed tasks during the semester (electronic)
+* [X] Semester project submission on GitHub
+* [X] Submit this material electronically to your repository 
+  + Schedule a visit with me

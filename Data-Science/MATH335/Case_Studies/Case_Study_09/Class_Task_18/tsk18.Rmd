@@ -1,0 +1,80 @@
+---
+title: "Task 18"
+subtitle: "The US Grocer"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") #run this line once in console to get package
+library(tidyverse)
+library(dygraphs)
+library(timetk)
+library(tidyquant)
+library(lubridate)
+
+index <- tq_index_options()
+dow <- tq_index("DOW")
+```
+
+```{r load_data}
+sys_now <- now() - ddays(x = 1)
+sys_minus_5yr <- sys_now - dyears(x = 5)
+sys_minus_2yr <- sys_now - dyears(x = 2)
+
+kroger <- tq_get(c("KR"), get = "stock.prices", from = sys_minus_5yr, to = sys_now) %>% 
+  select(date, adjusted) 
+
+kr <- tk_xts(kroger)
+```
+
+## Background
+
+Interactive visualizations can often be powerful for data investigations. They let your team get at questions in real time. Use the Kroger (KR) stock price to build an interactive visualization of their performance over the last five years. Take some time to build a couple of different visualizations that show Krogers performance. See the task items below for a description.
+
+## Reading
+
+* dygraphs for R
+* DT: An R interface to the Data Tables library
+* timekit R package
+
+## Tasks
+
+* [X] Build the library(dygraphs) plot that shows the Kroger (KR) stock price performance over 5 years.
+* [X] Imaging that you invested $10,000 in kroger about two years ago on April 5th. Make a graph with dygraph that shows performance dyRebase() to $10,000.
+* [X] Annotate the graphic with a note of the reason at two or more time points, or intervals, where the price had significant shifts.
+* [X] Create an .Rmd file with 1-2 paragraphs summarizing your graphics and the choices you made in the data presentation
+* [X] Compile your .md and .html file into your git repository
+
+## Data Wrangling & Visualization
+
+```{r tidy_plot}
+# Use this R-Chunk to wrangle & plot your data!
+dygraph(kr)
+
+dygraph(kr) %>% 
+  dyRangeSelector(dateWindow = c(sys_minus_2yr, sys_now)) %>% 
+  dyRebase(value = 10000) %>% 
+  dyAnnotation("2019-07-23", text = "A", tooltip = "Drop") %>%
+  dyAnnotation("2018-09-07", text = "B", tooltip = "Raised")
+```
+
+## Conclusions
+
+I created a graph that shows the change in stocks of kroger. I picked a drop and a raise in the in the stock. I was able to incorporate lubridate in my wrangling.   

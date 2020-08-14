@@ -1,0 +1,171 @@
+---  
+title: "Task 3"  
+subtitle: "Asking the right questions"
+author: "Kyle Tolliver"  
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+--- 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+Learning how to ask interesting questions takes time. As data scientists we need to learn how to ask questions that data can answer. This task supports your semester project. Note that the reading on data transformation below is necessary for the case study for this week and may be the most important reading of the semester to fully understand.
+
+## Readings
+* Computational Thinking
+* Optional Reading for new programmers
+* Creating Questions for your project (watch the videos that are free)
+* Questions and data science
+* Chapter 5: R for Data Science - Data transformation
+
+## Tasks
+[X] Take notes on your reading of the specified ‘R for Data Science’ chapter in the README.md or in a ‘.R’ script in the class task folder
+
+[X] Develop a few novel questions that data can answer
+
+* [X] Get feedback from 5-10 people on their interest in your questions and summarize this feedback 
+* [X] Find other examples of people addressing your question
+* [X] Present your question to a data scientist to get feedback on the quality of the question and if it can be addressed in 2-months.
+
+[X] Create one .rmd file that has your report
+
+* [X] Have a section for each question
+
+[X] Be prepared to discuss your results in the upcoming class
+
+## Reading Notes
+
+ggplot --  implements the grammar of graphics, a coherent system for describing and building graphs
+
+geom_col(mapping = NULL, data = NULL, position = "stack", ...,
+  width = NULL, na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE)
+  
+geom_line(mapping = NULL, data = NULL, stat = "identity",
+  position = "identity", na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE, ...)
+
+library(tidyverse) includes ggplot2, tibble, tidyr, readr, purr, dplyr, stringr, and forcats
+
+*ggplot set up* --
+
+* ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+* ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(
+     mapping = aes(<MAPPINGS>),
+     stat = <STAT>, 
+     position = <POSITION>) +
+  <COORDINATE_FUNCTION> +
+  <FACET_FUNCTION>  
+  
+*Aesthetic* 
+
+* visual property of the objects in your plot 
+* include things like the size, the shape, or the color of your points 
+
+*Facets*
+
+* particularly useful for categorical variables
+* subplots that each display one subset of the data 
+* facet_wrap()/facet_grid() - first argument should be a formula created with ~
+
+*Geom*
+
+* Geometrical object that a plot uses to represent data
+
+*Tibble*
+
+* Data frames
+* Wrangle
+
+*Filter*
+
+* Allows you to subset observations based on their values
+* The first argument is the name of the data frame
+* NA -- not availables -- unknown value
+
+*Arrange*
+
+* Similar to filter()
+* Except that instead of selecting rows, it changes their order
+
+*Select*
+
+* Allows you to rapidly zoom in on a useful subset using operations based on the names of the variables
+
+*Mutate*
+
+* Always adds new columns at the end of your dataset so we’ll start by creating a narrower dataset so we can see the new variables
+
+## In Class Notes
+
+%>% -- Means "Then", This is a pipe
+
+### Data Manipulation Commands
+
+* Filter - filter your data to a smaller set of important rows.
+* Sort - Organize the row order of my data
+* Select - select specific columns to keep or remove
+* Mutate - add new mutated (changed) variables as columns to my data.
+* Summarise - build summaries of the columns specified
+* Group by - divide your data into groups. Often used with summarise
+* Stack - convert data from “wide” to “long” format by moving column names into a key column, gathering the column values into a single value column
+* Unstack - convert data from “long” to “wide” format by using unique values of a key column as new column names, and values being placed in one of the new columns based on its key value in the original data structure
+* Seperate - parse, or break apart, each cell into several cells (usually applied to columns, but can be applied row wise as well)
+* Unite - collapse or combine cells across several columns to make a single column
+
+Use dplyr and tidyr --- Part of tidyverse
+
+## Data Questions 
+
+### Embedded Systems
+
+1. [What radiation levels switch the states of the FPGA?](https://www.sciencedirect.com/science/article/pii/S1738573317302723)
+
+* What causes Radiation?
+* Pressure differences?
+
+2. [Most used Embedded System in industry?](https://www.totalphase.com/blog/2017/06/embedded-systems-applications-across-industries/)
+
+3. [Most used language in Embedded Systems (other than Embedded C)?](https://www.ubuntupit.com/top-15-best-embedded-systems-programming-languages/)   
+
+4. Most common used social engineering technique?
+
+### MATH/CS 335
+
+1. What is the average grade of the students that attend RLab?
+2. Are student that go to RLab higher then then those that don't?
+3. Grade earned compared to Major?
+4. Does those that have taken MATH/CS 335 do better in CS 450?
+5. Does those that have taken MATH 325 do better in MATH/CS 335?
+
+### Feedback
+
+1. Ben said that number 3 would be the easiest.
+
+2. Jacob said that number 2 would be cool.  
+
+3. Seth said to talk to Hathaway and figure out if the data can be used
+
+4. Braden said the questions are great. 
+
+5. Jasean said would the data science questions are great.
+
+### Sharing with Data Scientist
+
+* Talked to ***Avery Robbins***
+
+* Said that I should dive deeper into the questions. 
+* Likes the 335 questions not sure if I can get the data for them  

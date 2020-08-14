@@ -1,0 +1,168 @@
+---
+title: "Task 21"
+subtitle: "Interactive Maps"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+library(tidyverse)
+library(sf)
+library(fs)
+library(downloader)
+library(USAboundaries)
+library(ggrepel)
+library(leaflet)
+library(htmltools)
+
+options(scipen = 999)
+```
+
+```{r continent_function}
+my_continent <- function(dat){dat %>% unique() %>% filter(!state_abbr %in% c("AK","HI","PR"))}
+```
+
+```{r load_data_19}
+state <- my_continent(us_states())
+IDcounties <- my_continent(us_counties()) %>% filter(state_abbr == "ID")
+
+city <- my_continent(us_cities()) %>% 
+  group_by(state_name) %>% 
+  top_n(3, population)
+```
+
+```{r str_function}
+my_str <- function(dat){dat %>% unlist() %>% str_flatten("|")}
+```
+
+```{r tidy_data_19}
+city_max <- my_str(city %>%
+  group_by(state_abbr) %>% 
+  summarise(max(population)) %>% 
+  select(`max(population)`))
+
+city_min <- my_str(city %>%
+  group_by(state_abbr) %>% 
+  summarise(min(population)) %>% 
+  select(`min(population)`))
+
+cities <- city %>% 
+  mutate(newpop = (population/1000)) %>% 
+  group_by(state_abbr) %>% 
+  mutate(rank = case_when(str_detect(population, city_max) ~ 1, str_detect(population, city_min) ~ 3, TRUE ~ 2))
+
+top_cities <- cities %>% filter(rank == 1)
+```
+
+```{r load_path_20}
+pathb <- "https://byuistats.github.io/M335/data/shp.zip"
+pathw <- "https://opendata.arcgis.com/datasets/1abb666937894ae4a87afe9655d2ff83_1.zip?outSR=%7B%22latestWkid%22%3A102605%2C%22wkid%22%3A102605%7D"
+pathd <- "https://opendata.arcgis.com/datasets/e163d7da3b84410ab94700a92b7735ce_0.zip?outSR=%7B%22latestWkid%22%3A102605%2C%22wkid%22%3A102605%7D"
+pathh <- "https://research.idwr.idaho.gov/gis/Spatial/Hydrography/streams_lakes/c_250k/hyd250.zip"
+```
+
+```{r unzip_function}
+read_my_zip <- function(my_path){
+  df <- tempfile()
+  uf <- tempfile()
+  download(my_path, df, mode = "wb")
+  unzip(df, exdir = uf)
+  dataset <- read_sf(uf)
+  file_delete(df)
+  dir_delete(uf)
+  dataset
+}
+```
+
+```{r tidy_data_20}
+big_dams <- read_my_zip(pathd) %>% 
+  mutate(SurfaceAre = parse_number(SurfaceAre)) %>% 
+  filter(SurfaceAre > 50)
+
+big_wells <- read_my_zip(pathw) %>% 
+  filter(Production > 5000) 
+
+river <- read_my_zip(pathh) %>% 
+  filter(str_detect(FEAT_NAME, "Snake River") | str_detect(FEAT_NAME, "Henry"))
+
+idaho <- read_my_zip(pathb) %>% 
+  filter(StateName == "Idaho" & StateFIPSN == 16)
+```
+
+## Background
+
+Choose from Task 19 or Task 20 and recreate your plot using leaflet
+
+## Reading 
+
+* Leaflet for R: Introduction
+* Leaflet for R: The Map Widget
+* Leaflet for R: Basemaps
+* Leaflet for R: Markers
+* Leaflet for R: Popups and Labels
+* Leaflet for R: Lines and Shapes
+* Leaflet for R: Colors
+
+## Tasks
+
+*See tasks for Task 19 (Leaflet)*
+
+* [X] Create a plot that closely matches my example
+  + [X] library(USAboundaries) has three useful functions - us_cities(), us_states(), and us_counties()
+
+*See tasks for Task 20 (Leaflet)*
+
+## Data Visualization
+
+### Task 19
+
+```{r plot_19}
+ggplot() + 
+  geom_sf(data = state, fill = NA) +
+  geom_sf(data = IDcounties, fill = NA) +
+  geom_sf(data = cities, aes(size = newpop, color = rank)) +
+  theme_bw() +
+  labs(size = "Population (1000)") +
+  guides(color = FALSE) + 
+  geom_label_repel(data = top_cities, aes(label = city, geometry = geometry), stat = "sf_coordinates") +
+  theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(), axis.text.y=element_blank(), axis.ticks.y=element_blank()) 
+```
+
+### Task 20
+
+```{r plot_20}
+# Use this R-Chunk to clean & wrangle your data!
+ggplot() +
+  geom_sf(data = idaho, fill = "white") +
+  geom_sf(data = river, color = "blue", size = 2) +
+  geom_sf(data = big_dams, color = "red", pch = 7, aes(size = SurfaceAre)) +
+  geom_sf(data = big_wells) +
+  theme_bw() +
+  labs(size = "Dam Surface Area (square acres)", title = "Idaho Water Works") +
+  coord_sf(crs = st_crs(3857))
+```
+
+### Task 21
+
+#### Task 19 Plot
+```{r plot_19/21}
+leaflet(data = state) %>% 
+  addTiles() %>% 
+  addPolygons(data = IDcounties, fillColor = topo.colors(10, alpha = NULL), color = "black") %>% 
+  addCircles(data = cities, color = "red") %>% 
+  addMarkers(data = top_cities, popup = ~htmlEscape(city)) 
+```

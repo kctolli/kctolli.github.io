@@ -1,0 +1,140 @@
+---
+title: "Task 7"
+subtitle: "Data to Answer Questions"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+  editor_options: 
+    chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(nycflights13)
+here <- here::here()
+setwd(here)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+
+```
+
+## Background
+
+Finding good data takes time, and can take longer than the time to tidy your data. This task could easily take 3-6 hours to find the data you need for your semester project. After you find good data sources make sure to complete the remaining tasks.
+
+## Reading
+
+* What do people do with new data
+* Finding data to answer your question
+* Find a post from the functional art
+* Chapter 20: R for Data Science - Vectors
+* Chapter 18: R for Data Science - Pipes
+
+## Tasks
+
+[X] Take notes on your reading of the specified ‘R for Data Science’ chapter in the README.md or in a ‘.R’ script in the class task folder
+
+[X] Review the “What do people do with new data" link above and write one quote that resonated with you in your .Rmd file.
+
+[ ] Build an interactive document that has links to sources with a description of the quality of each
+
+* [ ] Find 3-5 potential data sources (that are free) and document some information about the source
+* [ ] Build an R script that reads in, formats, and visualizes the data using the principles of exploratory analysis
+* [ ] Write a short summary of the read in process and some coding secrets you learned
+* [ ] Include 2-3 quick visualizations that you used to check the quality of your data
+* [ ] Summarize the limitations of your final compiled data in addressing your original question
+
+[X] After formatting your data identify any follow on or alternate questions that you could use for your project
+
+## Data 
+
+### Sources
+
+#### Embedded Systems
+
+1. [What radiation levels switch the states of the FPGA?](https://www.sciencedirect.com/science/article/pii/S1738573317302723)
+
+2. [Most used Embedded System in industry?](https://www.totalphase.com/blog/2017/06/embedded-systems-applications-across-industries/)
+
+3. [Most used language in Embedded Systems (other than Embedded C)?](https://www.ubuntupit.com/top-15-best-embedded-systems-programming-languages/)   
+
+4. Most common used social engineering technique?
+
+#### MATH/CS 335
+
+1. What is the average grade of the students that attend RLab?
+2. Are student that go to RLab higher then then those that don't?
+3. Grade earned compared to Major?
+4. Does those that have taken MATH/CS 335 do better in CS 450?
+5. Does those that have taken MATH 325 do better in MATH/CS 335?
+
+#### Job Comparsions
+
+1. [What is the salary of data Sciencists?](https://neuvoo.com/salary/?job=data+scientist)    
+1a. Best state to work in?
+
+2. [What is the income of an Embedded Systems Engineer?](https://neuvoo.com/salary/?job=Embedded%20Systems%20Engineer)   
+2a. Best state to work in?
+
+3. [What is the salary of a Security Specialist?](https://neuvoo.com/salary/?job=Security+Admin)    
+3a. Best state to work in?
+
+### Analysis and Visualizations
+
+See neuvoo.com
+
+### Process
+
+* Read in data
+* Format it
+* Analysis Data
+* Visualize
+
+### Limitations
+
+* Not enough data
+* Data not well organized
+* Time to Analysis 
+* Resources 
+
+### Follow on questions
+
+I came across that the questions I came up with first don't have enough data. 
+I also had questions about 335 it self so Hathaway said there isn't data for that. 
+
+How do I get the data needed to analysis (answer these questions)? 
+
+## Reading Notes
+
+### Ch 20 - Vectors
+
+* Atomic vectors, of which there are six types: logical, integer, double, character, complex, and raw. 
+* Integer and double vectors are collectively known as numeric vectors.
+* Lists, which are sometimes called recursive vectors because lists can contain other lists.
+
+### Ch 18 - Pipes
+
+%<>% - Assignment with pipe
+
+### What do people do with new data 
+
+"Interview the source, if possible, to know all of the problems with the data, use limitations, caveats, etc." — Evan Thomas Paul
+
+## Class Notes   
+### STEM Fair

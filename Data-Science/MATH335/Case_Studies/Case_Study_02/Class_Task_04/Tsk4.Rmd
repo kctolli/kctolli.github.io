@@ -1,0 +1,61 @@
+---  
+title: "Task 4"  
+subtitle: "Let’s git going"
+author: "Kyle Tolliver"  
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+You have just been hired to a new data science team, and you need to collaborate on projects. The team lead told you to connect to your git repository on Github and edit the README.md in your repository. She wants you to describe who you are in a short paragraph.
+
+
+## Readings
+* MCS 335, Git, and Github use
+* Why Git, Git, and GitHub setup (optional)
+* Getting Github and Git connected to R-Studio (optional)
+* Chapter 8: R for Data Science - Projects (optional)
+* R-Studio and the Git GUI (optional)
+
+## Tasks
+
+[X] Install git on your computer
+
+[X] Make sure your GitHub account is registered
+
+[X] Work through readings on git and github
+
+[X] Make sure git works in R-Studio
+
+[X] Update your README.md in your repository (you will need to give me time to create your repo after you post your username)
+
+* [X] Type one or two sentences that describe you 
+* [X] Make sure you pull and push
+
+[X] Get your previous class tasks and case studies into the appropriate folders and add, commit, push with git
+
+### Additional Links
+
+* Chapter 4: Happy Git and Github for the useR - Installation
+* Chapter 5: Happy Git and Github for the useR - GitHub
+* Chapter 7: Happy Git and Github for the useR - Install Git
+* Chapter 8: Happy Git and Github for the useR - Using Git
+* Chapter 10: Happy Git and Github for the useR - Version Control
+* git
+* githug
+* Git for R users
+* Getting Ready
+* Intro Tutorial
+* Advanced Tutorial

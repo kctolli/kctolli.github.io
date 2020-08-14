@@ -1,0 +1,102 @@
+---
+title: "Task 19"
+subtitle: "Spatial Data and Measure Data"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+library(tidyverse)
+library(sf)
+library(USAboundaries)
+library(ggrepel)
+library(maps)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+
+```
+
+## Background
+
+Up to this point, we have dealt with data that fits into the tidy format without much effort. Spatial data has many complicating factors that have made handling spatial data in R complicated. Big strides are being made to make spatial data tidy in R. However; we are in the middle of the transition.
+
+We will use library(USAboundaries), library(ggrepel), and library(sf) to make a map of the US and show the top 3 largest cities in each state. Specifically, you will use library(ggplot2) and the function geom_sf() to recreate the provided image.
+
+## Reading
+
+* Using SF package with tidyverse
+* SF R package
+* USAboundaries R Package
+* Video on spatial datums
+* Video 2 on spatial datums
+
+## Task
+
+* [X] Create a .png image that closely matches my example
+  + [X] Note that fill = NA in geom_sf() will not fill the polygons with a grey color
+  + [X] Note that library(USAboundaries) has three useful functions - us_cities(), us_states(), and us_counties()
+* [X] Save your script and .png files to GitHub
+
+## Data Wrangling & Visualization
+
+```{r tidy_plot}
+# Use this R-Chunk to clean & wrangle your data!
+states <- sf::st_as_sf(map("state", plot = FALSE, fill = TRUE))
+state <- us_states()
+
+counties <- us_counties() %>% filter(state_abbr == "ID")
+
+city <- us_cities() %>% 
+  filter(!state_abbr %in% c("AK","HI","PR")) %>% 
+  group_by(state_name) %>% 
+  top_n(3, population)
+
+city_max <- city %>%
+  group_by(state_abbr) %>% 
+  summarise(max(population)) %>% 
+  select(`max(population)`) %>% 
+  unlist() %>% 
+  str_flatten("|")
+
+city_min <- city %>%
+  group_by(state_abbr) %>% 
+  summarise(min(population)) %>% 
+  select(`min(population)`) %>% 
+  unlist() %>% 
+  str_flatten("|")
+
+cities <- city %>% 
+  mutate(newpop = (population/1000)) %>% 
+  group_by(state_abbr) %>% 
+  mutate(rank = case_when(str_detect(population, city_max) ~ 1, str_detect(population, city_min) ~ 3, TRUE ~ 2))
+
+top_cities <- cities %>% filter(rank == 1)
+
+ggplot() + 
+  geom_sf(data = states, fill = NA) +
+  geom_sf(data = counties, fill = NA) +
+  geom_sf(data = cities, aes(size = newpop, color = rank)) +
+  theme_bw() +
+  labs(size = "Population (1000)") +
+  guides(color = FALSE) + 
+  geom_label_repel(data = top_cities, aes(label = city, geometry = geometry), stat = "sf_coordinates") +
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank())
+
+ggsave("task19.png")
+```

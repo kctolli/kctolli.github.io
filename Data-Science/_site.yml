@@ -21,9 +21,9 @@ navbar:
       menu:
         - text: "Personal Work"
         - text: "Website"
-          href: https://kctolli.github.io/MATH335/            
+          href: https://kctolli.github.io/Data-Science/MATH335/docs
         - text: "Github"
-          href: https://github.com/kctolli/MATH335
+          href: https://github.com/kctolli/kctolli.github.io/tree/master/Data-Science/MATH335/Case_Studies
         - text: "---------------"  
         - text: "Course Material"
         - text: "Website"

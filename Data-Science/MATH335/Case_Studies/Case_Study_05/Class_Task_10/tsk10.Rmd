@@ -1,0 +1,140 @@
+---
+title: "Task 10"
+subtitle: "Clean and Reformat (aka tidy)"
+author: "Kyle Tolliver"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+library(downloader)
+library(DT)
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+csvdata <- tempfile("tsk9a", fileext = ".csv")
+download("https://raw.githubusercontent.com/byuistats/data/master/Dart_Expert_Dow_6month_anova/Dart_Expert_Dow_6month_anova.csv",mode = "wb", destfile = csvdata)
+datacsv <- read_csv(csvdata) #%>% View() 
+```
+
+## Background
+
+With stock return data from the previous task, we need to tidy this data for the creation of a time series plot. We want to look at the returns for each six-month period of the year in which the returns were reported. Your plot should highlight the tighter spread of the DJIA as compared to the other two selection methods (DARTS and PROS). We need to display a table of the DJIA returns with months on the rows and years in the columns (i.e. “spread” the data).
+
+## Reading
+
+* Chapter 12: R for Data Science - Tidy Data
+* tidy R Package functions
+* openxlsx R package
+
+## Tasks
+
+[X] Take notes on your reading of the specified ‘R for Data Science’ chapter in the class task folder
+
+[X] Import the Dart_Expert_Dow_6month_anova data from GitHub (see details in previous task)
+
+[X] The contestant_period column is not “tidy” we want to create a month_end and year_end column from the information it contains
+
+[X] Save your “tidy” data as an .rds object
+
+[X] Create a plot that shows the six-month returns by the year in which the returns are collected
+
+[X] Create a table using code of the DJIA returns that matches the table shown below (“spread” the data)
+
+[X] Include your plots in an .Rmd file with short paragraph describing your plots.     
+* Make sure to display the tidyr code in your file
+
+[X] Push your .Rmd, .md, and .html to your GitHub repo
+
+## Reading        
+### Ch 12
+
+##### Tidy Data
+
+* Pivot wider and longer
+* Separate
+* Unite
+* Explicitly, i.e. flagged with NA.
+* Implicitly, i.e. simply not present in the data.
+
+## Data Wrangling
+
+```{r tidy}
+tidyrds <- datacsv %>% 
+  separate(contest_period, into = c("begin", "end"), sep = "-") %>% 
+  separate(end, into = c("end_month", "end_year"), sep = -4) %>%  
+  select(-"begin") %>% 
+  na.omit() 
+
+tidyrds %>% 
+  saveRDS(file = "my_tidy_data.rds")
+```
+
+`tidyrds <- datacsv %>% 
+  separate(contest_period, into = c("begin", "end"), sep = "-") %>% 
+  separate(end, into = c("end_month", "end_year"), sep = -4) %>%  
+  select(-"begin") %>% 
+  na.omit() `
+
+## Data Visualization
+
+```{r visual1}
+tidyrds %>% 
+  filter(end_month != "Dec.") %>% 
+  filter(end_month != "Febuary") %>% 
+  ggplot(aes(x = value, y = end_year, color = variable)) + 
+  geom_point() +
+  facet_wrap(~end_month) + 
+  theme_bw()
+```
+
+```{r visual2}
+tidyrds %>% 
+  ggplot(aes(x = value, y = end_year, color = variable)) + 
+  geom_point() + 
+  theme_bw()
+```
+
+```{r visual3}
+tidyrds %>% 
+  filter(end_month != "Dec.") %>% 
+  filter(end_month != "Febuary") %>% 
+  ggplot(aes(x = value, y = end_year, color = end_month)) + 
+  geom_point() + 
+  theme_bw()
+```
+
+I plotted 3 different graphs. The first is showing value vs year with respect to variable and month. The second is showing value vs year with respect to just variable. The third is showing value vs year with respect to just month.
+
+## Data Table
+
+```{r table}
+tidy <- tidyrds %>% 
+  filter(end_month != "Dec.") %>% 
+  filter(end_month != "Febuary") %>% 
+  pivot_wider(names_from = end_year, values_from = value, values_fill = list(value = 0)) %>%
+  select(-variable)
+
+datatable(tidy)
+
+tidy %>% 
+  saveRDS(file = "my_data.rds")
+```
