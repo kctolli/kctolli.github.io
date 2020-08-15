@@ -7,18 +7,22 @@ library(tidyverse)
 library(knitr)
 ```
 
+<!-- ## Machine Learning and Data Mining -->
+
+<!-- 2020 -- -->
+
 <!-- ## Blogdown Cookbook -->
 
-<!-- Ongoing -->
+<!-- 2020 -- Ongoing -->
 
 <!-- * Used R-package Blogdown to create blog -->
-<!-- *      -->
+<!-- *  -->
 
 ## COVID-19 Analytics
 
-2020 -- Over 165 hours 
+#### Senior Thesis/Practicum
 
-Senior Thesis/Practicum
+2020 -- Over 165 hours
 
 * Developed a data website using R, Rmds and Yaml
 * Explored different datasets to determine viable information
@@ -158,3 +162,4 @@ include_graphics(skate)
 * Wired both AC and DC electronics 
 * Designed a method to convert voltages
   + 120V AC to 12V DC and 5V DC
+

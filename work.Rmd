@@ -2,6 +2,17 @@
 title: "Work Experience"
 ---
 
+## Lineage Logistics
+
+### Assistant Project Manager - Contract
+
+August 2020 - December 2020 --- Rexburg, Idaho
+
+* Recuited and onboarded new members
+* Used Python to create functions, classes, and Machine Learning algorithms
+* Developed code in shortest path optimization for warehouse robot
+* [BYU-Idaho Data Science Society](https://www.byui.edu/mathematics/student-resources/data-science/data-science-society) Project
+
 ## LLNL - Lawrence Livermore National Labs
 
 ### Research Specialist - Intern
@@ -29,7 +40,7 @@ April 2020 – July 2020 --- Remote
   + Benchmark tested the microprocessor in C++
   + Setup the [website](https://ecen499-nasa.github.io/) using Rmds, CSS and Yaml
   
-#### Mission Statement
+##### Mission Statement
 
 Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V core configurations in Triple Modular Redundancy (TMR) for use in NASA’s Caution and Warning System (CWS) in the Portable Life Support System (PLSS) of the newest space suit (xEMU - Exploratory Extravehicular Mobility Unit).  
 
@@ -37,14 +48,14 @@ Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V cor
 
 ###  C Programming Teaching Assistant 
 
-July 2020 – Present --- Rexburg, ID
+July 2020 – Present --- Remote
 
 * Help students learn C and C++ programming language 
 * Assist the professor in creating new material
 
 ### Intro Engineering Teaching Assistant 
 
-January 2020 – Present --- Rexburg, ID
+January 2020 – Present --- Rexburg, ID and Remote
 
 * Mentor new students in Engineering and Computer Science
 * Help students with basic circuit analysis
@@ -78,4 +89,3 @@ April 2018 - August 2018 --- Rexburg, ID
   + Introduction to Electrical and Computer Engineering 
 * Taught students topics from these classes
 * Lead group and individual appointments and discussions
-

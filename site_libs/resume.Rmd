@@ -55,7 +55,7 @@ Skills {#skills}
 Disclaimer {#disclaimer}
 ------------------------------------
 
-Member of Tau Beta Pi <br /> Engineering Honor Society <br /> Idaho Delta chapter at <a style="color:black;" href="https://www.byui.edu/academic-societies/tau-beta-pi">BYU-Idaho</a>.
+Member of Tau Beta Pi <br /> Engineering Honor Society <br /> Idaho Delta chapter at BYU-Idaho.
 
 This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
 
@@ -81,7 +81,6 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Minor: Computer Engineering
-<!-- + Honors: Tau Beta Pi -->
 + Societies: Data Science Society, IEEE, and ACM
 + Coursework: <!-- Machine Learning, Intermediate Stats, Statistical Consulting, --> Data Intuition, Data Wrangling, Objects and Structures, Database Development, Software Development, Web Development, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
 
@@ -100,6 +99,18 @@ Remote
 + Conducted market research on new security techniques
 + Followed Scrum methodology and Kanban (Trello) board  
 
+### Assistant Project Manager
+
+Lineage Logistics
+
+Rexburg, ID
+
+2020
+
++ Recuited and onboarded new members
++ Used Python to create classes, and Machine Learning algorithms
++ Developed code in shortest path optimization for warehouse robot
+
 ### Student Senior Design Project
 
 NASA - National Aeronautics and Space Administration
@@ -110,19 +121,7 @@ Remote
 
 + Developed embedded C interface to the sensors in NASA's Spacesuit 
 + Benchmark tested the microprocessor in C++
-+ Setup a <a style="color:black;" href="https://ecen499-nasa.github.io/">website</a> using Rmds, CSS and Yaml
-
-### Teaching Assistant and Tutor
-
-BYU - Idaho, Computer Science and Engineering 
-
-Rexburg, ID
-
-2018  <br> | <br>  2020
-
-+ Lead students to increase their knowledge
-+ Guide students to improvement by giving feedback
-+ Help students with programming Verilog, C/C++ and Embedded C
++ Setup a website using Rmds, CSS and Yaml
 
 Projects {data-icon=laptop}
 ------------------------------------
@@ -135,7 +134,7 @@ Remote
 
 2020
 
-+ Developed a data <a style="color:black;" href="https://kctolli.github.io/COVID-19/">website</a> using R, Rmds and Yaml
++ Developed a data website using R, Rmds and Yaml
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
@@ -148,5 +147,5 @@ Rexburg, ID
 
 2020 
 
-*	Used R and the <a style="color:black;" href="https://tidyverse.tidyverse.org/">Tidyverse package</a> to wrangle and visualize data
+*	Used R and the Tidyverse package to wrangle and visualize data
 *	Allowed professors to help improve curriculum 

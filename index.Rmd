@@ -3,7 +3,7 @@ title: "Kyle Tolliver"
 ---
 
 ```{r load_libraries, include=FALSE}
-library(tidyverse, knitr)
+pacman::p_load(pacman, tidyverse, knitr)
 ```
 
 <script type="text/javascript">
@@ -33,6 +33,7 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 
 #### Quick Facts
 
+* [Assistant Project Manager at Lineage Logistics](./work.html#Assistant_Project_Manager_-_Contract)
 * [Research Specialist Intern at Lawrence Livermore National Labs](./work.html#Research_Specialist_-_Intern)
 * Member of Tau Beta Pi - Idaho Delta Chapter
 * Inquisitive, Motivated and Driven
@@ -51,11 +52,10 @@ BYU-Idaho Senior studying Software Engineering and Data Science. I am also worki
 #### Volunteer Experience  
 
 * Tau Beta Pi - Idaho Delta Chapter Secretary
-* BYU - Idaho Data Science Society Assistant Project Manager
 * Held many different positions in Church
 * [Moorpark Teaching Zoo (EATM)](https://www.moorparkcollege.edu/departments/administrative/institutional-research-and-planning/student-learning-outcomes/program-15) Fence
   + Eagle Scout Project
-  + Lead 10 to 15 youth in building the fence
+  + Lead 15 to 20 youth in building the fence
   + Created a project report
   + What I learned
     - Leadership
