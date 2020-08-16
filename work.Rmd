@@ -8,7 +8,7 @@ title: "Work Experience"
 
 August 2020 - December 2020 --- Rexburg, Idaho
 
-* Recuited and onboarded new members
+* Recruited and onboarded new members
 * Used Python to create functions, classes, and Machine Learning algorithms
 * Developed code in shortest path optimization for warehouse robot
 * [BYU-Idaho Data Science Society](https://www.byui.edu/mathematics/student-resources/data-science/data-science-society) Project

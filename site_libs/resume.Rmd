@@ -107,7 +107,7 @@ Rexburg, ID
 
 2020
 
-+ Recuited and onboarded new members
++ Recruited and onboarded new members
 + Used Python to create classes, and Machine Learning algorithms
 + Developed code in shortest path optimization for warehouse robot
 
