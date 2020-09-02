@@ -4,14 +4,21 @@ title: "Work Experience"
 
 ## Lineage Logistics
 
+* [Research & Business Development Center's](http://alps.rbdcenter.org/) Advanced Applied Learning Projects
+
+### Junior Analyst - Part Time
+
+September 2020 - December 2020 --- Rexburg, Idaho
+
+* Used Python to create functions, classes, and Machine Learning algorithms
+* Developed code in shortest path optimization for warehouse robot
+
 ### Assistant Project Manager - Contract
 
 August 2020 - December 2020 --- Rexburg, Idaho
 
-* Recruited and onboarded new members
-* Used Python to create functions, classes, and Machine Learning algorithms
-* Developed code in shortest path optimization for warehouse robot
-* [BYU-Idaho Data Science Society](https://www.byui.edu/mathematics/student-resources/data-science/data-science-society) Project
+* Recruited new members
+* Helped members application and onboarding process
 
 ## LLNL - Lawrence Livermore National Labs
 
@@ -46,14 +53,14 @@ Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V cor
 
 ## Brigham Young University - Idaho
 
-###  C Programming Teaching Assistant 
+###  C Programming Teaching Assistant - Part Time
 
 July 2020 – Present --- Remote
 
 * Help students learn C and C++ programming language 
 * Assist the professor in creating new material
 
-### Intro Engineering Teaching Assistant 
+### Intro Engineering Teaching Assistant - Part Time
 
 January 2020 – Present --- Rexburg, ID and Remote
 
@@ -61,7 +68,7 @@ January 2020 – Present --- Rexburg, ID and Remote
 * Help students with basic circuit analysis
 * Lead students in learning arduino skills
 
-### Digital Systems Teaching Assistant  
+### Digital Systems Teaching Assistant - Part Time
 
 September 2018 – Present --- Rexburg, ID
 
@@ -69,14 +76,14 @@ September 2018 – Present --- Rexburg, ID
 *	Guide students to improvement by giving feedback
 *	Help students with programming Verilog 
 
-### Discrete Math Teaching Assistant 
+### Discrete Math Teaching Assistant - Part Time
 
 April 2019 - July 2019 --- Rexburg, ID
 
 * Solved example problems to assist students with Discrete Math
 * Assisted students in learning Elisp and Erlang
 
-### Computer Science Tutor
+### Computer Science Tutor - Part Time
 
 April 2018 - August 2018 --- Rexburg, ID
 

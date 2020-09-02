@@ -55,7 +55,7 @@ include_graphics(car)
 include_graphics(car_circuit)
 ```
 
-* Designed Circuits and Assembled the Electronics
+* Designed circuits and assembled the electronics
 *	Programmed the Arduino in Embedded C
 *	Setup Raspberry Pi for Deep Learning and Computer Vision
 

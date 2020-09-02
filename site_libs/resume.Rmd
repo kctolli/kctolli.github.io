@@ -59,10 +59,6 @@ Member of Tau Beta Pi <br /> Engineering Honor Society <br /> Idaho Delta chapte
 
 This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
 
-<!-- Last updated on `r format(Sys.Date(), format="%B %d %Y")`. -->
-
-<!-- Kyle Tolliver --- Resume -->
-
 Main
 ====================================
 
@@ -82,10 +78,22 @@ Rexburg, ID
 
 + Minor: Computer Engineering
 + Societies: Data Science Society, IEEE, and ACM
-+ Coursework: <!-- Machine Learning, Intermediate Stats, Statistical Consulting, --> Data Intuition, Data Wrangling, Objects and Structures, Database Development, Software Development, Web Development, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
++ Coursework: <!-- Machine Learning, Intermediate Stats, --> Data Intuition, Data Wrangling,  Database Development, Software Development, Web Development, Objects and Structures, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
 
 Experience {data-icon=briefcase}
 ------------------------------------
+
+### Junior Analyst
+
+Lineage Logistics
+
+Rexburg, ID
+
+2020
+
++ Used Python to create classes, and Machine Learning algorithms
++ Developed code in shortest path optimization for warehouse robot
++ Helped new members with the application and onboarding process
 
 ### Research Specialist Intern
 
@@ -98,18 +106,6 @@ Remote
 + Tested security technologies using binary analysis
 + Conducted market research on new security techniques
 + Followed Scrum methodology and Kanban (Trello) board  
-
-### Assistant Project Manager
-
-Lineage Logistics
-
-Rexburg, ID
-
-2020
-
-+ Recruited and onboarded new members
-+ Used Python to create classes, and Machine Learning algorithms
-+ Developed code in shortest path optimization for warehouse robot
 
 ### Student Senior Design Project
 
