@@ -51,7 +51,6 @@ pander(grade, caption = "Applicable Coursework - Grades")
 * Software Design and Development using Java
 * Introduction to Programming for IT
 * System Security 
-<!-- * JavaScript Language  -->
 * Senior Practicum 
 * Senior Project 
 
@@ -60,8 +59,7 @@ pander(grade, caption = "Applicable Coursework - Grades")
 * Database Design and Development
 * Data Intuition and Insight
 * Data Wrangling and Visualization
-<!-- * Machine Learning and Data Mining -->
-<!-- * Statistical Consulting -->
+* Machine Learning and Data Mining
 
 ### Computer Engineering Minor
 
@@ -81,7 +79,7 @@ pander(grade, caption = "Applicable Coursework - Grades")
 * Differential Calculus
 * Linear Algebra 
 * Discrete Math 
-<!-- * Intermediate Statistics  -->
+* Intermediate Statistics
 * Introduction to Chemistry
 * Foundations of Science
 

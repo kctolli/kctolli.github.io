@@ -78,14 +78,14 @@ Rexburg, ID
 
 + Minor: Computer Engineering
 + Societies: Data Science Society, IEEE, and ACM
-+ Coursework: <!-- Machine Learning, Intermediate Stats, --> Data Intuition, Data Wrangling,  Database Development, Software Development, Web Development, Objects and Structures, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
++ Coursework: Machine Learning, Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, System Security, Digital System Design, Advanced Embedded Systems, Computer Architecture, Circuit Theory and Analysis, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
 
 Experience {data-icon=briefcase}
 ------------------------------------
 
 ### Junior Analyst
 
-Lineage Logistics
+RBDC - Research and Business Development Center
 
 Rexburg, ID
 
@@ -93,7 +93,7 @@ Rexburg, ID
 
 + Used Python to create classes, and Machine Learning algorithms
 + Developed code in shortest path optimization for warehouse robot
-+ Helped new members with the application and onboarding process
++ Lead Scrum meetings and helped programmers develop code
 
 ### Research Specialist Intern
 

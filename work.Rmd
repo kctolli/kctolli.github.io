@@ -2,34 +2,28 @@
 title: "Work Experience"
 ---
 
-## Lineage Logistics
+## Research & Business Development Center
 
-* [Research & Business Development Center's](http://alps.rbdcenter.org/) Advanced Applied Learning Projects
+### Lineage Logistics
 
-### Junior Analyst - Part Time
+#### Junior Analyst - Part Time
 
 September 2020 - December 2020 --- Rexburg, Idaho
 
 * Used Python to create functions, classes, and Machine Learning algorithms
 * Developed code in shortest path optimization for warehouse robot
+* Recruited new members and helped members with the onboarding process
+* Lead Scrum meetings and helped programmers develop code
 
-### Assistant Project Manager - Contract
+### LLNL - Lawrence Livermore National Labs
 
-August 2020 - December 2020 --- Rexburg, Idaho
-
-* Recruited new members
-* Helped members application and onboarding process
-
-## LLNL - Lawrence Livermore National Labs
-
-### Research Specialist - Intern
+#### Research Specialist - Intern
 
 July 2020 - September 2020 --- Remote
 
 * Tested security technologies using binary analysis
 * Conducted market research on new security techniques
 * Followed Scrum methodology and Kanban (Trello) board
-* [Research & Business Development Center's](http://alps.rbdcenter.org/) Advanced Applied Learning Projects
 
 ## NASA - National Aeronautics and Space Administration
 

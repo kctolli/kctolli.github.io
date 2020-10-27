@@ -59,9 +59,9 @@ title: "Skills"
   + Visualization
   + Exploration
   + Consulting
-  <!-- + Mining -->
+  + Mining
 * Statistics
-<!-- * Machine Learning -->
+* Machine Learning
 
 ## Computer Engineering
 
@@ -115,11 +115,6 @@ title: "Skills"
 * HTML
 * CSS
 * Javascript
-<!-- * Node.JS -->
-<!-- * Express.JS -->
-<!-- * PHP -->
-<!-- * NoSQL -->
-<!-- * APIs -->
 * R-based webpages
   + Basic knitr    
     Basic building blocks:
@@ -149,7 +144,6 @@ title: "Skills"
   + Mathematica
   + Elisp
   + Erlang
-  <!-- + Clojure -->
   + Python
 * Discrete Math 
 * Differential Calculus 
