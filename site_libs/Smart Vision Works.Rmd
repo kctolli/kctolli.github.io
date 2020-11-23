@@ -3,18 +3,15 @@ title: "Cover Letter"
 output: word_document
 ---
 
-<!-- Tuesdays and Thursdays 11-2 or 3-5 -->
-<!-- Friday all day -->
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Dear Hiring Manager,
 
-I am seeking the _______ position with ________.
+I am seeking the Software Engineer position with Smart Vision Works.
 
-My resume illustrates my programming and hardware experience. I am not afraid to ask for help or clarification when I need it. I also know how to find answers to any questions from study. I will spend my own outside of work to learn needed material for this position. I am a creative thinker with an ever-present thirst to solve complex problems such as discrete math problems. I am confident that with my technical experience I would make an immediate contribution to ___________.
+My resume illustrates my programming and hardware experience. I am not afraid to ask for help or clarification when I need it. I also know how to find answers to any questions from study. I will spend my own outside of work to learn needed material for this position. I am a creative thinker with an ever-present thirst to solve complex problems such as discrete math problems. I am confident that with my technical experience I would make an immediate contribution to Smart Vision Works.
 
 The following are just a few of the highlights of my qualifications:
 *	Received recognition for my dedication to engineering and learning by joining Tau Beta Pi 
