@@ -29,22 +29,7 @@ navbar:
         - text: "Website"
           href: https://byuistats.github.io/M335/
         - text: "R for Data Science"    
-          href: https://r4ds.had.co.nz/ 
-    - text: "Machine Learning"  
-      menu:
-        - text: "Personal Work"
-        - text: "Website"
-          href: https://kctolli.github.io/CSE450/           
-        - text: "Github"
-          href: https://github.com/kctolli/CSE450
-        - text: "---------------"  
-        - text: "Course Material"
-        - text: "Github"
-          href: https://github.com/byui-cs/cs450-course
-        - text: "Algorthmic Prospective"
-          href: https://kctolli.github.io/CSE450/course/Machine_Learning.pdf
-        - text: "Machine Learning - R"
-          href: https://kctolli.github.io/CSE450/course/Machine_Learning_R.pdf       
+          href: https://r4ds.had.co.nz/       
     - text: "Intermediate Stats"  
       menu:
         - text: "Personal Work"
