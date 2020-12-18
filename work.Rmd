@@ -6,9 +6,9 @@ title: "Work Experience"
 
 ### Lineage Logistics
 
-#### Junior Analyst - Part Time
+#### Assistant Project Manager - Part Time
 
-September 2020 - December 2020 --- Rexburg, Idaho
+September 2020 - December 2020 --- Remote
 
 * Used Python to create functions, classes, and Machine Learning algorithms
 * Developed code in shortest path optimization for warehouse robot
@@ -27,7 +27,9 @@ July 2020 - September 2020 --- Remote
 
 ## NASA - National Aeronautics and Space Administration
 
-### Student Senior Design Project - Contract
+#### Contract
+
+### Student Senior Designer
 
 April 2020 – July 2020 --- Remote
 
@@ -45,16 +47,20 @@ April 2020 – July 2020 --- Remote
 
 Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V core configurations in Triple Modular Redundancy (TMR) for use in NASA’s Caution and Warning System (CWS) in the Portable Life Support System (PLSS) of the newest space suit (xEMU - Exploratory Extravehicular Mobility Unit).  
 
-## Brigham Young University - Idaho
+## Brigham Young University - Idaho 
 
-###  C Programming Teaching Assistant - Part Time
+#### Part Time
+
+### Teaching Assistant {.tabset .tabset-fade}
+
+#### C Programming 
 
 July 2020 – Present --- Remote
 
 * Help students learn C and C++ programming language 
 * Assist the professor in creating new material
 
-### Intro Engineering Teaching Assistant - Part Time
+#### Intro Engineering 
 
 January 2020 – Present --- Rexburg, ID and Remote
 
@@ -62,7 +68,7 @@ January 2020 – Present --- Rexburg, ID and Remote
 * Help students with basic circuit analysis
 * Lead students in learning arduino skills
 
-### Digital Systems Teaching Assistant - Part Time
+#### Digital Systems 
 
 September 2018 – Present --- Rexburg, ID
 
@@ -70,14 +76,14 @@ September 2018 – Present --- Rexburg, ID
 *	Guide students to improvement by giving feedback
 *	Help students with programming Verilog 
 
-### Discrete Math Teaching Assistant - Part Time
+#### Discrete Math
 
 April 2019 - July 2019 --- Rexburg, ID
 
 * Solved example problems to assist students with Discrete Math
 * Assisted students in learning Elisp and Erlang
 
-### Computer Science Tutor - Part Time
+### Computer Science Tutor 
 
 April 2018 - August 2018 --- Rexburg, ID
 

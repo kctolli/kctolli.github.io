@@ -7,20 +7,16 @@ library(tidyverse)
 library(knitr)
 ```
 
-<!-- ## Machine Learning and Data Mining -->
+## Spotify Popularity Predictive Analytics
 
-<!-- 2020 -- -->
+2020 -- Spent 50 Hours on the project
 
-<!-- ## Blogdown Cookbook -->
+* Used three different predictive algorithms
+  + Created Decision Trees in Python
+  + Used R to create Regression models
+  + Developed Neural Networks using Python
 
-<!-- 2020 -- Ongoing -->
-
-<!-- * Used R-package Blogdown to create blog -->
-<!-- *  -->
-
-## COVID-19 Analytics
-
-#### Senior Thesis/Practicum
+## COVID-19 Analytics -- Senior Thesis/Practicum 
 
 2020 -- Over 165 hours
 

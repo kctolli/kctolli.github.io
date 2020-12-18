@@ -16,7 +16,11 @@ navbar:
       href: ./projects.html   
     - text: "Resume"
       icon: fa-file-text
-      href: ./site_libs/resume.html 
+      menu: 
+        - text: "Embedded Systems"
+          href: ./site_libs/resume/resumees.html 
+        - text: "Data Science"
+          href: ./site_libs/resume/resumeds.html 
           
 output_dir: '.'
 

@@ -38,6 +38,7 @@ title: "Skills"
   + pacman
   + installer
   + blogdown
+  + mosaic
 * Python and Jupyter Notebook     
   Libraries include:
   + Pandas
@@ -45,6 +46,7 @@ title: "Skills"
   + Numpy
   + Plotly
   + Math
+  + Tensor Flow
 * SQL 
   + Oracle
   + MySQL
@@ -61,7 +63,21 @@ title: "Skills"
   + Consulting
   + Mining
 * Statistics
+  Tests include
+  + t test
+  + Wilcox
+  + ANOVA
+  + Kruskal-Wallis
+  + Linear and Logistic Regression
+  + Chi-Squared
+  + Permutation and Randomization
 * Machine Learning
+  Algorithms include:
+  + Classifiers
+  + Clustering
+  + Decision Trees
+  + K-Nearest Neighbors
+  + Neural Networks
 
 ## Computer Engineering
 
