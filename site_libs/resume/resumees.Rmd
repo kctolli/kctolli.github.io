@@ -118,18 +118,6 @@ Remote
 Projects {data-icon=laptop}
 ------------------------------------
 
-### Spotify Popularity Predictive Analytics 		
-
-BYU - Idaho, Computer Science and Engineering 
-
-Rexburg, ID
-
-2020 
-
-+ Created Decision Trees in Python
-+ Used R to create Regression models
-+ Developed Neural Networks using Python
-
 ### COVID-19 Data Consulting
 
 BYU - Idaho, Computer Science and Engineering 
@@ -142,3 +130,15 @@ Remote
 + Explored different datasets to determine viable information
 + Wrote my own COVID-19 R package to wrangle data
 + Visualized the data to make the data easily understood
+
+### Self Driving Car	
+
+BYU - Idaho, Computer Science and Engineering 
+
+Rexburg, ID
+
+2020 
+
++ Designed circuits and assembled the electronics
++	Programmed the Arduino in Embedded C
++	Setup Raspberry Pi for Deep Learning and Computer Vision
