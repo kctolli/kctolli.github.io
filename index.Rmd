@@ -47,18 +47,18 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I am also wor
 * CSS
 * Github
 
-#### Volunteer Experience  
+<!-- #### Volunteer Experience   -->
 
-* Tau Beta Pi - Idaho Delta Chapter Secretary
-* Held many different positions in Church
-* [Moorpark Teaching Zoo (EATM)](https://www.moorparkcollege.edu/departments/administrative/institutional-research-and-planning/student-learning-outcomes/program-15) Fence
-  + Eagle Scout Project
-  + Lead 15 to 20 youth in building the fence
-  + Created a project report
-  + What I learned
-    - Leadership
-    - Communication
-    - Delegation 
+<!-- * Tau Beta Pi - Idaho Delta Chapter Secretary -->
+<!-- * Held many different positions in Church -->
+<!-- * [Moorpark Teaching Zoo (EATM)](https://www.moorparkcollege.edu/departments/administrative/institutional-research-and-planning/student-learning-outcomes/program-15) Fence -->
+<!--   + Eagle Scout Project -->
+<!--   + Lead 15 to 20 youth in building the fence -->
+<!--   + Created a project report -->
+<!--   + What I learned -->
+<!--     - Leadership -->
+<!--     - Communication -->
+<!--     - Delegation  -->
 
 </div></div>
 
