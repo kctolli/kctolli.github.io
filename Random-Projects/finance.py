@@ -47,7 +47,7 @@ def main():
     car_insurance = int(input("How much do spend on car insurance a month: $"))
     food = int(input("How much do you spend a month on food: $"))
 
-    post_expenses = post_tax - (year(housing) + year(car + car_insurance) + year(food))
+    post_expenses = roundhundredth(post_tax - (year(housing) + year(car + car_insurance) + year(food)))
 
     print("You will have {} a year after expenses!".format(post_expenses))
     savings = int(input("Let's put money in savings! What percent do you want to save: "))
