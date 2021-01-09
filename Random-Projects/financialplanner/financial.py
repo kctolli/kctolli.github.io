@@ -1,9 +1,5 @@
 """
-    Financial Planner
-    
-    main: finance.py
-    
-    libraries used: math - from python standard library
+    Financial Planner - financial.py
     
     Copyright 2021 Kyle Tolliver
 
@@ -131,21 +127,3 @@ tax = []
 amount = []
 bracket = [9875, 40125, 85523, 163300, 207350, 518400, math.inf]
 percent = [.1, .12, .22, .24, .32, .35, .37]
-
-# Main Function
-
-def main():
-    
-    print("DISCLAIMER: This is an estimate for values. This will only give you an idea of what your expenses are and where your money goes.")
-    print("WARNING: The state tax is set for Utah's tax rate which is 4.95%")
-    
-    salary = getsalary()
-    post_tax = gettax(salary)
-    post_expenses = getexpenses(post_tax)
-    final = getsavings(post_expenses)
-    getspending(final)
-    
-    
-if __name__ == "__main__":
-    # execute only if run as a script
-    main()    
