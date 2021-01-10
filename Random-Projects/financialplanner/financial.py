@@ -34,6 +34,8 @@ def interest(x, y, z): return roundhundredth(x * (1 + (month(todecimal(y)))) ** 
 def getsalary():
     check = ""
     salary = 0
+    fsa = math.inf
+    hsa = math.inf
     
     while not(check == "hourly" or check == "salary"):
         check = input("Are you hourly or salary: ")
@@ -41,7 +43,7 @@ def getsalary():
         if check == "hourly":
             hourly = float(input("What do you make per hour: $"))
             salary = hourly * 40 * 50
-            print("Your estimated salary is {}".format(salary))
+            print("Your estimated salary is {:.2f}".format(salary))
         elif check == "salary":
             salary = float(input("What is your Salary: $"))
         else:
@@ -49,8 +51,26 @@ def getsalary():
             
     retirement = int(input("How much percent of you salary do you contribute to your retirement: "))
     health = int(input("How much do you pay for health insurance a month: $"))
-    fsa = int(input("How much do you put in the flex savings for health care: $"))
-    base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + fsa))))   
+    
+    while not(check == "hsa" or check == "health" or check == "health savings" or check == "fsa" or check == "flex" or check == "flex savings"):
+        check = input("Do you have health savings(hsa) or flex savings(fsa): ")
+        check = check.lower()
+        if check == "hsa" or check == "health" or check == "health savings":
+            while hsa >= 3550:
+                hsa = int(input("How much do you put in the hsa savings for health care: $"))
+                if hsa > 3550:
+                    print("That value is too high")
+                else:
+                    base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + hsa))))
+        elif check == "fsa" or check == "flex" or check == "flex savings":
+            while fsa >= 2750:
+                fsa = int(input("How much do you put in the flex savings for health care: $"))
+                if fsa > 2750:
+                    print("That value is too high")
+                else:
+                    base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + fsa)))) 
+        else:
+            print("Please input either health savings(hsa) or flex savings(fsa).")   
     
     return int(salary)
 
@@ -68,18 +88,18 @@ def gettax(salary):
     full_tax = roundhundredth(sum(tax) + (salary * .049))
     
     while not(check == "yes" or check == "y" or check == "no" or check == "n" ):
-        check = input("Do you pay Tithing? (yes/no)")
+        check = input("Do you pay Tithing? (yes/no) ")
         check = check.lower()
         if check == "yes"or check == "y":
             tithing = roundhundredth(salary * .1)
             post_tax =  roundhundredth(base[0] - full_tax - tithing)   
-            print("You will pay {} in taxes a year. You will pay {} in tithing a year.".format(full_tax, tithing))
-            print("You would have {} after taxes, tithing, retirement, and health insurance.".format(post_tax))
+            print("You will pay {:.2f} in taxes a year. You will pay {:.2f} in tithing a year.".format(full_tax, tithing))
+            print("You would have {:.2f} after taxes, tithing, retirement, and health insurance.".format(post_tax))
             return int(post_tax)
         elif check == "no" or check == "n":
             post_tax =  roundhundredth(base[0] - full_tax)   
-            print("You will pay {} in taxes a year.".format(full_tax))
-            print("You would have {} after taxes, retirement, and health insurance.".format(post_tax))
+            print("You will pay {:.2f} in taxes a year.".format(full_tax))
+            print("You would have {:.2f} after taxes, retirement, and health insurance.".format(post_tax))
             return int(post_tax)
         elif check == "na" or check == "help" or check == "n/a":
             print("Tithing is the donation of one-tenth of one’s income to God’s Church. This commandment has been known since Old Testament times.")
@@ -92,11 +112,11 @@ def getexpenses(tax):
     housing = int(input("How much do you spend on housing a month: $"))
     car = int(input("How much do spend to pay off your car loan a month: $"))
     car_insurance = int(input("How much do spend on car insurance a month: $"))
-    food = int(input("How much do you spend a month on food: $"))
-    post_expenses = tax - (year(housing) + year(car + car_insurance) + year(food))
-    print("You will have {} a year after expenses!".format(post_expenses))
-    if post_expenses <= tax * 2 / 3: print("Your expenses are high")
-    return post_expenses
+    food = float(input("How much do you spend a month on food: $"))
+    utilities = float(input("How much do you spend on utilities a month: $"))
+    post_expenses = tax - (year(housing) + year(car + car_insurance) + year(food) + year(utilities))
+    print("You will have {:.2f} a year after expenses!".format(post_expenses))
+    return int(post_expenses)
 
 def getsavings(post):
     savings = int(input("Let's put money in savings! What percent do you want to save: "))
@@ -106,20 +126,20 @@ def getsavings(post):
         for x in range(6):
             amount.insert(x, interest(save, rate, x))
             if x == 0:
-                print("You will put {} in savings a year.".format(save))
+                print("You will put {:.2f} in savings a year.".format(save))
             else:
                 delta = amount[x] - amount[x-1]
                 if x == 1:
-                    print("After a year you will have {} in your account. Your account increased by {} this year.".format(amount[x], roundhundredth(delta)))
+                    print("After a year you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(amount[x], roundhundredth(delta)))
                 else:
-                    print("After {} years you will have {} in your account. Your account increased by {} this year.".format(x, amount[x], roundhundredth(delta)))
+                    print("After {} years you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(x, amount[x], roundhundredth(delta)))
     return roundhundredth(post * (1 - todecimal(savings)))
 
 def getspending(final):
     if month(final) <= 200:
         print("You don't have much spending money move expenses around")
     else:
-        print("You have {} for spending money a year. So you have {} a month.".format(final, roundhundredth(month(final))))
+        print("You have {:.2f} for spending money a year. So you have {:.2f} a month.".format(final, roundhundredth(month(final))))
 
 # Global Arrays
 base = []
