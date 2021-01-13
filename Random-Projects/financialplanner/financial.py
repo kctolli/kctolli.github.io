@@ -29,13 +29,20 @@ def todecimal(x): return float(x / 100)
 def roundhundredth(x): return float(math.ceil(x * 100) / 100)
 def interest(x, y, z): return roundhundredth(x * (1 + (month(todecimal(y)))) ** (year(z)))
 
-## Calculation Functions
+def taxcalc(start, group, rate):
+    tax = start * rate if start < group else group * rate
+    return tax if tax > 0 else 0
+
+def gettax(salary):
+    for i in range(7):
+        tax.insert(i, taxcalc(base[i], bracket[i], percent[i]))
+        base.insert(i + 1, carry(bracket[i]))
+    
+    return roundhundredth(sum(tax) + (salary * .049))
 
 def getsalary():
     check = ""
     salary = 0
-    fsa = math.inf
-    hsa = math.inf
     
     while not(check == "hourly" or check == "salary"):
         check = input("Are you hourly or salary: ")
@@ -48,11 +55,18 @@ def getsalary():
             salary = float(input("What is your Salary: $"))
         else:
             print("Please input either hourly or salary.")
-            
+
+    return int(salary)
+
+def gethealth(salary):
+    check = ""
+    fsa = math.inf
+    hsa = math.inf
+    
     retirement = int(input("How much percent of you salary do you contribute to your retirement: "))
     health = int(input("How much do you pay for health insurance a month: $"))
     
-    while not(check == "hsa" or check == "health" or check == "health savings" or check == "fsa" or check == "flex" or check == "flex savings"):
+    while not(check == "hsa" or check == "health" or check == "health savings" or check == "fsa" or check == "flex" or check == "flex savings" or check == "none" or check == "na" or check == "no"):
         check = input("Do you have health savings(hsa) or flex savings(fsa): ")
         check = check.lower()
         if check == "hsa" or check == "health" or check == "health savings":
@@ -69,23 +83,13 @@ def getsalary():
                     print("That value is too high")
                 else:
                     base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + fsa)))) 
+        elif check == "none" or check == "na" or check == "no":
+            base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health)))))
         else:
             print("Please input either health savings(hsa) or flex savings(fsa).")   
-    
-    return int(salary)
 
-def taxcalc(start, group, rate):
-    tax = start * rate if start < group else group * rate
-    return tax if tax > 0 else 0
-
-def gettax(salary):
+def gettithing(full_tax, salary):
     check = ""
-    
-    for i in range(7):
-        tax.insert(i, taxcalc(base[i], bracket[i], percent[i]))
-        base.insert(i + 1, carry(bracket[i]))
-    
-    full_tax = roundhundredth(sum(tax) + (salary * .049))
     
     while not(check == "yes" or check == "y" or check == "no" or check == "n" ):
         check = input("Do you pay Tithing? (yes/no) ")
@@ -130,16 +134,21 @@ def getsavings(post):
             else:
                 delta = amount[x] - amount[x-1]
                 if x == 1:
-                    print("After a year you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(amount[x], roundhundredth(delta)))
+                        print("After a year you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(amount[x], roundhundredth(delta)))
                 else:
                     print("After {} years you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(x, amount[x], roundhundredth(delta)))
-    return roundhundredth(post * (1 - todecimal(savings)))
+        return roundhundredth(post * (1 - todecimal(savings)))
+    else:
+        print("No Savings I see.")
+        return post      
 
 def getspending(final):
-    if month(final) <= 200:
+    monthfinal = month(final)
+    
+    if monthfinal <= 200:
         print("You don't have much spending money move expenses around")
     else:
-        print("You have {:.2f} for spending money a year. So you have {:.2f} a month.".format(final, roundhundredth(month(final))))
+        print("You have {:.2f} for spending money a year. So you have {:.2f} a month.".format(final, roundhundredth(monthfinal)))
 
 # Global Arrays
 base = []

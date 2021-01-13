@@ -25,10 +25,13 @@ import financial as fin
 def main():
     
     print("DISCLAIMER: This is an estimate for values. This will only give you an idea of what your expenses are and where your money goes.")
-    print("WARNING: The state tax is set for Utah's tax rate which is 4.95%")
+    print("WARNING: The state tax is set for Utah's tax rate which is 4.95%.")
+    print("CAUTION: This is set for a single individual.")
     
     salary = fin.getsalary()
-    post_tax = fin.gettax(salary)
+    fin.gethealth(salary)
+    full_tax = fin.gettax(salary)
+    post_tax = fin.gettithing(full_tax, salary)
     post_expenses = fin.getexpenses(post_tax)
     final = fin.getsavings(post_expenses)
     fin.getspending(final)
