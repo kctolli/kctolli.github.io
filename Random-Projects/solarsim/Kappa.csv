@@ -1,0 +1,32 @@
+Material,Thermal conductivity
+Diamond,1000
+Silver,406
+Copper,385
+Gold,314
+Brass,109
+Aluminum,205
+Iron,79.5
+Steel,50.2
+Lead,34.7
+Mercury,8.3
+Ice,1.6
+"Glass,ordinary",0.8
+Concrete,0.8
+Water at 20° C,0.6
+Asbestos,0.08
+Snow (dry),...
+Fiberglass,0.04
+"Brick,insulating",0.15
+"Brick, red",0.6
+Cork board,0.04
+Wool felt,0.04
+Rock wool,0.04
+Polystyrene (styrofoam),0.033
+Polyurethane,0.02
+Wood,0.12-0.04
+Air at 0° C,0.024
+Helium (20°C),0.138
+Hydrogen(20°C),0.172
+Nitrogen(20°C),0.0234
+Oxygen(20°C),0.0238
+Silica aerogel,0.003
