@@ -33,16 +33,16 @@ def taxcalc(start, group, rate):
     tax = start * rate if start < group else group * rate
     return tax if tax > 0 else 0
 
-def gettax(salary):
+def gettax():
     for i in range(7):
         tax.insert(i, taxcalc(base[i], bracket[i], percent[i]))
         base.insert(i + 1, carry(bracket[i]))
-    
-    return roundhundredth(sum(tax) + (salary * .049))
+    tax.append(salary * .049)    
+    return roundhundredth(sum(tax))
 
 def getsalary():
+    global salary
     check = ""
-    salary = 0
     
     while not(check == "hourly" or check == "salary"):
         check = input("Are you hourly or salary: ")
@@ -53,12 +53,12 @@ def getsalary():
             print("Your estimated salary is {:.2f}".format(salary))
         elif check == "salary":
             salary = float(input("What is your Salary: $"))
+            print("Your estimated hourly wage is {:.2f}".format(salary / 40 / 50))
         else:
             print("Please input either hourly or salary.")
+    int(salary)    
 
-    return int(salary)
-
-def gethealth(salary):
+def pretax():
     check = ""
     fsa = math.inf
     hsa = math.inf
@@ -88,7 +88,7 @@ def gethealth(salary):
         else:
             print("Please input either health savings(hsa) or flex savings(fsa).")   
 
-def gettithing(full_tax, salary):
+def gettithing(full_tax):
     check = ""
     
     while not(check == "yes" or check == "y" or check == "no" or check == "n" ):
@@ -112,43 +112,71 @@ def gettithing(full_tax, salary):
         else:
             print("Please input either yes or no.")
 
-def getexpenses(tax):
-    housing = int(input("How much do you spend on housing a month: $"))
-    car = int(input("How much do spend to pay off your car loan a month: $"))
-    car_insurance = int(input("How much do spend on car insurance a month: $"))
-    food = float(input("How much do you spend a month on food: $"))
-    utilities = float(input("How much do you spend on utilities a month: $"))
-    post_expenses = tax - (year(housing) + year(car + car_insurance) + year(food) + year(utilities))
-    print("You will have {:.2f} a year after expenses!".format(post_expenses))
+def gettransportation():
+    check = ""
+    
+    while not(check == "car" or check == "public" or check == "train" or check == "bus" or check == "bike" or check == "foot" or check == "walking" or check == "other"):
+        check = input("What is your mode of transportation? (car/train/bus/bike/foot/other) ")
+        check = check.lower()
+        if check == "car":
+            car = []
+            car.append(float(input("How much do spend to pay off your car loan a month: $")))
+            car.append(float(input("How much do spend on car insurance a month: $")))
+            car.append(float(input("How much do spend on gas a month: $")))
+            return year(int(sum(car)))
+        elif check == "public transportation" or check == "train" or check == "bus":
+            public = float(input("How much do spend on public transportation a month: $"))
+            return year(int(public))
+        elif check == "bike":
+            return 175
+        elif check == "walking" or check == "foot":
+            return 0
+        elif check == "other":
+            other = float(input("How much do spend on transportation a month: $"))
+            return year(int(other))
+        else:
+            print("Please input either car, train, bus, bike, foot.")
+            
+def getexpenses(post):
+    expenses = []
+    expenses.append(year(float(input("How much do you spend on housing a month: $"))))
+    expenses.append(gettransportation())
+    expenses.append(year(float(input("How much do you spend a month on food: $"))))
+    expenses.append(year(float(input("How much do you spend on utilities a month: $"))))
+    expense = sum(expenses)
+    post_expenses = post - expense
+    print("You will have {:.2f} a year after expenses (${:.2f})!".format(post_expenses, expense))
     return int(post_expenses)
 
 def getsavings(post):
-    savings = int(input("Let's put money in savings! What percent do you want to save: "))
-    if savings > 0:
-        rate = float(input("What is the interest rate of your savings (APY): "))
-        save = roundhundredth(post * (todecimal(savings)))
-        for x in range(6):
-            amount.insert(x, interest(save, rate, x))
-            if x == 0:
-                print("You will put {:.2f} in savings a year.".format(save))
-            else:
-                delta = amount[x] - amount[x-1]
-                if x == 1:
-                        print("After a year you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(amount[x], roundhundredth(delta)))
+    savings = math.inf
+    while (savings > 100 or savings < 0):
+        savings = float(input("Let's put money in savings! What percent do you want to save: "))
+        if savings > 0 and savings <= 100:
+            rate = float(input("What is the interest rate of your savings (APY): "))
+            save = roundhundredth(post * (todecimal(savings)))
+            for x in range(6):
+                amount.insert(x, interest(save, rate, x))
+                if x == 0:
+                    print("You will put {:.2f} in savings a year.".format(save))
                 else:
-                    print("After {} years you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(x, amount[x], roundhundredth(delta)))
-        return roundhundredth(post * (1 - todecimal(savings)))
-    else:
-        print("No Savings I see.")
-        return post      
+                    delta = amount[x] - amount[x-1]
+                    if x == 1:
+                        print("After a year you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(amount[x], roundhundredth(delta)))
+                    else:
+                        print("After {} years you will have {:.2f} in your account. Your account increased by {:.2f} this year.".format(x, amount[x], roundhundredth(delta)))
+            return roundhundredth(post * (1 - todecimal(savings)))
+        elif savings == 0:
+            print("No savings I see.")
+            return post
+        else:
+            print("Invalid percent to save")
 
 def getspending(final):
-    monthfinal = month(final)
-    
-    if monthfinal <= 200:
+    if month(final) <= 200:
         print("You don't have much spending money move expenses around")
     else:
-        print("You have {:.2f} for spending money a year. So you have {:.2f} a month.".format(final, roundhundredth(monthfinal)))
+        print("You have {:.2f} for spending money a year. So you have {:.2f} a month.".format(final, roundhundredth(month(final))))
 
 # Global Arrays
 base = []
