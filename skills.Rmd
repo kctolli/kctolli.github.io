@@ -63,7 +63,7 @@ title: "Skills"
   + Consulting
   + Mining
 * Statistics
-  Tests include
+  Tests include:
   + t test
   + Wilcox
   + ANOVA

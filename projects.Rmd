@@ -7,6 +7,14 @@ library(tidyverse)
 library(knitr)
 ```
 
+## Financial Planner 		
+
+2021 -- Spent 20 Hours on the project 
+
+* Used Python to create a financial planner
+* Loops used to calculate tax brackets
+* Made to help uses plan basic finances
+
 ## Spotify Popularity Predictive Analytics
 
 2020 -- Spent 50 Hours on the project
