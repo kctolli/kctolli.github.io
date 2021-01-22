@@ -20,6 +20,11 @@
 
 # Imports
 import math
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import altair as alt
 
 # Global Functions
 def carry(x): return base[0] - x
@@ -48,12 +53,9 @@ def getsalary():
         check = input("Are you hourly or salary: ")
         check = check.lower()
         if check == "hourly":
-            hourly = float(input("What do you make per hour: $"))
-            salary = hourly * 40 * 50
-            print("Your estimated salary is {:.2f}".format(salary))
+            salary = float(input("What do you make per hour: $")) * 40 * 50
         elif check == "salary":
             salary = float(input("What is your Salary: $"))
-            print("Your estimated hourly wage is {:.2f}".format(salary / 40 / 50))
         else:
             print("Please input either hourly or salary.")
     int(salary)    
@@ -72,17 +74,11 @@ def pretax():
         if check == "hsa" or check == "health" or check == "health savings":
             while hsa >= 3550:
                 hsa = int(input("How much do you put in the hsa savings for health care: $"))
-                if hsa > 3550:
-                    print("That value is too high")
-                else:
-                    base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + hsa))))
+                print("That value is too high") if hsa > 3550 else base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + hsa))))
         elif check == "fsa" or check == "flex" or check == "flex savings":
             while fsa >= 2750:
                 fsa = int(input("How much do you put in the flex savings for health care: $"))
-                if fsa > 2750:
-                    print("That value is too high")
-                else:
-                    base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + fsa)))) 
+                print("That value is too high") if fsa > 2750 else base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health) + fsa)))) 
         elif check == "none" or check == "na" or check == "no":
             base.insert(0, roundhundredth(int(salary - ((salary * (todecimal(retirement))) + year(health)))))
         else:
