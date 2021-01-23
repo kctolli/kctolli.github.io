@@ -47,6 +47,7 @@ title: "Skills"
   + Plotly
   + Math
   + Tensor Flow
+  + SciPy
 * SQL 
   + Oracle
   + MySQL
@@ -128,59 +129,114 @@ title: "Skills"
 
 ## Web Development
 
-* HTML
-* CSS
-* Javascript
-* R-based webpages
-  + Basic knitr    
-    Basic building blocks:
-    - knitr (R package)
-    - _site.yml
-    - index.Rmd
-  + Blogdown    
-    Basic building blocks:
-    - blogdown (R package)
-    - config.toml
-    - index.Rmd
-  <!-- + Bookdown     -->
-  <!--   Basic building blocks: -->
-  <!--   - bookdown (R package) -->
-  <!--   - config.toml -->
-  <!--   - index.Rmd   -->
-  + Pagedown    
-    Basic building blocks:
-    - pagedown (R package and templates)
-    - knitr (R package)
-    - Rmarkdown
+<ul>
+
+  <li>HTML</li>
+  <li>CSS</li>
+
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
+  </span></div>
+</ul>  
+
+
+### R-based webpages
+
+* Basic knitr    
+  Basic building blocks:
+  - knitr (R package)
+  - _site.yml
+  - index.Rmd
+* Blogdown    
+  Basic building blocks:
+  - blogdown (R package)
+  - config.toml
+  - index.Rmd
+<!-- * Bookdown     -->
+<!--   Basic building blocks: -->
+<!--   - bookdown (R package) -->
+<!--   - config.toml -->
+<!--   - index.Rmd   -->
+* Pagedown    
+  Basic building blocks:
+  - pagedown (R package and templates)
+  - knitr (R package)
+  - Rmarkdown
   
 ## Mathematics
 
-* Functional Programming
-  + MATLAB
-  + Mathematica
-  + Elisp
-  + Erlang
-  + Python
-* Discrete Math 
-* Differential Calculus 
-* Linear Algebra  
+<ul>
+
+  <li>Functional Programming</li><ul>
+    <li>MATLAB</li>
+    <li>Mathematica</li>
+    <li>Elisp</li>
+    <li>Erlang</li>
+    <li>Python</li></ul>
+  <li>Discrete Math</li>
+  <li>Differential Calculus</li>
+  <li>Linear Algebra</li>
+
+
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+  </span></div>
+</ul>  
 
 ## General Programming
 
-* C/C++ 
-* Java - Android Studio
-* Python 
-  + Arcade  
-  + Random 
-* Methods
-  + Procedural
-  + Object-Oriented
-  + Data Structures
-  + Algorithms and Sorts
+<ul>
+
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+  </span></div>
+  
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
+  </span></div>
+  
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+  </span></div>
+
+  <div style="padding-left:1px;">
+  <li>Types</li><ul>
+    <li>Scripting</li>
+    <li>Functional</li>
+    <li>Logical</li>
+    <li>Procedural</li>
+    <li>Object-Oriented</li>
+    <li>Data Structures and Algorithms</li><ul>
+      <li>Arrays and Lists</li>
+      <li>Sorts</li>
+      <li>Trees</li>
+      <li>Heaps</li>
+      <li>Hash Tables</li>
+      <li>Queue</li>
+  </ul></ul></div>
+  
+  <div style="padding-left:1px;">
+  <li>Methodologies</li><ul>
+    <li>Design</li>
+    <li>Develop</li>
+    <li>Test</li>
+    <li>Debug</li>
+  </ul></div>
+
+</ul>  
   
 ## Operating Systems
 
 * Linux
+  + Ubuntu
+  + Fedora
+  + Crouton
+  + Debian
 * Chrome OS
 * Microsoft Windows
   + Office 365
@@ -190,6 +246,15 @@ title: "Skills"
   + Batch
   <!-- + Powershell -->
   + Windows Task Scheduler
+
+## Cloud Computing
+
+* Git
+  + Github
+  + Bash
+* Google Cloud
+  + Drive
+  + Colab
 
 ## Industry Knowledge
 
@@ -209,9 +274,6 @@ title: "Skills"
   + Kanban Board
     - Trello
     - Jira
-* Git
-  + Github
-  + Bash
 * Security  
   + Social Engineering
   + Cryptography
