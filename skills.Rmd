@@ -63,6 +63,7 @@ title: "Skills"
 ### Statistics
 
 Tests include:
+
 * Distributions
 * Z Scores
 * Confidence Interval
@@ -89,6 +90,7 @@ Tests include:
 ### Machine Learning
 
 Algorithms include:
+
 * Classifiers
 * Clustering
 * Decision Trees
@@ -144,6 +146,8 @@ Algorithms include:
   - Verilog Test Bench
   - Logisim
 * Logic Integrated Circuits 
+  + TTL (7400-Series)
+  + CMOS
   
 ### Internet of Things
 
@@ -208,16 +212,9 @@ Algorithms include:
 
 <ul>
 
-  <li>Functional Programming</li><ul>
-    <li>MATLAB</li>
-    <li>Mathematica</li>
-    <li>Elisp</li>
-    <li>Erlang</li>
-    <li>Python</li></ul>
   <li>Discrete Math</li>
   <li>Differential Calculus</li>
   <li>Linear Algebra</li>
-
 
   <div style="padding-left:1px;">
   <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
@@ -225,7 +222,16 @@ Algorithms include:
   </span></div>
 </ul>  
 
+### Functional Programming
+    
+* MATLAB
+* Mathematica
+* Elisp
+* Erlang
+
 ## General Programming
+
+### Languages
 
 <ul>
 
@@ -243,33 +249,21 @@ Algorithms include:
   <span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
   <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
   </span></div>
-
-  <div style="padding-left:1px;">
-  <li>Types</li><ul>
-    <li>Scripting</li>
-    <li>Functional</li>
-    <li>Logical</li>
-    <li>Procedural</li>
-    <li>Object-Oriented</li>
-    <li>Data Structures and Algorithms</li><ul>
-      <li>Arrays and Lists</li>
-      <li>Sorts</li>
-      <li>Trees</li>
-      <li>Heaps</li>
-      <li>Hash Tables</li>
-      <li>Queue</li>
-  </ul></ul></div>
-  
-  <div style="padding-left:1px;">
-  <li>Methodologies</li><ul>
-    <li>Design</li>
-    <li>Develop</li>
-    <li>Test</li>
-    <li>Debug</li>
-  </ul></div>
-
 </ul>  
-  
+
+### Design Patterns
+
+* Multithreading
+* UML Diagrams
+* Model–view–controller
+* Test Driven Development
+* Observer
+* Factory
+* Singleton
+* Adapter
+* Template
+* Composite
+
 ## Operating Systems
 
 * Linux
