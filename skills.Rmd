@@ -15,6 +15,8 @@ title: "Skills"
 
 ## Data Science
 
+### Tools
+
 * R, Rmd and RStudio     
   Packages include:
   + tidyverse
@@ -39,6 +41,7 @@ title: "Skills"
   + installer
   + blogdown
   + mosaic
+  + car
 * Python and Jupyter Notebook     
   Libraries include:
   + Pandas
@@ -48,84 +51,121 @@ title: "Skills"
   + Math
   + Tensor Flow
   + SciPy
-* SQL 
-  + Oracle
-  + MySQL
 * Tableau
-* Spreadsheets
-  + Excel 
-  + Google Sheets
-* Data Management
-  + Intuition
-  + Insight 
-  + Wrangling 
-  + Visualization
-  + Exploration
-  + Consulting
-  + Mining
-* Statistics
-  Tests include:
-  + t test
-  + Wilcox
-  + ANOVA
-  + Kruskal-Wallis
-  + Linear and Logistic Regression
-  + Chi-Squared
-  + Permutation and Randomization
-* Machine Learning
-  Algorithms include:
-  + Classifiers
-  + Clustering
-  + Decision Trees
-  + K-Nearest Neighbors
-  + Neural Networks
+* Databases
+  + Spreadsheets
+    - Excel 
+    - Google Sheets
+  + SQL
+    - Oracle
+    - MySQL
+
+### Statistics
+
+Tests include:
+* Distributions
+* Z Scores
+* Confidence Interval
+* t test
+* Wilcox
+* ANOVA
+* Kruskal-Wallis
+* Linear and Logistic Regression
+* Chi-Squared 
+  + Independence
+  + Goodness of Fit
+* Permutation and Randomization
+    
+### Data Management
+
+* Intuition
+* Insight 
+* Wrangling 
+* Visualization
+* Exploration
+* Consulting
+* Mining
+  
+### Machine Learning
+
+Algorithms include:
+* Classifiers
+* Clustering
+* Decision Trees
+* K-Nearest Neighbors
+* Neural Networks
 
 ## Computer Engineering
 
-* Embedded Programming and Systems
+### Embedded Systems
+
+* Programming
   + C/C++ 
   + Python
   + Assembly
   + Machine code
   + Register-level C 
   + Simulink
+* Development Environments
+  - Code Composer Studio
+  - Energia
+  - Arduino
 * Embedded Operating Systems
-  + ROS (Robot Operating System)
-  + VxWorks
-  + FreeRTOS 
-  + Real-Time Linux
-  + Embedded Linux
-  + Raspberry OS (Raspian)
-  + Windows IOT
-* Digital Systems
-  + HDL 
-    - Verilog
-    - VHDL
-  + FPGA 
-    - Artix 7
-    - Kintex 7
-    - PolarFire
-  + Simulation
-    - Verilog Test Bench
-    - Logisim
-  + Logic Integrated Circuits  
-* Internet of Things
-  + Communications
-  + Information
-  + Fourier Series and Transform
-  + Filters
-* Circuit Analysis
-  + LTspice Software
-  + Transistors, Diodes, and Op-Amps
-    - MOSFETS
-    - BJT
-  + Basic Circuits
-    - Inductors
-    - Capacitors 
-    - Resistors
-  + Methods and Techniques
-    - Node
-    - Mesh
+  - ROS (Robot Operating System)
+  - VxWorks
+  - FreeRTOS 
+  - Real-Time Linux
+  - Embedded Linux
+  - Raspberry OS (Raspian)
+  - Windows IOT
+* Microcontrollers
+  - LattePanda 
+  - ESP 8266 
+  - MSP 432
+  - Arduino
+    + Uno
+    + Nano
+    + Mega
+  - Raspberry Pi
+    
+### Digital Systems
+  
+* HDL 
+  - Verilog
+    + Behavioral
+    + Dataflow
+    + Structural
+  - VHDL
+* FPGA 
+  - Artix 7
+  - Kintex 7
+  - PolarFire
+* Simulation
+  - Verilog Test Bench
+  - Logisim
+* Logic Integrated Circuits 
+  
+### Internet of Things
+
+* Communications
+* Information
+* Fourier Series and Transform
+* Filters
+* Networking
+
+### Circuit Analysis
+
+* LTspice Software
+* Transistors, Diodes, and Op-Amps
+  - MOSFETS
+  - BJT
+* Basic Circuits
+  - Inductors
+  - Capacitors 
+  - Resistors
+* Methods and Techniques
+  - Node
+  - Mesh
 
 ## Web Development
 
@@ -241,6 +281,9 @@ title: "Skills"
 * Microsoft Windows
   + Office 365
   + Active Directory
+* Virtual Machines
+  + VirtualBox
+  + VMware
 * Command lines 
   + Bash
   + Batch
@@ -280,3 +323,5 @@ title: "Skills"
   + Data and Networks 
   + Authentication, Access and Accounts
   + Binary Analysis
+  
+  
