@@ -13,6 +13,80 @@ title: "Skills"
 
 </style>
 
+## Computer Engineering
+
+### Embedded Systems
+
+* Programming
+  + C/C++ 
+  + Python
+  + Assembly
+  + Machine code
+  + Register-level C 
+  + Simulink
+* Development Environments
+  - Code Composer Studio
+  - Energia
+  - Arduino
+* Embedded Operating Systems
+  - ROS (Robot Operating System)
+  - VxWorks
+  - FreeRTOS 
+  - Real-Time Linux
+  - Embedded Linux
+  - Raspberry OS (Raspian)
+  - Windows IOT
+* Microcontrollers
+  - LattePanda 
+  - ESP 8266 
+  - MSP 432
+  - Arduino
+    + Uno
+    + Nano
+    + Mega
+  - Raspberry Pi
+    
+### Digital Systems
+  
+* HDL 
+  - Verilog
+    + Behavioral
+    + Dataflow
+    + Structural
+  - VHDL
+* FPGA 
+  - Artix 7
+  - Kintex 7
+  - PolarFire
+* Simulation
+  - Verilog Test Bench
+  - Logisim
+* Logic Integrated Circuits 
+  + TTL (7400-Series)
+  + CMOS
+  
+### Internet of Things
+
+* Communications
+* Information
+* Fourier Series and Transform
+* Filters
+* Networking
+
+### Circuit Analysis
+
+* LTspice Software
+* Transistors, Diodes, and Op-Amps
+  - MOSFETS
+  - BJT
+* Basic Circuits
+  - Inductors
+  - Capacitors 
+  - Resistors
+* Methods and Techniques
+  - Node
+  - Mesh
+
 ## Data Science
 
 ### Tools
@@ -97,80 +171,6 @@ Algorithms include:
 * K-Nearest Neighbors
 * Neural Networks
 
-## Computer Engineering
-
-### Embedded Systems
-
-* Programming
-  + C/C++ 
-  + Python
-  + Assembly
-  + Machine code
-  + Register-level C 
-  + Simulink
-* Development Environments
-  - Code Composer Studio
-  - Energia
-  - Arduino
-* Embedded Operating Systems
-  - ROS (Robot Operating System)
-  - VxWorks
-  - FreeRTOS 
-  - Real-Time Linux
-  - Embedded Linux
-  - Raspberry OS (Raspian)
-  - Windows IOT
-* Microcontrollers
-  - LattePanda 
-  - ESP 8266 
-  - MSP 432
-  - Arduino
-    + Uno
-    + Nano
-    + Mega
-  - Raspberry Pi
-    
-### Digital Systems
-  
-* HDL 
-  - Verilog
-    + Behavioral
-    + Dataflow
-    + Structural
-  - VHDL
-* FPGA 
-  - Artix 7
-  - Kintex 7
-  - PolarFire
-* Simulation
-  - Verilog Test Bench
-  - Logisim
-* Logic Integrated Circuits 
-  + TTL (7400-Series)
-  + CMOS
-  
-### Internet of Things
-
-* Communications
-* Information
-* Fourier Series and Transform
-* Filters
-* Networking
-
-### Circuit Analysis
-
-* LTspice Software
-* Transistors, Diodes, and Op-Amps
-  - MOSFETS
-  - BJT
-* Basic Circuits
-  - Inductors
-  - Capacitors 
-  - Resistors
-* Methods and Techniques
-  - Node
-  - Mesh
-
 ## Web Development
 
 <ul>
@@ -181,6 +181,11 @@ Algorithms include:
   <div style="padding-left:1px;">
   <span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
   <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
+  </span></div>
+  
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('CS')"><li>C#</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
   </span></div>
 </ul>  
 
@@ -212,15 +217,26 @@ Algorithms include:
 
 <ul>
 
-  <li>Discrete Math</li>
   <li>Differential Calculus</li>
   <li>Linear Algebra</li>
+  <li>Boolean Algebra</li>
+  <li>College Algebra</li>
+  <li>Trigonometry</li>
 
   <div style="padding-left:1px;">
   <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
   <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
   </span></div>
 </ul>  
+
+### Discrete Math
+
+* Sets and Logic
+* Functions and Relations
+* Combinatorics and Probability
+* Number Theory and Practice
+* Trees and Graphs
+* Languages and Grammars
 
 ### Functional Programming
     
@@ -292,30 +308,45 @@ Algorithms include:
 * Google Cloud
   + Drive
   + Colab
+<!-- * Microsoft  -->
+<!--   + Onedrive -->
+<!--   +  -->
 
 ## Industry Knowledge
 
+### Interpersonal Skills
+
 * Technical Communication
 * Human Relations
-* Teaching 
-* Research
-  + Scientific 
-  + Computational
-  + Security
-  + Market 
-  + Data
-* Project Management
+* Problem Solving
+* Teaching
+
+### Research
+
+* Scientific 
+* Computational
+* Security
+* Market 
+* Data
+
+### Project Management
+
+* Technical Teamwork
+* Risk Management
+* Methodologies
   + Agile
   + Scrum
   + Waterfall
-  + Kanban Board
-    - Trello
-    - Jira
-* Security  
-  + Social Engineering
-  + Cryptography
-  + Data and Networks 
-  + Authentication, Access and Accounts
-  + Binary Analysis
+* Kanban Board
+  + Trello
+  + Jira
+  
+### Security  
+
+* Social Engineering
+* Cryptography
+* Data and Networks 
+* Authentication, Access and Accounts
+* Binary Analysis
   
   
