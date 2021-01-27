@@ -1,0 +1,37 @@
+<fulfillmentToken fulfillmentType="loan" auth="user" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:9cb786e8-586a-4950-8901-fff8d2ee6025</distributor>
+  <operatorURL>http://acs.ebookcentral.proquest.com/fulfillment</operatorURL>
+  <transaction>6246595_254377797</transaction>
+  <expiration>2020-10-30T10:57:05-07:00</expiration>
+  <resourceItemInfo>
+    <resource>urn:uuid:00000000-0000-0000-0000-000006246595</resource>
+    <resourceItem>0</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Fundamentals of Machine Learning for Predictive Data Analytics</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kelleher, John D.; Mac Namee, Brian; D'Arcy, Aoife</dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">MIT Press</dc:publisher>
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">6246595</dc:identifier>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+    </metadata>
+    <licenseToken>
+      <resource>urn:uuid:00000000-0000-0000-0000-000006246595</resource>
+      <permissions>
+        <display>
+          <duration>1814399</duration>
+        </display>
+        <excerpt>
+          <duration>1814399</duration>
+          <count initial="57" max="57" incrementInterval="31831"/>
+        </excerpt>
+        <print>
+          <duration>1814399</duration>
+          <count initial="29" max="29" incrementInterval="62565"/>
+        </print>
+        <play>
+          <duration>1814399</duration>
+        </play>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>A5ZKwFG/dswIrheAMyl87WV1teE=</hmac>
+</fulfillmentToken>
