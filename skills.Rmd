@@ -26,15 +26,17 @@ title: "Skills"
   + Simulink
 * Development Environments
   - Code Composer Studio
+  - MATLAB
   - Energia
   - Arduino
 * Embedded Operating Systems
   - ROS (Robot Operating System)
   - VxWorks
   - FreeRTOS 
-  - Real-Time Linux
-  - Embedded Linux
-  - Raspberry OS (Raspian)
+  - Linux
+    + Real-Time 
+    + Embedded 
+    + Raspberry OS (Raspian)
   - Windows IOT
 * Microcontrollers
   - LattePanda 
@@ -308,9 +310,8 @@ Algorithms include:
 * Google Cloud
   + Drive
   + Colab
-<!-- * Microsoft  -->
-<!--   + Onedrive -->
-<!--   +  -->
+* Docker
+* Kubernetes
 
 ## Industry Knowledge
 
@@ -348,5 +349,6 @@ Algorithms include:
 * Data and Networks 
 * Authentication, Access and Accounts
 * Binary Analysis
-  
+* System Administration
+
   
