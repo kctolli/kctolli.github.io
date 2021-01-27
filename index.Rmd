@@ -21,7 +21,7 @@ pacman::p_load(pacman, tidyverse, knitr)
 
 ## About Me
 
-BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I am also working toward a minor in Computer Engineering and Data Science. I love to learn new things and solve problems.
+BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned a minor in Computer Engineering and Data Science. I love to learn new things and solve problems. 
 
 <div style="padding-left:5px;">
 
@@ -64,7 +64,7 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I am also wor
 * [COVID-19 Research and Consulting](https://kctolli.github.io/COVID-19/index.html)
 * [Senior Design Project](https://ecen499-nasa.github.io/)
 * [Data Science Coursework](./Data-Science/index.html)
-* [Web Design and Development](.../WDD/WDD100/index.html)
+* [Web Design and Development](./WDD/WDD100/index.html)
 * [Digital System Design Coursework](https://ecen-340.glitch.me/)
 
 <!-- <br />  -->
