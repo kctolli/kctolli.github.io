@@ -1,0 +1,87 @@
+import pandas as pd
+import tensorflow as tf
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import math
+
+
+from tensorflow import keras
+from tensorflow.keras import layers
+from keras.layers import Dense
+from tensorflow.keras.layers.experimental import preprocessing
+from sklearn.model_selection import train_test_split
+
+############################
+train_dataset = bikes.sample(frac=0.8, random_state=0)
+test_dataset = bikes.drop(train_dataset.index)
+############################
+train_features = train_dataset.copy()
+test_features = test_dataset.copy()
+############################
+train_labels = train_features.pop('total_used')
+test_labels = test_features.pop('total_used')
+############################
+normalizer = preprocessing.Normalization()
+normalizer.adapt(np.array(train_features))
+############################
+
+######################
+MULTIVARIABLE MODEL BEGIN
+######################
+
+dnn_model = keras.Sequential([
+      normalizer, 
+      layers.Dense(15, activation='relu'),
+      layers.Dropout(.2),
+      layers.Dense(10, activation='relu'),
+      layers.Dropout(.1),
+      layers.Dense(1, activation='linear')
+  ])
+
+  dnn_model.compile(loss='mean_absolute_error',
+                optimizer=tf.keras.optimizers.Adam(0.01))
+  dnn_model.summary()
+
+####################
+
+%%time
+history = dnn_model.fit(
+    train_features, train_labels,
+    validation_split=0.2,
+    verbose=0, epochs=100)
+
+######################
+
+hist = pd.DataFrame(history.history)
+hist['epoch'] = history.epoch
+hist.tail()
+
+#####################
+
+test_predictions = dnn_model.predict(test_features).flatten()
+
+##########################
+
+a = plt.axes(aspect='equal')
+plt.scatter(test_labels, test_predictions)
+plt.xlabel('True Values')
+plt.ylabel('Predictions')
+lims = [0, 200]
+plt.xlim(lims)
+plt.ylim(lims)
+_ = plt.plot(lims, lims)
+
+####################
+
+error = test_predictions - test_labels
+plt.hist(error, bins=25)
+plt.xlabel('Prediction Error')
+_ = plt.ylabel('Count')
+
+########
+
+TODO: abs value the error, so that it can adjust a total value off, and not have the positivies help out the negatives
+
+avg = error.sum()
+print((avg/len(error)))

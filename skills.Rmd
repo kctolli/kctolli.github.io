@@ -247,6 +247,47 @@ Algorithms include:
 * Elisp
 * Erlang
 
+## Information Technology
+
+### Operating Systems
+
+* Linux
+  + Ubuntu
+  + Fedora
+  + Crouton
+  + Debian
+* Chrome OS
+* Microsoft Windows
+  + Office 365
+  + Active Directory
+* Virtual Machines
+  + VirtualBox
+  + VMware
+* Command lines 
+  + Bash
+  + Batch
+  <!-- + Powershell -->
+  + Windows Task Scheduler
+
+### Cloud Computing
+
+* Git
+  + Github
+  + Bash
+* Google Cloud
+  + Drive
+  + Colab
+* Docker
+* Kubernetes
+
+### Security  
+
+* Social Engineering
+* Cryptography
+* Data and Networks 
+* Authentication, Access and Accounts
+* Binary Analysis
+
 ## General Programming
 
 ### Languages
@@ -282,37 +323,6 @@ Algorithms include:
 * Template
 * Composite
 
-## Operating Systems
-
-* Linux
-  + Ubuntu
-  + Fedora
-  + Crouton
-  + Debian
-* Chrome OS
-* Microsoft Windows
-  + Office 365
-  + Active Directory
-* Virtual Machines
-  + VirtualBox
-  + VMware
-* Command lines 
-  + Bash
-  + Batch
-  <!-- + Powershell -->
-  + Windows Task Scheduler
-
-## Cloud Computing
-
-* Git
-  + Github
-  + Bash
-* Google Cloud
-  + Drive
-  + Colab
-* Docker
-* Kubernetes
-
 ## Industry Knowledge
 
 ### Interpersonal Skills
@@ -341,14 +351,4 @@ Algorithms include:
 * Kanban Board
   + Trello
   + Jira
-  
-### Security  
-
-* Social Engineering
-* Cryptography
-* Data and Networks 
-* Authentication, Access and Accounts
-* Binary Analysis
-* System Administration
-
   
