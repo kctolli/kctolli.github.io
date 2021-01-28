@@ -20,7 +20,7 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
 </script>
 
 <style>
-
+p {color: black;}
 </style>
 
 ## Brigham Young University - Idaho

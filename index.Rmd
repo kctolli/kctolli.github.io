@@ -14,8 +14,19 @@ pacman::p_load(pacman, tidyverse, knitr)
 </script>
 
 <style>
-
+a {color: blue;}
+p {color: black;}
+nav {font-size: 80%; font-style: italic;}
 </style>
+
+<nav>
+This website is setup as a personal portfolio. 
+
+How to navigate this website:
+
+  + Blue text - Clickable (Click to see pop up links or new pages)
+  + Gray text - Hoverable (Hover to get more information)
+</nav>
 
 ![](./site_libs/images/me.jpg)
 
@@ -71,9 +82,16 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 <hr />
 
+<footer>
+
+<p id="info">&copy; 2020-2021  - Kyle Tolliver</p> 
+
+<br />
+
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
 ######  *--- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files *
 
 ######  *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io)*
 
+</footer>

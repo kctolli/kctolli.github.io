@@ -10,7 +10,8 @@ title: "Skills"
 </script>
 
 <style>
-
+a { color: gray;}
+p, ul {color: black;}
 </style>
 
 ## Computer Engineering
@@ -93,33 +94,49 @@ title: "Skills"
 
 ### Tools
 
-* R, Rmd and RStudio     
-  Packages include:
-  + tidyverse
-    - ggplot 2 
-    - dplyr
-    - tidyr
-    - readr
-    - purr 
-    - tibble
-    - stringr
-    - forcats
-  + knitr
-  + reticulate
-  + lubridate
-  + dygraphs
-  + sf (simple features)
-  + leaflet
-  + devtools
-  + downloader
-  + pagedown
-  + pacman
-  + installer
-  + blogdown
-  + mosaic
-  + car
-* Python and Jupyter Notebook     
-  Libraries include:
+<ul>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('R')"><li style="color:blue;">R, Rmd and RStudio</li></a>
+</span>
+<div id="R" style="display:none;padding-left:20px;">
+
+Packages include: 
+
++ tidyverse
+  - ggplot 2 
+  - dplyr
+  - tidyr
+  - readr
+  - purr 
+  - tibble
+  - stringr
+  - forcats
++ knitr
++ reticulate
++ lubridate
++ dygraphs
++ sf (simple features)
++ leaflet
++ devtools
++ downloader
++ pagedown
++ pacman
++ installer
++ blogdown
++ mosaic
++ car
+</div></div>
+  
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('Py')"><li style="color:blue;">Python and Jupyter Notebook</li></a>
+</span>
+<div id="Py" style="display:none;padding-left:20px;">
+
+Libraries include:
+
   + Pandas
   + Matplotlib
   + Numpy
@@ -127,14 +144,30 @@ title: "Skills"
   + Math
   + Tensor Flow
   + SciPy
-* Tableau
-* Databases
-  + Spreadsheets
-    - Excel 
-    - Google Sheets
-  + SQL
-    - Oracle
-    - MySQL
+</div></div>  
+  
+<li>Tableau</li>
+<li>Databases
+  <ul>
+  <div style="padding-left:1px;">
+  
+  <span class="tooltipr"><a href="javascript:showhide('spread')"><li>Spreadsheets</li></a>
+  <span class="tooltipRtext">
+  <ul>
+  <li style="color:white;">Excel</li> 
+  <li style="color:white;">Google Sheets</li>
+  </ul></span></span></div>
+  
+  <div style="padding-left:1px;">
+  
+  <span class="tooltipr"><a href="javascript:showhide('sql')"><li>SQL</li></a>
+  <span class="tooltipRtext">
+  <ul>
+  <li style="color:white;">Oracle</li> 
+  <li style="color:white;">MySQL</li>
+  </ul></span></span></div>
+
+</ul>
 
 ### Statistics
 
@@ -173,7 +206,9 @@ Algorithms include:
 * K-Nearest Neighbors
 * Neural Networks
 
-## Web Development
+## Information Technology
+
+### Web Development
 
 <ul>
 
@@ -189,10 +224,11 @@ Algorithms include:
   <span class="tooltipr"><a href="javascript:showhide('CS')"><li>C#</li></a>
   <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
   </span></div>
-</ul>  
 
+<div style="padding-left:1px;">
 
-### R-based webpages
+<span class="tooltipr"><a href="javascript:showhide('Rweb')"><li style="color:blue;"><i>R-based webpages</i></li></a></span>
+<div id="Rweb" style="display:none;padding-left:20px;">
 
 * Basic knitr    
   Basic building blocks:
@@ -214,40 +250,9 @@ Algorithms include:
   - pagedown (R package and templates)
   - knitr (R package)
   - Rmarkdown
-  
-## Mathematics
 
-<ul>
+</div></div></ul>  
 
-  <li>Differential Calculus</li>
-  <li>Linear Algebra</li>
-  <li>Boolean Algebra</li>
-  <li>College Algebra</li>
-  <li>Trigonometry</li>
-
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-  </span></div>
-</ul>  
-
-### Discrete Math
-
-* Sets and Logic
-* Functions and Relations
-* Combinatorics and Probability
-* Number Theory and Practice
-* Trees and Graphs
-* Languages and Grammars
-
-### Functional Programming
-    
-* MATLAB
-* Mathematica
-* Elisp
-* Erlang
-
-## Information Technology
 
 ### Operating Systems
 
@@ -287,6 +292,38 @@ Algorithms include:
 * Data and Networks 
 * Authentication, Access and Accounts
 * Binary Analysis
+
+## Mathematics
+
+<ul>
+
+  <li>Differential Calculus</li>
+  <li>Linear Algebra</li>
+  <li>Boolean Algebra</li>
+  <li>College Algebra</li>
+  <li>Trigonometry</li>
+
+  <div style="padding-left:1px;">
+  <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
+  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+  </span></div>
+</ul>  
+
+### Discrete Math
+
+* Sets and Logic
+* Functions and Relations
+* Combinatorics and Probability
+* Number Theory and Practice
+* Trees and Graphs
+* Languages and Grammars
+
+### Functional Programming
+    
+* MATLAB
+* Mathematica
+* Elisp
+* Erlang
 
 ## General Programming
 

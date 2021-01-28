@@ -402,7 +402,8 @@ div.tocify {
  }
 </script>
 <style>
-
+a { color: gray;}
+p, ul {color: black;}
 </style>
 <div id="computer-engineering" class="section level2">
 <h2>Computer Engineering</h2>
@@ -522,8 +523,14 @@ div.tocify {
 <div id="tools" class="section level3">
 <h3>Tools</h3>
 <ul>
-<li>R, Rmd and RStudio<br />
-Packages include:
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('R')">
+<li style="color:blue;">
+R, Rmd and RStudio
+</li>
+</a> </span>
+<div id="R" style="display:none;padding-left:20px;">
+<p>Packages include:</p>
 <ul>
 <li>tidyverse
 <ul>
@@ -550,9 +557,17 @@ Packages include:
 <li>blogdown</li>
 <li>mosaic</li>
 <li>car</li>
-</ul></li>
-<li>Python and Jupyter Notebook<br />
-Libraries include:
+</ul>
+</div>
+</div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('Py')">
+<li style="color:blue;">
+Python and Jupyter Notebook
+</li>
+</a> </span>
+<div id="Py" style="display:none;padding-left:20px;">
+<p>Libraries include:</p>
 <ul>
 <li>Pandas</li>
 <li>Matplotlib</li>
@@ -561,21 +576,49 @@ Libraries include:
 <li>Math</li>
 <li>Tensor Flow</li>
 <li>SciPy</li>
-</ul></li>
-<li>Tableau</li>
-<li>Databases
+</ul>
+</div>
+</div>
+<li>
+Tableau
+</li>
+<li>
+Databases
 <ul>
-<li>Spreadsheets
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('spread')">
+<li>
+Spreadsheets
+</li>
+</a> <span class="tooltipRtext">
 <ul>
-<li>Excel</li>
-<li>Google Sheets</li>
-</ul></li>
-<li>SQL
+<li style="color:white;">
+Excel
+</li>
+<li style="color:white;">
+Google Sheets
+</li>
+</ul>
+</span></span>
+</div>
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('sql')">
+<li>
+SQL
+</li>
+</a> <span class="tooltipRtext">
 <ul>
-<li>Oracle</li>
-<li>MySQL</li>
-</ul></li>
-</ul></li>
+<li style="color:white;">
+Oracle
+</li>
+<li style="color:white;">
+MySQL
+</li>
+</ul>
+</span></span>
+</div>
 </ul>
 </div>
 <div id="statistics" class="section level3">
@@ -622,8 +665,10 @@ Libraries include:
 </ul>
 </div>
 </div>
-<div id="web-development" class="section level2">
-<h2>Web Development</h2>
+<div id="information-technology" class="section level2">
+<h2>Information Technology</h2>
+<div id="web-development" class="section level3">
+<h3>Web Development</h3>
 <ul>
 <li>
 HTML
@@ -645,9 +690,13 @@ C#
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 23/25</span> </span>
 </div>
-</ul>
-<div id="r-based-webpages" class="section level3">
-<h3>R-based webpages</h3>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('Rweb')">
+<li style="color:blue;">
+<i>R-based webpages</i>
+</li>
+</a></span>
+<div id="Rweb" style="display:none;padding-left:20px;">
 <ul>
 <li>Basic knitr<br />
 Basic building blocks:
@@ -673,55 +722,8 @@ Basic building blocks:
 </ul>
 </div>
 </div>
-<div id="mathematics" class="section level2">
-<h2>Mathematics</h2>
-<ul>
-<li>
-Differential Calculus
-</li>
-<li>
-Linear Algebra
-</li>
-<li>
-Boolean Algebra
-</li>
-<li>
-College Algebra
-</li>
-<li>
-Trigonometry
-</li>
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('math')">
-<li>
-Basic Math
-</li>
-</a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
-</div>
-</ul>
-<div id="discrete-math" class="section level3">
-<h3>Discrete Math</h3>
-<ul>
-<li>Sets and Logic</li>
-<li>Functions and Relations</li>
-<li>Combinatorics and Probability</li>
-<li>Number Theory and Practice</li>
-<li>Trees and Graphs</li>
-<li>Languages and Grammars</li>
 </ul>
 </div>
-<div id="functional-programming" class="section level3">
-<h3>Functional Programming</h3>
-<ul>
-<li>MATLAB</li>
-<li>Mathematica</li>
-<li>Elisp</li>
-<li>Erlang</li>
-</ul>
-</div>
-</div>
-<div id="information-technology" class="section level2">
-<h2>Information Technology</h2>
 <div id="operating-systems" class="section level3">
 <h3>Operating Systems</h3>
 <ul>
@@ -776,6 +778,53 @@ Basic Math
 <li>Data and Networks</li>
 <li>Authentication, Access and Accounts</li>
 <li>Binary Analysis</li>
+</ul>
+</div>
+</div>
+<div id="mathematics" class="section level2">
+<h2>Mathematics</h2>
+<ul>
+<li>
+Differential Calculus
+</li>
+<li>
+Linear Algebra
+</li>
+<li>
+Boolean Algebra
+</li>
+<li>
+College Algebra
+</li>
+<li>
+Trigonometry
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('math')">
+<li>
+Basic Math
+</li>
+</a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
+</div>
+</ul>
+<div id="discrete-math" class="section level3">
+<h3>Discrete Math</h3>
+<ul>
+<li>Sets and Logic</li>
+<li>Functions and Relations</li>
+<li>Combinatorics and Probability</li>
+<li>Number Theory and Practice</li>
+<li>Trees and Graphs</li>
+<li>Languages and Grammars</li>
+</ul>
+</div>
+<div id="functional-programming" class="section level3">
+<h3>Functional Programming</h3>
+<ul>
+<li>MATLAB</li>
+<li>Mathematica</li>
+<li>Elisp</li>
+<li>Erlang</li>
 </ul>
 </div>
 </div>

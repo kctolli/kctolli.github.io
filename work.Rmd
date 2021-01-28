@@ -2,6 +2,17 @@
 title: "Work Experience"
 ---
 
+<script type="text/javascript">
+ function showhide(id) {
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ }
+</script>
+
+<style>
+p {color: black;}
+</style>
+
 ## Research & Business Development Center
 
 ### Lineage Logistics
