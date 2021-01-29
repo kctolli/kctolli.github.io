@@ -10,63 +10,115 @@ title: "Skills"
 </script>
 
 <style>
-a { color: gray;}
-p, ul {color: black;}
+a {color: blue;}
+p {color: black;}
+.tooltipRtext {color: white;}
+ul {text-align: left; color: black;}
 </style>
 
 ## Computer Engineering
 
 ### Embedded Systems
 
-* Programming
-  + C/C++ 
-  + Python
-  + Assembly
-  + Machine code
-  + Register-level C 
-  + Simulink
-* Development Environments
-  - Code Composer Studio
-  - MATLAB
-  - Energia
-  - Arduino
-* Embedded Operating Systems
-  - ROS (Robot Operating System)
-  - VxWorks
-  - FreeRTOS 
-  - Linux
-    + Real-Time 
-    + Embedded 
-    + Raspberry OS (Raspian)
-  - Windows IOT
-* Microcontrollers
-  - LattePanda 
-  - ESP 8266 
-  - MSP 432
-  - Arduino
-    + Uno
-    + Nano
-    + Mega
-  - Raspberry Pi
+#### Programming
+  
+* C/C++ 
+* Python
+* Assembly
+* Machine code
+* Register-level C 
+* Simulink
+  
+#### Development Environments
+  
+* Code Composer Studio
+* SoftConsole
+* MATLAB
+* Energia
+* Arduino
+  
+#### Embedded Operating Systems
+
+<ul>
+
+<li>ROS (Robot Operating System)</li>
+<li>VxWorks</li>
+<li>FreeRTOS</li>
+<li>Windows IOT</li>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('linux')"><li style="color:gray;">Linux</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Real-Time</li>
+<li>Embedded</li>
+<li>Raspberry OS</li>
+</ul></span></span></div>
+
+</ul>
+  
+#### Microcontrollers
+
+<ul>
+
+<li>Intel Galileo</li>
+<li>Raspberry Pi</li>
+<li>LattePanda</li>
+<li>ESP 8266</li>
+<li>MSP 432</li>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('arduino')"><li style="color:gray;">Arduino</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Uno</li>
+<li>Nano</li>
+<li>Mega</li>
+</ul></span></span></div>
+
+</ul>
     
 ### Digital Systems
+
+#### FPGAs and HDLs
+
+<ul>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('verilog')"><li style="color:gray;">Verilog</li></a>
+<span class="tooltipRtext">Developed using: Vivado <br/> on a Artix 7 and Kintex 7</span></span></div>
+<ul>
+<li>Behavioral</li> 
+<li>Dataflow</li>
+<li>Structural</li>
+<li>System</li>
+</ul>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('vhdl')"><li style="color:gray;">VHDL</li></a>
+<span class="tooltipRtext">Developed using: Libero <br/> on a PolarFire</span></span></div>
+
+</ul>
   
-* HDL 
-  - Verilog
-    + Behavioral
-    + Dataflow
-    + Structural
-  - VHDL
-* FPGA 
-  - Artix 7
-  - Kintex 7
-  - PolarFire
-* Simulation
-  - Verilog Test Bench
-  - Logisim
-* Logic Integrated Circuits 
-  + TTL (7400-Series)
-  + CMOS
+#### Simulation and Testing
+
+<ul>
+
+<li>Verilog Test Bench</li>
+<li>Logisim</li>
+<li>Waveform</li>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('IC')"><li style="color:gray;">Logic Integrated Circuits</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>TTL (7400-Series)</li>
+<li>CMOS</li>
+</ul></span></span></div>
+
+</ul>
   
 ### Internet of Things
 
@@ -78,17 +130,39 @@ p, ul {color: black;}
 
 ### Circuit Analysis
 
-* LTspice Software
-* Transistors, Diodes, and Op-Amps
-  - MOSFETS
-  - BJT
-* Basic Circuits
-  - Inductors
-  - Capacitors 
-  - Resistors
-* Methods and Techniques
-  - Node
-  - Mesh
+<ul>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('spice')"><li style="color:gray;">Spice Software</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>LTSpice</li> 
+<li>EasyEDA</li>
+</ul></span></span></div>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('op')"><li style="color:gray;">Transistors, Diodes, and Op-Amps</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>MOSFETS</li> 
+<li>BJT</li>
+</ul></span></span></div>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('BC')"><li style="color:gray;">Basic Circuits</li></a>
+<span class="tooltipRtext"><p style="color:white;">Methods and Techniques:</p><ul style="color:white;">
+<li>Nodal</li> 
+<li>Mesh</li>
+<li>Kirchhoff's Laws</li> 
+<li>Thevenin's Theorem</li> 
+<li>Norton's Theorem</li>
+</ul></span></span></div>
+<ul>
+<li>Inductors</li> 
+<li>Capacitors</li>
+<li>Resistors</li>
+</ul></ul>
 
 ## Data Science
 
@@ -98,7 +172,8 @@ p, ul {color: black;}
 
 <div style="padding-left:1px;">
 
-<span class="tooltipr"><a href="javascript:showhide('R')"><li style="color:blue;">R, Rmd and RStudio</li></a>
+<span class="tooltipr"><a href="javascript:showhide('R')"><li>R</li></a>
+<span class="tooltipRtext">Developed using: RStudio <br/> with Rmd files and R Scripts</span>
 </span>
 <div id="R" style="display:none;padding-left:20px;">
 
@@ -131,7 +206,8 @@ Packages include:
   
 <div style="padding-left:1px;">
 
-<span class="tooltipr"><a href="javascript:showhide('Py')"><li style="color:blue;">Python and Jupyter Notebook</li></a>
+<span class="tooltipr"><a href="javascript:showhide('Py')"><li>Python</li></a>
+<span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span>
 </span>
 <div id="Py" style="display:none;padding-left:20px;">
 
@@ -142,30 +218,30 @@ Libraries include:
   + Numpy
   + Plotly
   + Math
+  + CMath
   + Tensor Flow
   + SciPy
+  + Random
 </div></div>  
   
 <li>Tableau</li>
 <li>Databases
-  <ul>
-  <div style="padding-left:1px;">
-  
-  <span class="tooltipr"><a href="javascript:showhide('spread')"><li>Spreadsheets</li></a>
-  <span class="tooltipRtext">
-  <ul>
-  <li style="color:white;">Excel</li> 
-  <li style="color:white;">Google Sheets</li>
-  </ul></span></span></div>
-  
-  <div style="padding-left:1px;">
-  
-  <span class="tooltipr"><a href="javascript:showhide('sql')"><li>SQL</li></a>
-  <span class="tooltipRtext">
-  <ul>
-  <li style="color:white;">Oracle</li> 
-  <li style="color:white;">MySQL</li>
-  </ul></span></span></div>
+<ul><div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Excel</li> 
+<li>Google Sheets</li>
+<li>LibreOffice Calc</li>
+</ul></span></span></div>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">SQL</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Oracle</li> 
+<li>MySQL</li>
+</ul></span></span></div>
 
 </ul>
 
@@ -212,22 +288,22 @@ Algorithms include:
 
 <ul>
 
-  <li>HTML</li>
-  <li>CSS</li>
+<li>HTML</li>
+<li>CSS</li>
 
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
-  </span></div>
-  
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('CS')"><li>C#</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
-  </span></div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">JavaScript</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
+</span></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('CS')"><li style="color:gray;">C#</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
+</span></div>
 
 <div style="padding-left:1px;">
 
-<span class="tooltipr"><a href="javascript:showhide('Rweb')"><li style="color:blue;"><i>R-based webpages</i></li></a></span>
+<span class="tooltipr"><a href="javascript:showhide('Rweb')"><li><i>R-based webpages</i></li></a></span>
 <div id="Rweb" style="display:none;padding-left:20px;">
 
 * Basic knitr    
@@ -253,7 +329,6 @@ Algorithms include:
 
 </div></div></ul>  
 
-
 ### Operating Systems
 
 * Linux
@@ -274,6 +349,18 @@ Algorithms include:
   <!-- + Powershell -->
   + Windows Task Scheduler
 
+### Security  
+
+* Malware and Antimalware
+* Social Engineering
+* Cryptography
+* Data and Networks 
+* Authentication and Access
+* Application and Device
+* Business Continuity
+* Risk Mitigation
+* Binary Analysis
+
 ### Cloud Computing
 
 * Git
@@ -285,31 +372,21 @@ Algorithms include:
 * Docker
 * Kubernetes
 
-### Security  
-
-* Social Engineering
-* Cryptography
-* Data and Networks 
-* Authentication, Access and Accounts
-* Binary Analysis
-
 ## Mathematics
 
 <ul>
 
-  <li>Differential Calculus</li>
-  <li>Linear Algebra</li>
-  <li>Boolean Algebra</li>
-  <li>College Algebra</li>
-  <li>Trigonometry</li>
+<li>Differential Calculus</li>
+<li>Linear Algebra</li>
+<li>Boolean Algebra</li>
+<li>College Algebra</li>
+<li>Trigonometry</li>
 
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('math')"><li>Basic Math</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-  </span></div>
-</ul>  
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('dm')"><li>Discrete Math</li></a></span>
+<div id="dm" style="display:none;padding-left:20px;">
 
-### Discrete Math
+Topics include:
 
 * Sets and Logic
 * Functions and Relations
@@ -317,6 +394,14 @@ Algorithms include:
 * Number Theory and Practice
 * Trees and Graphs
 * Languages and Grammars
+
+</div></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+</span></div>
+</ul>  
 
 ### Functional Programming
     
@@ -331,20 +416,44 @@ Algorithms include:
 
 <ul>
 
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-  </span></div>
-  
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
-  </span></div>
-  
-  <div style="padding-left:1px;">
-  <span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
-  <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-  </span></div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+</span>
+<div id="C++" style="display:none;padding-left:20px;">
+
+Developed Using
+
+* Visual Studio
+
+</div></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
+</span>
+<div id="Java" style="display:none;padding-left:20px;">
+
+Developed Using
+
+* IntelliJ
+* Android Studio
+
+</div></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
+</span>
+<div id="Python" style="display:none;padding-left:20px;">
+
+Developed Using
+
+* PyCharm 
+* Thony
+* Jupyter Notebook
+
+</div></div>
 </ul>  
 
 ### Design Patterns
@@ -364,10 +473,42 @@ Algorithms include:
 
 ### Interpersonal Skills
 
-* Technical Communication
-* Human Relations
-* Problem Solving
-* Teaching
+<ul>
+
+<li>Technical Communication</li>
+<li>Human Relations</li>
+<li>Problem Solving</li>
+<li>Teaching</li>
+<li>Leadership</li>
+<li>Organization</li>
+
+<div style="padding-left:1px;">
+
+<span class="tooltipr"><a href="javascript:showhide('PM')"><li>Project Management</li></a></span>
+<div id="PM" style="display:none;padding-left:20px;">
+
+<ul>
+
+<li>Technical Teamwork</li>
+<li>Risk Management</li>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('method')"><li style="color:gray;">Methodologies</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Agile</li>
+<li>Scrum</li>
+<li>Waterfall</li>
+</ul></span></span></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('kanban')"><li style="color:gray;">Kanban Board</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Trello</li>
+<li>Jira</li>
+</ul></span></span></div>
+
+</ul></div></div></ul>  
+
 
 ### Research
 
@@ -376,16 +517,3 @@ Algorithms include:
 * Security
 * Market 
 * Data
-
-### Project Management
-
-* Technical Teamwork
-* Risk Management
-* Methodologies
-  + Agile
-  + Scrum
-  + Waterfall
-* Kanban Board
-  + Trello
-  + Jira
-  

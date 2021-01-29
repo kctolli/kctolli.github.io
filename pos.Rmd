@@ -20,6 +20,7 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
 </script>
 
 <style>
+a {color: blue;}
 p {color: black;}
 </style>
 
@@ -30,15 +31,14 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 <div style="padding-left:5px;">
 
 <span class="tooltipr">
-<a href="javascript:showhide('hovertobegin')"><p style="color:blue;">Diploma</p></a>
-  <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.64 out of 4 </span>
+<a href="javascript:showhide('hovertobegin')"><p>Diploma</p></a>
+  <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span>
 </span>
 <div id="hovertobegin" style="display:none;padding-left:20px;">
 
 ![](./site_libs/images/diploma.jpg)
 
-</div>
-</div>
+</div></div>
 
 ### Software Engineering (BS)
 

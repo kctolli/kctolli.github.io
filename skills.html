@@ -402,15 +402,17 @@ div.tocify {
  }
 </script>
 <style>
-a { color: gray;}
-p, ul {color: black;}
+a {color: blue;}
+p {color: black;}
+.tooltipRtext {color: white;}
+ul {text-align: left; color: black;}
 </style>
 <div id="computer-engineering" class="section level2">
 <h2>Computer Engineering</h2>
 <div id="embedded-systems" class="section level3">
 <h3>Embedded Systems</h3>
-<ul>
-<li>Programming
+<div id="programming" class="section level4">
+<h4>Programming</h4>
 <ul>
 <li>C/C++</li>
 <li>Python</li>
@@ -418,72 +420,159 @@ p, ul {color: black;}
 <li>Machine code</li>
 <li>Register-level C</li>
 <li>Simulink</li>
-</ul></li>
-<li>Development Environments
+</ul>
+</div>
+<div id="development-environments" class="section level4">
+<h4>Development Environments</h4>
 <ul>
 <li>Code Composer Studio</li>
+<li>SoftConsole</li>
 <li>MATLAB</li>
 <li>Energia</li>
 <li>Arduino</li>
-</ul></li>
-<li>Embedded Operating Systems
-<ul>
-<li>ROS (Robot Operating System)</li>
-<li>VxWorks</li>
-<li>FreeRTOS</li>
-<li>Linux
-<ul>
-<li>Real-Time</li>
-<li>Embedded</li>
-<li>Raspberry OS (Raspian)</li>
-</ul></li>
-<li>Windows IOT</li>
-</ul></li>
-<li>Microcontrollers
-<ul>
-<li>LattePanda</li>
-<li>ESP 8266</li>
-<li>MSP 432</li>
-<li>Arduino
-<ul>
-<li>Uno</li>
-<li>Nano</li>
-<li>Mega</li>
-</ul></li>
-<li>Raspberry Pi</li>
-</ul></li>
 </ul>
+</div>
+<div id="embedded-operating-systems" class="section level4">
+<h4>Embedded Operating Systems</h4>
+<ul>
+<li>
+ROS (Robot Operating System)
+</li>
+<li>
+VxWorks
+</li>
+<li>
+FreeRTOS
+</li>
+<li>
+Windows IOT
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('linux')">
+<li style="color:gray;">
+Linux
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Real-Time
+</li>
+<li>
+Embedded
+</li>
+<li>
+Raspberry OS
+</li>
+</ul>
+</span></span>
+</div>
+</ul>
+</div>
+<div id="microcontrollers" class="section level4">
+<h4>Microcontrollers</h4>
+<ul>
+<li>
+Intel Galileo
+</li>
+<li>
+Raspberry Pi
+</li>
+<li>
+LattePanda
+</li>
+<li>
+ESP 8266
+</li>
+<li>
+MSP 432
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('arduino')">
+<li style="color:gray;">
+Arduino
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Uno
+</li>
+<li>
+Nano
+</li>
+<li>
+Mega
+</li>
+</ul>
+</span></span>
+</div>
+</ul>
+</div>
 </div>
 <div id="digital-systems" class="section level3">
 <h3>Digital Systems</h3>
+<div id="fpgas-and-hdls" class="section level4">
+<h4>FPGAs and HDLs</h4>
 <ul>
-<li>HDL
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('verilog')">
+<li style="color:gray;">
+Verilog
+</li>
+</a> <span class="tooltipRtext">Developed using: Vivado <br/> on a Artix 7 and Kintex 7</span></span>
+</div>
 <ul>
-<li>Verilog
-<ul>
-<li>Behavioral</li>
-<li>Dataflow</li>
-<li>Structural</li>
-</ul></li>
-<li>VHDL</li>
-</ul></li>
-<li>FPGA
-<ul>
-<li>Artix 7</li>
-<li>Kintex 7</li>
-<li>PolarFire</li>
-</ul></li>
-<li>Simulation
-<ul>
-<li>Verilog Test Bench</li>
-<li>Logisim</li>
-</ul></li>
-<li>Logic Integrated Circuits
-<ul>
-<li>TTL (7400-Series)</li>
-<li>CMOS</li>
-</ul></li>
+<li>
+Behavioral
+</li>
+<li>
+Dataflow
+</li>
+<li>
+Structural
+</li>
+<li>
+System
+</li>
 </ul>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('vhdl')">
+<li style="color:gray;">
+VHDL
+</li>
+</a> <span class="tooltipRtext">Developed using: Libero <br/> on a PolarFire</span></span>
+</div>
+</ul>
+</div>
+<div id="simulation-and-testing" class="section level4">
+<h4>Simulation and Testing</h4>
+<ul>
+<li>
+Verilog Test Bench
+</li>
+<li>
+Logisim
+</li>
+<li>
+Waveform
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('IC')">
+<li style="color:gray;">
+Logic Integrated Circuits
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+TTL (7400-Series)
+</li>
+<li>
+CMOS
+</li>
+</ul>
+</span></span>
+</div>
+</ul>
+</div>
 </div>
 <div id="internet-of-things" class="section level3">
 <h3>Internet of Things</h3>
@@ -498,23 +587,77 @@ p, ul {color: black;}
 <div id="circuit-analysis" class="section level3">
 <h3>Circuit Analysis</h3>
 <ul>
-<li>LTspice Software</li>
-<li>Transistors, Diodes, and Op-Amps
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('spice')">
+<li style="color:gray;">
+Spice Software
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+LTSpice
+</li>
+<li>
+EasyEDA
+</li>
+</ul>
+</span></span>
+</div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('op')">
+<li style="color:gray;">
+Transistors, Diodes, and Op-Amps
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+MOSFETS
+</li>
+<li>
+BJT
+</li>
+</ul>
+</span></span>
+</div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('BC')">
+<li style="color:gray;">
+Basic Circuits
+</li>
+</a> <span class="tooltipRtext">
+<p style="color:white;">
+Methods and Techniques:
+</p>
+<ul style="color:white;">
+<li>
+Nodal
+</li>
+<li>
+Mesh
+</li>
+<li>
+Kirchhoff’s Laws
+</li>
+<li>
+Thevenin’s Theorem
+</li>
+<li>
+Norton’s Theorem
+</li>
+</ul>
+</span></span>
+</div>
 <ul>
-<li>MOSFETS</li>
-<li>BJT</li>
-</ul></li>
-<li>Basic Circuits
-<ul>
-<li>Inductors</li>
-<li>Capacitors</li>
-<li>Resistors</li>
-</ul></li>
-<li>Methods and Techniques
-<ul>
-<li>Node</li>
-<li>Mesh</li>
-</ul></li>
+<li>
+Inductors
+</li>
+<li>
+Capacitors
+</li>
+<li>
+Resistors
+</li>
+</ul>
 </ul>
 </div>
 </div>
@@ -525,10 +668,10 @@ p, ul {color: black;}
 <ul>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('R')">
-<li style="color:blue;">
-R, Rmd and RStudio
+<li>
+R
 </li>
-</a> </span>
+</a> <span class="tooltipRtext">Developed using: RStudio <br/> with Rmd files and R Scripts</span> </span>
 <div id="R" style="display:none;padding-left:20px;">
 <p>Packages include:</p>
 <ul>
@@ -562,10 +705,10 @@ R, Rmd and RStudio
 </div>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Py')">
-<li style="color:blue;">
-Python and Jupyter Notebook
+<li>
+Python
 </li>
-</a> </span>
+</a> <span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span> </span>
 <div id="Py" style="display:none;padding-left:20px;">
 <p>Libraries include:</p>
 <ul>
@@ -574,8 +717,10 @@ Python and Jupyter Notebook
 <li>Numpy</li>
 <li>Plotly</li>
 <li>Math</li>
+<li>CMath</li>
 <li>Tensor Flow</li>
 <li>SciPy</li>
+<li>Random</li>
 </ul>
 </div>
 </div>
@@ -586,34 +731,35 @@ Tableau
 Databases
 <ul>
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('spread')">
-<li>
+<li style="color:gray;">
 Spreadsheets
 </li>
 </a> <span class="tooltipRtext">
-<ul>
-<li style="color:white;">
+<ul style="color:white;">
+<li>
 Excel
 </li>
-<li style="color:white;">
+<li>
 Google Sheets
+</li>
+<li>
+LibreOffice Calc
 </li>
 </ul>
 </span></span>
 </div>
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('sql')">
-<li>
+<li style="color:gray;">
 SQL
 </li>
 </a> <span class="tooltipRtext">
-<ul>
-<li style="color:white;">
+<ul style="color:white;">
+<li>
 Oracle
 </li>
-<li style="color:white;">
+<li>
 MySQL
 </li>
 </ul>
@@ -678,21 +824,21 @@ CSS
 </li>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('JS')">
-<li>
+<li style="color:gray;">
 JavaScript
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 21/25</span> </span>
 </div>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('CS')">
-<li>
+<li style="color:gray;">
 C#
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 23/25</span> </span>
 </div>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Rweb')">
-<li style="color:blue;">
+<li>
 <i>R-based webpages</i>
 </li>
 </a></span>
@@ -773,10 +919,14 @@ Basic building blocks:
 <div id="security" class="section level3">
 <h3>Security</h3>
 <ul>
+<li>Malware and Antimalware</li>
 <li>Social Engineering</li>
 <li>Cryptography</li>
 <li>Data and Networks</li>
-<li>Authentication, Access and Accounts</li>
+<li>Authentication and Access</li>
+<li>Application and Device</li>
+<li>Business Continuity</li>
+<li>Risk Mitigation</li>
 <li>Binary Analysis</li>
 </ul>
 </div>
@@ -800,15 +950,13 @@ College Algebra
 Trigonometry
 </li>
 <div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('math')">
+<span class="tooltipr"><a href="javascript:showhide('dm')">
 <li>
-Basic Math
+Discrete Math
 </li>
-</a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
-</div>
-</ul>
-<div id="discrete-math" class="section level3">
-<h3>Discrete Math</h3>
+</a></span>
+<div id="dm" style="display:none;padding-left:20px;">
+<p>Topics include:</p>
 <ul>
 <li>Sets and Logic</li>
 <li>Functions and Relations</li>
@@ -818,6 +966,15 @@ Basic Math
 <li>Languages and Grammars</li>
 </ul>
 </div>
+</div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('math')">
+<li style="color:gray;">
+Basic Math
+</li>
+</a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
+</div>
+</ul>
 <div id="functional-programming" class="section level3">
 <h3>Functional Programming</h3>
 <ul>
@@ -839,6 +996,12 @@ Basic Math
 C/C++
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
+<div id="C++" style="display:none;padding-left:20px;">
+<p>Developed Using</p>
+<ul>
+<li>Visual Studio</li>
+</ul>
+</div>
 </div>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Java')">
@@ -846,6 +1009,13 @@ C/C++
 Java
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 22/25</span> </span>
+<div id="Java" style="display:none;padding-left:20px;">
+<p>Developed Using</p>
+<ul>
+<li>IntelliJ</li>
+<li>Android Studio</li>
+</ul>
+</div>
 </div>
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Python')">
@@ -853,6 +1023,14 @@ Java
 Python
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 25/25</span> </span>
+<div id="Python" style="display:none;padding-left:20px;">
+<p>Developed Using</p>
+<ul>
+<li>PyCharm</li>
+<li>Thony</li>
+<li>Jupyter Notebook</li>
+</ul>
+</div>
 </div>
 </ul>
 </div>
@@ -877,10 +1055,76 @@ Python
 <div id="interpersonal-skills" class="section level3">
 <h3>Interpersonal Skills</h3>
 <ul>
-<li>Technical Communication</li>
-<li>Human Relations</li>
-<li>Problem Solving</li>
-<li>Teaching</li>
+<li>
+Technical Communication
+</li>
+<li>
+Human Relations
+</li>
+<li>
+Problem Solving
+</li>
+<li>
+Teaching
+</li>
+<li>
+Leadership
+</li>
+<li>
+Organization
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('PM')">
+<li>
+Project Management
+</li>
+</a></span>
+<div id="PM" style="display:none;padding-left:20px;">
+<ul>
+<li>
+Technical Teamwork
+</li>
+<li>
+Risk Management
+</li>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('method')">
+<li style="color:gray;">
+Methodologies
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Agile
+</li>
+<li>
+Scrum
+</li>
+<li>
+Waterfall
+</li>
+</ul>
+</span></span>
+</div>
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('kanban')">
+<li style="color:gray;">
+Kanban Board
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Trello
+</li>
+<li>
+Jira
+</li>
+</ul>
+</span></span>
+</div>
+</ul>
+</div>
+</div>
 </ul>
 </div>
 <div id="research" class="section level3">
@@ -891,24 +1135,6 @@ Python
 <li>Security</li>
 <li>Market</li>
 <li>Data</li>
-</ul>
-</div>
-<div id="project-management" class="section level3">
-<h3>Project Management</h3>
-<ul>
-<li>Technical Teamwork</li>
-<li>Risk Management</li>
-<li>Methodologies
-<ul>
-<li>Agile</li>
-<li>Scrum</li>
-<li>Waterfall</li>
-</ul></li>
-<li>Kanban Board
-<ul>
-<li>Trello</li>
-<li>Jira</li>
-</ul></li>
 </ul>
 </div>
 </div>
