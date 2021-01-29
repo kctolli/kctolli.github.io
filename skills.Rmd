@@ -47,14 +47,12 @@ ul {text-align: left; color: black;}
 <li>Windows IOT</li>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('linux')"><li style="color:gray;">Linux</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Real-Time</li>
 <li>Embedded</li>
 <li>Raspberry OS</li>
 </ul></span></span></div>
-
 </ul>
   
 #### Microcontrollers
@@ -68,14 +66,12 @@ ul {text-align: left; color: black;}
 <li>MSP 432</li>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('arduino')"><li style="color:gray;">Arduino</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Uno</li>
 <li>Nano</li>
 <li>Mega</li>
 </ul></span></span></div>
-
 </ul>
     
 ### Digital Systems
@@ -85,7 +81,6 @@ ul {text-align: left; color: black;}
 <ul>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('verilog')"><li style="color:gray;">Verilog</li></a>
 <span class="tooltipRtext">Developed using: Vivado <br/> on a Artix 7 and Kintex 7</span></span></div>
 <ul>
@@ -96,10 +91,8 @@ ul {text-align: left; color: black;}
 </ul>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('vhdl')"><li style="color:gray;">VHDL</li></a>
 <span class="tooltipRtext">Developed using: Libero <br/> on a PolarFire</span></span></div>
-
 </ul>
   
 #### Simulation and Testing
@@ -111,13 +104,11 @@ ul {text-align: left; color: black;}
 <li>Waveform</li>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('IC')"><li style="color:gray;">Logic Integrated Circuits</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>TTL (7400-Series)</li>
 <li>CMOS</li>
 </ul></span></span></div>
-
 </ul>
   
 ### Internet of Things
@@ -133,7 +124,6 @@ ul {text-align: left; color: black;}
 <ul>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('spice')"><li style="color:gray;">Spice Software</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>LTSpice</li> 
@@ -141,7 +131,6 @@ ul {text-align: left; color: black;}
 </ul></span></span></div>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('op')"><li style="color:gray;">Transistors, Diodes, and Op-Amps</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>MOSFETS</li> 
@@ -149,7 +138,6 @@ ul {text-align: left; color: black;}
 </ul></span></span></div>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('BC')"><li style="color:gray;">Basic Circuits</li></a>
 <span class="tooltipRtext"><p style="color:white;">Methods and Techniques:</p><ul style="color:white;">
 <li>Nodal</li> 
@@ -162,7 +150,8 @@ ul {text-align: left; color: black;}
 <li>Inductors</li> 
 <li>Capacitors</li>
 <li>Resistors</li>
-</ul></ul>
+</ul>
+</ul>
 
 ## Data Science
 
@@ -171,7 +160,6 @@ ul {text-align: left; color: black;}
 <ul>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('R')"><li>R</li></a>
 <span class="tooltipRtext">Developed using: RStudio <br/> with Rmd files and R Scripts</span>
 </span>
@@ -205,7 +193,6 @@ Packages include:
 </div></div>
   
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('Py')"><li>Python</li></a>
 <span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span>
 </span>
@@ -227,22 +214,20 @@ Libraries include:
 <li>Tableau</li>
 <li>Databases
 <ul><div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Excel</li> 
 <li>Google Sheets</li>
 <li>LibreOffice Calc</li>
+<li>R Datasets</li>
 </ul></span></span></div>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">SQL</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Oracle</li> 
 <li>MySQL</li>
 </ul></span></span></div>
-
 </ul>
 
 ### Statistics
@@ -400,8 +385,7 @@ Topics include:
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-</span></div>
-</ul>  
+</span></div></ul>  
 
 ### Functional Programming
     
@@ -453,8 +437,7 @@ Developed Using
 * Thony
 * Jupyter Notebook
 
-</div></div>
-</ul>  
+</div></div></ul>  
 
 ### Design Patterns
 
@@ -483,11 +466,8 @@ Developed Using
 <li>Organization</li>
 
 <div style="padding-left:1px;">
-
 <span class="tooltipr"><a href="javascript:showhide('PM')"><li>Project Management</li></a></span>
-<div id="PM" style="display:none;padding-left:20px;">
-
-<ul>
+<div id="PM" style="display:none;padding-left:20px;"><ul>
 
 <li>Technical Teamwork</li>
 <li>Risk Management</li>
@@ -506,9 +486,7 @@ Developed Using
 <li>Trello</li>
 <li>Jira</li>
 </ul></span></span></div>
-
 </ul></div></div></ul>  
-
 
 ### Research
 
