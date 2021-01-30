@@ -219,7 +219,7 @@ Libraries include:
 <li>Excel</li> 
 <li>Google Sheets</li>
 <li>LibreOffice Calc</li>
-<li>R Datasets</li>
+<li>R Data Editor</li>
 </ul></span></span></div>
 
 <div style="padding-left:1px;">
@@ -464,6 +464,7 @@ Developed Using
 <li>Teaching</li>
 <li>Leadership</li>
 <li>Organization</li>
+<li>Finance</li>
 
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('PM')"><li>Project Management</li></a></span>
