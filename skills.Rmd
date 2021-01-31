@@ -138,19 +138,22 @@ ul {text-align: left; color: black;}
 </ul></span></span></div>
 
 <div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('BC')"><li style="color:gray;">Basic Circuits</li></a>
-<span class="tooltipRtext"><p style="color:white;">Methods and Techniques:</p><ul style="color:white;">
+<span class="tooltipr"><a href="javascript:showhide('BC')"><li>Basic Circuits</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Inductors</li> 
+<li>Capacitors</li>
+<li>Resistors</li>
+</ul></span></span>
+<div id="BC" style="display:none;padding-left:20px;">
+<p>Methods and Techniques:</p>
+<ul>
 <li>Nodal</li> 
 <li>Mesh</li>
 <li>Kirchhoff's Laws</li> 
 <li>Thevenin's Theorem</li> 
 <li>Norton's Theorem</li>
-</ul></span></span></div>
-<ul>
-<li>Inductors</li> 
-<li>Capacitors</li>
-<li>Resistors</li>
-</ul>
+</ul></div></div>
+
 </ul>
 
 ## Data Science
@@ -228,7 +231,7 @@ Libraries include:
 <li>Oracle</li> 
 <li>MySQL</li>
 </ul></span></span></div>
-</ul>
+</li></ul>
 
 ### Statistics
 
@@ -288,7 +291,7 @@ Algorithms include:
 
 <div style="padding-left:1px;">
 
-<span class="tooltipr"><a href="javascript:showhide('Rweb')"><li><i>R-based webpages</i></li></a></span>
+<span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
 <div id="Rweb" style="display:none;padding-left:20px;">
 
 * Basic knitr    
@@ -316,23 +319,40 @@ Algorithms include:
 
 ### Operating Systems
 
-* Linux
-  + Ubuntu
-  + Fedora
-  + Crouton
-  + Debian
-* Chrome OS
-* Microsoft Windows
-  + Office 365
-  + Active Directory
-* Virtual Machines
-  + VirtualBox
-  + VMware
-* Command lines 
-  + Bash
-  + Batch
-  <!-- + Powershell -->
-  + Windows Task Scheduler
+<ul>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">Linux</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Ubuntu</li>
+<li>Fedora</li>
+<li>Crouton</li>
+<li>Debian</li>
+</ul></span></span></div>
+
+<li>Chrome OS</li>
+
+<li>Microsoft Windows</li>
+<ul>
+<li>Office 365</li>
+<li>Active Directory</li>
+</ul>
+
+<li>Virtual Machines</li>
+<ul>
+<li>VirtualBox</li>
+<li>VMware</li>
+</ul>
+
+<li>Command lines</li>
+<ul>
+<li>Bash</li>
+<li>Batch</li>
+<!-- <li>Powershell</li> -->
+<li>Windows Task Scheduler</li>
+</ul>
+
+</ul>  
 
 ### Security  
 
@@ -356,6 +376,10 @@ Algorithms include:
   + Colab
 * Docker
 * Kubernetes
+* Network Computing
+  + Virtual Network Computing (VNC)
+  + Secure Shell (SSH)
+  + Remote Desktop Protocol (RDP)
 
 ## Mathematics
 
@@ -383,7 +407,7 @@ Topics include:
 </div></div>
 
 <div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math</li></a>
+<span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math and Arithmetic</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
 </span></div></ul>  
 
