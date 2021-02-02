@@ -20,11 +20,11 @@ p {color: black;}
 
 ## Financial Planner 		
 
-2021 -- Spent 20 Hours on the project 
+2021 -- Spent 25 Hours on the project 
 
-* Used Python to create a financial planner
+* Used Python to create a [financial planner](https://github.com/kctolli/kctolli.github.io/tree/master/Random-Projects/financialplanner)
 * Loops used to calculate tax brackets
-* Made to help uses plan basic finances
+* Made to help users plan basic finances
 
 ## Spotify Popularity Predictive Analytics
 
@@ -32,8 +32,8 @@ p {color: black;}
 
 * Used three different predictive algorithms
   + Created Decision Trees in Python
-  + Used R to create Regression models
-  + Developed Neural Networks using Python
+  + [Used R to create Regression models](https://kctolli.github.io/MATH325/Analyses/Consulting.html)
+  + [Developed Neural Networks using Python](https://github.com/kctolli/kctolli.github.io/blob/master/Data-Science/Machine-Learning/Individual_Assignment.ipynb)
 
 ## COVID-19 Analytics -- Senior Thesis/Practicum 
 

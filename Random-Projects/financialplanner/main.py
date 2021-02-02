@@ -30,8 +30,8 @@ def main():
     
     fin.getsalary()
     fin.pretax()
-    full_tax = fin.gettax()
-    post_tax = fin.gettithing(full_tax)
+    fin.gettax()
+    post_tax = fin.gettithing()
     post_expenses = fin.getexpenses(post_tax)
     final = fin.getsavings(post_expenses)
     fin.getspending(final)
