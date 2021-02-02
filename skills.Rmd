@@ -223,7 +223,8 @@ Libraries include:
 
 <li>Databases
 
-<ul><div style="padding-left:1px;">
+<ul>
+<div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Excel</li> 
@@ -246,15 +247,11 @@ Libraries include:
 </ul></span></span></div>
 </li></ul>
 
-### Statistics
+### Statistics {.tabset .tabset-fade}
 
-Tests and Topics include:
+#### Tests
 
-* Distributions
-* Z Scores
-* Confidence Interval
-* Hypothesis Testing
-* t test
+* t-test
 * Wilcox
 * ANOVA
 * Kruskal-Wallis
@@ -265,6 +262,16 @@ Tests and Topics include:
   + Independence
   + Goodness of Fit
 * Permutation and Randomization
+
+#### Topics
+
+* Distributions
+* Z Scores
+* P Values
+* Experimental Design
+* Probability Theory
+* Confidence Intervals
+* Hypothesis Testing
 * Data Management
   + Intuition
   + Insight 
@@ -398,6 +405,28 @@ Algorithms include:
   + Virtual Network Computing (VNC)
   + Secure Shell (SSH)
   + Remote Desktop Protocol (RDP)
+  
+### Project Management
+
+<ul>
+
+<li>Technical Teamwork</li>
+<li>Risk Management</li>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('method')"><li style="color:gray;">Methodologies</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Agile</li>
+<li>Scrum</li>
+<li>Waterfall</li>
+</ul></span></span></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('kanban')"><li style="color:gray;">Kanban Board</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Trello</li>
+<li>Jira</li>
+</ul></span></span></div></ul> 
 
 ## Mathematics
 
@@ -509,38 +538,13 @@ Developed Using
 
 ### Interpersonal Skills
 
-<ul>
-
-<li>Technical Communication</li>
-<li>Human Relations</li>
-<li>Problem Solving</li>
-<li>Teaching</li>
-<li>Leadership</li>
-<li>Organization</li>
-<li>Finance</li>
-
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('PM')"><li>Project Management</li></a></span>
-<div id="PM" style="display:none;padding-left:20px;"><ul>
-
-<li>Technical Teamwork</li>
-<li>Risk Management</li>
-
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('method')"><li style="color:gray;">Methodologies</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Agile</li>
-<li>Scrum</li>
-<li>Waterfall</li>
-</ul></span></span></div>
-
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('kanban')"><li style="color:gray;">Kanban Board</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Trello</li>
-<li>Jira</li>
-</ul></span></span></div>
-</ul></div></div></ul>  
+* Technical Communication
+* Human Relations
+* Problem Solving
+* Teaching
+* Leadership
+* Organization
+* Finance
 
 ### Research
 
