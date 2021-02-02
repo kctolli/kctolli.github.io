@@ -153,7 +153,6 @@ ul {text-align: left; color: black;}
 <li>Thevenin's Theorem</li> 
 <li>Norton's Theorem</li>
 </ul></div></div>
-
 </ul>
 
 ## Data Science
@@ -170,30 +169,37 @@ ul {text-align: left; color: black;}
 
 Packages include: 
 
-+ tidyverse
-  - ggplot 2 
-  - dplyr
-  - tidyr
-  - readr
-  - purr 
-  - tibble
-  - stringr
-  - forcats
-+ knitr
-+ reticulate
-+ lubridate
-+ dygraphs
-+ sf (simple features)
-+ leaflet
-+ devtools
-+ downloader
-+ pagedown
-+ pacman
-+ installer
-+ blogdown
-+ mosaic
-+ car
-</div></div>
+<ul>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('tidy')"><li style="color:gray;">tidyverse</li></a>
+<span class="tooltipRtext" style="color:white;"><ul style="color:white;">
+<li>ggplot2</li> 
+<li>dplyr</li>
+<li>tidyr</li>
+<li>readr</li>
+<li>purr</li> 
+<li>tibble</li>
+<li>stringr</li>
+<li>forcats</li></li>
+</ul></span></span></div>
+
+<li>knitr</li>
+<li>stringi</li>
+<li>reticulate</li>
+<li>lubridate</li>
+<li>dygraphs</li>
+<li>sf (simple features)</li>
+<li>leaflet</li>
+<li>devtools</li>
+<li>downloader</li>
+<li>pagedown</li>
+<li>pacman</li>
+<li>installer</li>
+<li>blogdown</li>
+<li>mosaic</li>
+<li>car</li>
+</ul></div></div>
   
 <div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Py')"><li>Python</li></a>
@@ -208,14 +214,15 @@ Libraries include:
   + Numpy
   + Plotly
   + Math
-  + CMath
   + Tensor Flow
   + SciPy
   + Random
 </div></div>  
   
 <li>Tableau</li>
+
 <li>Databases
+
 <ul><div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
@@ -231,34 +238,41 @@ Libraries include:
 <li>Oracle</li> 
 <li>MySQL</li>
 </ul></span></span></div>
+
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">NoSQL</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>MongoDB</li> 
+</ul></span></span></div>
 </li></ul>
 
 ### Statistics
 
-Tests include:
+Tests and Topics include:
 
 * Distributions
 * Z Scores
 * Confidence Interval
+* Hypothesis Testing
 * t test
 * Wilcox
 * ANOVA
 * Kruskal-Wallis
-* Linear and Logistic Regression
+* Regression
+  + Linear
+  + Logistic
 * Chi-Squared 
   + Independence
   + Goodness of Fit
 * Permutation and Randomization
-    
-### Data Management
-
-* Intuition
-* Insight 
-* Wrangling 
-* Visualization
-* Exploration
-* Consulting
-* Mining
+* Data Management
+  + Intuition
+  + Insight 
+  + Wrangling 
+  + Visualization
+  + Exploration
+  + Consulting
+  + Mining
   
 ### Machine Learning
 
@@ -290,7 +304,11 @@ Algorithms include:
 </span></div>
 
 <div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
+</span></div>
 
+<div style="padding-left:1px;">
 <span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
 <div id="Rweb" style="display:none;padding-left:20px;">
 
@@ -475,6 +493,17 @@ Developed Using
 * Adapter
 * Template
 * Composite
+
+### Data Structures
+
+* Array
+* Stack
+* Heap
+* Queue
+* Graph
+* Tree
+* Linked Lists
+* Hash Tables
 
 ## Industry Knowledge
 
