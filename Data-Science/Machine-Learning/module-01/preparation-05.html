@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preparation Reading 05: Bayes' Theorem and the Base Rate Fallacy</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.eot');
+            src: url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.eot#iefix-8k8p81') format('embedded-opentype'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.ttf') format('truetype'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.woff') format('woff'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.svg#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/lib/katex/katex.min.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/lib/highlight/styles/monokai-sublime.min.css">
+	<link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/cse450.css?v1.3">
+    <meta charset="utf-8">
+
+</head>
+<body class="">
+     <div id="modal-screen">
+        <div id="contents-wrapper">
+            <div class="toc">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#reading">Reading</a></li>
+</ul>
+</div>
+
+            <a href="#" id="hide-contents" title="Close Table of Contents"><i class="far fa-window-close"></i></a>
+        </div>
+    </div>
+	<header>
+        <span class="icon-byui-logo"></span>
+        <div id="titles">
+            <h1>CSE 450 - Machine Learning &amp; Data Mining</h1>
+            <h2>Preparation Reading 05: Bayes' Theorem and the Base Rate Fallacy</h2>
+        </div>
+        <a href="#" id="show-contents" title="Show Table of Contents"><i class="far fa-list-alt"></i></a>
+    </header>
+	<article>
+		<h2 id="overview">Overview</h2>
+<p>In this reading you'll learn about Bayes' Theorem and how it applies to Machine Learning.</p>
+<div class="admonition time">
+<p class="admonition-title">Estimated Reading Time</p>
+<p>Plan on around 60 to 90 minutes for this preparation reading, which contains a mix of online and textbook reading.</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Consider the following question:</p>
+<blockquote>
+<p>If a test to detect a disease whose prevalence is 1/1,000 has a false positive rate of 5 per cent, what is the chance that a person found to have a positive result actually has the disease, assuming that you know nothing about the person’s symptoms or signs?</p>
+</blockquote>
+<p>Your first thought might be:</p>
+<blockquote>
+<p>Well, the test gives a false-positive 5% of the time, so it must be right 95% of the time...so you have a 95% chance of having the disease, right?</p>
+</blockquote>
+<p>Would you be surprised to learn the correct answer is actually only 2%?</p>
+<p>Would you be even more surprised (or perhaps alarmed), that when this question was asked 60 house officers, students, and physicians at the Harvard Medical School, that most of them answered this question incorrectly? Almost half of them stated that the answer was 95%. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> </p>
+<p>This test has been repeated many times amongst medical professionals <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, law students <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, and the general public, all with similar results.</p>
+<p>The flaw in reasoning that leads to this mistake is known as the "Base Rate Fallacy", and sometimes (as in your text) as the "False Positive Paradox". </p>
+<div class="admonition def">
+<p class="admonition-title">Base Rate Fallacy</p>
+<p>A fallacy committed when people attempt to calculate the likelihood of an event in a specific situation, without taking into account the prevalence, or overall likelihood, of that event.</p>
+</div>
+<p>Understanding Bayes' Theorem will help you to avoid this fallacy.</p>
+<h2 id="reading">Reading</h2>
+<p>You may have done a bit of this reading in your work on Data Exploration 04, but please complete the following:</p>
+<ul>
+<li>Read Section 6.1 - 6.2.2  (pages 247 - 261) of <em>Machine Learning and Predictive Data Analytics</em></li>
+<li>Watch this video about the False Positive Paradox:</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1csFTDXXULY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://www.nejm.org/doi/pdf/10.1056/NEJM197811022991808">Casscells W, Schoenberger A, Graboys TB. Interpretation by physicians of clinical laboratory results. N Engl J Med. 1978;299(18):999-1001. doi:10.1056/NEJM197811022991808</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4521525/">Whiting PF, Davenport C, Jameson C, et al. How well do health professionals interpret diagnostic information? A systematic review. BMJ Open</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.uio.no/studier/emner/jus/jus/JUS4121/v12/undervisningsmateriale/Evidence%20RLE2%20kopi%204%20avd.pdf">Two tests of the base rate neglect among law students</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+	</article>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/highlight/highlight.pack.js"></script>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/katex/katex.min.js"></script>
+    <script src="https://byui-cse.github.io/cse450-course/shared/lib/katex/contrib/auto-render.min.js"></script>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/smartquotes/smartquotes.min.js"></script>
+    <script>
+
+        /* Startup scripts for katex rendering */
+    	renderMathInElement(document.body,
+		{
+			delimiters: [
+				{left: "$$", right: "$$", display: true},
+				{left: "$", right: "$", display: false},
+			]
+    	});
+
+        /* Highlighting code */
+    	hljs.initHighlightingOnLoad();
+    	var elements = document.querySelectorAll('.language-text')
+		for (var i = 0; i < elements.length; i++) {
+  			elements[i].classList.add('hljs');
+		}
+
+        /* TOC support */
+        var hideContents = function(e){
+            console.log(e.target);
+            if(e.target.id === 'modal-screen' || e.target.nodeName.toLowerCase() === 'i') {
+                e.preventDefault();
+                document.querySelector('#contents-wrapper').classList.remove('active');
+                document.querySelector('#modal-screen').classList.remove('active');
+            }
+        }
+
+        var showContents = function(e){
+            e.preventDefault();
+            document.querySelector('#contents-wrapper').classList.add('active');
+            document.querySelector('#modal-screen').classList.add('active');
+        }
+
+        document.querySelector("#hide-contents").addEventListener('click', hideContents);
+        document.querySelector("#modal-screen").addEventListener('click', hideContents);
+        document.querySelector("#show-contents").addEventListener('click', showContents);
+    	
+    </script>
+</body>
+</html>

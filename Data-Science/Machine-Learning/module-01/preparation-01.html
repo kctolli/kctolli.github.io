@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preparation Reading 01: Introduction</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.eot');
+            src: url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.eot#iefix-8k8p81') format('embedded-opentype'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.ttf') format('truetype'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.woff') format('woff'), url('https://byui-cse.github.io/cse450-course/shared/fonts/byui/icomoon.svg#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/lib/katex/katex.min.css">
+    <link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/lib/highlight/styles/monokai-sublime.min.css">
+	<link rel="stylesheet" type="text/css" href="https://byui-cse.github.io/cse450-course/shared/cse450.css?v1.3">
+    <meta charset="utf-8">
+
+</head>
+<body class="">
+     <div id="modal-screen">
+        <div id="contents-wrapper">
+            <div class="toc">
+<ul>
+<li><a href="#overview">Overview</a><ul>
+<li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
+<li><a href="#unsupervised-learning">Unsupervised Learning</a></li>
+</ul>
+</li>
+<li><a href="#an-example-of-supervised-learning">An Example of Supervised Learning</a></li>
+<li><a href="#supervised-machine-learning-tasks">Supervised Machine Learning Tasks</a></li>
+<li><a href="#numeric-vs-categorical-features">Numeric vs Categorical Features</a></li>
+<li><a href="#the-pandas-library">The Pandas Library</a></li>
+</ul>
+</div>
+
+            <a href="#" id="hide-contents" title="Close Table of Contents"><i class="far fa-window-close"></i></a>
+        </div>
+    </div>
+	<header>
+        <span class="icon-byui-logo"></span>
+        <div id="titles">
+            <h1>CSE 450 - Machine Learning &amp; Data Mining</h1>
+            <h2>Preparation Reading 01: Introduction</h2>
+        </div>
+        <a href="#" id="show-contents" title="Show Table of Contents"><i class="far fa-list-alt"></i></a>
+    </header>
+	<article>
+		<p><img alt="Credit Card Transaction" src="https://byui-cse.github.io/cse450-course/shared/img/cc.jpg" />
+<em><a href="https://unsplash.com/photos/q3o_8MteFM0">Photo by Blake Wisz on Unsplash</a></em></p>
+<h2 id="overview">Overview</h2>
+<div class="admonition time">
+<p class="admonition-title">Estimated Reading Time</p>
+<p>Plan on around 90 - 120 minutes for this preparation reading.</p>
+</div>
+<p>Broadly speaking, there are three main types of machine learning: reinforcement learning, unsupervised learning, and supervised learning.</p>
+<p>In this course, we'll focus on supervised learning, but we'll present a quick overview of the other two branches:</p>
+<h3 id="reinforcement-learning">Reinforcement Learning</h3>
+<p>Reinforcement learning is what most people think of when they think of artificial intelligence. </p>
+<p>Reinforcement learning is used in robotics development to train robots to respond to varying environmental factors in order to achieve a goal. </p>
+<div class="admonition def">
+<p class="admonition-title">Reinforcement Learning</p>
+<p>Reinforcement learning is an iterative process where an algorithm seeks to maximize some value based on rewards received for being right.</p>
+</div>
+<h3 id="unsupervised-learning">Unsupervised Learning</h3>
+<p>A grocery store chain might wish to decide which customers to target for a particular sales promotion. Historic shopping data can be analyzed using a technique known as <em>cluster analysis</em> to determine which groups of customers would be most likely to respond to a particular ad campaign.</p>
+<p>A geneticist tracking how a plant cell responds to drought conditions might take measurements of tens of thousands of proteins every few seconds. With that many features to analyze, it can be difficult to find any kind of useful pattern. </p>
+<p>A technique known as <em>dimensional reduction</em> can aggregate the features into groups based on their response patterns, reducing the number of features that need to be analyzed.</p>
+<p>Cluster analysis and dimensional reduction are examples of unsupervised learning.</p>
+<div class="admonition def">
+<p class="admonition-title">Unsupervised Learning</p>
+<p>Unsupervised learning algorithms generate models that allow us to identify patterns in data, make inferences about those patterns, and predict where future data might fall within those patterns. </p>
+</div>
+<h2 id="an-example-of-supervised-learning">An Example of Supervised Learning</h2>
+<p>Credit card companies use supervised learning to develop models that can predict if a transaction looks fraudulent. </p>
+<p>They start with a large set of transactions that they've already analyzed for fraud. This is called the <em>training data</em>. Each transaction in this set is referred to as an <em>instance</em> or <em>sample</em>.</p>
+<p>Each sample will  have a set of interesting attributes, such as the time the transaction occurred, the amount, the location of the purchase, etc... </p>
+<p>These attributes are called <em>predictors</em>, <em>independent variables</em>, or <em>features</em>. Data scientists usually refer to them as <em>features</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Synonym Madness</p>
+<p>The concepts and techniques used in machine learning have been around for a long time, and have been developed and refined through work in many different fields. </p>
+<p>Because of this, there are many terms like "predictors" and "features" that came from different fields, but which mean the same thing and are sometimes used interchangeably.</p>
+</div>
+<p>Since these are historic transactions, one of the attributes will be whether or not the transaction really was fraudulent. Since this is the attribute we're trying to predict in future transactions, it is referred to as the <em>response variable</em>, or the <em>target</em>.</p>
+<p>With that background, we can formally define supervised learning as:</p>
+<div class="admonition def">
+<p class="admonition-title">Supervised Learning</p>
+<p>Supervised learning algorithms use <em>labeled</em> training data, (data that starts with known values for the target variable) to generate models that relate the features to the target. </p>
+<p>More formally, given:</p>
+<ul>
+<li>An $n$ x $m$ matrix, of $X$, where $n$ is the number of samples, and $m$ is the number of features</li>
+<li>A vector of $n$ target values, $y$ </li>
+</ul>
+<p>A supervised learning algorithm is one that "fits" $X$ to $y$ to create a model capable of predicting the target values of new samples.</p>
+</div>
+<p>The purpose of these models is to accurately predict the response for future observations (prediction) or to help us better understand the relationship between the response and the predictors (inference). </p>
+<h2 id="supervised-machine-learning-tasks">Supervised Machine Learning Tasks</h2>
+<p>Most prediction problems addressed by supervised machine learning can be divided into two groups, regression and classification. These are sometimes referred to as "regression tasks" and "classification tasks".</p>
+<div class="admonition def">
+<p class="admonition-title">Regression</p>
+<p>The process of generating a model that can be used to predict a numeric value.</p>
+</div>
+<p>Examples of regression problems include:</p>
+<ul>
+<li>Predicting the likelihood that someone will contract a disease</li>
+<li>Calculating the value of a house</li>
+<li>Predicting a student's most likely GPA based on their ACT scores.</li>
+</ul>
+<p>If you're trying to predict a number, that is usually a regression task.</p>
+<div class="admonition def">
+<p class="admonition-title">Classification</p>
+<p>The process of generating a model that can be used to predict a particular value from a set of discrete choices.</p>
+</div>
+<p>Examples of classification problems include:</p>
+<ul>
+<li>Facial recognition software</li>
+<li>Fraud detection</li>
+<li>Disease diagnosis </li>
+<li>Text recognition</li>
+</ul>
+<p>If you're trying to predict whether something belongs to a certain class ("picture of dog" vs "picture of cat", "has disease" vs "does not have disease", etc...), that is usually a classification task.</p>
+<div class="admonition warning">
+<p class="admonition-title">Regression vs Classification</p>
+<p>While there are some algorithms that are designed to be used in regression or classification scenarios, most can be used in either one. In addition, with a few modifications to the problem statement, many classification problems can be restated as regression problems and vice versa.</p>
+<p>Depending on how the final model is going to be used, one approach might make more sense than another. As you'll soon realize is the case for many aspects of machine learning, the right approach will depend on many factors. And it's unusual for there to be one "best" way.</p>
+</div>
+<h2 id="numeric-vs-categorical-features">Numeric vs Categorical Features</h2>
+<p>When analyzing a feature of our data, one of the first things we need to know is whether or not we are looking at a numeric or categorical feature.</p>
+<div class="admonition def">
+<p class="admonition-title">Numeric Feature</p>
+<p>A numeric, or quantitative feature is a property of the data ($x$) that can take on a range of quantitative values between two numeric limits: $ x_{min} \leq x \leq x_{max} $.</p>
+</div>
+<p>If we were to measure the height of everyone on campus, we might find that their heights span a range between 100 cm and 200 cm. We would say that <code>height</code> is a numeric feature of our data, with a minimum value of 100 cm and a maximum value of 200 cm.</p>
+<p>Other examples of numeric features for this dataset might include the student's weight, age, GPA, number of credits completed, hours of Netflix watched each week, and bank account balance.</p>
+<p>If we asked students which academic class they were in (Freshman, Sophomore, Junior, or Senior), we would be measuring a <em>categorical feature</em>.</p>
+<div class="admonition def">
+<p class="admonition-title">Categorical Feature</p>
+<p>A property of the data that can have one or more qualitative values.</p>
+</div>
+<p>Other examples of categorical measurements for this dataset might include the student's favorite flavor of ice cream, their eye color, their relationship status, and whether or not they've completed an internship.</p>
+<div class="admonition warning">
+<p class="admonition-title">Features in Disguise</p>
+<p>Beware of categorical features that <em>look</em> like numeric features. For example, if students in our survey live in three different apartment complexes, we might ask "Which apartment complex do you live in, 1, 2, or 3?".</p>
+<p>Even though this is technically a numeric value between two limits, it is really a categorical feature because there's no quantitative difference between the apartment complexes. Later on, we'll see how to make sure our machine learning algorithms know that a feature really is a categorical feature, even when it uses numeric values.</p>
+<p>Even more tricky is the case of features that could go either way. In our first categorical feature example, we could have asked "Which academic year are you currently in, 1, 2, 3, or 4?". </p>
+<p>There might actually be an important relationship in our data that relies on the fact that senior students have been at school 4 times longer than freshman students. In cases like these, we sometimes have to try treating a feature both ways to see which gives us better results.</p>
+</div>
+<h2 id="the-pandas-library">The Pandas Library</h2>
+<p>The pandas library is a python library used for data analysis and manipulation. It will provide the core functionality for most of what you do in the data exploration and preprocessing stages of most machine learning projects.</p>
+<p>You'll want to read through the <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Getting Started Tutorials</a> and keep them handy for reference as you work on the Data Exploration materials this week.</p>
+	</article>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/highlight/highlight.pack.js"></script>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/katex/katex.min.js"></script>
+    <script src="https://byui-cse.github.io/cse450-course/shared/lib/katex/contrib/auto-render.min.js"></script>
+	<script src="https://byui-cse.github.io/cse450-course/shared/lib/smartquotes/smartquotes.min.js"></script>
+    <script>
+
+        /* Startup scripts for katex rendering */
+    	renderMathInElement(document.body,
+		{
+			delimiters: [
+				{left: "$$", right: "$$", display: true},
+				{left: "$", right: "$", display: false},
+			]
+    	});
+
+        /* Highlighting code */
+    	hljs.initHighlightingOnLoad();
+    	var elements = document.querySelectorAll('.language-text')
+		for (var i = 0; i < elements.length; i++) {
+  			elements[i].classList.add('hljs');
+		}
+
+        /* TOC support */
+        var hideContents = function(e){
+            console.log(e.target);
+            if(e.target.id === 'modal-screen' || e.target.nodeName.toLowerCase() === 'i') {
+                e.preventDefault();
+                document.querySelector('#contents-wrapper').classList.remove('active');
+                document.querySelector('#modal-screen').classList.remove('active');
+            }
+        }
+
+        var showContents = function(e){
+            e.preventDefault();
+            document.querySelector('#contents-wrapper').classList.add('active');
+            document.querySelector('#modal-screen').classList.add('active');
+        }
+
+        document.querySelector("#hide-contents").addEventListener('click', hideContents);
+        document.querySelector("#modal-screen").addEventListener('click', hideContents);
+        document.querySelector("#show-contents").addEventListener('click', showContents);
+    	
+    </script>
+</body>
+</html>
