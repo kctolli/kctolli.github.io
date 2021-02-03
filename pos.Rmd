@@ -47,7 +47,7 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 * Software Design and Development using Java
 * Introduction to Programming for IT
 * System Security 
-* Senior Practicum 
+* Professional Career Preparation 
 * Senior Project 
 
 ### Data Science Minor

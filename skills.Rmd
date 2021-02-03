@@ -18,26 +18,29 @@ ul {text-align: left; color: black;}
 
 ## Computer Engineering
 
-### Embedded Systems
+### Embedded Systems {.tabset .tabset-fade}
 
-#### Programming
-  
-* C/C++ 
-* Python
-* Assembly
-* Machine code
-* Register-level C 
-* Simulink
-  
-#### Development Environments
-  
-* Code Composer Studio
-* SoftConsole
-* MATLAB
-* Energia
-* Arduino
-  
-#### Embedded Operating Systems
+#### Tools
+
+##### Programming
+
+<ul>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">C/C++ </li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Embedded</li>
+<li>Register-level</li>
+</ul></span></span></div>
+
+<li>Python</li>
+<li>Assembly</li>
+<li>Machine Code</li>
+<li>Simulink</li>
+
+</ul>
+
+##### Embedded OS
 
 <ul>
 
@@ -46,7 +49,7 @@ ul {text-align: left; color: black;}
 <li>FreeRTOS</li>
 <li>Windows IOT</li>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('linux')"><li style="color:gray;">Linux</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Real-Time</li>
@@ -54,33 +57,41 @@ ul {text-align: left; color: black;}
 <li>Raspberry OS</li>
 </ul></span></span></div>
 </ul>
+
+#### Resources
+
+##### Environments
   
-#### Microcontrollers
+* Code Composer Studio
+* SoftConsole
+* MATLAB
+* Energia
+* Arduino IDE
+  
+##### Microcontrollers
 
-<ul>
-
-<li>Intel Galileo</li>
-<li>Raspberry Pi</li>
-<li>LattePanda</li>
-<li>ESP 8266</li>
-<li>MSP 432</li>
-
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('arduino')"><li style="color:gray;">Arduino</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Uno</li>
-<li>Nano</li>
-<li>Mega</li>
-</ul></span></span></div>
-</ul>
+* Intel Galileo
+* Raspberry Pi
+* LattePanda
+* ESP 8266
+* MSP 432
+* Arduino
     
-### Digital Systems
+##### Internet of Things
+
+* Communications
+* Information
+* Fourier Series and Transform
+* Filters
+* Networking    
+    
+### Digital Systems {.tabset .tabset-fade}
 
 #### FPGAs and HDLs
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('verilog')"><li style="color:gray;">Verilog</li></a>
 <span class="tooltipRtext">Developed using: Vivado <br/> on a Artix 7 and Kintex 7</span></span></div>
 <ul>
@@ -90,7 +101,7 @@ ul {text-align: left; color: black;}
 <li>System</li>
 </ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('vhdl')"><li style="color:gray;">VHDL</li></a>
 <span class="tooltipRtext">Developed using: Libero <br/> on a PolarFire</span></span></div>
 </ul>
@@ -103,41 +114,46 @@ ul {text-align: left; color: black;}
 <li>Logisim</li>
 <li>Waveform</li>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('IC')"><li style="color:gray;">Logic Integrated Circuits</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>TTL (7400-Series)</li>
 <li>CMOS</li>
 </ul></span></span></div>
 </ul>
-  
-### Internet of Things
 
-* Communications
-* Information
-* Fourier Series and Transform
-* Filters
-* Networking
+### Computer Systems
+
+* Computer Organization
+* Memory Hierarchy 
+* Computer Arithmetic
+* Processor Design
+* Pipelining
+* Program Optimization
+* Concurrency
+* Parallelism
+* Instruction Architecture
+* Control Unit Design
 
 ### Circuit Analysis
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('spice')"><li style="color:gray;">Spice Software</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>LTSpice</li> 
 <li>EasyEDA</li>
 </ul></span></span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('op')"><li style="color:gray;">Transistors, Diodes, and Op-Amps</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>MOSFETS</li> 
 <li>BJT</li>
 </ul></span></span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('BC')"><li>Basic Circuits</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Inductors</li> 
@@ -152,8 +168,7 @@ ul {text-align: left; color: black;}
 <li>Kirchhoff's Laws</li> 
 <li>Thevenin's Theorem</li> 
 <li>Norton's Theorem</li>
-</ul></div></div>
-</ul>
+</ul></div></div></ul>
 
 ## Data Science
 
@@ -161,7 +176,7 @@ ul {text-align: left; color: black;}
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('R')"><li>R</li></a>
 <span class="tooltipRtext">Developed using: RStudio <br/> with Rmd files and R Scripts</span>
 </span>
@@ -201,7 +216,7 @@ Packages include:
 <li>car</li>
 </ul></div></div>
   
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Py')"><li>Python</li></a>
 <span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span>
 </span>
@@ -224,7 +239,7 @@ Libraries include:
 <li>Databases
 
 <ul>
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Excel</li> 
@@ -233,14 +248,14 @@ Libraries include:
 <li>R Data Editor</li>
 </ul></span></span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">SQL</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Oracle</li> 
 <li>MySQL</li>
 </ul></span></span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">NoSQL</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>MongoDB</li> 
@@ -283,7 +298,10 @@ Libraries include:
   
 ### Machine Learning
 
-Algorithms include:
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('ML')"><div style="color:gray;">Algorithms include:</div></a>
+<span class="tooltipRtext">Developed using Python</span>
+</span></div>
 
 * Classifiers
 * Clustering
@@ -300,22 +318,22 @@ Algorithms include:
 <li>HTML</li>
 <li>CSS</li>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">JavaScript</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
 </span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('CS')"><li style="color:gray;">C#</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
 </span></div>
 
-<div style="padding-left:1px;">
-<span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
-</span></div>
+<!-- <div style="padding-left:1px;"> -->
+<!-- <span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a> -->
+<!-- <span class="tooltipRtext">W3 Schools Quiz: 22/25</span> -->
+<!-- </span></div> -->
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
 <div id="Rweb" style="display:none;padding-left:20px;">
 
@@ -346,7 +364,7 @@ Algorithms include:
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">Linux</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Ubuntu</li>
@@ -413,7 +431,7 @@ Algorithms include:
 <li>Technical Teamwork</li>
 <li>Risk Management</li>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('method')"><li style="color:gray;">Methodologies</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Agile</li>
@@ -421,12 +439,22 @@ Algorithms include:
 <li>Waterfall</li>
 </ul></span></span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('kanban')"><li style="color:gray;">Kanban Board</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Trello</li>
 <li>Jira</li>
 </ul></span></span></div></ul> 
+
+### General CIT
+
+* Networking
+* DevOps
+* System Administration 
+* Databases
+  + Development 
+  + Programming
+  + Administration
 
 ## Mathematics
 
@@ -434,11 +462,32 @@ Algorithms include:
 
 <li>Differential Calculus</li>
 <li>Linear Algebra</li>
-<li>Boolean Algebra</li>
 <li>College Algebra</li>
 <li>Trigonometry</li>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('ba')"><li>Boolean Algebra</li></a></span>
+<div id="ba" style="display:none;padding-left:20px;">
+
+Topics include:
+
+* Numbers Systems
+* Signed Numbers
+  + Signed Magnitude
+  + 1's Complement
+  + 2's Complement
+* Theorems and Identities
+  + Simplification
+  + Consensus
+  + DeMorgan's Rules
+  + Sum of Products and Product of Sums
+  + Canonical Forms
+  + Minimization
+  + Karnaugh Maps
+
+</div></div>
+
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('dm')"><li>Discrete Math</li></a></span>
 <div id="dm" style="display:none;padding-left:20px;">
 
@@ -453,7 +502,7 @@ Topics include:
 
 </div></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math and Arithmetic</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
 </span></div></ul>  
@@ -471,7 +520,7 @@ Topics include:
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
 </span>
@@ -483,7 +532,7 @@ Developed Using
 
 </div></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
 </span>
@@ -496,7 +545,7 @@ Developed Using
 
 </div></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
 </span>
@@ -525,12 +574,12 @@ Developed Using
 
 ### Data Structures
 
-* Array
-* Stack
-* Heap
-* Queue
-* Graph
-* Tree
+* Arrays
+* Stacks
+* Heaps
+* Queues
+* Graphs
+* Trees
 * Linked Lists
 * Hash Tables
 
