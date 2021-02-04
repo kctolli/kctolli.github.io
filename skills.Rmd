@@ -20,23 +20,28 @@ ul {text-align: left; color: black;}
 
 ### Embedded Systems {.tabset .tabset-fade}
 
-#### Tools
+#### Technologies
 
 ##### Programming
 
 <ul>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">C/C++ </li></a>
+<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">C/C++</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>Embedded</li>
 <li>Register-level</li>
 </ul></span></span></div>
 
 <li>Python</li>
+<li>Simulink</li>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">Machine Level Instructions</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
 <li>Assembly</li>
 <li>Machine Code</li>
-<li>Simulink</li>
+</ul></span></span></div>
 
 </ul>
 
@@ -58,7 +63,7 @@ ul {text-align: left; color: black;}
 </ul></span></span></div>
 </ul>
 
-#### Resources
+#### Tools
 
 ##### Environments
   
@@ -76,6 +81,18 @@ ul {text-align: left; color: black;}
 * ESP 8266
 * MSP 432
 * Arduino
+
+#### Data Transfer
+
+##### Communication Protocol
+
+* I2C
+* SPI
+* GPIO
+* USB
+* UART
+  + Differential Signaling
+  + Full-Duplex
     
 ##### Internet of Things
 
@@ -122,18 +139,23 @@ ul {text-align: left; color: black;}
 </ul></span></span></div>
 </ul>
 
-### Computer Systems
+### Computer Systems {.tabset .tabset-fade}
 
-* Computer Organization
+#### Computer Organization
+
 * Memory Hierarchy 
 * Computer Arithmetic
-* Processor Design
-* Pipelining
-* Program Optimization
+* Machine Optimization
+* System Drivers
 * Concurrency
 * Parallelism
+
+#### Processor Design
+
 * Instruction Architecture
 * Control Unit Design
+* Reduced Instruction Set 
+* Triple Modular Redundancy
 
 ### Circuit Analysis
 
@@ -281,6 +303,10 @@ Libraries include:
 #### Topics
 
 * Distributions
+  + Normal (Z) Distribution
+  + Chi Squared Distribution
+  + t Distribution
+  + F Distribution
 * Z Scores
 * P Values
 * Experimental Design
@@ -328,10 +354,10 @@ Libraries include:
 <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
 </span></div>
 
-<!-- <div style="padding-left:1px;"> -->
-<!-- <span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a> -->
-<!-- <span class="tooltipRtext">W3 Schools Quiz: 22/25</span> -->
-<!-- </span></div> -->
+<div style="padding-left:1px;">
+<span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
+</span></div>
 
 <div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
@@ -371,9 +397,16 @@ Libraries include:
 <li>Fedora</li>
 <li>Crouton</li>
 <li>Debian</li>
+<li>Mint</li>
+<li>Kali</li>
 </ul></span></span></div>
+<ul>
+<li>Bootloader</li>
+<li>File Systems</li>
+</ul>
 
 <li>Chrome OS</li>
+<li>Android OS</li>
 
 <li>Microsoft Windows</li>
 <ul>
