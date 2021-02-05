@@ -25,19 +25,24 @@ def main():
     check = ""
     
     while not(check == "side" or check == "sides" or check == "angle" or check == "angles"):
-        check = input("Are you describing triangle with angles or sides: ")
+        check = input("Are you describing the triangle with angles or sides: ")
         check = check.lower()
     
         if check == "side" or check == "sides":
             correct, class_angle, class_side = tri.getsidetriangle() ## Get triangle from angles
-            print("The angles of the triangle are {:.2f}, {:.2f}, {:.2f}.".format(tri.angle[0], tri.angle[1], tri.angle[2]))
+            if correct == tri.valid[0]: ## Display not valid triangle
+                print("These values do not produce a valid triangle.")
+            elif correct == tri.valid[1]: ## Display valid triangle type
+                print("These values produce a valid {}, {} triangle.".format(class_angle, class_side))
+                print("The angles of the triangle are {:.2f}, {:.2f}, {:.2f}.".format(tri.angle[0], tri.angle[1], tri.angle[2]))
         elif check == "angle" or check == "angles":
             correct, class_angle, class_side = tri.getangletriangle() ## Get triangle from sides
-    
-    if correct == tri.valid[0]: ## Display not valid triangle
-        print("These values produce {} triangle.".format(correct))
-    elif correct == tri.valid[1]: ## Display valid triangle type
-        print("These values produce {} {}, {} triangle.".format(correct, class_angle, class_side))
+            if correct == tri.valid[0]: ## Display not valid triangle
+                print("These values do not produce a valid triangle.")
+            elif correct == tri.valid[1]: ## Display valid triangle type
+                print("These values produce a valid {}, {} triangle.".format(class_angle, class_side))
+
+
         
         
 if __name__ == "__main__":

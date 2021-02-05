@@ -24,7 +24,7 @@ import numpy as np
 # Global Variables
 angle = []
 side = []
-valid = ["not a valid", "a valid"]
+valid = ["not valid", "valid"]
 
 half_pi = math.pi / 2
 
@@ -34,7 +34,13 @@ def square(x): return pow(x,2)
 ## Trig Functions
 def rad2degree(rad): return rad * 180/math.pi
 def degree2rad(degree): return degree * math.pi/180
-def lawcosines(a, b, c): return rad2degree(math.acos((square(a) + square(b) - square(c)) / (2 * a * b))) ## arccos returns radians
+
+def lawcosines(a, b, c):
+    lawcos = (square(a) + square(b) - square(c)) / (2 * a * b)
+    if lawcos < -1 or lawcos > 1:
+        return 0
+    else:
+        return rad2degree(math.acos(lawcos)) ## arccos returns radians
 
 ## Get Triangle Type
 def validangles():
@@ -65,12 +71,21 @@ def getangletriangle():
         check = input("Are you angles in degrees or radians: ")
         check = check.lower()
         
-        angle.insert(0, float(input("Enter your first angle: ")))
-        angle.insert(1, float(input("Enter your second angle: ")))
-        angle.insert(2, float(input("Enter your third angle: ")))
-        
-        if check == "radian" or check == "radians": angle = [rad2degree(i) for i in angle]
-    
+        if check == "radian" or check == "radians":
+            radian = []
+            radian.append(float(input("Enter your first angle: ")))
+            radian.append(float(input("Enter your second angle: ")))
+            radian.append(float(input("Enter your third angle: ")))
+            for i in radian:
+                angle.append(rad2degree(i))
+        elif check == "degree" or check == "degrees":
+            degree = []
+            degree.append(float(input("Enter your first angle: ")))
+            degree.append(float(input("Enter your second angle: ")))
+            degree.append(float(input("Enter your third angle: ")))
+            for i in degree:
+                angle.append(i) 
+            
     if angle[0] <= 0 or angle[1] <= 0 or angle[2] <= 0:
         correct = valid[0]
     elif sum(angle) == 180:
@@ -92,22 +107,28 @@ def getsidetriangle():
     side.insert(1, float(input("Enter your second side length: ")))
     side.insert(2, float(input("Enter your third side length: ")))
     
+    squared = [square(i) for i in sorted(side)]
+
     if side[0] <= 0 or side[1] <= 0 or side[2] <= 0:
-        correct = valid[0]
+        correct = valid[0]   
     elif side[0] + side[1] > side[2] and side[0] + side[2] > side[1] and side[1] + side[2] > side[2]:
         class_side = tri(side)
         correct = valid[1]
-        squared = [square(i) for i in sorted(side)]
-        if squared[0] + squared[1] == squared[2]:
-            class_angle = "right"
-        elif class_side == "equilateral":
+        if class_side == "equilateral":
             class_angle = "acute"
-        else: # not right or equilateral
+            for i in range(3):
+                angle.append(60)
+        else: # not equilateral
             angle.insert(0, lawcosines(side[0], side[1], side[2]))
             angle.insert(1, lawcosines(side[1], side[2], side[0]))
             angle.insert(2, lawcosines(side[2], side[0], side[1]))
-            class_angle = validangles()
+            if angle[0] <= 0 or angle[1] <= 0 or angle[2] <= 0:
+                correct = valid[0]
+            elif squared[0] + squared[1] == squared[2]:
+                class_angle = "right"
+            else:
+                class_angle = validangles()
     else: 
         correct = valid[0]
     
-    return correct, class_angle, class_side  
+    return correct, class_angle, class_side
