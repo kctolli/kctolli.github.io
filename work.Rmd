@@ -9,10 +9,6 @@ title: "Work Experience"
  }
 </script>
 
-<style>
-p {color: black;}
-</style>
-
 ## Research & Business Development Center
 
 ### Lineage Logistics

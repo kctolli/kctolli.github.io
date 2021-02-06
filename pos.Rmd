@@ -19,11 +19,6 @@ grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
  }
 </script>
 
-<style>
-a {color: blue;}
-p {color: black;}
-</style>
-
 ## Brigham Young University - Idaho
 
 I earned a Bachelor's of Science in Software Engineering with a minor in Computer Engineering and Data Science.

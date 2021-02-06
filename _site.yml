@@ -15,18 +15,14 @@ navbar:
       icon: fa-tasks
       href: ./projects.html   
     - text: "Resume"
-      icon: fa-file-text
-      menu: 
-        - text: "Embedded Systems"
-          href: ./site_libs/resume/resumees.html 
-        - text: "Data Science"
-          href: ./site_libs/resume/resumeds.html 
+      icon: fa-file-alt
+      href: ./site_libs/resume/resume.html 
           
 output_dir: '.'
 
 output: 
   html_document:
-    css: ./site_libs/styles.css
+    css: [./site_libs/styles.css, ./site_libs/site.css]
     highlight: tango
     theme: readable
     toc: true

@@ -14,10 +14,6 @@ library(knitr)
  }
 </script>
 
-<style>
-p {color: black;}
-</style>
-
 ## Financial Planner 		
 
 2021 -- Spent 25 Hours on the project 
@@ -30,10 +26,9 @@ p {color: black;}
 
 2020 -- Spent 50 Hours on the project
 
-* Used three different predictive algorithms
-  + Created Decision Trees in Python
-  + [Used R to create Regression models](https://kctolli.github.io/MATH325/Analyses/Consulting.html)
-  + [Developed Neural Networks using Python](https://github.com/kctolli/kctolli.github.io/blob/master/Data-Science/Machine-Learning/Individual_Assignment.ipynb)
++ Used energy, liveliness, length and tempo to predict song popularity
++ [Created Regression models in R](https://kctolli.github.io/MATH325/Analyses/Consulting.html)
++ [Developed Neural Networks and Decision Trees using Python](https://github.com/kctolli/kctolli.github.io/blob/master/Data-Science/Machine-Learning/Individual_Assignment.ipynb)
 
 ## COVID-19 Analytics -- Senior Thesis/Practicum 
 

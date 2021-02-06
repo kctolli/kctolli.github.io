@@ -26,6 +26,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 
 
 
@@ -56,7 +65,9 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="site_libs\styles.css" type="text/css" />
+
+<link rel="stylesheet" href="site_libs/styles.css" type="text/css" />
+<link rel="stylesheet" href="site_libs/site.css" type="text/css" />
 
 
 
@@ -335,48 +346,38 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="./pos.html">
-    <span class="fa fa-university"></span>
+    <span class="fas fa-university"></span>
      
     Program of Study
   </a>
 </li>
 <li>
   <a href="./skills.html">
-    <span class="fa fa-briefcase"></span>
+    <span class="fas fa-briefcase"></span>
      
     Skills
   </a>
 </li>
 <li>
   <a href="./work.html">
-    <span class="fa fa-laptop"></span>
+    <span class="fas fa-laptop"></span>
      
     Work
   </a>
 </li>
 <li>
   <a href="./projects.html">
-    <span class="fa fa-tasks"></span>
+    <span class="fas fa-tasks"></span>
      
     Projects
   </a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-file-text"></span>
+<li>
+  <a href="./site_libs/resume/resume.html">
+    <span class="fas fa-file-alt"></span>
      
     Resume
-     
-    <span class="caret"></span>
   </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./site_libs/resume/resumees.html">Embedded Systems</a>
-    </li>
-    <li>
-      <a href="./site_libs/resume/resumeds.html">Data Science</a>
-    </li>
-  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -401,12 +402,6 @@ div.tocify {
     e.style.display = (e.style.display == 'block') ? 'none' : 'block';
  }
 </script>
-<style>
-a {color: blue;}
-p {color: black;}
-.tooltipRtext {color: white;}
-ul {text-align: left; color: black;}
-</style>
 <div id="computer-engineering" class="section level2">
 <h2>Computer Engineering</h2>
 <div id="embedded-systems" class="section level3 tabset tabset-fade">
@@ -438,22 +433,6 @@ Python
 <li>
 Simulink
 </li>
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C')">
-<li style="color:gray;">
-Machine Level Instructions
-</li>
-</a> <span class="tooltipRtext">
-<ul style="color:white;">
-<li>
-Assembly
-</li>
-<li>
-Machine Code
-</li>
-</ul>
-</span></span>
-</div>
 </ul>
 </div>
 <div id="embedded-os" class="section level5">
@@ -519,18 +498,84 @@ Raspberry OS
 </div>
 <div id="data-transfer" class="section level4">
 <h4>Data Transfer</h4>
-<div id="communication-protocol" class="section level5">
-<h5>Communication Protocol</h5>
+<div id="communication-protocols" class="section level5">
+<h5>Communication Protocols</h5>
 <ul>
-<li>I2C</li>
-<li>SPI</li>
-<li>GPIO</li>
-<li>USB</li>
-<li>UART
-<ul>
-<li>Differential Signaling</li>
-<li>Full-Duplex</li>
-</ul></li>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('uart)">
+<li style="color:gray;">
+UART
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Differential Signaling
+</li>
+<li>
+Full-Duplex
+</li>
+</ul>
+</span></span>
+</div>
+<li>
+I2C
+</li>
+<li>
+SPI
+</li>
+<li>
+GPIO
+</li>
+<li>
+USB
+</li>
+<li>
+eUSCI
+</li>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('wifi)">
+<li style="color:gray;">
+Wireless
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Wifi (WLAN)
+</li>
+<li>
+Bluetooth
+</li>
+<li>
+Zigbee
+</li>
+<li>
+RFID
+</li>
+<li>
+GSM and GPS
+</li>
+</ul>
+</span></span>
+</div>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('uart)">
+<li style="color:gray;">
+Mixed-Signals
+</li>
+</a> <span class="tooltipRtext">
+<ul style="color:white;">
+<li>
+Analog
+</li>
+<li>
+Digital
+</li>
+<li>
+ADCs and DACs
+</li>
+</ul>
+</span></span>
+</div>
 </ul>
 </div>
 <div id="internet-of-things" class="section level5">
@@ -628,6 +673,7 @@ CMOS
 <h4>Processor Design</h4>
 <ul>
 <li>Instruction Architecture</li>
+<li>Machine Level Instructions</li>
 <li>Control Unit Design</li>
 <li>Reduced Instruction Set</li>
 <li>Triple Modular Redundancy</li>
@@ -710,6 +756,25 @@ Norton’s Theorem
 </ul>
 </div>
 </div>
+</ul>
+</div>
+<div id="engineer-fundamentals" class="section level3">
+<h3>Engineer Fundamentals</h3>
+<ul>
+<li>Design and Communication</li>
+<li>Ethics and Economics</li>
+<li>Newtonian Mechanics</li>
+<li>Materials and Manufacturing</li>
+<li>Drawings and Symbols</li>
+<li>Parameters
+<ul>
+<li>Length</li>
+<li>Time</li>
+<li>Mass</li>
+<li>Force</li>
+<li>Temperature</li>
+<li>Energy and Power</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -1403,7 +1468,7 @@ Python
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

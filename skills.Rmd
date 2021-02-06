@@ -9,13 +9,6 @@ title: "Skills"
  }
 </script>
 
-<style>
-a {color: blue;}
-p {color: black;}
-.tooltipRtext {color: white;}
-ul {text-align: left; color: black;}
-</style>
-
 ## Computer Engineering
 
 ### Embedded Systems {.tabset .tabset-fade}
@@ -35,13 +28,6 @@ ul {text-align: left; color: black;}
 
 <li>Python</li>
 <li>Simulink</li>
-
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">Machine Level Instructions</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Assembly</li>
-<li>Machine Code</li>
-</ul></span></span></div>
 
 </ul>
 
@@ -84,16 +70,43 @@ ul {text-align: left; color: black;}
 
 #### Data Transfer
 
-##### Communication Protocol
+##### Communication Protocols
 
-* I2C
-* SPI
-* GPIO
-* USB
-* UART
-  + Differential Signaling
-  + Full-Duplex
-    
+<ul>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('uart)"><li style="color:gray;">UART</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Differential Signaling</li>
+<li>Full-Duplex</li>
+</ul></span></span></div>
+
+<li>I2C</li>
+<li>SPI</li>
+<li>GPIO</li>
+<li>USB</li>
+<li>eUSCI</li>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('wifi)"><li style="color:gray;">Wireless</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Wifi (WLAN)</li>
+<li>Bluetooth</li>
+<li>Zigbee</li>
+<li>RFID</li>
+<li>GSM and GPS</li>
+</ul></span></span></div>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('uart)"><li style="color:gray;">Mixed-Signals</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Analog</li>
+<li>Digital</li>
+<li>ADCs and DACs</li>
+</ul></span></span></div>
+
+</ul>
+
 ##### Internet of Things
 
 * Communications
@@ -153,6 +166,7 @@ ul {text-align: left; color: black;}
 #### Processor Design
 
 * Instruction Architecture
+* Machine Level Instructions
 * Control Unit Design
 * Reduced Instruction Set 
 * Triple Modular Redundancy
@@ -191,6 +205,23 @@ ul {text-align: left; color: black;}
 <li>Thevenin's Theorem</li> 
 <li>Norton's Theorem</li>
 </ul></div></div></ul>
+
+### Engineer Fundamentals
+
+* Design and Communication
+* Ethics and Economics
+* Newtonian Mechanics
+* Strengths and Materials 
+* Manufacturing Processes
+* Drawings and Symbols
+* Parameters
+  + Length
+  + Time
+  + Mass
+  + Force
+  + Temperature
+    - Thermodynamics
+  + Energy and Power
 
 ## Data Science
 

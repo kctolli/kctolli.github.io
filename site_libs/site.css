@@ -1,0 +1,12 @@
+nav {
+	font-size: 80%; 
+	font-style: italic; 
+	color: black; 
+	font-family: "Georgia";
+}
+
+a {color: blue;}
+p {color: black;}
+ul {text-align: left; color: black;}
+
+.tooltipRtext {color: white;}

@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap");
+/* Fix Margins */
+.pagedjs_page {
+    background: linear-gradient(to left,var(--sidebar-background-color),var(--sidebar-background-color) var(--sidebar-background-width),white var(--sidebar-background-width));
+    --pagedjs-margin-top: .5in;
+    --pagedjs-margin-right: 0.5in;
+    --pagedjs-margin-left: 0.25in;
+    --pagedjs-margin-bottom: .5in;
+    --pagedjs-pagebox-width: 8.5in;
+    --pagedjs-pagebox-height: 11in;
+}
+
+:root {
+	--sidebar-width: 12rem;
+	--margin-right: .4in; 
+}
 
 /* Avoid the breaking within a section */
 .blocks {break-inside: avoid;}
@@ -7,4 +21,4 @@
 p, ul {color: black;}
 
 /* Makes links blue*/
-a{color: blue;}
+a {color: blue;}

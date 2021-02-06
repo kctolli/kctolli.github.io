@@ -26,6 +26,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 
 
 
@@ -56,7 +65,9 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="site_libs\styles.css" type="text/css" />
+
+<link rel="stylesheet" href="site_libs/styles.css" type="text/css" />
+<link rel="stylesheet" href="site_libs/site.css" type="text/css" />
 
 
 
@@ -335,48 +346,38 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="./pos.html">
-    <span class="fa fa-university"></span>
+    <span class="fas fa-university"></span>
      
     Program of Study
   </a>
 </li>
 <li>
   <a href="./skills.html">
-    <span class="fa fa-briefcase"></span>
+    <span class="fas fa-briefcase"></span>
      
     Skills
   </a>
 </li>
 <li>
   <a href="./work.html">
-    <span class="fa fa-laptop"></span>
+    <span class="fas fa-laptop"></span>
      
     Work
   </a>
 </li>
 <li>
   <a href="./projects.html">
-    <span class="fa fa-tasks"></span>
+    <span class="fas fa-tasks"></span>
      
     Projects
   </a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-file-text"></span>
+<li>
+  <a href="./site_libs/resume/resume.html">
+    <span class="fas fa-file-alt"></span>
      
     Resume
-     
-    <span class="caret"></span>
   </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./site_libs/resume/resumees.html">Embedded Systems</a>
-    </li>
-    <li>
-      <a href="./site_libs/resume/resumeds.html">Data Science</a>
-    </li>
-  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -401,11 +402,6 @@ div.tocify {
     e.style.display = (e.style.display == 'block') ? 'none' : 'block';
  }
 </script>
-<style>
-a {color: blue;}
-p {color: black;}
-nav {font-size: 80%; font-style: italic; color: black; font-family: "Georgia";}
-</style>
 <nav>
 <hr/>
 <p>
@@ -498,7 +494,7 @@ This website is setup as a personal portfolio. <br/><br/>How to navigate this we
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
