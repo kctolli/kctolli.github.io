@@ -27,7 +27,7 @@ Contact Info {#contact}
 
 - <i class="fa fa-linkedin"></i> [linkedin.com/in/kctolli/](https://www.linkedin.com/in/kctolli/)
 
-- <i class="fa fa-globe-americas"></i> [kctolli.github.io](../../index.html)
+- <i class="fa fa-link"></i> [kctolli.github.io](../../index.html)
 
 Skills {#skills}
 ------------------------------------
