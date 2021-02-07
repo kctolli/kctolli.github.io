@@ -228,8 +228,6 @@ title: "Skills"
 <span class="tooltipr"><a href="javascript:showhide('Science')"><li>Science</li></a></span>
 <div id="Science" style="display:none;padding-left:20px;">
 
-##### {.tabset .tabset-pills}
-
 ###### Physics
 
 <ul>
@@ -501,10 +499,6 @@ Libraries include:
 <li>Mint</li>
 <li>Kali</li>
 </ul></span></span></div>
-<ul>
-<li>Bootloader</li>
-<li>File Systems</li>
-</ul>
 
 <li>Chrome OS</li>
 <li>Android OS</li>
@@ -656,43 +650,29 @@ Topics include:
 <ul>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-</span>
-<div id="C++" style="display:none;padding-left:20px;">
-
-Developed Using
-
-* Visual Studio
-
-</div></div>
+<span class="tooltipr"><a href="javascript:showhide('C++')"><li style="color:gray;">C/C++</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
+<ul style="color:white;">
+<li>Visual Studio</li>
+</ul></span></span></div>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 22/25</span>
-</span>
-<div id="Java" style="display:none;padding-left:20px;">
-
-Developed Using
-
-* IntelliJ
-* Android Studio
-
-</div></div>
+<span class="tooltipr"><a href="javascript:showhide('Java')"><li style="color:gray;">Java</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 22/25<br/><br/>Developed Using:
+<ul style="color:white;">
+<li>IntelliJ</li>
+<li>Android Studio</li>
+</ul></span></span></div>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-</span>
-<div id="Python" style="display:none;padding-left:20px;">
-
-Developed Using
-
-* PyCharm 
-* Thony
-* Jupyter Notebook
-
-</div></div></ul>  
+<span class="tooltipr"><a href="javascript:showhide('Python')"><li style="color:gray;">Python</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
+<ul style="color:white;">
+<li>Pycharm</li>
+<li>Thony</li>
+<li>Jupyter Notebook</li>
+</ul></span></span></div>
+</ul>  
 
 ### Design Patterns
 
