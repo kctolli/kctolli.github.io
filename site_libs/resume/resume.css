@@ -9,11 +9,6 @@
     --pagedjs-pagebox-height: 11in;
 }
 
-:root {
-	--sidebar-width: 12rem;
-	--margin-right: .4in; 
-}
-
 /* Avoid the breaking within a section */
 .blocks {break-inside: avoid;}
 

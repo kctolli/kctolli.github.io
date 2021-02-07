@@ -171,7 +171,7 @@ title: "Skills"
 * Reduced Instruction Set 
 * Triple Modular Redundancy
 
-### Engineer Fundamentals {.tabset .tabset-fade}
+### Engineering Fundamentals {.tabset .tabset-fade}
 
 #### Circuit Analysis
 
@@ -210,7 +210,7 @@ title: "Skills"
 
 </ul>
 
-#### Engineer Basics
+#### Engineering Basics
 
 <ul>
 
@@ -228,12 +228,14 @@ title: "Skills"
 <li>Temperature</li>
 <li>Energy and Power</li>
 </ul></span></span></div>
-  
-</ul>  
 
-#### Science {.tabset .tabset-pills}
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Science')"><li>Science</li></a></span>
+<div id="Science" style="display:none;padding-left:20px;">
 
-##### Physics
+##### {.tabset .tabset-pills}
+
+###### Physics
 
 <ul>
 
@@ -275,7 +277,7 @@ title: "Skills"
   
 </ul> 
   
-##### Chemistry
+###### Chemistry
 
 * Strengths and Materials 
 * Molecular and Ionic Compounds
@@ -283,7 +285,7 @@ title: "Skills"
 * Reactions, Kinetics and Equilibrium
 * Acids and Bases
 
-##### Thermodynamics
+###### Thermodynamics
 
 * Thermodynamic Systems and Entropy
 * Heat Transfer and Thermal Equilibrium
@@ -292,6 +294,9 @@ title: "Skills"
 * Enthalpy of Formation and Reaction
 * Hess’s Law and Ideal Gas Law
 * Laws of Thermodynamics
+
+</div></div>
+</ul>  
 
 ## Data Science
 
