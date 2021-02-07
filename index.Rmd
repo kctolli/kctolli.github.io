@@ -6,12 +6,7 @@ title: "Kyle Tolliver"
 pacman::p_load(pacman, tidyverse, knitr)
 ```
 
-<script type="text/javascript">
- function showhide(id) {
-    var e = document.getElementById(id);
-    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
- }
-</script>
+<script src="./site_libs/script.js"></script>
 
 <nav>
 <hr/>
@@ -40,14 +35,16 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 #### Top Skills
 
-* R/Rmd
-* Python
-* C/C++
-* Embedded C
-* Verilog
-* HTML
-* CSS
-* Github
+- Python
+- C / C++
+- R / Rmd 
+- Verilog
+- Java
+- SQL
+- HTML 
+- CSS
+- Tableau
+- Github
 
 </div></div>
 

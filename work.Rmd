@@ -2,18 +2,13 @@
 title: "Work Experience"
 ---
 
-<script type="text/javascript">
- function showhide(id) {
-    var e = document.getElementById(id);
-    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
- }
-</script>
+<script src="./site_libs/script.js"></script>
 
 ## Research & Business Development Center
 
-### Lineage Logistics
+#### Part Time
 
-#### Assistant Project Manager - Part Time
+### Assistant Project Manager 
 
 September 2020 - December 2020 --- Remote
 
@@ -22,9 +17,11 @@ September 2020 - December 2020 --- Remote
 * Recruited new members and helped members with the onboarding process
 * Lead Scrum meetings and helped programmers develop code
 
-### LLNL - Lawrence Livermore National Labs
+## LLNL - Lawrence Livermore National Labs
 
-#### Research Specialist - Intern
+#### Internship
+
+### Research Specialist
 
 July 2020 - September 2020 --- Remote
 
@@ -62,14 +59,14 @@ Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V cor
 
 #### C Programming 
 
-July 2020 – Present --- Remote
+July 2020 – December 2020 --- Remote
 
 * Help students learn C and C++ programming language 
 * Assist the professor in creating new material
 
 #### Intro Engineering 
 
-January 2020 – Present --- Rexburg, ID and Remote
+January 2020 – December 2020 --- Rexburg, ID and Remote
 
 * Mentor new students in Engineering and Computer Science
 * Help students with basic circuit analysis
@@ -77,7 +74,7 @@ January 2020 – Present --- Rexburg, ID and Remote
 
 #### Digital Systems 
 
-September 2018 – Present --- Rexburg, ID
+September 2018 – December 2020 --- Rexburg, ID
 
 *	Lead students to increase their knowledge of Digital Systems
 *	Guide students to improvement by giving feedback
