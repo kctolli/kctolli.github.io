@@ -307,7 +307,7 @@ Packages include:
 
 <ul>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('tidy')"><li style="color:gray;">tidyverse</li></a>
 <span class="tooltipRtext" style="color:white;"><ul style="color:white;">
 <li>ggplot2</li> 
@@ -357,7 +357,9 @@ Libraries include:
   
 <li>Tableau</li>
 
-<li>Databases
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Databases')"><li>Databases</li></a></span>
+<div id="Databases" style="display:none;padding-left:20px;">
 
 <ul>
 <div style="padding-left:0px;">
@@ -377,11 +379,10 @@ Libraries include:
 </ul></span></span></div>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">NoSQL</li></a>
+<span class="tooltipr"><a href="javascript:showhide('nosql')"><li style="color:gray;">NoSQL</li></a>
 <span class="tooltipRtext"><ul style="color:white;">
 <li>MongoDB</li> 
-</ul></span></span></div>
-</li></ul>
+</ul></span></span></div></div></ul>
 
 ### Statistics {.tabset .tabset-fade}
 
@@ -606,12 +607,11 @@ Topics include:
   + 1's Complement
   + 2's Complement
 * Theorems and Identities
-  + Simplification
+  + Simplification and Minimization
   + Consensus
   + DeMorgan's Rules
   + Sum of Products and Product of Sums
   + Canonical Forms
-  + Minimization
   + Karnaugh Maps
 
 </div></div>

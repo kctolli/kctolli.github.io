@@ -10,7 +10,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(results='asis', echo = TRUE)
 
-library(tidyverse)
+pacman::p_load(tidyverse, glue)
 ```
 
 Aside
