@@ -9,8 +9,13 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(results='asis', echo = TRUE)
-
 pacman::p_load(tidyverse, glue)
+
+print_info <- function(cv){
+  glue_data(cv, "<i class='fa fa-{cv$icon}'></i> [{cv$contact}]({cv$link}) \n\n\n") %>%
+    print()
+  invisible(cv)
+}
 ```
 
 Aside
@@ -19,15 +24,10 @@ Aside
 Contact Info {#contact}
 ------------------------------------
 
-- <i class="fa fa-envelope"></i> [kyle@tollivers.org](mailto:kyle@tollivers.org?subject=Job)
-
-- <i class="fa fa-phone"></i> [(805)367-6723](tel: 18053676723)
-
-- <i class="fas fa-map-marker-alt"></i> [Highland, Utah, USA](https://www.google.com/maps/place/Highland,+UT/@40.4327126,-111.8226669,13)
-
-- <i class="fa fa-linkedin"></i> [linkedin.com/in/kctolli/](https://www.linkedin.com/in/kctolli/)
-
-- <i class="fa fa-link"></i> [kctolli.github.io](../../index.html)
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+contact_info <- read_csv("../data/contact_info.csv")
+print_info(contact_info)
+```
 
 Skills {#skills}
 ------------------------------------
