@@ -92,13 +92,13 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 <span class="tooltipr"><a href="javascript:showhide('r')">
 ```{r, echo=FALSE}
 current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n'))
 ```
 </a><span class="tooltipRtext">Click to see code</span></span>
 <div id="r" style="display:none;padding-left:20px;">
 ```{r, eval=FALSE}
 current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n'))
 ```
 </div></div>
 

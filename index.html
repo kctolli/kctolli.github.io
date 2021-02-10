@@ -572,7 +572,7 @@ This website is setup as a personal portfolio. <br/><br/>How to navigate this we
 <span class="tooltipr"><a href="javascript:showhide('r')"> © 2020 - 2021 – Kyle Tolliver </a><span class="tooltipRtext">Click to see code</span></span>
 <div id="r" style="display:none;padding-left:20px;">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">current_year &lt;-<span class="st"> </span>lubridate<span class="op">::</span><span class="kw">year</span>(<span class="kw">Sys.Date</span>())</a>
-<a class="sourceLine" id="cb1-2" title="2">pander<span class="op">::</span><span class="kw">pander</span>(glue<span class="op">::</span><span class="kw">glue</span>(<span class="st">&#39;© 2020 - {current_year} -- Kyle Tolliver&#39;</span>))</a></code></pre></div>
+<a class="sourceLine" id="cb1-2" title="2">pander<span class="op">::</span><span class="kw">pander</span>(glue<span class="op">::</span><span class="kw">glue</span>(<span class="st">&#39;© 2020 - {current_year} -- Kyle Tolliver </span><span class="ch">\n\n</span><span class="st">&#39;</span>))</a></code></pre></div>
 </div>
 </div>
 <p><br /></p>

@@ -187,12 +187,7 @@ title: "Skills"
 </ul></span></span></div>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('BC')"><li>Basic Circuits</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Inductors</li> 
-<li>Capacitors</li>
-<li>Resistors</li>
-</ul></span></span>
+<span class="tooltipr"><a href="javascript:showhide('BC')"><li>Basic Circuits</li></a></span>
 <div id="BC" style="display:none;padding-left:20px;">
 <p>Methods and Techniques:</p>
 <ul>
@@ -202,6 +197,11 @@ title: "Skills"
 <li>Thevenin's Theorem</li> 
 <li>Norton's Theorem</li>
 </ul></div></div>
+<ul>
+<li>Inductors</li> 
+<li>Capacitors</li>
+<li>Resistors</li>
+</ul>
 
 </ul>
 
@@ -224,11 +224,9 @@ title: "Skills"
 <li>Energy and Power</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Science')"><li>Science</li></a></span>
-<div id="Science" style="display:none;padding-left:20px;">
+#### Science {.tabset .tabset-pills}
 
-###### Physics
+##### Physics
 
 <ul>
 
@@ -270,7 +268,7 @@ title: "Skills"
   
 </ul> 
   
-###### Chemistry
+##### Chemistry
 
 * Strengths and Materials 
 * Molecular and Ionic Compounds
@@ -278,7 +276,7 @@ title: "Skills"
 * Reactions, Kinetics and Equilibrium
 * Acids and Bases
 
-###### Thermodynamics
+##### Thermodynamics
 
 * Thermodynamic Systems and Entropy
 * Heat Transfer and Thermal Equilibrium
@@ -287,9 +285,6 @@ title: "Skills"
 * Enthalpy of Formation and Reaction
 * Hess’s Law and Ideal Gas Law
 * Laws of Thermodynamics
-
-</div></div>
-</ul>  
 
 ## Data Science
 

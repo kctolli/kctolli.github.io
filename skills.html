@@ -23,7 +23,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -718,19 +717,7 @@ BJT
 <li>
 Basic Circuits
 </li>
-</a> <span class="tooltipRtext">
-<ul style="color:white;">
-<li>
-Inductors
-</li>
-<li>
-Capacitors
-</li>
-<li>
-Resistors
-</li>
-</ul>
-</span></span>
+</a></span>
 <div id="BC" style="display:none;padding-left:20px;">
 <p>
 Methods and Techniques:
@@ -754,6 +741,17 @@ Norton’s Theorem
 </ul>
 </div>
 </div>
+<ul>
+<li>
+Inductors
+</li>
+<li>
+Capacitors
+</li>
+<li>
+Resistors
+</li>
+</ul>
 </ul>
 </div>
 <div id="engineering-basics" class="section level4">
@@ -796,14 +794,11 @@ Energy and Power
 </ul>
 </span></span>
 </div>
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Science')">
-<li>
-Science
-</li>
-</a></span>
-<div id="Science" style="display:none;padding-left:20px;">
-<h6 id="physics">Physics</h6>
+</div>
+<div id="science" class="section level4 tabset tabset-pills">
+<h4>Science</h4>
+<div id="physics" class="section level5">
+<h5>Physics</h5>
 <ul>
 <li>
 Mechanics
@@ -889,7 +884,9 @@ Relativity
 </span></span>
 </div>
 </ul>
-<h6 id="chemistry">Chemistry</h6>
+</div>
+<div id="chemistry" class="section level5">
+<h5>Chemistry</h5>
 <ul>
 <li>Strengths and Materials</li>
 <li>Molecular and Ionic Compounds</li>
@@ -897,7 +894,9 @@ Relativity
 <li>Reactions, Kinetics and Equilibrium</li>
 <li>Acids and Bases</li>
 </ul>
-<h6 id="thermodynamics">Thermodynamics</h6>
+</div>
+<div id="thermodynamics" class="section level5">
+<h5>Thermodynamics</h5>
 <ul>
 <li>Thermodynamic Systems and Entropy</li>
 <li>Heat Transfer and Thermal Equilibrium</li>
@@ -908,8 +907,6 @@ Relativity
 <li>Laws of Thermodynamics</li>
 </ul>
 </div>
-</div>
-</ul>
 </div>
 </div>
 </div>

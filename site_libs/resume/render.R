@@ -5,7 +5,7 @@
 # loaded and load the cached version in the .Rmd instead of re-fetching it twice
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
-setwd(glue::glue("{here::here()}/site_libs/resume"))
+#setwd(glue::glue("{here::here()}/site_libs/resume"))
 
 file <- "resume"
 
