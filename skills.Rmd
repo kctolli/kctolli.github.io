@@ -335,6 +335,7 @@ Packages include:
 <li>blogdown</li>
 <li>mosaic</li>
 <li>car</li>
+<li>future</li>
 </ul></div></div>
   
 <div style="padding-left:0px;">

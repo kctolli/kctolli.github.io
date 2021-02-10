@@ -23,17 +23,9 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 
 
@@ -65,9 +57,8 @@ h6 {
 }
 </style>
 
-
-<link rel="stylesheet" href="site_libs/styles.css" type="text/css" />
-<link rel="stylesheet" href="site_libs/site.css" type="text/css" />
+<link rel="stylesheet" href="site_libs\styles.css" type="text/css" />
+<link rel="stylesheet" href="site_libs\site.css" type="text/css" />
 
 
 
@@ -346,35 +337,35 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="./pos.html">
-    <span class="fas fa-university"></span>
+    <span class="fa fa-university"></span>
      
     Program of Study
   </a>
 </li>
 <li>
   <a href="./skills.html">
-    <span class="fas fa-briefcase"></span>
+    <span class="fa fa-briefcase"></span>
      
     Skills
   </a>
 </li>
 <li>
   <a href="./work.html">
-    <span class="fas fa-laptop"></span>
+    <span class="fa fa-laptop"></span>
      
     Work
   </a>
 </li>
 <li>
   <a href="./projects.html">
-    <span class="fas fa-tasks"></span>
+    <span class="fa fa-tasks"></span>
      
     Projects
   </a>
 </li>
 <li>
   <a href="./site_libs/resume/resume.html">
-    <span class="fas fa-file-alt"></span>
+    <span class="fa fa-file-alt"></span>
      
     Resume
   </a>
@@ -396,6 +387,20 @@ div.tocify {
 </div>
 
 
+<!--
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
 <script src="./site_libs/script.js"></script>
 <nav>
 <hr/>
@@ -491,7 +496,7 @@ This website is setup as a personal portfolio. <br/><br/>How to navigate this we
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
