@@ -18,7 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
 ```{r load_libraries, include=FALSE}
-pacman::p_load(pacman, tidyverse, knitr)
+library(tidyverse, knitr)
 ```
 
 <script src="./site_libs/script.js"></script>
@@ -88,7 +88,19 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 <footer>
 
-<p>&copy; 2020-2021  - Kyle Tolliver</p> 
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('r')">
+```{r, echo=FALSE}
+current_year <- lubridate::year(Sys.Date())
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+```
+</a><span class="tooltipRtext">Click to see code</span></span>
+<div id="r" style="display:none;padding-left:20px;">
+```{r, eval=FALSE}
+current_year <- lubridate::year(Sys.Date())
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+```
+</div></div>
 
 <br />
 
