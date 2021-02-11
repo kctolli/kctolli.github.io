@@ -5,6 +5,8 @@ output:
   pagedown::html_resume:
     css: ['resume.css', resume]
     self_contained: true
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -12,72 +14,7 @@ knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning =
 pacman::p_load(tidyverse, glue)
 
 datapath <- "../data/"
-
-resume_data <- function(dat){dat %>% filter(in_resume)}
-```
-
-
-```{r display, include=FALSE}
-sanitize_links <- function(cv, text){
-  if(cv$pdf_mode){
-    link_titles <- stringr::str_extract_all(text, '(?<=\\[).+?(?=\\]\\()')[[1]]
-    link_destinations <- stringr::str_extract_all(text, '(?<=\\]\\().+?(?=\\))')[[1]]
-
-    n_links <- length(cv$links)
-    n_new_links <- length(link_titles)
-
-    if(n_new_links > 0){
-      # add links to links array
-      cv$links <- c(cv$links, link_destinations)
-
-      # Build map of link destination to superscript
-      link_superscript_mappings <- purrr::set_names(
-        paste0("<sup>", (1:n_new_links) + n_links, "</sup>"),
-        paste0("(", link_destinations, ")")
-      )
-
-      # Replace the link destination and remove square brackets for title
-      text <- text %>%
-        stringr::str_replace_all(stringr::fixed(link_superscript_mappings)) %>%
-        stringr::str_replace_all('\\[(.+?)\\](?=<sup>)', "\\1")
-    }
-  }
-
-  list(cv = cv, text = text)
-}
-
-print_section <- function(cv, section_id, glue_template = "default"){
-
-  if(glue_template == "default"){
-    glue_template <- "
-### {title}
-
-{loc}
-
-{institution}
-
-{timeline}
-
-{description_bullets}
-\n\n\n"
-  }
-
-  section_data <- dplyr::filter(cv$entries_data, section == section_id)
-
-  # Take entire entries data frame and removes the links in descending order
-  # so links for the same position are right next to each other in number.
-  for(i in 1:nrow(section_data)){
-    for(col in c('title', 'description_bullets')){
-      strip_res <- sanitize_links(cv, section_data[i, col])
-      section_data[i, col] <- strip_res$text
-      cv <- strip_res$cv
-    }
-  }
-
-  print(glue::glue_data(section_data, glue_template))
-
-  invisible(strip_res$cv)
-}
+source("../script.R")
 ```
 
 Aside
@@ -87,23 +24,17 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-contact_info <- read_csv(glue("{datapath}contact_info.csv"))
+contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_resume)
 glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
 ```
 
 Skills {#skills}
 ------------------------------------
 
-- Python
-- C / C++
-- R / Rmd 
-- Verilog
-- Java
-- SQL
-- HTML 
-- CSS
-- Tableau
-- Github
+```{r skill}
+skills <- read_csv(glue("{datapath}skills.csv"))
+glue_data(skills, "- {skill} \n")
+```
 
 Disclaimer {#disclaimer}
 ------------------------------------
@@ -135,41 +66,10 @@ Rexburg, ID
 Experience {data-icon=briefcase}
 ------------------------------------
 
-### Assistant Project Manager
-
-RBDC - Research and Business Development Center
-
-Remote
-
-2020
-
-+ Used Python to create functions and Machine Learning algorithms
-+ Developed code in shortest path optimization for warehouse robot
-+ Lead Scrum meetings and helped programmers develop code
-
-### Research Specialist Intern
-
-LLNL - Lawrence Livermore National Labs
-
-Remote
-
-2020
-
-+ Tested security technologies using binary analysis
-+ Conducted market research on new security techniques
-+ Followed Scrum methodology and Kanban (Trello) board  
-
-### Student Senior Designer
-
-NASA - National Aeronautics and Space Administration
-
-Remote
-
-2020
-
-+ Developed embedded C interface to the sensors in NASA's Spacesuit 
-+ Benchmark tested the microprocessor in C++
-+ Setup a website using Rmds, CSS and Yaml
+```{r}
+entries <- read_csv(glue("{datapath}entries.csv")) %>% filter(in_resume)
+print_section(entries, 'experience')
+```
 
 Projects {data-icon=laptop}
 ------------------------------------

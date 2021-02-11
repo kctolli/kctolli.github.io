@@ -18,7 +18,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
 ```{r load_libraries, include=FALSE}
-library(tidyverse, knitr)
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
+pacman::p_load(tidyverse, glue)
+
+source("./site_libs/script.R")
+datapath <- "./site_libs/data/"
 ```
 
 <script src="./site_libs/script.js"></script>
@@ -50,25 +54,19 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 #### Top Skills
 
-- Python
-- C / C++
-- R / Rmd 
-- Verilog
-- Java
-- SQL
-- HTML 
-- CSS
-- Tableau
-- Github
+```{r skill}
+skills <- read_csv(glue("{datapath}skills.csv"))
+glue_data(skills, "- {skill} \n")
+```
 
 </div></div><br />
 
 ## Contact Me
 
-* Email: [kyle@tollivers.org](mailto:kyle@tollivers.org?subject=Portfolio)
-* Phone: [(805) 367-6723](tel:18053676723)
-* LinkedIn: [linkedin.com/in/kctolli](https://www.linkedin.com/in/kctolli)
-* Github: [github.com/kctolli](https://github.com/kctolli)
+```{r contact}
+contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
+glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
+```
 
 <!-- <br />  -->
 
@@ -88,21 +86,10 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 <footer>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('r')">
-```{r, echo=FALSE}
+```{r}
 current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n'))
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n\n'))
 ```
-</a><span class="tooltipRtext">Click to see code</span></span>
-<div id="r" style="display:none;padding-left:20px;">
-```{r, eval=FALSE}
-current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n'))
-```
-</div></div>
-
-<br />
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 

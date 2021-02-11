@@ -3,8 +3,11 @@ title: "Projects"
 ---
 
 ```{r load_libraries, include=FALSE}
-library(tidyverse)
-library(knitr)
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
+pacman::p_load(tidyverse, glue)
+
+source("./site_libs/script.R")
+datapath <- "./site_libs/data/"
 ```
 
 <script src="./site_libs/script.js"></script>

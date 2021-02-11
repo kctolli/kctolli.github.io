@@ -2,14 +2,12 @@
 title: "Program of Study"
 ---
 
-```{r load, include=FALSE}
-library(mosaic)
-library(tidyverse)
-library(pander)
-library(DT) 
-library(knitr)
+```{r load_libraries, include=FALSE}
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
+pacman::p_load(tidyverse, glue)
 
-grade <- read_csv("./site_libs/records/grade.csv") %>% na.omit()
+source("./site_libs/script.R")
+datapath <- "./site_libs/data/"
 ```
 
 <script src="./site_libs/script.js"></script>

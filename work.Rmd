@@ -2,58 +2,22 @@
 title: "Work Experience"
 ---
 
+```{r load_libraries, include=FALSE}
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
+pacman::p_load(tidyverse, glue)
+
+source("./site_libs/script.R")
+datapath <- "./site_libs/data/"
+```
+
 <script src="./site_libs/script.js"></script>
 
-## Research & Business Development Center
-
-#### Part Time
-
-### Assistant Project Manager 
-
-September 2020 - December 2020 --- Remote
-
-* Used Python to create functions, classes, and Machine Learning algorithms
-* Developed code in shortest path optimization for warehouse robot
-* Recruited new members and helped members with the onboarding process
-* Lead Scrum meetings and helped programmers develop code
-
-## LLNL - Lawrence Livermore National Labs
-
-#### Internship
-
-### Research Specialist
-
-July 2020 - September 2020 --- Remote
-
-* Tested security technologies using binary analysis
-* Conducted market research on new security techniques
-* Followed Scrum methodology and Kanban (Trello) board
-
-## NASA - National Aeronautics and Space Administration
-
-#### Contract
-
-### Student Senior Designer
-
-April 2020 – July 2020 --- Remote
-
-* Was contracted by NASA for my Senior Project
-* Worked in a 4 person team, as a team, our goal was:
-  + Develop an FPGA (PolarFire) based RISC-V processor 
-  + Associate software to monitor vitals in space
-  + Design, Assemble, and Solder a PCB to interface with sensors  
-* My contribution was: 
-  + Developed embedded C interface to the sensors in NASA's Spacesuit 
-  + Benchmark tested the microprocessor in C++
-  + Setup the [website](https://ecen499-nasa.github.io/) using Rmds, CSS and Yaml
-  
-##### Mission Statement
-
-Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V core configurations in Triple Modular Redundancy (TMR) for use in NASA’s Caution and Warning System (CWS) in the Portable Life Support System (PLSS) of the newest space suit (xEMU - Exploratory Extravehicular Mobility Unit).  
+```{r}
+entries <- read_csv(glue("{datapath}entries.csv"))
+print_work(entries)
+```
 
 ## Brigham Young University - Idaho 
-
-#### Part Time
 
 ### Teaching Assistant {.tabset .tabset-fade}
 
