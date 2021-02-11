@@ -1,15 +1,35 @@
+/*
+    Triangles - triangle.cs
+    
+    Copyright 2021 Kyle Tolliver
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+*/
+
 using System;
 
 namespace MyApp
 {
   class Triangle
   { 
-    public string correct = "not valid"; 
-    public double[] side = new double[3];
-    public double[] angle = new double[3];
-    public string class_side = ""; 
-    public string class_angle = "";
-    const double pi = 3.141592f;
+    public static string correct = "not valid"; 
+    public static double[] side = new double[3];
+    public static double[] angle = new double[3];
+    public static string class_side = ""; 
+    public static string class_angle = "";
+    const double pi = 3.14159265359f;
   
     static double square(double x) {return x * x;}
     static double rad2degree(double rad) {return rad * 180/pi;}
@@ -30,29 +50,29 @@ namespace MyApp
     static string triside()
     {
         if (side[0] == side[1] && side[0] == side[2] && side[1] == side[2]){return "equilateral";}
-        else if (side[0] == side[1] || array[0] == side[2] || side[1] == side[2]){return "isosceles";}
+        else if (side[0] == side[1] || side[0] == side[2] || side[1] == side[2]){return "isosceles";}
         else {return "scalene";}
     }
     
     static void getsidetriangle()
     { 
-        double[] squared = new string[3];
-    
-        //side.insert(0, float(input("Enter your first side length: ")))
-        //side.insert(1, float(input("Enter your second side length: ")))
-        //side.insert(2, float(input("Enter your third side length: ")))
+        Console.WriteLine("Enter your first side length: ");
+        side[0] = Convert.ToDouble(Console.ReadLine());
         
-        //angle.insert(0, lawcosines(side[0], side[1], side[2]))
-        //angle.insert(1, lawcosines(side[1], side[2], side[0]))
-        //angle.insert(2, lawcosines(side[2], side[0], side[1]))
+        Console.WriteLine("Enter your second side length: ");
+        side[1] = Convert.ToDouble(Console.ReadLine());
         
-        //Array.Sort(side);
-        
-        //foreach double i in side {double[] squared =  new double[] square(side);}
+        Console.WriteLine("Enter your third side length: ");
+        side[2] = Convert.ToDouble(Console.ReadLine());
 
         if (side[0] <= 0 || side[1] <= 0 || side[2] <= 0){correct = "not valid";}
-        else if (angle[0] <= 0 || angle[1] <= 0 || angle[2] <= 0) {correct = "not valid";}
-        else if (sum(angle) != 180) {correct = "not valid";}
+        
+        angle[0] = lawcosines(side[0], side[1], side[2]);
+        angle[1] = lawcosines(side[1], side[2], side[0]);
+        angle[2] = lawcosines(side[2], side[0], side[1]);
+        
+        if (angle[0] <= 0 || angle[1] <= 0 || angle[2] <= 0) {correct = "not valid";}
+        else if (angle[0] + angle[1] + angle[2] != 180) {correct = "not valid";}
         else if (side[0] + side[1] > side[2] && side[0] + side[2] > side[1] && side[1] + side[2] > side[2])
         {
             class_side = triside();
@@ -65,7 +85,7 @@ namespace MyApp
                     angle[i] = 60;
                 }
             }    
-            else {class_angle = validangles(angle);}// not equilateral
+            else {class_angle = validangles();}// not equilateral
         }
         else {correct = "not valid";}
     }
