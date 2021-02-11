@@ -29,7 +29,7 @@ def main():
         check = check.lower()
     
         if check == "side" or check == "sides":
-            correct, class_angle, class_side = tri.getsidetriangle() ## Get triangle from angles
+            correct, class_angle, class_side = tri.getsidetriangle() ## Get triangle from sides
             if correct == tri.valid[0]: ## Display not valid triangle
                 print("These values do not produce a valid triangle.")
             elif correct == tri.valid[1]: ## Display valid triangle type
@@ -37,7 +37,7 @@ def main():
                 print("The angles in degrees of the triangle are {:.2f}, {:.2f}, {:.2f}.".format(tri.angle[0], tri.angle[1], tri.angle[2]))                           
                 print("The angles in radians of the triangle are {:.2f}, {:.2f}, {:.2f}.".format(tri.degree2rad(tri.angle[0]), tri.degree2rad(tri.angle[1]), tri.degree2rad(tri.angle[2]))) 
         elif check == "angle" or check == "angles":
-            correct, class_angle, class_side = tri.getangletriangle() ## Get triangle from sides
+            correct, class_angle, class_side = tri.getangletriangle() ## Get triangle from angle
             if correct == tri.valid[0]: ## Display not valid triangle
                 print("These values do not produce a valid triangle.")
             elif correct == tri.valid[1]: ## Display valid triangle type

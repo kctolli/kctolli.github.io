@@ -46,12 +46,10 @@ def lawcosines(a, b, c):
 def validangles():
     if angle[0] == 90 or angle[1] == 90 or angle[2] == 90:
         return "right"
-    elif angle[0] >= 90 or angle[1] >= 90 or angle[2] >= 90:
+    elif angle[0] > 90 or angle[1] > 90 or angle[2] > 90:
         return "obtuse"
-    elif angle[0] <= 90 or angle[1] <= 90 or angle[2] <= 90:
-        return "acute"
     else:
-        return ""
+        return "acute"
 
 def tri(array):
     if array[0] == array[1] and array[0] == array[2] and array[1] == array[2]:
@@ -123,6 +121,8 @@ def getsidetriangle():
             angle.insert(1, lawcosines(side[1], side[2], side[0]))
             angle.insert(2, lawcosines(side[2], side[0], side[1]))
             if angle[0] <= 0 or angle[1] <= 0 or angle[2] <= 0:
+                correct = valid[0]
+            elif sum(angle) != 180:
                 correct = valid[0]
             elif squared[0] + squared[1] == squared[2]:
                 class_angle = "right"

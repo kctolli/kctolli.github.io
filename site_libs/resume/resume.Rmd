@@ -8,13 +8,75 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(results='asis', echo = TRUE)
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
 pacman::p_load(tidyverse, glue)
 
-print_info <- function(cv){
-  glue_data(cv, "<i class='fa fa-{cv$icon}'></i> [{cv$contact}]({cv$link}) \n\n\n") %>%
-    print()
-  invisible(cv)
+datapath <- "../data/"
+
+resume_data <- function(dat){dat %>% filter(in_resume)}
+```
+
+
+```{r display, include=FALSE}
+sanitize_links <- function(cv, text){
+  if(cv$pdf_mode){
+    link_titles <- stringr::str_extract_all(text, '(?<=\\[).+?(?=\\]\\()')[[1]]
+    link_destinations <- stringr::str_extract_all(text, '(?<=\\]\\().+?(?=\\))')[[1]]
+
+    n_links <- length(cv$links)
+    n_new_links <- length(link_titles)
+
+    if(n_new_links > 0){
+      # add links to links array
+      cv$links <- c(cv$links, link_destinations)
+
+      # Build map of link destination to superscript
+      link_superscript_mappings <- purrr::set_names(
+        paste0("<sup>", (1:n_new_links) + n_links, "</sup>"),
+        paste0("(", link_destinations, ")")
+      )
+
+      # Replace the link destination and remove square brackets for title
+      text <- text %>%
+        stringr::str_replace_all(stringr::fixed(link_superscript_mappings)) %>%
+        stringr::str_replace_all('\\[(.+?)\\](?=<sup>)', "\\1")
+    }
+  }
+
+  list(cv = cv, text = text)
+}
+
+print_section <- function(cv, section_id, glue_template = "default"){
+
+  if(glue_template == "default"){
+    glue_template <- "
+### {title}
+
+{loc}
+
+{institution}
+
+{timeline}
+
+{description_bullets}
+\n\n\n"
+  }
+
+  section_data <- dplyr::filter(cv$entries_data, section == section_id)
+
+  # Take entire entries data frame and removes the links in descending order
+  # so links for the same position are right next to each other in number.
+  for(i in 1:nrow(section_data)){
+    for(col in c('title', 'description_bullets')){
+      strip_res <- sanitize_links(cv, section_data[i, col])
+      section_data[i, col] <- strip_res$text
+      cv <- strip_res$cv
+    }
+  }
+
+  print(glue::glue_data(section_data, glue_template))
+
+  invisible(strip_res$cv)
 }
 ```
 
@@ -24,9 +86,9 @@ Aside
 Contact Info {#contact}
 ------------------------------------
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-contact_info <- read_csv("../data/contact_info.csv")
-print_info(contact_info)
+```{r contact}
+contact_info <- read_csv(glue("{datapath}contact_info.csv"))
+glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
 ```
 
 Skills {#skills}
