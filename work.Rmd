@@ -55,12 +55,21 @@ April 2019 - July 2019 --- Rexburg, ID
 
 April 2018 - August 2018 --- Rexburg, ID
 
-* Tutored many classes    
+<ul>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('tutor')"><li>Tutored many classes</li></a></span>
+<div id="tutor" style="display:none;padding-left:20px;">
   Including:
+  
   + Object-Oriented Programming with Data Structures using Python
-  + Fundamentals of Digital Systems
-  + Digital Systems Lab
+  + Fundamentals of Digital Systems w/ Lab
   + Introduction to Engineering
   + Introduction to Electrical and Computer Engineering 
-* Taught students topics from these classes
-* Lead group and individual appointments and discussions
+  
+</div></div>
+
+<li>Taught students topics from these classes</li>
+<li>Lead group and individual appointments and discussions</li>
+
+</ul>

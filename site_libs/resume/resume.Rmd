@@ -24,7 +24,8 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_resume)
+contact_info <- read_csv(glue("{datapath}contact_info.csv")) 
+contact_info <- resume(contact_info)
 glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
 ```
 
@@ -49,64 +50,35 @@ Main
 Kyle Tolliver {#title}
 ------------------------------------
 
+```{r}
+entries <- read_csv(glue("{datapath}entries.csv")) 
+entries <- resume(entries)
+```
+
 Education {data-icon=graduation-cap}
 ------------------------------------
 
 ### Brigham Young University - Idaho
 
-Bachelor of Science in Software Engineering 
+Bachelor of Science in Software Engineering
 
 Rexburg, ID
 
 2017 <br> | <br> 2020
 
 + Minor: Computer Engineering and Data Science
-+ Coursework: Advanced Embedded Systems, Digital System Design, Computer Architecture, Machine Learning, Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, System Security, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
++ Coursework: Advanced Embedded Systems, Digital System Design, Computer Architecture, Machine Learning, Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, System Security, Project Management, Linear Algebra, Discrete Math, Differential Calculus
 
 Experience {data-icon=briefcase}
 ------------------------------------
 
 ```{r}
-entries <- read_csv(glue("{datapath}entries.csv")) %>% filter(in_resume)
 print_section(entries, 'experience')
 ```
 
 Projects {data-icon=laptop}
 ------------------------------------
 
-### Spotify Predictive Analytics 		
-
-BYU - Idaho, Computer Science and Engineering 
-
-Rexburg, ID
-
-2020 
-
-+ Used energy, liveliness, length and tempo to predict song popularity
-+ Created Regression models in R
-+ Developed Neural Networks and Decision Trees using Python
-
-### COVID-19 Data Consulting
-
-BYU - Idaho, Computer Science and Engineering 
-
-Remote
-
-2020
-
-+ Developed a data website using R, Rmds and Yaml
-+ Explored different datasets to determine viable information
-+ Wrote my own COVID-19 R package to wrangle data
-+ Visualized the data to make the data easily understood
-
-### Self Driving Car	
-
-BYU - Idaho, Computer Science and Engineering 
-
-Rexburg, ID
-
-2020 
-
-+ Designed circuits and assembled the electronics
-+	Programmed the Arduino in Embedded C
-+	Setup Raspberry Pi for Deep Learning and Computer Vision
+```{r}
+print_section(entries, 'projects')
+```
