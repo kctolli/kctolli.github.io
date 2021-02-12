@@ -51,7 +51,7 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 
 ```{r society}
 soc <- read_csv(glue("{datapath}society.csv"))
-glue_data(soc, "- {group} ({start} - {end}) \n")
+glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n")
 ```
 
 #### Top Skills
