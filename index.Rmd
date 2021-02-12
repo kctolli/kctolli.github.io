@@ -85,10 +85,17 @@ glue_data(highlights, "- [{Text}]({Link}) \n")
 
 <footer>
 
+<div style="padding-left:5px;">
+
+<span class="tooltipr"><a href="javascript:showhide('copyright')">
+
 ```{r}
 current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n\n'))
+pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 ```
+
+</a></span>
+<div id="copyright" style="display:none;padding-left:20px;">
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
@@ -96,4 +103,4 @@ pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver \n\n\n'))
 
 ######  *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io)*
 
-</footer>
+</div></div></footer>
