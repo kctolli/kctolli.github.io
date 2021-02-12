@@ -47,10 +47,12 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 <span class="tooltipr"><a href="javascript:showhide('hovertobegin')">A little more about me</a></span>
 <div id="hovertobegin" style="display:none;padding-left:20px;">
 
-#### Quick Facts
+#### Societies
 
-* Member of Tau Beta Pi - Idaho Delta Chapter
-* Inquisitive, Motivated and Driven
+```{r society}
+soc <- read_csv(glue("{datapath}society.csv"))
+glue_data(soc, "- {group} ({start} - {end}) \n")
+```
 
 #### Top Skills
 
