@@ -97,8 +97,8 @@ pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
 
-######  *--- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files. <br/> &nbsp; &nbsp; &nbsp;Website is developed using HTML, CSS and Javascript.*
+###### *--- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files. <br/> &nbsp; &nbsp; &nbsp;Website is developed in HTML, CSS and Javascript.*
 
-######  *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io)*
+###### *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io). <br/> &nbsp; &nbsp; &nbsp; *
 
 </div></div></footer>

@@ -19,10 +19,9 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 <div style="padding-left:1px;">
 
 <span class="tooltipr">
-<a href="javascript:showhide('hovertobegin')">Diploma</a>
-  <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span>
-</span>
-<div id="hovertobegin" style="display:none;padding-left:20px;">
+<a href="javascript:showhide('diploma')">Diploma</a>
+  <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
+<div id="diploma" style="display:none;padding-left:20px;">
 
 ![](./site_libs/images/diploma.jpg)
 
@@ -84,12 +83,19 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 * Writing and Reasoning
 * Technical Communication
 
-###
 <hr/>
 
 ## Moorpark High School
 
-I was able to take some college level courses in the process of getting my High School Diploma. <br/> Moorpark High School graduating class of 2017.  
+Moorpark High School graduating class of 2017.
+
+<div style="padding-left:0px;">
+
+<span class="tooltipr">
+<a href="javascript:showhide('hs')">
+I was able to take some college level courses in the process of getting my High School Diploma.
+</a></span>
+<div id="hs" style="display:none;padding-left:20px;">
 
 * Geometry Honors
 * Algebra 2 Accelerated 
@@ -100,3 +106,5 @@ I was able to take some college level courses in the process of getting my High 
 * AP Art 2-D Design (Photography)
 * Introduction to Computer Science using C++
 * Introduction to Engineering
+
+</div></div>
