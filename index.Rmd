@@ -27,14 +27,12 @@ datapath <- "./site_libs/data/"
 
 <script src="./site_libs/script.js"></script>
 
-<nav>
-<hr/>
+<nav><hr/>
 <p>This website is setup as a personal portfolio. <br/><br/>How to navigate this website: </p>
 <ul>
 <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
 <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
-</ul><hr/>  
-</nav>
+</ul><hr/></nav>
 
 ![](./site_libs/images/me.jpg)
 
@@ -89,14 +87,12 @@ glue_data(highlights, "- [{Text}]({Link}) \n")
 
 <div style="padding-left:5px;">
 
-<span class="tooltipr"><a href="javascript:showhide('copyright')">
-
+<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">
 ```{r}
 current_year <- lubridate::year(Sys.Date())
 pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 ```
-
-</a></span>
+</p></a></span>
 <div id="copyright" style="display:none;padding-left:20px;">
 
 ###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
