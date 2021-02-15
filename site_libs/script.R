@@ -100,3 +100,12 @@ copyright <- function(){
   current_year <- lubridate::year(Sys.Date())
   pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 }
+
+# Knit the HTML version
+render_all <- function(){
+  rmarkdown::render("index.rmd", params = list(pdf_mode = FALSE), output_file = "index.html")
+  rmarkdown::render("pos.rmd", params = list(pdf_mode = FALSE), output_file = "pos.html")
+  rmarkdown::render("projects.rmd", params = list(pdf_mode = FALSE), output_file = "projects.html")
+  rmarkdown::render("skills.rmd", params = list(pdf_mode = FALSE), output_file = "skills.html")
+  rmarkdown::render("work.rmd", params = list(pdf_mode = FALSE), output_file = "work.html")
+}

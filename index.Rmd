@@ -25,6 +25,10 @@ source("./site_libs/script.R")
 datapath <- "./site_libs/data/"
 ```
 
+```{r eval=FALSE}
+render_all()
+```
+
 <script src="./site_libs/script.js"></script>
 
 This website is setup as a personal portfolio. 
