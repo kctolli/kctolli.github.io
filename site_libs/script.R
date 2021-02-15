@@ -63,7 +63,21 @@ print_work <- function(cv){
 print_project <- function(cv){
   
   section_id = 'projects'
+
+  if(cv$start == cv$end){
   
+    glue_template <- "
+### {title}
+
+{end} --- Spent {time} hours
+
+- {description_1}
+- {description_2}
+- {description_3}
+\n\n\n"
+      
+  } else {
+    
   glue_template <- "
 ### {title}
 
@@ -73,6 +87,7 @@ print_project <- function(cv){
 - {description_2}
 - {description_3}
 \n\n\n"
+  }
   
   section_data <- dplyr::filter(cv, section == section_id)
   
@@ -80,3 +95,8 @@ print_project <- function(cv){
 }
 
 resume <- function(cv){cv %>% filter(in_resume)}
+
+copyright <- function(){
+  current_year <- lubridate::year(Sys.Date())
+  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+}

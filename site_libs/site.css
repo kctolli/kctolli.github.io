@@ -10,3 +10,11 @@ p {color: black;}
 ul {text-align: left; color: black;}
 
 .tooltipRtext {color: white;}
+
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}

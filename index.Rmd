@@ -27,8 +27,10 @@ datapath <- "./site_libs/data/"
 
 <script src="./site_libs/script.js"></script>
 
+This website is setup as a personal portfolio. 
+
 <nav><hr/>
-<p>This website is setup as a personal portfolio. <br/><br/>How to navigate this website: </p>
+<p>How to navigate this website: </p>
 <ul>
 <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
 <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
@@ -68,8 +70,6 @@ contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index
 glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
 ```
 
-<!-- <br />  -->
-
 <hr />
 
 ## Highlights
@@ -79,26 +79,6 @@ highlights <- read_csv(glue("{datapath}highlights.csv"))
 glue_data(highlights, "- [{Text}]({Link}) \n")
 ```
 
-<!-- <br />  -->
-
 <hr />
 
-<footer>
-
-<div style="padding-left:5px;">
-
-<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">
-```{r}
-current_year <- lubridate::year(Sys.Date())
-pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
-```
-</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">
-
-###### *--- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](./site_libs/LICENSE.txt)*
-
-###### *--- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files. <br/> &nbsp; &nbsp; &nbsp;Website is developed in HTML, CSS and Javascript.*
-
-###### *--- Hosted on [github](https://github.com/kctolli/kctolli.github.io). <br/> &nbsp; &nbsp; &nbsp; *
-
-</div></div></footer>
+<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>

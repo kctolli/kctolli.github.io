@@ -73,3 +73,7 @@ April 2018 - August 2018 --- Rexburg, ID
 <li>Lead group and individual appointments and discussions</li>
 
 </ul>
+
+<hr />
+
+<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>
