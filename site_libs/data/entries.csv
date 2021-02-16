@@ -2,13 +2,17 @@ section,in_resume,title,loc,institution,startmonth,start,endmonth,end,descriptio
 experience,TRUE,Assistant Project Manager,Remote,RBDC - Research and Business Development Center,September,2020,December,2020,Used Python to create functions and Machine Learning algorithms,Developed code in shortest path optimization for warehouse robot,Lead Scrum meetings and helped programmers develop code,Part-Time
 experience,TRUE,Research Specialist Intern,Remote,LLNL - Lawrence Livermore National Labs,July,2020,September,2020,Tested security technologies using binary analysis,Conducted market research on new security techniques,Followed Scrum methodology and Kanban (Trello) board,Internship
 experience,TRUE,Student Senior Designer,Remote,NASA - National Aeronautics and Space Administration,April,2020,July,2020,Developed embedded C interface to the sensors in NASA's Spacesuit,Benchmark tested the microprocessor in C++,"Setup a website using Rmds, CSS and Yaml",Contract
+teaching,FALSE,C Programming,Remote,Brigham Young University - Idaho,July,2020,December,2020,Helped students learn C and C++ programming language,Assisted the professor in creating new material,Used MSP432 and Code Composer to develop C,Part-Time
+teaching,FALSE,Intro Computer Science and Engineering,"Rexburg, ID",Brigham Young University - Idaho,January,2020,December,2020,Mentored new students in Computer Science and Engineering,Helped students with basic circuit analysis,Lead students in learning arduino skills,Part-Time
+teaching,FALSE,Digital Systems,"Rexburg, ID",Brigham Young University - Idaho,September,2018,December,2020,Lead students to increase their knowledge of Digital Systems,Guided students to improvement by giving feedback,Helped students with programming Verilog,Part-Time
+teaching,FALSE,Discrete Math,"Rexburg, ID",Brigham Young University - Idaho,April,2019,July,2019,Solved example problems to assist students with Discrete Math,Guided students in the basics of Computational Theory,Assisted students in learning Elisp and Erlang,Part-Time
 projects,FALSE,Financial Planner,"Highland, UT",Personal,January,2021,Febuary,2021,Used Python to create a financial planner,Loops used to calculate tax brackets,Made to help users plan basic finances,25
 projects,TRUE,Spotify Predictive Analytics,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2020,December,2020,"Used energy, liveliness, length and tempo to predict song popularity",Created Regression models in R,Developed Neural Networks and Decision Trees using Python,50
 projects,TRUE,COVID-19 Data Consulting,Remote,"BYU - Idaho, Computer Science and Engineering ",April,2020,July,2020,"Developed a data website using R, Rmds and Yaml",Explored different datasets to determine viable information,Visualized the data to make the data easily understood,165
 projects,TRUE,Self Driving Car,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",January,2020,April,2020,Designed circuits and assembled the electronics,Programmed the Arduino in Embedded C,Setup Raspberry Pi for Deep Learning and Computer Vision,30
 projects,FALSE,Biology Exam Analysis,"Rexburg, ID","BYU - Idaho, Biology",January,2020,April,2020,Used R and the Tidyverse package to wrangle and visualize data,Allowed professors to help improve curriculum ,See [Exam Data Webpage](https://kctolli.github.io/MATH335/Semester_project.html),20
-projects,FALSE,Current-limited (BJT and OP-AMP) DC Power Supply,"Rexburg, ID","BYU - Idaho, Computer Information Technology and Management",September,2019,December,2019,Calculated the value of components of the power supply,Designed a power supply that convert 20V AC/DC to 5V DC,See [Report](./site_libs/images/ECEN350-report.pdf),20
-projects,FALSE,Project Life,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2019,December,2019,Used Trello (Kanban board) to plan life goals ,Broke goals into time segments ,Followed Agile Scrum methodology,10
+projects,FALSE,Current-limited (BJT and OP-AMP) DC Power Supply,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2019,December,2019,Calculated the value of components of the power supply,Designed a power supply that convert 20V AC/DC to 5V DC,See [Project Report](./site_libs/images/ECEN350-report.pdf),20
+projects,FALSE,Project Life,"Rexburg, ID","BYU - Idaho, Computer Information Technology and Management",September,2019,December,2019,Used Trello (Kanban board) to plan life goals ,Broke goals into time segments ,Followed Agile Scrum methodology,10
 projects,FALSE,FPGA Multifunction Calculator,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",April,2019,July,2019,Created new AVR commands using Verilog,Used Basys 3 (Artix 7) FPGA Board,See [Multifunction Calculator Webpage](https://ecen-340.glitch.me/final-project.html),30
 projects,FALSE,Optimizing Calendar C++ Program,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",January,2019,April,2019,Hyperthreaded and Pipelined a C++ Calendar,Used Tomohiko Sakamoto's Algorithm to adjust for leap year,Spead up the program  to about a 150 ms run time,15
 projects,FALSE,Electric Skateboard ,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2018,December,2018,Selected and assembled the components,Programmed the VESC in Embedded C,Setup a Wii remote as the skateboard controller,40
@@ -17,14 +21,3 @@ projects,FALSE,Obstacle Avoiding Car,"Rexburg, ID","BYU - Idaho, Computer Scienc
 projects,FALSE,Asteroids Game,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2017,July,2018,Used C++ and Python to recreate the classic game,Created and followed a UML class Diagram,Added additional features and graphics ,40
 projects,FALSE,4-Bit Microprocessor,"Rexburg, ID","BYU - Idaho, Computer Science and Engineering ",September,2017,December,2017,Created in both Verilog and simulation tools,Development required many different components,Wrote Machine code on the ROMs to control the CPU ,30
 projects,FALSE,Toolbox Power Supply,"Moorpark, CA","Moorpark College, Engineering",January,2017,May,2017,Selected and Assembled the electronics,Wired both AC and DC electronics ,Designed a method to convert voltages (120V AC to 12V/5V DC),30
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,

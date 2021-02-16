@@ -26,14 +26,15 @@ datapath <- "./site_libs/data/"
 ```
 
 ```{r eval=FALSE}
+setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
 <script src="./site_libs/script.js"></script>
 
-This website is setup as a personal portfolio. 
-
-<nav><hr/>
+<nav>
+<p>This website is setup as a personal portfolio.</p>
+<hr/>
 <p>How to navigate this website: </p>
 <ul>
 <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
@@ -71,7 +72,7 @@ glue_data(skills, "- {skill} \n")
 
 ```{r contact}
 contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
-glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
+glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n")
 ```
 
 <hr />
@@ -85,4 +86,14 @@ glue_data(highlights, "- [{Text}]({Link}) \n")
 
 <hr />
 
-<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>
+<footer><div style="padding-left:0px;">
+
+<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
+<div id="copyright" style="display:none;padding-left:20px;">
+
+```{r license}
+gnu <- read_csv(glue("{datapath}license.csv"))
+glue_data(gnu, "###### --- {details} \n")
+```
+
+</div></div></footer>

@@ -25,6 +25,7 @@ datapath <- "./site_libs/data/"
 ```
 
 ```{r eval=FALSE}
+setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
@@ -35,7 +36,16 @@ entries <- read_csv(glue("{datapath}entries.csv"))
 print_project(entries)
 ```
 
-
 <hr />
 
-<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>
+<footer><div style="padding-left:0px;">
+
+<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
+<div id="copyright" style="display:none;padding-left:20px;">
+
+```{r license}
+gnu <- read_csv(glue("{datapath}license.csv"))
+glue_data(gnu, "###### --- {details} \n")
+```
+
+</div></div></footer>

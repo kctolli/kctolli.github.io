@@ -17,6 +17,11 @@ datapath <- "../data/"
 source("../script.R")
 ```
 
+```{r eval=FALSE}
+setwd(glue("{here}/kctolli.github.io/site_libs/resume"))
+render_resume()
+```
+
 Aside
 ====================================
 
@@ -26,7 +31,7 @@ Contact Info {#contact}
 ```{r contact}
 contact_info <- read_csv(glue("{datapath}contact_info.csv")) 
 contact_info <- resume(contact_info)
-glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n\n")
+glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n")
 ```
 
 Skills {#skills}

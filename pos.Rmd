@@ -26,6 +26,7 @@ datapath <- "./site_libs/data/"
 ```
 
 ```{r eval=FALSE}
+setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
@@ -106,11 +107,9 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 
 ## Moorpark High School
 
-I was able to take some college level courses in the process of getting my High School Diploma.
-
 <div style="padding-left:0px;">
 
-<span class="tooltipr"><a href="javascript:showhide('hs')">More Highschool Details</a>
+<span class="tooltipr"><a href="javascript:showhide('hs')">I was able to take some college level courses in the process of getting my High School Diploma.</a>
 <span class="tooltipRtext"><strong>2017 Graduate </strong></span></span>
 <div id="hs" style="display:none;padding-left:20px;">
 
@@ -126,7 +125,16 @@ I was able to take some college level courses in the process of getting my High 
 
 </div></div>
 
-
 <hr />
 
-<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>
+<footer><div style="padding-left:0px;">
+
+<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
+<div id="copyright" style="display:none;padding-left:20px;">
+
+```{r license}
+gnu <- read_csv(glue("{datapath}license.csv"))
+glue_data(gnu, "###### --- {details} \n")
+```
+
+</div></div></footer>

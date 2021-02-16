@@ -23,52 +23,30 @@ pacman::p_load(tidyverse, glue)
 
 source("./site_libs/script.R")
 datapath <- "./site_libs/data/"
+
+entries <- read_csv(glue("{datapath}entries.csv"))
 ```
 
 ```{r eval=FALSE}
+setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
 <script src="./site_libs/script.js"></script>
 
 ```{r}
-entries <- read_csv(glue("{datapath}entries.csv"))
 print_work(entries)
 ```
 
 ## Brigham Young University - Idaho 
 
+#### Part-Time
+
 ### Teaching Assistant {.tabset .tabset-fade}
 
-#### C Programming 
-
-July 2020 – December 2020 --- Remote
-
-* Help students learn C and C++ programming language 
-* Assist the professor in creating new material
-
-#### Intro Engineering 
-
-January 2020 – December 2020 --- Rexburg, ID and Remote
-
-* Mentor new students in Engineering and Computer Science
-* Help students with basic circuit analysis
-* Lead students in learning arduino skills
-
-#### Digital Systems 
-
-September 2018 – December 2020 --- Rexburg, ID
-
-*	Lead students to increase their knowledge of Digital Systems
-*	Guide students to improvement by giving feedback
-*	Help students with programming Verilog 
-
-#### Discrete Math
-
-April 2019 - July 2019 --- Rexburg, ID
-
-* Solved example problems to assist students with Discrete Math
-* Assisted students in learning Elisp and Erlang
+```{r}
+print_TA(entries)
+```
 
 ### Computer Science Tutor 
 
@@ -95,4 +73,14 @@ April 2018 - August 2018 --- Rexburg, ID
 
 <hr />
 
-<iframe src="./site_libs/footer.html" width="100%" height="100%" style="border:none;"></iframe>
+<footer><div style="padding-left:0px;">
+
+<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
+<div id="copyright" style="display:none;padding-left:20px;">
+
+```{r license}
+gnu <- read_csv(glue("{datapath}license.csv"))
+glue_data(gnu, "###### --- {details} \n")
+```
+
+</div></div></footer>
