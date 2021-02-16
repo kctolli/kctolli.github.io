@@ -44,7 +44,28 @@ navbar:
         - text: "Github"
           href: https://github.com/saundersg/Statistics-Notebook
         - text: "Math 221 Book"
-          href: http://statistics.byuimath.com/index.php?title=Main_Page     
+          href: http://statistics.byuimath.com/index.php?title=Main_Page  
+    - text: "Machine Learning"  
+      menu:
+        - text: "Personal Work"
+        - text: "Final Project"
+          href: ./Machine-Learning/Individual_Assignment.html
+        - text: "---------------"  
+        - text: "Course Material"
+        - text: "Website"
+          href: https://byui-cse.github.io/cse450-course/
+        - text: "Github"
+          href: https://github.com/byui-cse/cse450-course
+        - text: "---------------"  
+        - text: "Resources" 
+        - text: "Data Science Programming"
+          href: https://byuistats.github.io/CSE250-Course/
+        - text: "Big Data Programming"
+          href: https://byuistats.github.io/CSE451-Course/
+        - text: "Python for Data Science"
+          href: https://byuidatascience.github.io/python4ds/index.html
+        - text: "Python Data Science Handbook"
+          href: https://jakevdp.github.io/PythonDataScienceHandbook/ 
   right:  
     - text: "ePortfolio"
       href: ../index.html

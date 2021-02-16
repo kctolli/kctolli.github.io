@@ -20,7 +20,15 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -52,7 +60,8 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="site_libs\styles.css" type="text/css" />
+
+<link rel="stylesheet" href="site_libs/styles.css" type="text/css" />
 
 
 
@@ -334,6 +343,41 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Machine Learning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Personal Work</li>
+    <li>
+      <a href="./Machine-Learning/Individual_Assignment.html">Final Project</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Course Material</li>
+    <li>
+      <a href="https://byui-cse.github.io/cse450-course/">Website</a>
+    </li>
+    <li>
+      <a href="https://github.com/byui-cse/cse450-course">Github</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Resources</li>
+    <li>
+      <a href="https://byuistats.github.io/CSE250-Course/">Data Science Programming</a>
+    </li>
+    <li>
+      <a href="https://byuistats.github.io/CSE451-Course/">Big Data Programming</a>
+    </li>
+    <li>
+      <a href="https://byuidatascience.github.io/python4ds/index.html">Python for Data Science</a>
+    </li>
+    <li>
+      <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -368,7 +412,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
