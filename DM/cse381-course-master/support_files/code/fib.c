@@ -10,14 +10,8 @@ using namespace std;
  */
 long fibonacci(long n)
 {
-   if (n == 0 || n == 1)
-   {
-      return n;
-   }
-   else
-   {
-      return (fibonacci(n - 1) + fibonacci(n - 2));
-   }
+   if (n == 0 || n == 1) {return n;}
+   else  {return (fibonacci(n - 1) + fibonacci(n - 2));}
 }
 
 void testFibonacci()
@@ -41,14 +35,8 @@ long memFuncFibonacci(long n)
 {
    if (fibmem[n] == 0)
    {
-      if (n == 0 || n == 1)
-      {
-         fibmem[n] = n;
-      }
-      else
-      {
-         fibmem[n] = (memFuncFibonacci(n - 1) + memFuncFibonacci(n - 2));
-      }
+      if (n == 0 || n == 1) {fibmem[n] = n;}
+      else {fibmem[n] = (memFuncFibonacci(n - 1) + memFuncFibonacci(n - 2));}
    }
    return fibmem[n];
 }
