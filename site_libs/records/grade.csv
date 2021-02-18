@@ -1,20 +1,20 @@
 Semester,Course,Name,Crds,Grade
 Transfer,ART 101,Introduction to the Visual Arts and Design,3,P
 Transfer,CHEM 101,Introduction to Chemistry,3,P
-Transfer,ME 101,Intro to Engineering,2,P
-Transfer,CS 124,Intro to Software Development,4,P
-Vertical,CS 101,Intro to Programming ,2,P
-Vertical,CIT 111,Introduction to Databases,3,P
+Transfer,ME 101,Intro to Engineering (Mechanical and Electrical),2,P
+Transfer,CS 124,Intro to Software Development using C++,4,P
+Vertical,CS 101,Intro to Programming using Python,2,P
+Vertical,CIT 111,Introduction to Databases using SQL,3,P
 Vertical,CIT 160,Introduction to Programming for IT,3,P
 Fall 2017,FDSCI 101,Foundations of Science,2,B-
 Fall 2017,ECEN 101,Intro to Computer Science and Engineering,1,A
 Fall 2017,ECEN 160,Fundamentals of Digital Systems with Lab,4,A
 Fall 2017,CS 241,Object-Oriented Programming with Data Structures,4,A
-Spring 2018,CS 165,Object-Oriented Development,3,A
+Spring 2018,CS 165,Object-Oriented Development using C++,3,A
 Spring 2018,CS 225,Database Design and Development,3,A
 Spring 2018,ECEN 260,Microprocessor Based-System Design,3,A
 Fall 2018,MATH 109,PreCalculus,5,A
-Fall 2018,CS 246,Software Design and Development,3,A-
+Fall 2018,CS 246,Software Design and Development using Java,3,A-
 Fall 2018,ECEN 361,Embedded Systems,3,A-
 Winter 2019,MATH 112,Differential Calculus,4,A
 Winter 2019,CS 237,Discrete Math ,2,A

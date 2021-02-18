@@ -112,6 +112,14 @@ print_TA <- function(cv){
   section(cv, section_id, glue_template)
 }
 
+print_pos <- function(cv, section_id){
+  
+  glue_template <- "
+- {name}\n"
+  
+  section(cv, section_id, glue_template)
+}
+
 resume <- function(cv){cv %>% filter(in_resume)}
 
 copyright <- function(){
@@ -130,19 +138,14 @@ render_all <- function(){
 
 # Knit the Resume to html and pdf
 render_resume <- function(){
-  file <- "resume"
+  file <- "resume" # Resume file name
   
   # Knit the HTML version
-  rmarkdown::render(glue::glue("{file}.rmd"),
-                    params = list(pdf_mode = FALSE),
-                    output_file = glue::glue("{file}.html"))
+  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
   
   # Knit the PDF version to temporary html location
-  rmarkdown::render(glue::glue("{file}.rmd"),
-                    params = list(pdf_mode = TRUE),
-                    output_file = fs::file_temp(ext = ".html"))
+  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = fs::file_temp(ext = ".html"))
   
   # Convert to PDF using Pagedown
-  pagedown::chrome_print(input = tmp_html_cv_loc,
-                         output = glue::glue("{file}.pdf"))
+  pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))
 }

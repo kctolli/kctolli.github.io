@@ -30,6 +30,10 @@ setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
+```{r}
+pos <- read_csv(glue("{datapath}pos.csv"))
+```
+
 <script src="./site_libs/script.js"></script>
 
 ## Brigham Young University - Idaho
@@ -49,61 +53,43 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 
 ### Software Engineering (BS)
 
-* Intro to Software Development using C++
-* Object-Oriented Development using C++
-* Software Design and Development using Java
-* Introduction to Programming for IT
-* System Security 
-* Professional Career Preparation 
-* Senior Project 
-
-### Data Science Minor
-
-* Database Design and Development
-* Data Intuition and Insight
-* Data Wrangling and Visualization
-* Machine Learning and Data Mining
+```{r}
+print_pos(pos, 'SE')
+```
 
 ### Computer Engineering Minor
 
-* Electric Circuit Analysis 
-* Electronic Devices and Circuits
-* Microprocessor Based-System Design
-* Digital System Design
-* Computer Architecture
-* Embedded Systems
-* Advanced Embedded Systems
+```{r}
+print_pos(pos, 'CE')
+```
+
+### Data Science Minor
+
+```{r}
+print_pos(pos, 'DS')
+```
 
 ### Core {.tabset .tabset-fade}
 
 #### Math and Science
 
-* PreCalculus
-* Differential Calculus
-* Linear Algebra 
-* Discrete Math 
-* Intermediate Statistics
-* Introduction to Chemistry
-* Foundations of Science
+```{r}
+print_pos(pos, 'GMS')
+```
 
 #### Programming
 
-* Intro to Computer Science and Engineering
-* Intro to Programming using Python
-* Object-Oriented Programming with Data Structures using Python
-* Introduction to Databases using SQL
-* Fundamentals of Digital Systems with Lab
-* Web Design and Development
-* Project Management
+```{r}
+print_pos(pos, 'GP')
+```
 
 #### General
 
-* Family and Human Relations
-* Introduction to the Visual Arts and Design
-* Writing and Reasoning
-* Technical Communication
+```{r}
+print_pos(pos, 'GE')
+```
 
-<hr/>
+<div style="clear:both;"></div>
 
 ## Moorpark High School
 
@@ -113,19 +99,11 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 <span class="tooltipRtext"><strong>2017 Graduate </strong></span></span>
 <div id="hs" style="display:none;padding-left:20px;">
 
-* Geometry Honors
-* Algebra 2 Accelerated 
-* PreCalculus Honors
-* AP Calculus
-* AP Chemistry
-* AP Physics 1 & 2
-* AP Art 2-D Design (Photography)
-* Introduction to Computer Science using C++
-* Introduction to Engineering
+```{r}
+print_pos(pos, 'HS')
+```
 
-</div></div>
-
-<hr />
+</div></div><hr />
 
 <footer><div style="padding-left:0px;">
 

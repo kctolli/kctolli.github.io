@@ -1,0 +1,47 @@
+section,course,name
+SE,CS 124,Intro to Software Development using C++
+SE,CS 165,Object-Oriented Development using C++
+SE,CS 246,Software Design and Development using Java
+SE,CIT 160,Introduction to Programming for IT
+SE,CIT 270,System Security
+SE,ECEN 490,Senior Practicum
+SE,ECEN 499,Senior Project
+CE,ME 101,Intro to Engineering (Mechanical and Electrical)
+CE,ECEN 361,Embedded Systems
+CE,ECEN 461,Advanced Embedded Systems
+CE,ECEN 260,Microprocessor Based-System Design
+CE,ECEN 340,Digital System Design
+CE,ECEN 324,Computer Architecture
+CE,ECEN 150,Electric Circuit Analysis 
+CE,ECEN 350,Electronic Devices and Circuits
+DS,CS 225,Database Design and Development
+DS,CSE 150,Data Intuition and Insight
+DS,MATH 335,Data Wrangling and Visualization
+DS,CSE 450,Machine Learning and Data Mining
+GMS,FDSCI 101,Foundations of Science
+GMS,CHEM 101,Introduction to Chemistry
+GMS,MATH 109,PreCalculus
+GMS,MATH 112,Differential Calculus
+GMS,MATH 341,Linear Algebra
+GMS,CS 237,Discrete Math 
+GMS,MATH 325,Intermediate Statistics
+GP,CS 101,Intro to Programming using Python
+GP,CS 241,Object-Oriented Programming with Data Structures
+GP,ECEN 101,Intro to Computer Science and Engineering
+GP,ECEN 160,Fundamentals of Digital Systems with Lab
+GP,CIT 111,Introduction to Databases using SQL
+GP,WDD 100,Web Design and Development
+GP,CIT 380,Project Management
+GE,ART 101,Introduction to the Visual Arts and Design
+GE,FAM 160,Family and Human Relations
+GE,ENG 101,Writing and Reasoning
+GE,CS 308,Technical Communication
+HS,M45,Geometry Honors
+HS,M57,Algebra 2 Accelerated 
+HS,M65,PreCalculus Honors
+HS,M77,AP Calculus 
+HS,C01,AP Chemistry
+HS,PH50,AP Physics 1 & 2
+HS,ART50,AP Art 2-D Design (Photography)
+HS,CSM10A,Introduction to Computer Science using C++
+HS,ENGRM01,Introduction to Engineering
