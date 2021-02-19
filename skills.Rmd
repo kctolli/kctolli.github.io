@@ -498,16 +498,37 @@ Libraries include:
   - blogdown (R package)
   - config.toml
   - index.Rmd
-<!-- * Bookdown     -->
-<!--   Basic building blocks: -->
-<!--   - bookdown (R package) -->
-<!--   - config.toml -->
-<!--   - index.Rmd   -->
+* Bookdown
+  Basic building blocks:
+  - bookdown (R package)
+  - config.toml
+  - index.Rmd
 * Pagedown    
   Basic building blocks:
   - pagedown (R package and templates)
   - knitr (R package)
   - Rmarkdown
+* Shiny App
+  Basic building blocks:
+  - shiny (R package)
+  - app.R or ui.R/server.R
+    + User Interface
+      ```
+      ui <- fluidPage(
+        titlePanel("title panel"),
+
+        sidebarLayout(
+          sidebarPanel("sidebar panel"),
+          mainPanel("main panel")
+        )
+      )
+      ```
+    + Server
+      ```
+      server <- function(input, output) {
+      
+      }
+      ```
 
 </div></div></ul>  
 
