@@ -501,7 +501,8 @@ Libraries include:
 * Bookdown    
   Basic building blocks:
   - bookdown (R package)
-  - config.toml
+  - _bookdown.yml
+  - _output.yaml
   - index.Rmd
 * Pagedown    
   Basic building blocks:
