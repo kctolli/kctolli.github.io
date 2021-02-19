@@ -743,7 +743,7 @@ Topics include:
 * Market 
 * Data
 
-<hr />
+`r pagebreak()`
 
 <footer><div style="padding-left:0px;">
 

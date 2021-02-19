@@ -71,7 +71,7 @@ April 2018 - August 2018 --- Rexburg, ID
 
 </ul>
 
-<hr />
+`r pagebreak()`
 
 <footer><div style="padding-left:0px;">
 

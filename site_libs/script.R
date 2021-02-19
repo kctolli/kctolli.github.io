@@ -1,9 +1,20 @@
 here <- here::here() # set here file path
 
+pagebreak <- function(){pander::pander(glue::glue('<hr /> <div style="clear:both;"></div>'))}
+
+resume <- function(cv){cv %>% filter(in_resume)}
+
+copyright <- function(){
+  current_year <- lubridate::year(Sys.Date())
+  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+}
+
 section <- function(cv, section_id, glue_template){
   section_data <- dplyr::filter(cv, section == section_id)
   print(glue::glue_data(section_data, glue_template))
 }
+
+# Templates
 
 print_section <- function(cv, section_id){
   
@@ -120,14 +131,9 @@ print_pos <- function(cv, section_id){
   section(cv, section_id, glue_template)
 }
 
-resume <- function(cv){cv %>% filter(in_resume)}
+# Renders
 
-copyright <- function(){
-  current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
-}
-
-# Knit the HTML version of all pages
+## Knit the HTML version of all pages
 render_all <- function(){
   rmarkdown::render("index.rmd", params = list(pdf_mode = FALSE), output_file = "index.html")
   rmarkdown::render("pos.rmd", params = list(pdf_mode = FALSE), output_file = "pos.html")
@@ -136,7 +142,7 @@ render_all <- function(){
   rmarkdown::render("work.rmd", params = list(pdf_mode = FALSE), output_file = "work.html")
 }
 
-# Knit the Resume to html and pdf
+## Knit the Resume to html and pdf
 render_resume <- function(){
   file <- "resume" # Resume file name
   

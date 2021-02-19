@@ -23,6 +23,7 @@ pacman::p_load(tidyverse, glue)
 
 source("./site_libs/script.R")
 datapath <- "./site_libs/data/"
+pos <- read_csv(glue("{datapath}pos.csv"))
 ```
 
 ```{r eval=FALSE}
@@ -30,11 +31,23 @@ setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
+<script src="./site_libs/script.js"></script>
+
+## LinkedIn Learning
+
+<div style="padding-left:1px;">
+
+Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learning</a> 
+<span class="tooltipRtext">Courses Include</span></span> to deepen my knowledge and continue learning after getting my Bachelors.
+<div id="ll" style="display:none;padding-left:20px;">
+
 ```{r}
-pos <- read_csv(glue("{datapath}pos.csv"))
+print_pos(pos, 'LL')
 ```
 
-<script src="./site_libs/script.js"></script>
+</div></div>
+
+`r pagebreak()`
 
 ## Brigham Young University - Idaho
 
@@ -71,16 +84,16 @@ print_pos(pos, 'DS')
 
 ### Core {.tabset .tabset-fade}
 
-#### Math and Science
-
-```{r}
-print_pos(pos, 'GMS')
-```
-
 #### Programming
 
 ```{r}
 print_pos(pos, 'GP')
+```
+
+#### Math and Science
+
+```{r}
+print_pos(pos, 'GMS')
 ```
 
 #### General
@@ -89,21 +102,27 @@ print_pos(pos, 'GP')
 print_pos(pos, 'GE')
 ```
 
-<div style="clear:both;"></div>
+### {-}
+
+`r pagebreak()`
 
 ## Moorpark High School
 
 <div style="padding-left:0px;">
 
-<span class="tooltipr"><a href="javascript:showhide('hs')">I was able to take some college level courses in the process of getting my High School Diploma.</a>
-<span class="tooltipRtext"><strong>2017 Graduate </strong></span></span>
+I was able to take some <span class="tooltipr"><a href="javascript:showhide('hs')">college level courses</a></span> in the process of getting my 
+<span class="tooltipr" style="padding-left:0px;"><a href="javascript:showhide('hsd')" style="color:gray;">High School Diploma.</a>
+<span class="tooltipRtext"><strong>2017 Graduate</strong></span>
+
 <div id="hs" style="display:none;padding-left:20px;">
 
 ```{r}
 print_pos(pos, 'HS')
 ```
 
-</div></div><hr />
+</div></div>
+
+`r pagebreak()`
 
 <footer><div style="padding-left:0px;">
 

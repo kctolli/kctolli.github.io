@@ -62,7 +62,7 @@ Tpeak <-  (77 − 32) * 5/9 + 273.15
 
 ![](sim.PNG)
 
-## System {.tabset .tabset-pills .tabset-fade}
+## Ideal System {.tabset .tabset-pills .tabset-fade}
 
 ### Heat Conduction
 
@@ -166,8 +166,6 @@ pander(data.frame(
 * The whole system is fully insulated
 * The storage tank is a standard water heater tank
 * The system is constantly pumping
-
-
 
 
 <br/><br/>

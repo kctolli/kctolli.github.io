@@ -75,7 +75,7 @@ contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index
 glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n")
 ```
 
-<hr />
+`r pagebreak()`
 
 ## Highlights
 
@@ -84,7 +84,7 @@ highlights <- read_csv(glue("{datapath}highlights.csv"))
 glue_data(highlights, "- [{Text}]({Link}) \n")
 ```
 
-<hr />
+`r pagebreak()`
 
 <footer><div style="padding-left:0px;">
 
