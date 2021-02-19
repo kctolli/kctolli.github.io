@@ -501,7 +501,8 @@ Libraries include:
 * Bookdown    
   Basic building blocks:
   - bookdown (R package)
-  - config.toml
+  - _bookdown.yml
+  - _output.yaml
   - index.Rmd
 * Pagedown    
   Basic building blocks:
@@ -572,7 +573,7 @@ Libraries include:
 <ul>
 <li>Bash</li>
 <li>Batch</li>
-<!-- <li>Powershell</li> -->
+<li>Powershell</li>
 <li>Windows Task Scheduler</li>
 </ul>
 
