@@ -572,7 +572,7 @@ Libraries include:
 <ul>
 <li>Bash</li>
 <li>Batch</li>
-<!-- <li>Powershell</li> -->
+<li>Powershell</li>
 <li>Windows Task Scheduler</li>
 </ul>
 
