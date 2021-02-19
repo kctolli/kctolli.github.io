@@ -1208,7 +1208,7 @@ C#
 </li>
 </a> <span class="tooltipRtext">W3 Schools Quiz: 23/25</span> </span>
 </div>
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('php')">
 <li style="color:gray;">
 PHP
@@ -1237,7 +1237,8 @@ Basic building blocks:
 <li>config.toml</li>
 <li>index.Rmd</li>
 </ul></li>
-<li>Bookdown Basic building blocks:
+<li>Bookdown<br />
+Basic building blocks:
 <ul>
 <li>bookdown (R package)</li>
 <li>config.toml</li>
@@ -1255,7 +1256,13 @@ Basic building blocks:
 <li>shiny (R package)</li>
 <li>app.R or ui.R/server.R
 <ul>
-<li><p>User Interface</p>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('shinyui')">
+<li>
+User Interface
+</li>
+</a></span>
+<div id="shinyui" style="display:none;padding-left:20px;">
 <pre><code>ui &lt;- fluidPage(
   titlePanel(&quot;title panel&quot;),
 
@@ -1263,11 +1270,21 @@ Basic building blocks:
     sidebarPanel(&quot;sidebar panel&quot;),
     mainPanel(&quot;main panel&quot;)
   )
-)</code></pre></li>
-<li><p>Server</p>
+)</code></pre>
+</div>
+</div>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('shinyserver')">
+<li>
+Shiny Server
+</li>
+</a></span>
+<div id="shinyserver" style="display:none;padding-left:20px;">
 <pre><code>server &lt;- function(input, output) {
 
-}</code></pre></li>
+}</code></pre>
+</div>
+</div>
 </ul></li>
 </ul></li>
 </ul>

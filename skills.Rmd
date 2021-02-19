@@ -479,7 +479,7 @@ Libraries include:
 <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
 </span></div>
 
-<div style="padding-left:1px;">
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
 </span></div>
@@ -498,7 +498,7 @@ Libraries include:
   - blogdown (R package)
   - config.toml
   - index.Rmd
-* Bookdown
+* Bookdown    
   Basic building blocks:
   - bookdown (R package)
   - config.toml
@@ -512,7 +512,10 @@ Libraries include:
   Basic building blocks:
   - shiny (R package)
   - app.R or ui.R/server.R
-    + User Interface
+    <ul>
+    <div style="padding-left:0px;">
+    <span class="tooltipr"><a href="javascript:showhide('shinyui')"><li>User Interface</li></a></span>
+    <div id="shinyui" style="display:none;padding-left:20px;">
       ```
       ui <- fluidPage(
         titlePanel("title panel"),
@@ -523,13 +526,16 @@ Libraries include:
         )
       )
       ```
-    + Server
+    </div></div>
+    <div style="padding-left:0px;">
+    <span class="tooltipr"><a href="javascript:showhide('shinyserver')"><li>Shiny Server</li></a></span>
+    <div id="shinyserver" style="display:none;padding-left:20px;">
       ```
       server <- function(input, output) {
       
       }
       ```
-
+    </div></div></ul> 
 </div></div></ul>  
 
 ### Operating Systems
