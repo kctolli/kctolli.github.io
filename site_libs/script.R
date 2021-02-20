@@ -4,17 +4,12 @@ pagebreak <- function(){pander::pander(glue::glue('<hr /> <div style="clear:both
 
 resume <- function(cv){cv %>% filter(in_resume)}
 
-copyright <- function(){
-  current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
-}
+# Section Templates
 
 section <- function(cv, section_id, glue_template){
   section_data <- dplyr::filter(cv, section == section_id)
   print(glue::glue_data(section_data, glue_template))
 }
-
-# Templates
 
 print_section <- function(cv, section_id){
   
@@ -131,6 +126,24 @@ print_pos <- function(cv, section_id){
   section(cv, section_id, glue_template)
 }
 
+# Licensing and Copyright
+
+copyright <- function(){
+  current_year <- lubridate::year(Sys.Date())
+  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+}
+
+licence <- function(){
+  
+  template <- "
+- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt). 
+- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files. 
+- Website is developed in R, HTML, CSS and Javascript. 
+- Hosted on [github](https://github.com/kctolli/kctolli.github.io)."
+  
+  pander::pander(template)
+}
+
 # Renders
 
 ## Knit the HTML version of all pages
@@ -150,7 +163,8 @@ render_resume <- function(){
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
   
   # Knit the PDF version to temporary html location
-  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = fs::file_temp(ext = ".html"))
+  tmp_html_cv_loc <- fs::file_temp(ext = ".html")
+  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html_cv_loc)
   
   # Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))

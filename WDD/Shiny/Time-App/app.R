@@ -2,14 +2,9 @@ library(shiny)
 library(lubridate)
 
 # Define UI for displaying current time ----
-ui <- fluidPage(
-  
-  h2("The current time is"),
-  h2(textOutput("currentTime"))
-  
-)
+ui <- fluidPage(h2("The current time is ", textOutput("currentTime")))
 
-# Define server logic to show current time, update every second ----
+# Define server logic to show current time ----
 server <- function(input, output, session) {
   
   output$currentTime <- renderText({

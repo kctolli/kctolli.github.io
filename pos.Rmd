@@ -125,13 +125,5 @@ print_pos(pos, 'HS')
 `r pagebreak()`
 
 <footer><div style="padding-left:0px;">
-
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">
-
-```{r license}
-gnu <- read_csv(glue("{datapath}license.csv"))
-glue_data(gnu, "###### --- {details} \n")
-```
-
-</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence()`</div></div></footer>
