@@ -2,12 +2,12 @@
 title: "Data Science"
 ---
 
-```{r pic, fig.align='center', out.width='75%', echo=FALSE}
-pacman::p_load(pacman, knitr, tidyverse)
-opts_chunk$set(echo = TRUE)
-pic <- 'https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg'
-knitr::include_graphics(pic)
+```{r include=FALSE}
+knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
+pacman::p_load(tidyverse, glue)
 ```
+
+![](https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg)
 
 #### Interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from many structural and unstructured data. 
 
