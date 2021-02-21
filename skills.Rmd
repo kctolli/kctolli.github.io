@@ -250,7 +250,7 @@ render_all()
 <li>Force</li>
 <li>Temperature</li>
 <li>Energy and Power</li>
-</ul></span></span></div>
+</ul></span></span></div></ul>
 
 #### Science {.tabset .tabset-pills}
 
@@ -360,6 +360,7 @@ Packages include:
 <li>car</li>
 <li>future</li>
 <li>glue</li>
+<li>shiny</li>
 </ul></div></div>
   
 <div style="padding-left:0px;">
@@ -413,46 +414,65 @@ Libraries include:
 
 #### Tests
 
-* t-test
-* Wilcox
-* ANOVA
-* Kruskal-Wallis
-* Regression
-  + Linear
-  + Logistic
-* Chi-Squared 
-  + Independence
-  + Goodness of Fit
-* Permutation and Randomization
+<ul>
+<li>t-test</li>
+<li>Wilcox</li>
+<li>ANOVA</li>
+<li>Kruskal-Wallis</li>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Regres')"><li style="color:gray;">Regression</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Linear</li>
+<li>Logistic</li>
+</ul></span></span></div>
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Chi')"><li style="color:gray;">Chi-Squared</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Independence</li>
+<li>Goodness of Fit</li>
+</ul></span></span></div>
+<li>Permutation and Randomization</li>
+</ul>
 
 #### Topics
 
-* Distributions
-  + Normal (Z) Distribution
-  + Chi Squared Distribution
-  + t Distribution
-  + F Distribution
-* Z Scores
-* P Values
-* Experimental Design
-* Probability Theory
-* Confidence Intervals
-* Hypothesis Testing
-* Data Management
-  + Intuition
-  + Insight 
-  + Wrangling 
-  + Visualization
-  + Exploration
-  + Consulting
-  + Mining
-  
+<ul>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Dis')"><li style="color:gray;">Distributions</li></a>
+<span class="tooltipRtext"><ul style="color:white;">
+<li>Normal (Z) Distribution</li>
+<li>Chi Squared Distribution</li>
+<li>t Distribution</li>
+<li>F Distribution</li>
+</ul></span></span></div>
+
+<li>Z Scores</li>
+<li>P Values</li>
+<li>Experimental Design</li>
+<li>Probability Theory</li>
+<li>Confidence Intervals</li>
+<li>Hypothesis Testing</li>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('dat')"><li>Data Management</li></a></span>
+<div id="dat" style="display:none;padding-left:20px;">
++ Intuition
++ Insight 
++ Wrangling 
++ Visualization
++ Exploration
++ Consulting
++ Mining
+</div></div>
+
+</ul>
+
 ### Machine Learning
 
 <div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('ML')"><div style="color:gray;">Algorithms include:</div></a>
-<span class="tooltipRtext">Developed using Python</span>
-</span></div>
+<span class="tooltipRtext">Developed using Python</span></span></div>
 
 * Classifiers
 * Clustering
@@ -485,6 +505,15 @@ Libraries include:
 </span></div>
 
 <div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Pyweb')"><li>Python Web App</li></a></span>
+<div id="Pyweb" style="display:none;padding-left:20px;">
+* Python libraries
+  - Flask
+  - Django
+* Google SDK  
+</div></div>
+
+<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
 <div id="Rweb" style="display:none;padding-left:20px;">
 
@@ -509,7 +538,7 @@ Libraries include:
   - pagedown (R package and templates)
   - knitr (R package)
   - Rmarkdown
-* Shiny App
+* Shiny App    
   Basic building blocks:
   - shiny (R package)
   - app.R or ui.R/server.R
@@ -536,8 +565,9 @@ Libraries include:
       
       }
       ```
-    </div></div></ul> 
-</div></div></ul>  
+    </div></div></div></div> 
+    
+</ul>  
 
 ### Operating Systems
 
