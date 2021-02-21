@@ -11,10 +11,38 @@ ul {text-align: left; color: black;}
 
 .tooltipRtext {color: white;}
 
-iframe:focus {
-  outline: none;
+/*
+iframe:focus {outline: none;}
+iframe[seamless] {display: block;}
+*/
+
+/*
+body {background-color: white;}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+*/
+
+/*<button class="btn"><i class="fas fa-adjust">Toggle Dark Mode</i></button>*/
+
+/*
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }
 
-iframe[seamless] {
-  display: block;
+.btn:hover {
+  background-color: black;
+  color: white;
 }
+*/
