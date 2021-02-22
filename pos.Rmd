@@ -23,6 +23,7 @@ pacman::p_load(tidyverse, glue)
 
 source("./site_libs/script.R")
 datapath <- "./site_libs/data/"
+load_libraries()
 pos <- read_csv(glue("{datapath}pos.csv"))
 ```
 
