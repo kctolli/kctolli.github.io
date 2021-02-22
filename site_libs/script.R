@@ -1,4 +1,5 @@
 here <- here::here() # set here file path
+user <- "kctolli" #set user
 
 pagebreak <- function(){pander::pander(glue::glue('<hr /> <div style="clear:both;"></div>'))}
 
@@ -7,6 +8,11 @@ resume <- function(cv){cv %>% filter(in_resume)}
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
   pacman::p_load(tidyverse, glue, pacman)
+}
+
+user_stats <- function(){
+  pander::pander(glue::glue('<div align="center"><img style="max-width:100%;" height="160" align="center" 
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
 }
 
 # Section Templates
