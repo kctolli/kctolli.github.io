@@ -335,13 +335,15 @@ Packages include:
 <li>dplyr</li>
 <li>tidyr</li>
 <li>readr</li>
-<li>purr</li> 
+<li>purr</li>
+<li>magrittr</li>
 <li>tibble</li>
 <li>stringr</li>
-<li>forcats</li></li>
+<li>forcats</li>
 </ul></span></span></div>
 
 <li>knitr</li>
+<li>readxl</li>
 <li>stringi</li>
 <li>reticulate</li>
 <li>lubridate</li>
@@ -353,10 +355,12 @@ Packages include:
 <li>pagedown</li>
 <li>pacman</li>
 <li>installer</li>
+<li>fs</li>
 <li>blogdown</li>
 <li>mosaic</li>
 <li>car</li>
 <li>future</li>
+<li>broom</li>
 <li>glue</li>
 <li>shiny</li>
 </ul></div></div>
