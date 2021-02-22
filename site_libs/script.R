@@ -1,5 +1,9 @@
-here <- here::here() # set here file path
-user <- "kctolli" #set user
+# Variables
+
+here <- here::here() ## set here file path
+user <- "kctolli" ## set user
+
+# Basic Functions
 
 pagebreak <- function(){pander::pander(glue::glue('<hr /> <div style="clear:both;"></div>'))}
 
