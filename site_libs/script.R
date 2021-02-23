@@ -14,9 +14,24 @@ load_libraries <- function(){
   pacman::p_load(tidyverse, glue, pacman)
 }
 
+# R to HTML Functions
+
 user_stats <- function(){
   pander::pander(glue::glue('<div align="center"><img style="max-width:100%;" height="160" align="center" 
   src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
+}
+
+nav <- function(){
+  pander::pander('
+  <script src="./site_libs/script.js"></script>
+  
+  <hr/><nav><p>How to navigate this website: </p><ul>
+  <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
+  <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
+  </ul></nav>
+  
+  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button><hr/>
+  ')
 }
 
 # Section Templates
@@ -148,15 +163,11 @@ copyright <- function(){
   pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 }
 
-licence <- function(){
-  
-  template <- "
-- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU General Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt). 
-- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://rmarkdown.rstudio.com/index.html) and [Yaml](https://github.com/kctolli/kctolli.github.io/blob/master/_site.yml) files. 
-- Website is developed in [R](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/script.R), HTML, CSS and [Javascript](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/script.js). 
-- Hosted on [github](https://github.com/kctolli/kctolli.github.io)."
-  
-  pander::pander(template)
+licence <- function(file){
+  pander::pander(glue::glue("
+- [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). 
+- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](./{file}.Rmd) and [Yaml](./_site.yml) files. 
+- Website is developed in [R](./site_libs/script.R), HTML, [CSS](./site_libs/site.css) and [Javascript](./site_libs/script.js)."))
 }
 
 # Renders

@@ -1,37 +1,13 @@
-nav {
-	font-size: 80%; 
-	font-style: italic; 
-	color: black; 
-	font-family: "Georgia";
-}
-
+nav {font-size: 80%; font-style: italic; font-family: "Georgia";}
 a {color: blue;}
-p {color: black;}
-ul {text-align: left; color: black;}
+ul {text-align: left;}
+hr{border-top: 1px solid black;}
+body {background-color: white; color: black;}
 
-.tooltipRtext {color: white;}
-
-/*
-iframe:focus {outline: none;}
-iframe[seamless] {display: block;}
-*/
-
-/*
-body {background-color: white;}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-*/
-
-/*<button class="btn"><i class="fas fa-adjust">Toggle Dark Mode</i></button>*/
-
-/*
 .btn {
   background-color: white;
   border: none;
-  color: black;
+  color: blue;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -41,8 +17,20 @@ body {background-color: white;}
   border-radius: 16px;
 }
 
-.btn:hover {
-  background-color: black;
-  color: white;
-}
+.btn:hover {background-color: blue; color: white;}
+
+.tooltipRtext {color: white;}
+.tocify{background-color: white; color: black;}
+
+.navbar{background-color: white;}
+
+.dark-mode {background-color: black; color: white;}
+
+.dark-mode hr {border-top: 1px solid white;}
+
+.dark-mode .navbar{background-color: black;}
+
+/*
+iframe:focus {outline: none;}
+iframe[seamless] {display: block;}
 */

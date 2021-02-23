@@ -1,5 +1,7 @@
 ---
 title: "Skills"
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!--
@@ -24,11 +26,10 @@ load_libraries()
 ```
 
 ```{r eval=FALSE}
-setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
-<script src="./site_libs/script.js"></script>
+`r nav()`
 
 ## Computer Engineering
 
@@ -807,4 +808,4 @@ Topics include:
 
 <footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence()`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(skills)`</div></div></footer>

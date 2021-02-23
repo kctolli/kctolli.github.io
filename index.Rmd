@@ -1,5 +1,7 @@
 ---
 title: "Kyle Tolliver"
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!--
@@ -24,20 +26,12 @@ load_libraries()
 ```
 
 ```{r eval=FALSE}
-setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
-<script src="./site_libs/script.js"></script>
+<p style = "font-style: italic;">This website is setup as a personal portfolio.</p>
 
-<nav>
-<p>This website is setup as a personal portfolio.</p>
-<hr/>
-<p>How to navigate this website: </p>
-<ul>
-<li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
-<li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
-</ul><hr/></nav>
+`r nav()`
 
 ![](./site_libs/images/me.jpg)
 
@@ -86,4 +80,4 @@ glue_data(highlights, "- [{Text}]({Link}) \n")
 
 <footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence()`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence("index")`</div></div></footer>

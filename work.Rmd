@@ -1,5 +1,7 @@
 ---
 title: "Work Experience"
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!--
@@ -26,13 +28,11 @@ entries <- read_csv(glue("{datapath}entries.csv"))
 ```
 
 ```{r eval=FALSE}
-setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
-<script src="./site_libs/script.js"></script>
-
 ```{r}
+nav()
 print_work(entries)
 ```
 
@@ -73,4 +73,4 @@ April 2018 - August 2018 --- Rexburg, ID
 
 <footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence()`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(work)`</div></div></footer>

@@ -1,5 +1,7 @@
 ---
 title: "Program of Study"
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!--
@@ -18,9 +20,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
 ```{r load_libraries, include=FALSE}
-knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
-pacman::p_load(tidyverse, glue)
-
 source("./site_libs/script.R")
 datapath <- "./site_libs/data/"
 load_libraries()
@@ -28,11 +27,10 @@ pos <- read_csv(glue("{datapath}pos.csv"))
 ```
 
 ```{r eval=FALSE}
-setwd(glue("{here}kctolli.github.io/"))
 render_all()
 ```
 
-<script src="./site_libs/script.js"></script>
+`r nav()`
 
 ## LinkedIn Learning
 
@@ -127,4 +125,4 @@ print_pos(pos, 'HS')
 
 <footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence()`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(pos)`</div></div></footer>

@@ -3,6 +3,7 @@ function showhide(id) {
 	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
 }
 
-/*
-function darkmode() {document.body.classList.toggle("dark-mode");}
-*/
+function darkmode() {
+	var element = document.body;
+  element.classList.toggle("dark-mode");
+}

@@ -1,9 +1,14 @@
 ---
 title: "resume"
 author: Kyle Tolliver
+params:
+  pdf_mode:
+    value: true
+  cache_data:
+    value: true
 output: 
   pagedown::html_resume:
-    css: ['resume.css', resume]
+    css: ['resume.css', 'resume']
     self_contained: true
 editor_options: 
   chunk_output_type: console
@@ -16,7 +21,6 @@ load_libraries()
 ```
 
 ```{r eval=FALSE}
-setwd(glue("{here}/kctolli.github.io/site_libs/resume"))
 render_resume()
 ```
 
