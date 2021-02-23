@@ -19,8 +19,10 @@ pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')
 paragraph <- function(par){pander::pander('<p>{par}</p>')}
 
 user_stats <- function(){
-  pander::pander(glue::glue('<div align="center"><img style="max-width:100%;" height="160" align="center" 
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
+  header <- glue::glue("## {h2} \n\n\n")
+  stats <- glue::glue('<div align="center"><img style="max-width:100%;" height="160" align="center" 
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>')
+  pander::pander(header, stats)
 }
 
 nav <- function(){
