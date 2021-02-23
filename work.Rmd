@@ -30,18 +30,16 @@ entries <- read_csv(glue("{datapath}entries.csv")) ## entries data set
 render_all()
 ```
 
-```{r}
+```{r main}
 nav()
+print_newline()
 print_work(entries)
-```
-
-## Brigham Young University - Idaho 
-
-#### Part-Time
-
-### Teaching Assistant {.tabset .tabset-fade}
-
-```{r}
+print_newline()
+print_h2("Brigham Young University - Idaho")
+print_newline()
+print_h4("Part-Time")
+print_newline()
+print_h3("Teaching Assistant {.tabset .tabset-fade}")
 print_TA(entries)
 ```
 

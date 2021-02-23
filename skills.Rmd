@@ -30,6 +30,7 @@ render_all()
 ```
 
 `r nav()`
+`r print_newline()`
 
 ## Computer Engineering
 

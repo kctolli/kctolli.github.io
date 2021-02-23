@@ -32,6 +32,7 @@ render_all()
 <p class="info">This website is setup as a personal portfolio.</p>
 
 `r nav()`
+`r print_newline()`
 
 ![](./site_libs/images/me.jpg)
 
@@ -44,21 +45,24 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 <div id="hovertobegin" style="display:none;padding-left:20px;">
 
 ```{r about}
-pander("#### Societies\n\n")
+print_newline()
+print_h4("Societies")
 print_soc(datapath)
-pander("\n")
-pander("#### Top Skills\n\n")
+print_newline()
+print_h4("Top Skills")
 print_skills(datapath)
 ```
 
 </div></div><br />
 
-```{r}
-pander("## Contact Me\n\n")
+```{r main}
+print_newline()
+print_h2("Contact Me")
 contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
 print_contact(contact_info)
 pagebreak()
-pander("## Highlights\n\n")
+print_newline()
+print_h2("Highlights")
 print_highlights(datapath) 
 ```
 

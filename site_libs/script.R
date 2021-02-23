@@ -6,8 +6,6 @@ datapath <- "./site_libs/data/" ## data path for website
 
 # Basic Functions
 
-pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')}
-
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
   pacman::p_load(tidyverse, glue, pacman, pander)
@@ -15,6 +13,10 @@ load_libraries <- function(){
 }
 
 # R to HTML Functions
+
+pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')}
+
+paragraph <- function(par){pander::pander('<p>{par}</p>')}
 
 user_stats <- function(){
   pander::pander(glue::glue('<div align="center"><img style="max-width:100%;" height="160" align="center" 
@@ -25,12 +27,14 @@ nav <- function(){
   pander::pander('
   <script src="./site_libs/script.js"></script>
   
-  <hr/><nav class="info"><p>How to navigate this website: </p><ul>
+  <hr/><div style="clear:both;"></div>
+  <nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
   </ul></nav>
   
-  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button><hr/>
+  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button>
+  <hr/><div style="clear:both;"></div>
   ')
 }
 
@@ -148,6 +152,8 @@ print_TA <- function(cv){
   section(cv, section_id, glue_template)
 }
 
+# Basic Templates
+
 print_pos <- function(cv, section_id){
   
   glue_template <- "
@@ -174,6 +180,16 @@ print_highlights <- function(path){
   highlights <- read_csv(glue("{path}highlights.csv"))
   glue_data(highlights, "- [{Text}]({Link}) \n")
 }
+
+# Headers 
+
+print_h1 <- function(h1){pander::pander(glue::glue("# {h1} \n\n\n"))}
+print_h2 <- function(h2){pander::pander(glue::glue("## {h2} \n\n\n"))}
+print_h3 <- function(h3){pander::pander(glue::glue("### {h3} \n\n\n"))}
+print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
+print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
+print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
+print_newline <- function(){pander::pander("\n")}
 
 # Licensing and Copyright
 
@@ -204,13 +220,13 @@ render_all <- function(){
 render_resume <- function(){
   file <- "resume" # Resume file name
   
-  # Knit the HTML version
+  ### Knit the HTML version
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
   
-  # Knit the PDF version to temporary html location
+  ### Knit the PDF version to temporary html location
   tmp_html_cv_loc <- fs::file_temp(ext = ".html")
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html_cv_loc)
   
-  # Convert to PDF using Pagedown
+  ### Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))
 }
