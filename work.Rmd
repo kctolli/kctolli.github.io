@@ -21,10 +21,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```{r load_libraries, include=FALSE}
 source("./site_libs/script.R")
-datapath <- "./site_libs/data/"
 load_libraries()
-
-entries <- read_csv(glue("{datapath}entries.csv"))
+file <- "work"
+entries <- read_csv(glue("{datapath}entries.csv")) ## entries data set
 ```
 
 ```{r eval=FALSE}
@@ -50,9 +49,7 @@ print_TA(entries)
 
 April 2018 - August 2018 --- Rexburg, ID
 
-<ul>
-
-<div style="padding-left:0px;">
+<ul><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('tutor')"><li>Tutored many classes</li></a></span>
 <div id="tutor" style="display:none;padding-left:20px;">
   Including:
@@ -63,14 +60,10 @@ April 2018 - August 2018 --- Rexburg, ID
   + Introduction to Electrical and Computer Engineering 
   
 </div></div>
-
 <li>Taught students topics from these classes</li>
 <li>Lead group and individual appointments and discussions</li>
-
 </ul>
 
-`r pagebreak()`
-
-<footer><div style="padding-left:0px;">
+`r pagebreak()`<footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence(work)`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(file)`</div></div></footer>

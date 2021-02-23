@@ -1,34 +1,34 @@
-nav {font-size: 80%; font-style: italic; font-family: "Georgia";}
 a {color: blue;}
 ul {text-align: left;}
-hr{border-top: 1px solid black;}
+
+.info {font-size: 80%; font-style: italic; font-family: "Georgia";}
+
 body {background-color: white; color: black;}
+.dark-mode {background-color: black; color: white;}
+
+hr{border-top: 1px solid black;}
+.dark-mode hr {border-top: 1px solid white;}
+
+.navbar{background-color: white;}
+.dark-mode .navbar{background-color: black;}
 
 .btn {
   background-color: white;
   border: none;
   color: blue;
-  padding: 10px 20px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 2px;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 4px;
+  font-family: "Georgia";
 }
-
+.dark-mode .btn{background-color: black;}
 .btn:hover {background-color: blue; color: white;}
 
-.tooltipRtext {color: white;}
 .tocify{background-color: white; color: black;}
-
-.navbar{background-color: white;}
-
-.dark-mode {background-color: black; color: white;}
-
-.dark-mode hr {border-top: 1px solid white;}
-
-.dark-mode .navbar{background-color: black;}
 
 /*
 iframe:focus {outline: none;}

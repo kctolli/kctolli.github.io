@@ -21,8 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```{r load_libraries, include=FALSE}
 source("./site_libs/script.R")
-datapath <- "./site_libs/data/"
 load_libraries()
+file <- "skills"
 ```
 
 ```{r eval=FALSE}
@@ -804,8 +804,6 @@ Topics include:
 * Market 
 * Data
 
-`r pagebreak()`
-
-<footer><div style="padding-left:0px;">
+`r pagebreak()`<footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence(skills)`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(file)`</div></div></footer>

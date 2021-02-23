@@ -21,8 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```{r load_libraries, include=FALSE}
 source("./site_libs/script.R")
-datapath <- "./site_libs/data/"
 load_libraries()
+file <- "pos"
 pos <- read_csv(glue("{datapath}pos.csv"))
 ```
 
@@ -46,15 +46,11 @@ print_pos(pos, 'LL')
 
 </div></div>
 
-`r pagebreak()`
-
 ## Brigham Young University - Idaho
 
 I earned a Bachelor's of Science in Software Engineering with a minor in Computer Engineering and Data Science.
 
-<div style="padding-left:1px;">
-
-<span class="tooltipr">
+<div style="padding-left:0px;"><span class="tooltipr">
 <a href="javascript:showhide('diploma')">Diploma</a>
   <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
 <div id="diploma" style="display:none;padding-left:20px;">
@@ -103,8 +99,6 @@ print_pos(pos, 'GE')
 
 ### {-}
 
-`r pagebreak()`
-
 ## Moorpark High School
 
 <div style="padding-left:0px;">
@@ -121,8 +115,6 @@ print_pos(pos, 'HS')
 
 </div></div>
 
-`r pagebreak()`
-
-<footer><div style="padding-left:0px;">
+`r pagebreak()`<footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence(pos)`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(file)`</div></div></footer>

@@ -2,16 +2,16 @@
 
 here <- here::here() ## set here file path
 user <- "kctolli" ## set user
+datapath <- "./site_libs/data/" ## data path for website
 
 # Basic Functions
 
 pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')}
 
-resume <- function(cv){dplyr::filter(cv, in_resume)}
-
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
-  pacman::p_load(tidyverse, glue, pacman)
+  pacman::p_load(tidyverse, glue, pacman, pander)
+  
 }
 
 # R to HTML Functions
@@ -25,7 +25,7 @@ nav <- function(){
   pander::pander('
   <script src="./site_libs/script.js"></script>
   
-  <hr/><nav><p>How to navigate this website: </p><ul>
+  <hr/><nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
   </ul></nav>
@@ -154,6 +154,25 @@ print_pos <- function(cv, section_id){
 - {name}\n"
   
   section(cv, section_id, glue_template)
+}
+
+print_contact <- function(info){
+  print(glue::glue_data(info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n"))
+}
+
+print_skills <- function(path){
+  skills <- readr::read_csv(glue::glue("{path}skills.csv"))
+  print(glue::glue_data(skills, "- {skill} \n"))
+}
+
+print_soc <- function(path){
+  soc <- readr::read_csv(glue::glue("{path}society.csv"))
+  glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n")
+}
+
+print_highlights <- function(path){
+  highlights <- read_csv(glue("{path}highlights.csv"))
+  glue_data(highlights, "- [{Text}]({Link}) \n")
 }
 
 # Licensing and Copyright

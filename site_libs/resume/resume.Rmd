@@ -16,8 +16,10 @@ editor_options:
 
 ```{r setup, include=FALSE}
 source("../script.R")
-datapath <- "../data/"
+datpath <- "../data/"
 load_libraries()
+
+entries <- read_csv(glue("{datpath}entries.csv")) %>% filter(in_resume) 
 ```
 
 ```{r eval=FALSE}
@@ -31,17 +33,15 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-contact_info <- read_csv(glue("{datapath}contact_info.csv")) 
-contact_info <- resume(contact_info)
-glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n")
+contact_info <- read_csv(glue("{datpath}contact_info.csv")) %>% filter(in_resume)
+print_contact(contact_info)
 ```
 
 Skills {#skills}
 ------------------------------------
 
 ```{r skill}
-skills <- read_csv(glue("{datapath}skills.csv"))
-glue_data(skills, "- {skill} \n")
+print_skills(datpath)
 ```
 
 Disclaimer {#disclaimer}
@@ -56,11 +56,6 @@ Main
 
 Kyle Tolliver {#title}
 ------------------------------------
-
-```{r}
-entries <- read_csv(glue("{datapath}entries.csv")) 
-entries <- resume(entries)
-```
 
 Education {data-icon=graduation-cap}
 ------------------------------------

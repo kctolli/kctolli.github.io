@@ -21,15 +21,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```{r load_libraries, include=FALSE}
 source("./site_libs/script.R")
-datapath <- "./site_libs/data/"
 load_libraries()
+file <- "index"
 ```
 
 ```{r eval=FALSE}
 render_all()
 ```
 
-<p style = "font-style: italic;">This website is setup as a personal portfolio.</p>
+<p class="info">This website is setup as a personal portfolio.</p>
 
 `r nav()`
 
@@ -40,44 +40,28 @@ render_all()
 BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned a minor in Computer Engineering and Data Science. I love to learn new things and solve problems. 
 
 <div style="padding-left:5px;">
-
 <span class="tooltipr"><a href="javascript:showhide('hovertobegin')">A little more about me</a></span>
 <div id="hovertobegin" style="display:none;padding-left:20px;">
 
-#### Societies
-
-```{r society}
-soc <- read_csv(glue("{datapath}society.csv"))
-glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n")
-```
-
-#### Top Skills
-
-```{r skill}
-skills <- read_csv(glue("{datapath}skills.csv"))
-glue_data(skills, "- {skill} \n")
+```{r about}
+pander("#### Societies\n\n")
+print_soc(datapath)
+pander("\n")
+pander("#### Top Skills\n\n")
+print_skills(datapath)
 ```
 
 </div></div><br />
 
-## Contact Me
-
-```{r contact}
+```{r}
+pander("## Contact Me\n\n")
 contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
-glue_data(contact_info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n")
+print_contact(contact_info)
+pagebreak()
+pander("## Highlights\n\n")
+print_highlights(datapath) 
 ```
 
-`r pagebreak()`
-
-## Highlights
-
-```{r highlights}
-highlights <- read_csv(glue("{datapath}highlights.csv"))
-glue_data(highlights, "- [{Text}]({Link}) \n")
-```
-
-`r pagebreak()`
-
-<footer><div style="padding-left:0px;">
+`r pagebreak()`<footer><div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence("index")`</div></div></footer>
+<div id="copyright" style="display:none;padding-left:20px;">`r licence(file)`</div></div></footer>
