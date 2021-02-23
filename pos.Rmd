@@ -45,7 +45,7 @@ Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learnin
 print_pos(pos, 'LL')
 ```
 
-</div></div>
+</div></div><br />
 
 ## Brigham Young University - Idaho
 
