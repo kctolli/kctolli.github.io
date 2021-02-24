@@ -3,12 +3,19 @@ title: "Data Science"
 ---
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
-pacman::p_load(tidyverse, glue)
+source("../site_libs/script.R")
+load_libraries()
 ```
 
-![](https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg)
-
-#### Interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from many structural and unstructured data. 
-
---- Related to [Data Analytics](https://en.wikipedia.org/wiki/Data_analysis), [Data Mining](https://en.wikipedia.org/wiki/Data_mining), [Big Data](https://en.wikipedia.org/wiki/Big_data), [Regression](https://en.wikipedia.org/wiki/Regression_analysis), [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning), and [Business Intelligence](https://en.wikipedia.org/wiki/Business_intelligence).      
+```{r}
+pander('<script src="../site_libs/script.js"></script>')
+nav()
+print_newline()
+print_pic("https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg")
+print_newline()
+print_h4("Interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from many structural and unstructured data.")
+print_newline()
+pander("--- Related to [Data Analytics](https://en.wikipedia.org/wiki/Data_analysis), [Data Mining](https://en.wikipedia.org/wiki/Data_mining), [Big Data](https://en.wikipedia.org/wiki/Big_data), [Regression](https://en.wikipedia.org/wiki/Regression_analysis), [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning), and [Business Intelligence](https://en.wikipedia.org/wiki/Business_intelligence).")
+pagebreak()
+copyright()
+```
