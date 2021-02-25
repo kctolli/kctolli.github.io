@@ -494,14 +494,18 @@ Libraries include:
 <li>CSS</li>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">JavaScript</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
-</span></div>
+<span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span>
+<div id="JS" style="display:none;padding-left:20px;">
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('CS')"><li style="color:gray;">C#</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
-</span></div>
+Frameworks:
+
+* JQuery
+* React
+* Angular
+* Node
+
+</div></div>
 
 <div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
@@ -744,14 +748,6 @@ Topics include:
 </ul></span></span></div>
 
 <div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Java')"><li style="color:gray;">Java</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 22/25<br/><br/>Developed Using:
-<ul style="color:white;">
-<li>IntelliJ</li>
-<li>Android Studio</li>
-</ul></span></span></div>
-
-<div style="padding-left:0px;">
 <span class="tooltipr"><a href="javascript:showhide('Python')"><li style="color:gray;">Python</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
 <ul style="color:white;">
@@ -760,6 +756,19 @@ Topics include:
 <li>Jupyter Notebook</li>
 </ul></span></span></div>
 </ul>  
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('Java')"><li style="color:gray;">Java</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 22/25<br/><br/>Developed Using:
+<ul style="color:white;">
+<li>IntelliJ</li>
+<li>Android Studio</li>
+</ul></span></span></div>
+
+<div style="padding-left:0px;">
+<span class="tooltipr"><a href="javascript:showhide('CS')"><li style="color:gray;">C#</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
+</span></div>
 
 ### Design Patterns
 

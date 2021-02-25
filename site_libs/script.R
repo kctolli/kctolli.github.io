@@ -7,8 +7,8 @@ datapath <- "./site_libs/data/" ## data path for website
 # Basic Functions
 
 load_libraries <- function(){
-  knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE)
-  pacman::p_load(tidyverse, glue, pacman, pander)
+  knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
+  pacman::p_load(tidyverse, glue, pacman, pander, lubridate)
   
 }
 
@@ -46,6 +46,11 @@ nav <- function(){
   <hr/><div style="clear:both;"></div>
   ')
 }
+
+## CSS
+w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')}
+bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
+bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
 
 # Section Templates
 
@@ -186,8 +191,8 @@ print_soc <- function(path){
 }
 
 print_highlights <- function(path){
-  highlights <- read_csv(glue("{path}highlights.csv"))
-  glue_data(highlights, "- [{Text}]({Link}) \n")
+  highlights <- readr::read_csv(glue::glue("{path}highlights.csv"))
+  glue::glue_data(highlights, "- [{Text}]({Link}) \n")
 }
 
 # Licensing and Copyright
@@ -195,6 +200,11 @@ print_highlights <- function(path){
 copyright <- function(){
   current_year <- lubridate::year(Sys.Date())
   pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+}
+
+copyrightcurrent <- function(){
+  current_year <- lubridate::year(Sys.Date())
+  pander::pander(glue::glue('© {current_year} -- Kyle Tolliver'))
 }
 
 licence <- function(file){

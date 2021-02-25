@@ -7,7 +7,7 @@ source("../site_libs/script.R")
 load_libraries()
 ```
 
-```{r}
+```{r main}
 pander('<script src="../site_libs/script.js"></script>')
 nav()
 print_newline()
