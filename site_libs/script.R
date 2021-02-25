@@ -202,7 +202,7 @@ copyright <- function(){
   pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
 }
 
-copyrightcurrent <- function(){
+copyright_current <- function(){
   current_year <- lubridate::year(Sys.Date())
   pander::pander(glue::glue('© {current_year} -- Kyle Tolliver'))
 }
