@@ -27,8 +27,7 @@ print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
 
 user_stats <- function(){
-  pander::pander(glue::glue('<h2>User Stats</h2>
-  <div align="center"><img style="max-width:100%;" height="160" align="center" 
+  pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center" 
   src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
 }
 
@@ -210,8 +209,8 @@ copyright_current <- function(){
 licence <- function(file){
   pander::pander(glue::glue("
 - [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). 
-- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](./{file}.Rmd) and [Yaml](./_site.yml) files. 
-- Website is developed in [R](./site_libs/script.R), HTML, [CSS](./site_libs/site.css) and [Javascript](./site_libs/script.js)."))
+- Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. 
+- Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.R), [HTML](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.html), [CSS](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.css) and [Javascript](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.js)."))
 }
 
 # Renders
