@@ -165,6 +165,32 @@ print_TA <- function(cv){
   section(cv, section_id, glue_template)
 }
 
+print_tutor <- function(){
+  string <- "javascript:showhide('tutor')"
+  
+  pander::pander(glue::glue('
+  ### Computer Science Tutor 
+  
+  April 2018 - August 2018 --- Rexburg, ID
+  
+  <ul><div style="padding-left:0px;">
+  <span class="tooltipr"><a href={string}><li>Tutored many classes</li></a></span>
+  <div id="tutor" style="display:none;padding-left:20px;">
+    Including:
+    
+    + Object-Oriented Programming with Data Structures using Python
+    + Fundamentals of Digital Systems w/ Lab
+    + Introduction to Engineering
+    + Introduction to Electrical and Computer Engineering 
+    
+  </div></div>
+  <li>Taught students topics from these classes</li>
+  <li>Lead group and individual appointments and discussions</li>
+  </ul>
+  '))
+}
+
+
 # Basic Templates
 
 print_pos <- function(cv, section_id){
@@ -211,6 +237,19 @@ licence <- function(file){
 - [Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). 
 - Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. 
 - Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.R), [HTML](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.html), [CSS](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.css) and [Javascript](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.js)."))
+}
+
+footer <- function(file){
+  pagebreak <- pagebreak()
+  copyright <- copyright()
+  licence <- licence(file)
+  string <- "javascript:showhide('copyright')"
+  
+  pander::pander(glue::glue('
+  {pagebreak}<footer><div style="padding-left:0px;">
+  <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
+  <div id="copyright" style="display:none;padding-left:20px;">{licence}</div></div></footer>
+  '))
 }
 
 # Renders

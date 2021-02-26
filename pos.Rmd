@@ -4,21 +4,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-<!--
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
-
 ```{r load_libraries, include=FALSE}
 source("./site_libs/script.R")
 load_libraries()
@@ -32,20 +17,6 @@ render_all()
 
 `r nav()`
 `r print_newline()`
-
-## LinkedIn Learning
-
-<div style="padding-left:0px;">
-
-Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learning</a> 
-<span class="tooltipRtext">Courses Include</span></span> to deepen my knowledge and continue learning after getting my Bachelors.
-<div id="ll" style="display:none;padding-left:20px;">
-
-```{r}
-print_pos(pos, 'LL')
-```
-
-</div></div><br />
 
 ## Brigham Young University - Idaho
 
@@ -100,6 +71,22 @@ print_pos(pos, 'HS')
 
 </div></div>
 
-`r pagebreak()`<footer><div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('copyright')"><p style="color:blue;">`r copyright()`</p></a></span>
-<div id="copyright" style="display:none;padding-left:20px;">`r licence(file)`</div></div></footer>
+`r pagebreak()`
+
+## Self Learning
+
+### LinkedIn Learning
+
+<div style="padding-left:0px;">
+
+Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learning</a> 
+<span class="tooltipRtext">Courses Include</span></span> to deepen my knowledge and continue learning after getting my Bachelors.
+<div id="ll" style="display:none;padding-left:20px;">
+
+```{r}
+print_pos(pos, 'LL')
+```
+
+</div></div><br />
+
+`r footer(file)`
