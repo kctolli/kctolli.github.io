@@ -40,12 +40,21 @@ function darkmode() {
   element.classList.toggle("dark-mode");
 }
 
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
 /* Firebase Database */
 
 include("https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js");
 include("https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js");
 include("https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js");
 include("https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js");
+
 /*
 // Replace the following with your app's Firebase project configuration
 // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
@@ -62,3 +71,106 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);*/
+
+/*Awaits*/
+
+async function getText(file, id) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  document.getElementById(id).innerHTML = myText;
+}
+
+async function getFile(file, id) {
+  let myPromise = new Promise(function(myResolve, myReject) {
+    let req = new XMLHttpRequest();
+    req.open('GET', file);
+    req.onload = function() {
+      if (req.status == 200) {
+        myResolve(req.response);
+      } else {
+        myResolve("File not Found");
+      }
+    };
+    req.send();
+  });
+  document.getElementById(id).innerHTML = await myPromise;
+}
+
+async function myDisplay(string, time, id) {
+  let myPromise = new Promise(function(myResolve, myReject) {
+    setTimeout(function() { myResolve(string); }, time);
+  });
+  document.getElementById(id).innerHTML = await myPromise;
+}
+
+/*Geolocation*/
+
+/*
+<button onclick="getLocation()">Try It</button>
+
+<p id="loc"></p>
+*/
+
+var x = document.getElementById("loc");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+
+/* Timer */
+
+/*
+<div id="time"></div> - For myTimer (AM/PM)
+
+<div onload="startTime()" id="txt"></div> - Start Timer (24hr)
+*/
+
+var timer = setInterval(myTimer, 100);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
