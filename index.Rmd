@@ -49,5 +49,6 @@ pagebreak()
 print_newline()
 print_h2("Highlights")
 print_highlights(datapath) 
+print_newline()
 footer(file)
 ```
