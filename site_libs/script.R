@@ -8,7 +8,7 @@ datapath <- "./site_libs/data/" ## data path for website
 
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
-  pacman::p_load(tidyverse, glue, pacman, pander, lubridate)
+  pacman::p_load(tidyverse, glue, pacman, pander, lubridate, modules)
   
 }
 
@@ -42,14 +42,19 @@ nav <- function(){
   </ul></nav>
   
   <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button>
-  <hr/><div style="clear:both;"></div>
-  ')
+  <hr/><div style="clear:both;"></div>')
 }
 
 ## CSS
 w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')}
 bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
 bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
+
+### colors
+gray <- function(){pander::pander('style="color:gray;"')}
+white <- function(){pander::pander('style="color:white;"')}
+px0 <- function(){pander::pander('style="padding-left:0px;"')}
+px20 <- function(){'style="display:none;padding-left:20px;"'}
 
 # Section Templates
 

@@ -27,9 +27,9 @@ render_all()
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C')"><li style="color:gray;">C/C++</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('C')"><li `r gray()`>C/C++</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Embedded</li>
 <li>Register-level</li>
 </ul></span></span></div>
@@ -48,9 +48,9 @@ render_all()
 <li>FreeRTOS</li>
 <li>Windows IOT</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('linux')"><li style="color:gray;">Linux</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('linux')"><li `r gray()`>Linux</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Real-Time</li>
 <li>Embedded</li>
 <li>Raspberry OS</li>
@@ -83,9 +83,9 @@ render_all()
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('uart)"><li style="color:gray;">UART</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('uart)"><li `r gray()`>UART</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Differential Signaling</li>
 <li>Full-Duplex</li>
 </ul></span></span></div>
@@ -96,9 +96,9 @@ render_all()
 <li>USB</li>
 <li>eUSCI</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('wifi)"><li style="color:gray;">Wireless</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('wifi)"><li `r gray()`>Wireless</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Wifi (WLAN)</li>
 <li>Bluetooth</li>
 <li>Zigbee</li>
@@ -106,9 +106,9 @@ render_all()
 <li>GSM and GPS</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('uart)"><li style="color:gray;">Mixed-Signals</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('uart)"><li `r gray()`>Mixed-Signals</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Analog</li>
 <li>Digital</li>
 <li>ADCs and DACs</li>
@@ -130,8 +130,8 @@ render_all()
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('verilog')"><li style="color:gray;">Verilog</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('verilog')"><li `r gray()`>Verilog</li></a>
 <span class="tooltipRtext">Developed using: Vivado <br/> on a Artix 7 and Kintex 7</span></span></div>
 <ul>
 <li>Behavioral</li> 
@@ -140,8 +140,8 @@ render_all()
 <li>System</li>
 </ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('vhdl')"><li style="color:gray;">VHDL</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('vhdl')"><li `r gray()`>VHDL</li></a>
 <span class="tooltipRtext">Developed using: Libero <br/> on a PolarFire</span></span></div>
 </ul>
   
@@ -153,9 +153,9 @@ render_all()
 <li>Logisim</li>
 <li>Waveform</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('IC')"><li style="color:gray;">Logic Integrated Circuits</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('IC')"><li `r gray()`>Logic Integrated Circuits</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>TTL (7400-Series)</li>
 <li>CMOS</li>
 </ul></span></span></div>
@@ -186,23 +186,23 @@ render_all()
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('spice')"><li style="color:gray;">Spice Software</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('spice')"><li `r gray()`>Spice Software</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>LTSpice</li> 
 <li>EasyEDA</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('op')"><li style="color:gray;">Transistors, Diodes, and Op-Amps</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('op')"><li `r gray()`>Transistors, Diodes, and Op-Amps</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>MOSFETS</li> 
 <li>BJT</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('BC')"><li>Basic Circuits</li></a></span>
-<div id="BC" style="display:none;padding-left:20px;">
+<div id="BC" `r px20()`>
 <p>Methods and Techniques:</p>
 <ul>
 <li>Nodal</li> 
@@ -227,9 +227,9 @@ render_all()
 <li>Ethics and Economics</li>
 <li>Drawings and Draftings</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('EM')"><li style="color:gray;">Parameters Based Systems</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('EM')"><li `r gray()`>Parameters Based Systems</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Length</li> 
 <li>Time</li>
 <li>Mass</li> 
@@ -253,9 +253,9 @@ render_all()
 <li>Dynamics</li>
 </ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('MM')"><li style="color:gray;">Motion and Momentum</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('MM')"><li `r gray()`>Motion and Momentum</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Circular</li> 
 <li>Harmonic</li>
 <li>Rotational (Torque)</li> 
@@ -263,23 +263,25 @@ render_all()
 
 <li>Waves and Sound</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('EM')"><li style="color:gray;">Electricity and Magnetism</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('EM')"><li `r gray()`>Electricity and Magnetism</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Electrical Systems, Fields and Forces</li> 
 <li>Magnetic Systems, Fields and Forces</li>
 <li>Electromagnetic Forces and Optics</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('MP')"><li style="color:gray;">Modern Physics</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('MP')"><li `r gray()`>Modern Physics</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Quantum</li> 
 <li>Atomic</li>
 <li>Nuclear</li> 
 <li>Relativity</li>
 </ul></span></span></div>
-  
+
+<li>Astro Physics</li>
+
 </ul> 
   
 ##### Chemistry
@@ -306,19 +308,19 @@ render_all()
 
 <ul>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('R')"><li>R</li></a>
 <span class="tooltipRtext">Developed using: RStudio <br/> with Rmd files and R Scripts</span>
 </span>
-<div id="R" style="display:none;padding-left:20px;">
+<div id="R" `r px20()`>
 
 Packages include: 
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('tidy')"><li style="color:gray;">tidyverse</li></a>
-<span class="tooltipRtext" style="color:white;"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('tidy')"><li `r gray()`>tidyverse</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>ggplot2</li> 
 <li>dplyr</li>
 <li>tidyr</li>
@@ -353,11 +355,10 @@ Packages include:
 <li>shiny</li>
 </ul></div></div>
   
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('Py')"><li>Python</li></a>
-<span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span>
-</span>
-<div id="Py" style="display:none;padding-left:20px;">
+<span class="tooltipRtext">Developed using: <br/> Google Colab <br/> with Jupyter Notebooks</span></span>
+<div id="Py" `r px20()`>
 
 Libraries include:
 
@@ -369,36 +370,21 @@ Libraries include:
   + Tensor Flow
   + SciPy
   + Random
+  
 </div></div>  
   
 <li>Tableau</li>
+<li>Databases</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Databases')"><li>Databases</li></a></span>
-<div id="Databases" style="display:none;padding-left:20px;">
-
-<ul>
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('spread')"><li style="color:gray;">Spreadsheets</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('spread')"><li `r gray()`>Spreadsheets</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Excel</li> 
 <li>Google Sheets</li>
-<li>LibreOffice Calc</li>
 <li>R Data Editor</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('sql')"><li style="color:gray;">SQL</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>Oracle</li> 
-<li>MySQL</li>
-</ul></span></span></div>
-
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('nosql')"><li style="color:gray;">NoSQL</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
-<li>MongoDB</li> 
-</ul></span></span></div></div></ul>
+</ul>
 
 ### Statistics {.tabset .tabset-fade}
 
@@ -409,28 +395,42 @@ Libraries include:
 <li>Wilcox</li>
 <li>ANOVA</li>
 <li>Kruskal-Wallis</li>
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Regres')"><li style="color:gray;">Regression</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Regres')"><li `r gray()`>Regression</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Linear</li>
 <li>Logistic</li>
 </ul></span></span></div>
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Chi')"><li style="color:gray;">Chi-Squared</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Chi')"><li `r gray()`>Chi-Squared</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Independence</li>
 <li>Goodness of Fit</li>
 </ul></span></span></div>
-<li>Permutation and Randomization</li>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Rand')"><li>Permutation</li></a></span>
+<div id="Rand" `r px20()`>
+
+The process of a permutation (randomization) test is:
+
+1.  a test statistic for the original data.
+2.  Re-sample the data (“shake it up and dump it out”) thousands of times, computing a new test statistic each time, to create a sampling distribution of the test statistic.
+3. Compute the p-value of the permutation test as the percentage of test statistics that are as extreme or more extreme than the one originally observed.
+
+</div></div> 
+
 </ul>
 
 #### Topics
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Dis')"><li style="color:gray;">Distributions</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Dis')"><li `r gray()`>Distributions</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Normal (Z) Distribution</li>
 <li>Chi Squared Distribution</li>
 <li>t Distribution</li>
@@ -444,9 +444,9 @@ Libraries include:
 <li>Confidence Intervals</li>
 <li>Hypothesis Testing</li>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('dat')"><li>Data Management</li></a></span>
-<div id="dat" style="display:none;padding-left:20px;">
+<div id="dat" `r px20()`>
 + Intuition
 + Insight 
 + Wrangling 
@@ -460,8 +460,8 @@ Libraries include:
 
 ### Machine Learning
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('ML')"><div style="color:gray;">Algorithms include:</div></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('ML')"><div `r gray()`>Algorithms include:</div></a>
 <span class="tooltipRtext">Developed using Python</span></span></div>
 
 * Classifiers
@@ -479,10 +479,10 @@ Libraries include:
 <li>HTML</li>
 <li>CSS</li>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span>
-<div id="JS" style="display:none;padding-left:20px;">
+<div id="JS" `r px20()`>
 
 Frameworks:
 
@@ -493,23 +493,23 @@ Frameworks:
 
 </div></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('php')"><li style="color:gray;">PHP</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('php')"><li `r gray()`>PHP</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
 </span></div>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('Pyweb')"><li>Python Web App</li></a></span>
-<div id="Pyweb" style="display:none;padding-left:20px;">
+<div id="Pyweb" `r px20()`>
 * Python libraries
   - Flask
   - Django
 * Google SDK  
 </div></div>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('Rweb')"><li>R-based webpages</li></a></span>
-<div id="Rweb" style="display:none;padding-left:20px;">
+<div id="Rweb" `r px20()`>
 
 * Basic knitr    
   Basic building blocks:
@@ -537,9 +537,9 @@ Frameworks:
   - shiny (R package)
   - app.R or ui.R/server.R
     <ul>
-    <div style="padding-left:0px;">
+    <div `r px0()`>
     <span class="tooltipr"><a href="javascript:showhide('shinyui')"><li>User Interface</li></a></span>
-    <div id="shinyui" style="display:none;padding-left:20px;">
+    <div id="shinyui" `r px20()`>
       ```
       ui <- fluidPage(
         titlePanel("title panel"),
@@ -551,11 +551,12 @@ Frameworks:
       )
       ```
     </div></div>
-    <div style="padding-left:0px;">
+    <div `r px0()`>
     <span class="tooltipr"><a href="javascript:showhide('shinyserver')"><li>Shiny Server</li></a></span>
-    <div id="shinyserver" style="display:none;padding-left:20px;">
+    <div id="shinyserver" `r px20()`>
       ```
       server <- function(input, output) {
+        ...
       
       }
       ```
@@ -567,9 +568,9 @@ Frameworks:
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('JS')"><li style="color:gray;">Linux</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('linux')"><li `r gray()`>Linux</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Ubuntu</li>
 <li>Fedora</li>
 <li>Crouton</li>
@@ -637,31 +638,55 @@ Frameworks:
 <li>Technical Teamwork</li>
 <li>Risk Management</li>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('method')"><li style="color:gray;">Methodologies</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('method')"><li `r gray()`>Methodologies</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Agile</li>
 <li>Scrum</li>
 <li>Waterfall</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('kanban')"><li style="color:gray;">Kanban Board</li></a>
-<span class="tooltipRtext"><ul style="color:white;">
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('kanban')"><li `r gray()`>Kanban Board</li></a>
+<span class="tooltipRtext"><ul `r white()`>
 <li>Trello</li>
 <li>Jira</li>
 </ul></span></span></div></ul> 
 
 ### General CIT
 
-* Networking
-* DevOps
-* System Administration 
-* Databases
-  + Development 
-  + Design
-  + Programming
-  + Administration
+<ul>
+
+<li>Networking</li>
+<li>DevOps</li>
+<li>System Administration</li>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Databases')"><li>Databases</li></a>
+<span class="tooltipRtext"><ul `r white()`>
+<li>Development</li>
+<li>Design</li>
+<li>Programming</li>
+<li>Administration</li>
+<li>Warehousing</li>
+</ul></span></span>
+<div id="Databases" `r px20()`><ul>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('sql')"><li `r gray()`>SQL</li></a>
+<span class="tooltipRtext"><ul `r white()`>
+<li>Oracle</li> 
+<li>MySQL</li>
+</ul></span></span></div>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('nosql')"><li `r gray()`>NoSQL</li></a>
+<span class="tooltipRtext"><ul `r white()`>
+<li>MongoDB</li> 
+<li>Firebase</li>
+</ul></span></span></div></div>
+
+</ul>
 
 ## Mathematics
 
@@ -672,9 +697,9 @@ Frameworks:
 <li>College Algebra</li>
 <li>Trigonometry</li>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('ba')"><li>Boolean Algebra</li></a></span>
-<div id="ba" style="display:none;padding-left:20px;">
+<div id="ba" `r px20()`>
 
 Topics include:
 
@@ -693,9 +718,9 @@ Topics include:
 
 </div></div>
 
-<div style="padding-left:0px;">
+<div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('dm')"><li>Discrete Math</li></a></span>
-<div id="dm" style="display:none;padding-left:20px;">
+<div id="dm" `r px20()`>
 
 Topics include:
 
@@ -708,8 +733,10 @@ Topics include:
 
 </div></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('math')"><li style="color:gray;">Basic Math and Arithmetic</li></a>
+<li>Applied Math</li>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('math')"><li `r gray()`>Basic Math and Arithmetic</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
 </span></div></ul>  
 
@@ -719,6 +746,7 @@ Topics include:
 * Mathematica
 * Elisp
 * Erlang
+* Clojure
 
 ## General Programming
 
@@ -726,35 +754,36 @@ Topics include:
 
 <ul>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('C++')"><li style="color:gray;">C/C++</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('C++')"><li `r gray()`>C/C++</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
-<ul style="color:white;">
+<ul `r white()`>
 <li>Visual Studio</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Python')"><li style="color:gray;">Python</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Python')"><li `r gray()`>Python</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
-<ul style="color:white;">
+<ul `r white()`>
 <li>Pycharm</li>
 <li>Thony</li>
 <li>Jupyter Notebook</li>
 </ul></span></span></div>
-</ul>  
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('Java')"><li style="color:gray;">Java</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Java')"><li `r gray()`>Java</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 22/25<br/><br/>Developed Using:
-<ul style="color:white;">
+<ul `r white()`>
 <li>IntelliJ</li>
 <li>Android Studio</li>
 </ul></span></span></div>
 
-<div style="padding-left:0px;">
-<span class="tooltipr"><a href="javascript:showhide('CS')"><li style="color:gray;">C#</li></a>
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('CS')"><li `r gray()`>C#</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
-</span></div>
+</span></div> 
+
+</ul>
 
 ### Design Patterns
 
@@ -780,17 +809,28 @@ Topics include:
 * Linked Lists
 * Hash Tables
 
+### Algorithms
+
+* Design 
+* Analysis
+* Languages
+* Complexity
+* Optimization
+* Computer Theory
+
 ## Industry Knowledge
 
 ### Interpersonal Skills
 
 * Technical Communication
+* Lifelong Learning
 * Human Relations
 * Problem Solving
 * Teaching
 * Leadership
 * Organization
 * Finance
+* Ethics
 
 ### Research
 

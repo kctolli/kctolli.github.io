@@ -22,10 +22,9 @@ render_all()
 
 I earned a Bachelor's of Science in Software Engineering with a minor in Computer Engineering and Data Science.
 
-<div style="padding-left:0px;"><span class="tooltipr">
-<a href="javascript:showhide('diploma')">Diploma</a>
-  <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
-<div id="diploma" style="display:none;padding-left:20px;">
+<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('diploma')">Diploma</a>
+<span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
+<div id="diploma" `r px20()`>
 
 ![](./site_libs/images/diploma.jpg)
 
@@ -57,13 +56,10 @@ print_h3("{-}")
 
 ## Moorpark High School
 
-<div style="padding-left:0px;">
-
-I was able to take some <span class="tooltipr"><a href="javascript:showhide('hs')">college level courses</a></span> in the process of getting my 
-<span class="tooltipr" style="padding-left:0px;"><a href="javascript:showhide('hsd')" style="color:gray;">High School Diploma.</a>
-<span class="tooltipRtext"><strong>2017 Graduate</strong></span>
-
-<div id="hs" style="display:none;padding-left:20px;">
+<div `r px0()`>I was able to take some <span class="tooltipr">
+<a href="javascript:showhide('hs')">college level courses</a></span> in the process of getting my 
+<span class="tooltipr" `r px0()`><a href="javascript:showhide('hsd')" `r gray()`>High School Diploma.</a>
+<span class="tooltipRtext"><strong>2017 Graduate</strong></span><div id="hs" `r px20()`>
 
 ```{r HS}
 print_pos(pos, 'HS')
@@ -77,11 +73,10 @@ print_pos(pos, 'HS')
 
 ### LinkedIn Learning
 
-<div style="padding-left:0px;">
-
+<div `r px0()`>
 Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learning</a> 
 <span class="tooltipRtext">Courses Include</span></span> to deepen my knowledge and continue learning after getting my Bachelors.
-<div id="ll" style="display:none;padding-left:20px;">
+<div id="ll" `r px20()`>
 
 ```{r}
 print_pos(pos, 'LL')

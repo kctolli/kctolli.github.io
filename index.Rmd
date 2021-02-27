@@ -25,9 +25,9 @@ render_all()
 
 BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned a minor in Computer Engineering and Data Science. I love to learn new things and solve problems. 
 
-<div style="padding-left:5px;">
-<span class="tooltipr"><a href="javascript:showhide('me')">A little more about me</a></span>
-<div id="me" style="display:none;padding-left:20px;">
+<div `r px0()`><span class="tooltipr">
+<a href="javascript:showhide('me')">A little more about me</a>
+</span><div id="me" `r px20()`>
 
 ```{r about}
 print_newline()
