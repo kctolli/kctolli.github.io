@@ -1,4 +1,8 @@
-/*Geolocation*/
+/*Location*/
+
+function newDoc() {
+  window.location.assign("https://www.w3schools.com")
+}
 
 /*
 <button onclick="getLocation()">Try It</button>
