@@ -494,9 +494,11 @@ Frameworks:
 </div></div>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('php')"><li `r gray()`>PHP</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 21/25</span>
-</span></div>
+<span class="tooltipr"><a href="javascript:showhide('php')"><li>PHP</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span>
+<div id="php" `r px20()`>Sololearn Certificate: 
+<a href="https://www.sololearn.com/Certificate/1059-7632512/pdf/">Certificate #1059-7632512</a>
+</div></div>
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('Pyweb')"><li>Python Web App</li></a></span>
@@ -564,6 +566,34 @@ Frameworks:
     
 </ul>  
 
+### Databases
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('DD')"><li `r gray()`>Development & Design</li></a>
+<span class="tooltipRtext"><ul `r white()`>
+
+<li>SQL</li><ul>
+<li>Oracle</li> 
+<li>MySQL</li>
+</ul>
+<li>NoSQL</li><ul>
+<li>MongoDB</li> 
+<li>Firebase</li>
+</ul>
+</ul></span></span></div>
+
+<li>Programming</li>
+
+<div `r px0()`>
+<span class="tooltipr"><a href="javascript:showhide('Databases')"><li `r gray()`>Administration</li></a>
+<span class="tooltipRtext"><ul `r white()`>
+<li>Ubuntu</li>
+<li>Fedora</li>
+<li>SQL Server</li>
+</ul></span></span></div>
+
+<li>Warehousing</li>
+
 ### Operating Systems
 
 <ul>
@@ -579,8 +609,7 @@ Frameworks:
 <li>Kali</li>
 </ul></span></span></div>
 
-<li>Chrome OS</li>
-<li>Android OS</li>
+<li>Chrome OS / Android OS</li>
 
 <li>Microsoft Windows</li>
 <ul>
@@ -637,6 +666,7 @@ Frameworks:
 
 <li>Technical Teamwork</li>
 <li>Risk Management</li>
+<li>Opportunity Cost</li>
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('method')"><li `r gray()`>Methodologies</li></a>
@@ -653,40 +683,13 @@ Frameworks:
 <li>Jira</li>
 </ul></span></span></div></ul> 
 
-### General CIT
+### Technical Support
 
-<ul>
-
-<li>Networking</li>
-<li>DevOps</li>
-<li>System Administration</li>
-
-<div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('Databases')"><li>Databases</li></a>
-<span class="tooltipRtext"><ul `r white()`>
-<li>Development</li>
-<li>Design</li>
-<li>Programming</li>
-<li>Administration</li>
-<li>Warehousing</li>
-</ul></span></span>
-<div id="Databases" `r px20()`><ul>
-
-<div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('sql')"><li `r gray()`>SQL</li></a>
-<span class="tooltipRtext"><ul `r white()`>
-<li>Oracle</li> 
-<li>MySQL</li>
-</ul></span></span></div>
-
-<div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('nosql')"><li `r gray()`>NoSQL</li></a>
-<span class="tooltipRtext"><ul `r white()`>
-<li>MongoDB</li> 
-<li>Firebase</li>
-</ul></span></span></div></div>
-
-</ul>
+* DevOps
+* Networking
+* Windows Client
+* System Administration
+* Data Center Administration
 
 ## Mathematics
 
@@ -737,8 +740,7 @@ Topics include:
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('math')"><li `r gray()`>Basic Math and Arithmetic</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 25/25</span>
-</span></div></ul>  
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span></span></div></ul>  
 
 ### Functional Programming
     
@@ -748,40 +750,44 @@ Topics include:
 * Erlang
 * Clojure
 
-## General Programming
+## Software Development
 
 ### Languages
 
 <ul>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('C++')"><li `r gray()`>C/C++</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
-<ul `r white()`>
-<li>Visual Studio</li>
-</ul></span></span></div>
+<span class="tooltipr"><a href="javascript:showhide('C++')"><li>C/C++</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span></span>
+<div id="C++" `r px20()`>
+Developed Using:
+<ul><li>Visual Studio</li>
+</ul></div></div>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('Python')"><li `r gray()`>Python</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 25/25<br/><br/>Developed Using:
-<ul `r white()`>
+<span class="tooltipr"><a href="javascript:showhide('Python')"><li>Python</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 25/25</span></span>
+<div id="Python" `r px20()`>
+Developed Using:
+<ul>
 <li>Pycharm</li>
 <li>Thony</li>
 <li>Jupyter Notebook</li>
-</ul></span></span></div>
+</ul></div></div>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('Java')"><li `r gray()`>Java</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 22/25<br/><br/>Developed Using:
-<ul `r white()`>
+<span class="tooltipr"><a href="javascript:showhide('Java')"><li>Java</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 22/25</span></span>
+<div id="Java" `r px20()`>
+Developed Using:
+<ul>
 <li>IntelliJ</li>
 <li>Android Studio</li>
-</ul></span></span></div>
+</ul></div></div>
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('CS')"><li `r gray()`>C#</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 23/25</span>
-</span></div> 
+<span class="tooltipRtext">W3 Schools Quiz: 23/25</span></span></div> 
 
 </ul>
 
@@ -817,6 +823,13 @@ Topics include:
 * Complexity
 * Optimization
 * Computer Theory
+
+### Software Testing
+
+* Software Lifecycle
+* Test Plans
+* Quality Assurance
+* Process Improvement
 
 ## Industry Knowledge
 

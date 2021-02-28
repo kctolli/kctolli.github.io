@@ -82,6 +82,10 @@ Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learnin
 print_pos(pos, 'LL')
 ```
 
-</div></div><br />
+</div></div>
+
+### Solo Learn
+
+* PHP - [Certificate #1059-7632512](https://www.sololearn.com/Certificate/1059-7632512/pdf/)
 
 `r footer(file)`
