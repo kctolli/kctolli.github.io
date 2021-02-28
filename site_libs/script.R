@@ -9,13 +9,12 @@ datapath <- "./site_libs/data/" ## data path for website
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
   pacman::p_load(tidyverse, glue, pacman, pander, lubridate, modules)
-  
+
 }
 
 # R to HTML Functions
 
 pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')}
-paragraph <- function(par){pander::pander('<p>{par}</p>')}
 
 print_newline <- function(){pander::pander("\n")}
 print_h1 <- function(h1){pander::pander(glue::glue("# {h1} \n\n\n"))}
@@ -27,20 +26,20 @@ print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
 
 user_stats <- function(){
-  pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center" 
+  pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center"
   src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
 }
 
 nav <- function(){
   pander::pander('
   <script src="./site_libs/script.js"></script>
-  
+
   <hr/><div style="clear:both;"></div>
   <nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
   </ul></nav>
-  
+
   <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button>
   <hr/><div style="clear:both;"></div>')
 }
@@ -64,9 +63,9 @@ section <- function(cv, section_id, glue_template){
 }
 
 print_section <- function(cv, section_id){
-  
+
   if(cv$start %in% cv$end){
-    
+
     glue_template <- "
 ### {title}
 
@@ -81,7 +80,7 @@ print_section <- function(cv, section_id){
 - {description_3}
 \n\n\n"
   } else {
-  
+
     glue_template <- "
 ### {title}
 
@@ -96,14 +95,14 @@ print_section <- function(cv, section_id){
 - {description_3}
 \n\n\n"
   }
-  
+
   section(cv, section_id, glue_template)
 }
 
 print_work <- function(cv){
-  
+
   section_id = 'experience'
-    
+
   glue_template <- "
 ## {institution}
 
@@ -117,16 +116,16 @@ print_work <- function(cv){
 - {description_2}
 - {description_3}
 \n\n\n"
-  
+
   section(cv, section_id, glue_template)
 }
 
 print_project <- function(cv){
-  
+
   section_id = 'projects'
 
   if(cv$start %in% cv$end){
-  
+
     glue_template <- "
 ### {title}
 
@@ -136,9 +135,9 @@ print_project <- function(cv){
 - {description_2}
 - {description_3}
 \n\n\n"
-      
+
   } else {
-    
+
   glue_template <- "
 ### {title}
 
@@ -148,15 +147,15 @@ print_project <- function(cv){
 - {description_2}
 - {description_3}
 \n\n\n"
-  
+
   }
-  
+
   section(cv, section_id, glue_template)
 }
 
 print_TA <- function(cv){
   section_id = 'teaching'
-  
+
   glue_template <- "
 #### {title}
 
@@ -166,28 +165,28 @@ print_TA <- function(cv){
 - {description_2}
 - {description_3}
 \n\n\n"
-  
+
   section(cv, section_id, glue_template)
 }
 
 print_tutor <- function(){
   string <- "javascript:showhide('tutor')"
-  
+
   pander::pander(glue::glue('
-  ### Computer Science Tutor 
-  
+  ### Computer Science Tutor
+
   April 2018 - August 2018 --- Rexburg, ID
-  
+
   <ul><div style="padding-left:0px;">
   <span class="tooltipr"><a href={string}><li>Tutored many classes</li></a></span>
   <div id="tutor" style="display:none;padding-left:20px;">
     Including:
-    
+
     + Object-Oriented Programming with Data Structures using Python
     + Fundamentals of Digital Systems w/ Lab
     + Introduction to Engineering
-    + Introduction to Electrical and Computer Engineering 
-    
+    + Introduction to Electrical and Computer Engineering
+
   </div></div>
   <li>Taught students topics from these classes</li>
   <li>Lead group and individual appointments and discussions</li>
@@ -199,10 +198,10 @@ print_tutor <- function(){
 # Basic Templates
 
 print_pos <- function(cv, section_id){
-  
+
   glue_template <- "
 - {name}\n"
-  
+
   section(cv, section_id, glue_template)
 }
 
@@ -229,24 +228,24 @@ print_highlights <- function(path){
 
 copyright <- function(){
   current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('© 2020 - {current_year} -- Kyle Tolliver'))
+  pander::pander(glue::glue('? 2020 - {current_year} -- Kyle Tolliver'))
 }
 
 copyright_current <- function(){
   current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('© {current_year} -- Kyle Tolliver'))
+  pander::pander(glue::glue('? {current_year} -- Kyle Tolliver'))
 }
 
 licence <- function(file){
   pander::pander(glue::glue('
   <ul>
-  
-  <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). 
+
+  <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io).
   <li>Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. </li>
   <li>Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.R), [HTML](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.html), [CSS](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.css) and [Javascript](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.js). </li>
-                              
+
   </ul>
-                            
+
   '))
 }
 
@@ -255,7 +254,7 @@ footer <- function(file){
   copyright <- copyright()
   licence <- licence(file)
   string <- "javascript:showhide('copyright')"
-  
+
   pander::pander(glue::glue('
   {pagebreak}<footer><div style="padding-left:0px;">
   <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
@@ -278,14 +277,14 @@ render_all <- function(){
 ## Knit the Resume to html and pdf
 render_resume <- function(){
   file <- "resume" # Resume file name
-  
+
   ### Knit the HTML version
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
-  
+
   ### Knit the PDF version to temporary html location
   tmp_html_cv_loc <- fs::file_temp(ext = ".html")
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html_cv_loc)
-  
+
   ### Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))
 }
