@@ -494,11 +494,8 @@ Frameworks:
 </div></div>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('php')"><li>PHP</li></a>
-<span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span>
-<div id="php" `r px20()`>Sololearn Certificate: 
-<a href="https://www.sololearn.com/Certificate/1059-7632512/pdf/">Certificate #1059-7632512</a>
-</div></div>
+<span class="tooltipr"><a href="javascript:showhide('php')"><li `r gray()`>PHP</li></a>
+<span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span></div>
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('Pyweb')"><li>Python Web App</li></a></span>

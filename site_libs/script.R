@@ -228,12 +228,12 @@ print_highlights <- function(path){
 
 copyright <- function(){
   current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('? 2020 - {current_year} -- Kyle Tolliver'))
+  pander::pander(glue::glue('<i class="far fa-copyright"></i> 2020 - {current_year} -- Kyle Tolliver'))
 }
 
 copyright_current <- function(){
   current_year <- lubridate::year(Sys.Date())
-  pander::pander(glue::glue('? {current_year} -- Kyle Tolliver'))
+  pander::pander(glue::glue('<i class="far fa-copyright"></i> {current_year} -- Kyle Tolliver'))
 }
 
 licence <- function(file){
