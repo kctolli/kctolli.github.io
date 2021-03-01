@@ -8,7 +8,6 @@ editor_options:
 source("./site_libs/script.R")
 load_libraries()
 file <- "pos"
-pos <- read_csv(glue("{datapath}pos.csv"))
 ```
 
 ```{r eval=FALSE}
@@ -26,32 +25,30 @@ I earned a Bachelor's of Science in Software Engineering with a minor in Compute
 <span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
 <div id="diploma" `r px20()`>
 
-![](./site_libs/images/diploma.jpg)
+![](./site_libs/images/diploma.jpg) 
 
 </div></div>
 
 ```{r BYUI}
 print_newline()
 print_h3("Software Engineering (BS)")
-print_pos(pos, 'SE')
+print_pos(datapath, 'SE')
 print_newline()
 print_h3("Computer Engineering Minor")
-print_pos(pos, 'CE')
+print_pos(datapath, 'CE')
 print_newline()
 print_h3("Data Science Minor")
-print_pos(pos, 'DS')
+print_pos(datapath, 'DS')
 print_newline()
 print_h3("Core {.tabset .tabset-fade}")
 print_h4("Programming")
-print_pos(pos, 'GP')
+print_pos(datapath, 'GP')
 print_newline()
 print_h4("Math and Science")
-print_pos(pos, 'GMS')
+print_pos(datapath, 'GMS')
 print_newline()
 print_h4("General")
-print_pos(pos, 'GE')
-print_newline()
-print_h3("{-}")
+print_pos(datapath, 'GE')
 ```
 
 ## Moorpark High School
@@ -62,7 +59,7 @@ print_h3("{-}")
 <span class="tooltipRtext"><strong>2017 Graduate</strong></span><div id="hs" `r px20()`>
 
 ```{r HS}
-print_pos(pos, 'HS')
+print_pos(datapath, 'HS')
 ```
 
 </div></div>
@@ -73,19 +70,18 @@ print_pos(pos, 'HS')
 
 ### LinkedIn Learning
 
-<div `r px0()`>
-Used <span class="tooltipr"><a href="javascript:showhide('ll')">LinkedIn Learning</a> 
-<span class="tooltipRtext">Courses Include</span></span> to deepen my knowledge and continue learning after getting my Bachelors.
-<div id="ll" `r px20()`>
+Courses Include:
 
-```{r}
-print_pos(pos, 'LL')
+```{r LL}
+print_pos(datapath, 'LL')
 ```
-
-</div></div>
 
 ### Solo Learn
 
-* PHP - [Certificate #1059-7632512](https://www.sololearn.com/Certificate/1059-7632512/pdf/)
+Certificates Include:
+
+```{r SL}
+print_solo(datapath)
+```
 
 `r footer(file)`

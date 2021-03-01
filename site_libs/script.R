@@ -9,7 +9,14 @@ datapath <- "./site_libs/data/" ## data path for website
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
   pacman::p_load(tidyverse, glue, pacman, pander, lubridate, modules)
+}
 
+readcsv <- function(file){
+  library(tidyverse)
+  csv <- read_csv(file)
+  csv <- na.omit(csv)
+  detach("package:tidyverse", unload = TRUE)
+  return(csv)
 }
 
 # R to HTML Functions
@@ -197,12 +204,24 @@ print_tutor <- function(){
 
 # Basic Templates
 
-print_pos <- function(cv, section_id){
+print_pos <- function(path, section_id){
 
+  cv <- readcsv(glue::glue("{path}pos.csv"))
+  
   glue_template <- "
 - {name}\n"
 
   section(cv, section_id, glue_template)
+}
+
+print_solo <- function(path, section_id){
+  
+  cv <- readcsv(glue::glue("{path}solo.csv"))
+  
+  glue_template <- "
+- {name} - [#{number}](https://www.sololearn.com/Certificate/{number}/pdf/)\n"
+  
+  print(glue::glue_data(cv, glue_template))
 }
 
 print_contact <- function(info){
@@ -210,18 +229,18 @@ print_contact <- function(info){
 }
 
 print_skills <- function(path){
-  skills <- readr::read_csv(glue::glue("{path}skills.csv"))
+  skills <- readcsv(glue::glue("{path}skills.csv"))
   print(glue::glue_data(skills, "- {skill} \n"))
 }
 
 print_soc <- function(path){
-  soc <- readr::read_csv(glue::glue("{path}society.csv"))
-  glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n")
+  soc <- readcsv(glue::glue("{path}society.csv"))
+  print(glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n"))
 }
 
 print_highlights <- function(path){
-  highlights <- readr::read_csv(glue::glue("{path}highlights.csv"))
-  glue::glue_data(highlights, "- [{Text}]({Link}) \n")
+  highlights <- readcsv(glue::glue("{path}highlights.csv"))
+  print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))
 }
 
 # Licensing and Copyright

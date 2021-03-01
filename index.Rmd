@@ -43,7 +43,7 @@ print_skills(datapath)
 ```{r main}
 print_newline()
 print_h2("Contact Me")
-contact_info <- read_csv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
+contact_info <- readcsv(glue("{datapath}contact_info.csv")) %>% filter(in_index)
 print_contact(contact_info)
 pagebreak()
 print_newline()
