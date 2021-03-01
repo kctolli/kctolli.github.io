@@ -8,24 +8,23 @@ editor_options:
 source("./site_libs/script.R")
 load_libraries()
 file <- "work"
-entries <- read_csv(glue("{datapath}entries.csv")) ## entries data set
 ```
 
 ```{r eval=FALSE}
-render_all()
+render_web()
 ```
 
 ```{r main}
 nav()
 print_newline()
-print_work(entries)
+print_work(datapath)
 print_newline()
 print_h2("Brigham Young University - Idaho")
 print_newline()
 print_h4("Part-Time")
 print_newline()
 print_h3("Teaching Assistant {.tabset .tabset-fade}")
-print_TA(entries)
+print_TA(datapath)
 print_newline()
 print_tutor()
 footer(file)

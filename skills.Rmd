@@ -11,7 +11,7 @@ file <- "skills"
 ```
 
 ```{r eval=FALSE}
-render_all()
+render_web()
 ```
 
 `r nav()`
@@ -568,7 +568,6 @@ Frameworks:
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('DD')"><li `r gray()`>Development & Design</li></a>
 <span class="tooltipRtext"><ul `r white()`>
-
 <li>SQL</li><ul>
 <li>Oracle</li> 
 <li>MySQL</li>

@@ -12,12 +12,12 @@ entries <- read_csv(glue("{datapath}entries.csv")) ## entries data set
 ```
 
 ```{r eval=FALSE}
-render_all()
+render_web()
 ```
 
 ```{r main}
 nav()
 print_newline()
-print_project(entries)
+print_project(datapath)
 footer(file)
 ```

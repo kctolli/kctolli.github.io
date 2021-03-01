@@ -18,8 +18,6 @@ editor_options:
 source("../script.R")
 datpath <- "../data/"
 load_libraries()
-
-entries <- read_csv(glue("{datpath}entries.csv")) %>% filter(in_resume) 
 ```
 
 ```{r eval=FALSE}
@@ -33,8 +31,7 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-contact_info <- read_csv(glue("{datpath}contact_info.csv")) %>% filter(in_resume)
-print_contact(contact_info)
+print_contact(readcsv(glue("{datpath}contact_info.csv")) %>% filter(in_resume))
 ```
 
 Skills {#skills}
@@ -75,12 +72,12 @@ Experience {data-icon=briefcase}
 ------------------------------------
 
 ```{r}
-print_section(entries, 'experience')
+print_resume_section(datpath, 'experience')
 ```
 
 Projects {data-icon=laptop}
 ------------------------------------
 
 ```{r}
-print_section(entries, 'projects')
+print_resume_section(datpath, 'projects')
 ```

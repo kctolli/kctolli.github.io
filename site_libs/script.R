@@ -8,13 +8,12 @@ datapath <- "./site_libs/data/" ## data path for website
 
 load_libraries <- function(){
   knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
-  pacman::p_load(tidyverse, glue, pacman, pander, lubridate, modules)
+  pacman::p_load(tidyverse, glue, pacman, pander, lubridate)
 }
 
 readcsv <- function(file){
   library(tidyverse)
-  csv <- read_csv(file)
-  csv <- na.omit(csv)
+  csv <- read_csv(file) %>% na.omit()
   detach("package:tidyverse", unload = TRUE)
   return(csv)
 }
@@ -69,8 +68,10 @@ section <- function(cv, section_id, glue_template){
   print(glue::glue_data(section_data, glue_template))
 }
 
-print_section <- function(cv, section_id){
-
+print_resume_section <- function(path, section_id){
+  
+  cv <- read_csv(glue("{path}entries.csv")) %>% filter(in_resume) 
+  
   if(cv$start %in% cv$end){
 
     glue_template <- "
@@ -106,8 +107,9 @@ print_section <- function(cv, section_id){
   section(cv, section_id, glue_template)
 }
 
-print_work <- function(cv){
-
+print_work <- function(path){
+  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
+  
   section_id = 'experience'
 
   glue_template <- "
@@ -127,8 +129,9 @@ print_work <- function(cv){
   section(cv, section_id, glue_template)
 }
 
-print_project <- function(cv){
-
+print_project <- function(path){
+  cv <- readcsv(glue::glue("{path}entries.csv")) 
+  
   section_id = 'projects'
 
   if(cv$start %in% cv$end){
@@ -160,7 +163,9 @@ print_project <- function(cv){
   section(cv, section_id, glue_template)
 }
 
-print_TA <- function(cv){
+print_TA <- function(path){
+  cv <- readcsv(glue::glue("{path}entries.csv")) 
+  
   section_id = 'teaching'
 
   glue_template <- "
@@ -284,8 +289,8 @@ footer <- function(file){
 
 # Renders
 
-## Knit the HTML version of all pages
-render_all <- function(){
+## Knit the HTML version of web pages
+render_web <- function(){
   rmarkdown::render("index.rmd", params = list(pdf_mode = FALSE), output_file = "index.html")
   rmarkdown::render("pos.rmd", params = list(pdf_mode = FALSE), output_file = "pos.html")
   rmarkdown::render("projects.rmd", params = list(pdf_mode = FALSE), output_file = "projects.html")
@@ -306,4 +311,13 @@ render_resume <- function(){
 
   ### Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))
+}
+
+## Render Everything
+
+render_all <- function(){
+  render_web()
+  setwd("./site_libs/resume")
+  render_resume()
+  setwd("../..")
 }
