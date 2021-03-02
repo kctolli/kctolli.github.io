@@ -224,7 +224,7 @@ print_solo <- function(path, section_id){
   cv <- readcsv(glue::glue("{path}solo.csv"))
   
   glue_template <- "
-- {name} - [#{number}](https://www.sololearn.com/Certificate/{number}/pdf/)\n"
+- {name} - [#{number}]({link})\n"
   
   print(glue::glue_data(cv, glue_template))
 }
