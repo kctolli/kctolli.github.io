@@ -64,24 +64,18 @@ print_pos(datapath, 'HS')
 
 </div></div>
 
-`r pagebreak()`
-
-## Self Learning
-
-### LinkedIn Learning
-
-Courses Include:
-
-```{r LL}
+```{r Self}
+pagebreak()
+print_h2("Self Learning")
+print_h3("LinkedIn Learning")
+pander("Courses Include: \n\n")
+print_newline()
 print_pos(datapath, 'LL')
-```
-
-### Solo Learn
-
-Certificates Include:
-
-```{r SL}
+print_newline()
+print_h3("Solo Learn")
+pander("Certificates Include: \n\n")
+print_newline()
 print_solo(datapath)
+print_newline()
+footer(file)
 ```
-
-`r footer(file)`
