@@ -22,7 +22,7 @@ render_web()
 I earned a Bachelor's of Science in Software Engineering with a minor in Computer Engineering and Data Science.
 
 <div `r px0()`><span class="tooltipr"><a href="javascript:showhide('diploma')">Diploma</a>
-<span class="tooltipRtext"><strong>2020 Graduate </strong><br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
+<span class="tooltipRtext">`r print_strong("2020 Graduate")`<br/>My cumulative GPA was <br/> 3.6 out of 4 </span></span>
 <div id="diploma" `r px20()`>
 
 ![](./site_libs/images/diploma.jpg) 

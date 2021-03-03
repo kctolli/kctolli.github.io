@@ -22,7 +22,7 @@ output_dir: '.'
 
 output: 
   html_document:
-    css: [./site_libs/styles.css, ./site_libs/site.css]
+    css: [./site_libs/site.css]
     highlight: tango
     theme: readable
     toc: true

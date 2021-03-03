@@ -30,6 +30,7 @@ print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
 print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
 print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
+print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 
 user_stats <- function(){
   pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center"
