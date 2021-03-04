@@ -7,8 +7,8 @@ datapath <- "./site_libs/data/" ## data path for website
 # Basic Functions
 
 load_libraries <- function(){
-  knitr::opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
-  pacman::p_load(tidyverse, glue, pacman, pander, lubridate)
+  pacman::p_load(tidyverse, glue, pacman, pander, lubridate, knitr)
+  opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
 }
 
 readcsv <- function(file){
@@ -20,8 +20,6 @@ readcsv <- function(file){
 
 # R to HTML Functions
 
-pagebreak <- function(){pander::pander('<hr /> <div style="clear:both;"></div>')}
-
 print_newline <- function(){pander::pander("\n")}
 print_h1 <- function(h1){pander::pander(glue::glue("# {h1} \n\n\n"))}
 print_h2 <- function(h2){pander::pander(glue::glue("## {h2} \n\n\n"))}
@@ -30,8 +28,9 @@ print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
 print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
 print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
-print_img <- function(img){pander::pander(glue::glue('<img src={img}> \n\n\n'))}
+print_img <- function(i, a="error"){pander::pander(glue::glue('<img src={i} alt={a}> \n\n\n'))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
+pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
 
 user_stats <- function(){
   pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center"

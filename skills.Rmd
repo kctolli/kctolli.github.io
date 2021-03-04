@@ -569,13 +569,11 @@ Frameworks:
 <span class="tooltipRtext"><ul `r white()`>
 <li>SQL</li><ul>
 <li>Oracle</li> 
-<li>MySQL</li>
-</ul>
+<li>MySQL</li></ul>
 <li>NoSQL</li><ul>
 <li>MongoDB</li> 
 <li>Firebase</li>
-</ul>
-</ul></span></span></div>
+</ul></ul></span></span></div>
 
 <li>Programming</li>
 
@@ -584,7 +582,6 @@ Frameworks:
 <span class="tooltipRtext"><ul `r white()`>
 <li>Ubuntu</li>
 <li>Fedora</li>
-<li>SQL Server</li>
 </ul></span></span></div>
 
 <li>Warehousing</li>
