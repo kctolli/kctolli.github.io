@@ -16,7 +16,6 @@ render_web()
 
 ```{r main}
 nav()
-print_newline()
 print_work(datapath)
 print_newline()
 print_h2("Brigham Young University - Idaho")

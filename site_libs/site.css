@@ -1,9 +1,13 @@
+/*
+Site Styles
+*/
+
 a {color: blue;}
 ul {text-align: left;}
 
 .info {font-size: 80%; font-style: italic; font-family: "Georgia";}
 
-body {background-color: white; color: black;}
+body {background-color: white; color: black; font-family: "Helvetica";}
 .dark-mode {background-color: black; color: white;}
 
 hr{border-top: 1px solid black;}
@@ -28,7 +32,7 @@ hr{border-top: 1px solid black;}
 .dark-mode .btn{background-color: black;}
 .btn:hover {background-color: blue; color: white;}
 
-.tocify{background-color: white; color: black;}
+.tocify{background-color: white; color: black; font-family: "Times";}
 
 /* 
 Yaml Styles 
@@ -81,9 +85,7 @@ Needed for Headers
     margin-left: -170px;
 }
 
-.tooltipr:hover .tooltiprtext {
-    display: block;
-}
+.tooltipr:hover .tooltiprtext {display: block;}
 
 .tooltipr:hover {
     background-color: #f8f8f8;

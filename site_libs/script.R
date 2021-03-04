@@ -30,6 +30,7 @@ print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
 print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
 print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
+print_img <- function(img){pander::pander(glue::glue('<img src={img}> \n\n\n'))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 
 user_stats <- function(){
@@ -38,17 +39,19 @@ user_stats <- function(){
 }
 
 nav <- function(){
-  pander::pander('
+  pagebreak <- pagebreak()
+  
+  pander::pander(glue::glue('
   <script src="./site_libs/script.js"></script>
 
-  <hr/><div style="clear:both;"></div>
+  {pagebreak}
   <nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
   </ul></nav>
 
   <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button>
-  <hr/><div style="clear:both;"></div>')
+  {pagebreak} \n\n\n'))
 }
 
 ## CSS
@@ -60,7 +63,7 @@ bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://ma
 gray <- function(){pander::pander('style="color:gray;"')}
 white <- function(){pander::pander('style="color:white;"')}
 px0 <- function(){pander::pander('style="padding-left:0px;"')}
-px20 <- function(){'style="display:none;padding-left:20px;"'}
+px20 <- function(){pander::pander('style="display:none;padding-left:20px;"')}
 
 # Section Templates
 

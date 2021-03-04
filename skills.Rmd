@@ -15,7 +15,6 @@ render_web()
 ```
 
 `r nav()`
-`r print_newline()`
 
 ## Computer Engineering
 
@@ -374,7 +373,6 @@ Libraries include:
 </div></div>  
   
 <li>Tableau</li>
-<li>Databases</li>
 
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('spread')"><li `r gray()`>Spreadsheets</li></a>
@@ -565,6 +563,7 @@ Frameworks:
 
 ### Databases
 
+<ul>
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('DD')"><li `r gray()`>Development & Design</li></a>
 <span class="tooltipRtext"><ul `r white()`>
@@ -589,6 +588,7 @@ Frameworks:
 </ul></span></span></div>
 
 <li>Warehousing</li>
+</ul>
 
 ### Operating Systems
 

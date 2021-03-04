@@ -17,7 +17,6 @@ render_web()
 <p class="info">This website is setup as a personal portfolio.</p>
 
 `r nav()`
-`r print_newline()`
 
 ![](./site_libs/images/me.jpg)
 
