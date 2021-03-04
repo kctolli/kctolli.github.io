@@ -31,7 +31,7 @@ BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned
 ```{r about}
 print_newline()
 print_h4("Societies")
-print_soc(datapath)
+print_soc()
 print_newline()
 print_h4("Top Skills")
 print_skills(datapath)

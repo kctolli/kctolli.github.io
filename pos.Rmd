@@ -27,23 +27,23 @@ I earned a Bachelor's of Science in Software Engineering <br />with a minor in C
 ```{r BYUI}
 print_newline()
 print_h3("Software Engineering (BS)")
-print_pos(datapath, 'SE')
+print_pos('SE')
 print_newline()
 print_h3("Computer Engineering Minor")
-print_pos(datapath, 'CE')
+print_pos('CE')
 print_newline()
 print_h3("Data Science Minor")
-print_pos(datapath, 'DS')
+print_pos('DS')
 print_newline()
 print_h3("Core {.tabset .tabset-fade}")
 print_h4("Programming")
-print_pos(datapath, 'GP')
+print_pos('GP')
 print_newline()
 print_h4("Math and Science")
-print_pos(datapath, 'GMS')
+print_pos('GMS')
 print_newline()
 print_h4("General")
-print_pos(datapath, 'GE')
+print_pos('GE')
 ```
 
 ## Moorpark High School
@@ -53,7 +53,7 @@ advanced and college level courses in the process of getting my High School Dipl
 <span class="tooltipRtext">`r print_strong("2017 Graduate")`</span></span><div id="hs" `r px20()`>
 
 ```{r HS}
-print_pos(datapath, 'HS')
+print_pos('HS')
 ```
 
 </div></div>
@@ -64,12 +64,12 @@ print_h2("Self Learning")
 print_h3("LinkedIn Learning")
 pander("Courses Include: \n\n")
 print_newline()
-print_pos(datapath, 'LL')
+print_pos('LL')
 print_newline()
 print_h3("Solo Learn")
 pander("Certificates Include: \n\n")
 print_newline()
-print_solo(datapath)
+print_solo()
 print_newline()
 footer(file)
 ```

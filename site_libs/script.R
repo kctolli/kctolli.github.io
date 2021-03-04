@@ -212,9 +212,9 @@ print_tutor <- function(){
 
 # Basic Templates
 
-print_pos <- function(path, section_id){
+print_pos <- function(section_id){
 
-  cv <- readcsv(glue::glue("{path}pos.csv"))
+  cv <- readcsv(glue::glue("{datapath}pos.csv"))
   
   glue_template <- "
 - {name}\n"
@@ -222,9 +222,9 @@ print_pos <- function(path, section_id){
   section(cv, section_id, glue_template)
 }
 
-print_solo <- function(path, section_id){
+print_solo <- function(){
   
-  cv <- readcsv(glue::glue("{path}solo.csv"))
+  cv <- readcsv(glue::glue("{datapath}solo.csv"))
   
   glue_template <- "
 - {name} - [#{number}]({link})\n"
@@ -241,8 +241,8 @@ print_skills <- function(path){
   print(glue::glue_data(skills, "- {skill} \n"))
 }
 
-print_soc <- function(path){
-  soc <- readcsv(glue::glue("{path}society.csv"))
+print_soc <- function(){
+  soc <- readcsv(glue::glue("{datapath}society.csv"))
   print(glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n"))
 }
 
