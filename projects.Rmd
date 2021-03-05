@@ -16,6 +16,6 @@ render_web()
 
 ```{r main}
 nav()
-print_project(datapath)
+print_project()
 footer(file)
 ```

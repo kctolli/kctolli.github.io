@@ -34,7 +34,7 @@ print_h4("Societies")
 print_soc()
 print_newline()
 print_h4("Top Skills")
-print_skills(datapath)
+print_skills()
 ```
 
 </div></div><br />
@@ -46,7 +46,7 @@ print_contact(readcsv(glue("{datapath}contact_info.csv")) %>% filter(in_index))
 pagebreak()
 print_newline()
 print_h2("Highlights")
-print_highlights(datapath) 
+print_highlights() 
 print_newline()
 footer(file)
 ```

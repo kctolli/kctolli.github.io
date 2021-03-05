@@ -110,7 +110,7 @@ print_resume_section <- function(path, section_id){
   section(cv, section_id, glue_template)
 }
 
-print_work <- function(path){
+print_work <- function(){
   cv <- readcsv(glue::glue("{datapath}entries.csv")) 
   
   section_id = 'experience'
@@ -132,8 +132,8 @@ print_work <- function(path){
   section(cv, section_id, glue_template)
 }
 
-print_project <- function(path){
-  cv <- readcsv(glue::glue("{path}entries.csv")) 
+print_project <- function(){
+  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
   
   section_id = 'projects'
 
@@ -166,8 +166,8 @@ print_project <- function(path){
   section(cv, section_id, glue_template)
 }
 
-print_TA <- function(path){
-  cv <- readcsv(glue::glue("{path}entries.csv")) 
+print_TA <- function(){
+  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
   
   section_id = 'teaching'
 
@@ -236,7 +236,7 @@ print_contact <- function(info){
   print(glue::glue_data(info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n"))
 }
 
-print_skills <- function(path){
+print_skills <- function(path = datapath){
   skills <- readcsv(glue::glue("{path}skills.csv"))
   print(glue::glue_data(skills, "- {skill} \n"))
 }
@@ -246,7 +246,7 @@ print_soc <- function(){
   print(glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n"))
 }
 
-print_highlights <- function(path){
+print_highlights <- function(path = datapath){
   highlights <- readcsv(glue::glue("{path}highlights.csv"))
   print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))
 }
