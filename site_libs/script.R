@@ -46,9 +46,9 @@ nav <- function(){
   <nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li>
-  </ul></nav>
+  </ul>
 
-  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button>
+  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
   {pagebreak} \n\n\n'))
 }
 

@@ -14,7 +14,7 @@ file <- "index"
 render_web()
 ```
 
-<p class="info">This website is setup as a personal portfolio.</p>
+<p class="info">This website is setup as a personal portfolio.</p>  
 
 `r nav()`
 

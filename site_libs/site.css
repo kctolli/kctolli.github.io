@@ -5,7 +5,7 @@ Site Styles
 a {color: blue;}
 ul {text-align: left;}
 
-.info {font-size: 80%; font-style: italic; font-family: "Georgia";}
+.info {font-size: 80%; font-style: italic; font-family: "Arial";}
 
 body {background-color: white; color: black; font-family: "Helvetica";}
 .dark-mode {background-color: black; color: white;}
