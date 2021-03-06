@@ -7,7 +7,7 @@ datapath <- "./site_libs/data/" ## data path for website
 # Basic Functions
 
 load_libraries <- function(){
-  pacman::p_load(tidyverse, glue, pacman, pander, lubridate, knitr)
+  pacman::p_load(tidyverse, pacman, glue, pander, lubridate, knitr, rmarkdown) ## Load Packages
   opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
 }
 
@@ -28,7 +28,6 @@ print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
 print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
 print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
-print_img <- function(i, a="error"){pander::pander(glue::glue('<img src={i} alt={a}> \n\n\n'))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
 
@@ -58,7 +57,7 @@ w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3s
 bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
 bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
 
-### colors
+### Commands
 gray <- function(){pander::pander('style="color:gray;"')}
 white <- function(){pander::pander('style="color:white;"')}
 px0 <- function(){pander::pander('style="padding-left:0px;"')}
