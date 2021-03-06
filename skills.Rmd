@@ -478,7 +478,7 @@ The process of a permutation (randomization) test is:
 <li>CSS</li>
 
 <div `r px0()`>
-<span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript</li></a>
+<span class="tooltipr"><a href="javascript:showhide('JS')"><li>JavaScript/TypeScript</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span>
 <div id="JS" `r px20()`>
 
@@ -486,7 +486,9 @@ Frameworks:
 
 * JQuery
 * React
+* Redux
 * Angular
+* NestJS
 * Node
 
 </div></div>

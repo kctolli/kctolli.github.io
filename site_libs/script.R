@@ -41,7 +41,7 @@ nav <- function(){
   pagebreak <- pagebreak()
   
   pander::pander(glue::glue('
-  <script src="./site_libs/script.js"></script>
+  <script src="./site_libs/scripts/site.js"></script>
 
   {pagebreak}
   <nav class="info"><p>How to navigate this website: </p><ul>
