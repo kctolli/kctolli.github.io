@@ -57,16 +57,9 @@ Kyle Tolliver {#title}
 Education {data-icon=graduation-cap}
 ------------------------------------
 
-### Brigham Young University - Idaho
-
-Bachelor of Science in Software Engineering
-
-Rexburg, ID
-
-2017 <br> | <br> 2020
-
-+ Minor: Computer Engineering and Data Science
-+ Coursework: Advanced Embedded Systems, Digital System Design, Computer Architecture, Machine Learning, Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, System Security, Project Management, Linear Algebra, Discrete Math, Differential Calculus
+```{r}
+print_resume_education()
+```
 
 Experience {data-icon=briefcase}
 ------------------------------------

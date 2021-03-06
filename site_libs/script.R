@@ -109,6 +109,26 @@ print_resume_section <- function(path, section_id){
   section(cv, section_id, glue_template)
 }
 
+print_resume_education <- function(){
+  
+  glue_template <- "
+### Brigham Young University - Idaho
+
+Bachelor of Science in Software Engineering
+
+Rexburg, ID
+
+2017 <br> | <br> 2020
+
++ Minor: Computer Engineering and Data Science
++ Coursework: Advanced Embedded Systems, Digital System Design, Computer Architecture, Machine Learning, 
+Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, 
+System Security, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
+"
+  
+  pander::pander(glue_template)  
+}
+
 print_work <- function(){
   cv <- readcsv(glue::glue("{datapath}entries.csv")) 
   
