@@ -13,6 +13,7 @@
 .blocks {break-inside: avoid;}
 
 /* Make font black */
+body {background-color: white; color: black; font-family: "Helvetica";}
 p, ul {color: black;}
 
 /* Makes links blue*/
