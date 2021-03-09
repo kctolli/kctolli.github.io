@@ -52,12 +52,12 @@ nav <- function(){
   {pagebreak} \n\n\n'))
 }
 
-## CSS
+# CSS
 w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')}
 bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
 bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
 
-### Commands
+## Commands
 gray <- function(){pander::pander('style="color:gray;"')}
 white <- function(){pander::pander('style="color:white;"')}
 px0 <- function(){pander::pander('style="padding-left:0px;"')}
@@ -110,8 +110,7 @@ print_resume_section <- function(path, section_id){
 }
 
 print_resume_education <- function(){
-  
-  glue_template <- "
+  pander::pander("
 ### Brigham Young University - Idaho
 
 Bachelor of Science in Software Engineering
@@ -121,16 +120,14 @@ Rexburg, ID
 2017 <br> | <br> 2020
 
 + Minor: Computer Engineering and Data Science
-+ Coursework: Advanced Embedded Systems, Digital System Design, Computer Architecture, Machine Learning, 
-Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Software Development, Web Development, 
-System Security, Project Management, Linear Algebra, Discrete Math, Differential Calculus  
-"
-  
-  pander::pander(glue_template)  
++ Coursework: Advanced Embedded Systems, Digital System Design, <br />Computer Architecture, Circuit Analysis, Machine Learning, 
+<br />Intermediate Stats, Data Intuition, Data Wrangling, Database Development, Applied Development, System Security, 
+Project Management, Linear Algebra, Discrete Math, Differential Calculus  
+")  
 }
 
-print_work <- function(){
-  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
+print_work <- function(path = datapath){
+  cv <- readcsv(glue::glue("{path}entries.csv")) 
   
   section_id = 'experience'
 
@@ -151,8 +148,8 @@ print_work <- function(){
   section(cv, section_id, glue_template)
 }
 
-print_project <- function(){
-  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
+print_project <- function(path = datapath){
+  cv <- readcsv(glue::glue("{path}entries.csv")) 
   
   section_id = 'projects'
 
@@ -185,8 +182,8 @@ print_project <- function(){
   section(cv, section_id, glue_template)
 }
 
-print_TA <- function(){
-  cv <- readcsv(glue::glue("{datapath}entries.csv")) 
+print_ta <- function(path = datapath){
+  cv <- readcsv(glue::glue("{path}entries.csv")) 
   
   section_id = 'teaching'
 
@@ -228,9 +225,6 @@ print_tutor <- function(){
   '))
 }
 
-
-# Basic Templates
-
 print_pos <- function(section_id){
 
   cv <- readcsv(glue::glue("{datapath}pos.csv"))
@@ -246,12 +240,18 @@ print_solo <- function(){
   cv <- readcsv(glue::glue("{datapath}solo.csv"))
   
   glue_template <- "
-- {name} - [#{number}]({link})\n"
+- {name} - [#{number}](https://www.sololearn.com/{link}/pdf)\n"
   
   print(glue::glue_data(cv, glue_template))
 }
 
-print_contact <- function(info){
+print_contact <- function(path, file){
+  info <- readcsv(glue::glue("{path}contact_info.csv")) 
+  
+  if (file == "resume"){info <- dplyr::filter(info, in_resume)}
+  else if (file == "index"){info <- dplyr::filter(info, in_index)}
+  else {info <- info}
+  
   print(glue::glue_data(info, "<i class='fa fa-{icon}'></i> [{contact}]({link}) \n\n"))
 }
 
@@ -260,8 +260,8 @@ print_skills <- function(path = datapath){
   print(glue::glue_data(skills, "- {skill} \n"))
 }
 
-print_soc <- function(){
-  soc <- readcsv(glue::glue("{datapath}society.csv"))
+print_soc <- function(path = datapath){
+  soc <- readcsv(glue::glue("{path}society.csv"))
   print(glue::glue_data(soc, "- {group} associated with {loc} ({start} - {end}) \n"))
 }
 
@@ -270,7 +270,17 @@ print_highlights <- function(path = datapath){
   print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))
 }
 
-# Licensing and Copyright
+print_disclaimer <- function(){
+  pander::pander('
+Member of [Tau Beta Pi](https://tbp.org) <br /> Engineering Honor Society <br /> Idaho Delta chapter at BYU-Idaho.
+
+This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
+')
+}
+
+print_portfolio <- function(){pander::pander('<p class="info">This website is setup as a personal portfolio.</p>')}
+
+## Licensing and Copyright
 
 copyright <- function(){
   current_year <- lubridate::year(Sys.Date())
@@ -288,7 +298,7 @@ licence <- function(file){
 
   <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io).
   <li>Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. </li>
-  <li>Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.R), [HTML](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.html), [CSS](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.css) and [Javascript](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.js). </li>
+  <li>Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/script.R), HTML, [CSS](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.css) and [Javascript](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/scripts/site.js). </li>
 
   </ul>
 
@@ -323,16 +333,18 @@ render_web <- function(){
 ## Knit the Resume to html and pdf
 render_resume <- function(){
   file <- "resume" # Resume file name
+  tmp_html <- fs::file_temp(ext = ".html") # Create a temp html file
 
   ### Knit the HTML version
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
 
   ### Knit the PDF version to temporary html location
-  tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html_cv_loc)
+  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html)
 
   ### Convert to PDF using Pagedown
-  pagedown::chrome_print(input = tmp_html_cv_loc, output = glue::glue("{file}.pdf"))
+  pagedown::chrome_print(input = tmp_html, output = glue::glue("{file}.pdf"))
+  
+  file.remove(tmp_html)
 }
 
 ## Render Everything

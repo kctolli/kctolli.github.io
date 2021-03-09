@@ -1,11 +1,11 @@
 ﻿name,number,link
-HTML,1014-7632512,https://www.sololearn.com/Certificate/1014-7632512/pdf
-CSS,1023-7632512,https://www.sololearn.com/Certificate/1023-7632512/pdf
-JavaScript,7632512-1024,https://www.sololearn.com/certificates/course/en/7632512/1024/landscape/pdf
-jQuery,1082-7632512,https://www.sololearn.com/Certificate/1082-7632512/pdf
-React + Redux,1097-7632512,https://www.sololearn.com/Certificate/1097-7632512/pdf
-Angular + NestJS,,
-PHP,1059-7632512,https://www.sololearn.com/Certificate/1059-7632512/pdf
+HTML,1014-7632512,Certificate/1014-7632512
+CSS,1023-7632512,Certificate/1023-7632512
+JavaScript,7632512-1024,certificates/course/en/7632512/1024/landscape
+jQuery,1082-7632512,Certificate/1082-7632512
+React + Redux,1097-7632512,Certificate/1097-7632512
+Angular + NestJS,1092-7632512,Certificate/1092-7632512
+PHP,1059-7632512,Certificate/1059-7632512
 Ruby,,
 SQL,,
 C,,
@@ -14,9 +14,9 @@ C#,,
 Java,,
 Kotlin,,
 Swift 4,,
-Python for Beginners,7632512-1157,https://www.sololearn.com/certificates/course/en/7632512/1157/landscape/pdf
-Intermediate Python,,
-Python Data Structures,,
-Python Core,,
+Python for Beginners,7632512-1157,certificates/course/en/7632512/1157/landscape
+Intermediate Python,7632512-1158,certificates/course/en/7632512/1158/landscape
+Python Data Structures,7632512-1159,certificates/course/en/7632512/1159/landscape
+Python Core,7632512-1073,certificates/course/en/7632512/1073/landscape
 DS with Python,,
 Machine Learning,,

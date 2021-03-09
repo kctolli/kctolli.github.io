@@ -14,19 +14,17 @@ file <- "index"
 render_web()
 ```
 
-<p class="info">This website is setup as a personal portfolio.</p>  
-
-`r nav()`
-
-![](./site_libs/images/me.jpg)
+```{r start}
+print_portfolio()
+nav()
+print_pic(./site_libs/images/me.jpg)
+```
 
 ## About Me
 
 BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. I also earned a minor in Computer Engineering and Data Science. I love to learn new things and solve problems. 
 
-<div `r px0()`><span class="tooltipr">
-<a href="javascript:showhide('me')">A little more about me</a>
-</span><div id="me" `r px20()`>
+<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('me')">A little more about me</a></span><div id="me" `r px20()`>
 
 ```{r about}
 print_newline()
@@ -42,7 +40,7 @@ print_skills()
 ```{r main}
 print_newline()
 print_h2("Contact Me")
-print_contact(readcsv(glue("{datapath}contact_info.csv")) %>% filter(in_index))
+print_contact(datapath, file)
 pagebreak()
 print_newline()
 print_h2("Highlights")

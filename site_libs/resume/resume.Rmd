@@ -18,6 +18,7 @@ editor_options:
 source("../script.R")
 datpath <- "../data/"
 load_libraries()
+file <- 'resume'
 ```
 
 ```{r eval=FALSE}
@@ -31,7 +32,7 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-print_contact(readcsv(glue("{datpath}contact_info.csv")) %>% filter(in_resume))
+print_contact(datpath, file)
 ```
 
 Skills {#skills}
@@ -44,9 +45,7 @@ print_skills(datpath)
 Disclaimer {#disclaimer}
 ------------------------------------
 
-Member of [Tau Beta Pi](https://tbp.org) <br /> Engineering Honor Society <br /> Idaho Delta chapter at BYU-Idaho.
-
-This resume was made with <br /> the R package [pagedown](https://github.com/rstudio/pagedown).
+`r print_disclaimer()`
 
 Main
 ====================================
@@ -57,9 +56,7 @@ Kyle Tolliver {#title}
 Education {data-icon=graduation-cap}
 ------------------------------------
 
-```{r}
-print_resume_education()
-```
+`r print_resume_education()`
 
 Experience {data-icon=briefcase}
 ------------------------------------
