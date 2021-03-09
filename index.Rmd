@@ -17,7 +17,7 @@ render_web()
 ```{r start}
 print_portfolio()
 nav()
-print_pic(./site_libs/images/me.jpg)
+print_pic("./site_libs/images/me.jpg")
 ```
 
 ## About Me
