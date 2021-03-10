@@ -335,9 +335,6 @@ render_resume <- function(){
   file <- "resume" # Resume file name
   tmp_html <- fs::file_temp(ext = ".html") # Create a temp html file
   
-  ### Knit the md version
-  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = "readme.md")
-  
   ### Knit the HTML version
   rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
 
