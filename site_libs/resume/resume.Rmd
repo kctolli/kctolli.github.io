@@ -32,14 +32,14 @@ Contact Info {#contact}
 ------------------------------------
 
 ```{r contact}
-print_contact(datpath, file)
+print_contact(file)
 ```
 
 Skills {#skills}
 ------------------------------------
 
 ```{r skill}
-print_skills(datpath)
+print_skills()
 ```
 
 Disclaimer {#disclaimer}
@@ -62,12 +62,12 @@ Experience {data-icon=briefcase}
 ------------------------------------
 
 ```{r}
-print_resume_section(datpath, 'experience')
+print_resume_section('experience')
 ```
 
 Projects {data-icon=laptop}
 ------------------------------------
 
 ```{r}
-print_resume_section(datpath, 'projects')
+print_resume_section('projects')
 ```
