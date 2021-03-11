@@ -1,17 +1,17 @@
 /*Scripts*/
 
-include("./ajax.js");
-include("./time.js");
-include("./form.js");
-include("./appml.js");
-include("./await.js");
-include("./jQuery.js");
-include("./cookie.js");
-include("./screen.js");
-include("./select.js");
-include("./firebase.js");
-include("./location.js");
-include("./frameworks.js");
+include("./javascript/ajax.js");
+include("./javascript/time.js");
+include("./javascript/form.js");
+include("./javascript/appml.js");
+include("./javascript/await.js");
+include("./javascript/jQuery.js");
+include("./javascript/cookie.js");
+include("./javascript/screen.js");
+include("./javascript/select.js");
+include("./javascript/firebase.js");
+include("./javascript/location.js");
+include("./javascript/frameworks.js");
 
 /*Basic Functions*/
 

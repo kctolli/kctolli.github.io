@@ -1,6 +1,7 @@
 ---
-title: "resume"
+title: "Resume"
 author: Kyle Tolliver
+date: "`r Sys.Date()`"
 params:
   pdf_mode:
     value: true
@@ -15,14 +16,10 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-source("../script.R")
+source("../scripts/site.R")
 datpath <- "../data/"
 load_libraries()
 file <- 'resume'
-```
-
-```{r eval=FALSE}
-render_resume()
 ```
 
 Aside
