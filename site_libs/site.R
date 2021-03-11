@@ -1,39 +1,27 @@
-source("./rscript/gsheets.R", "rt")
+# Setup
 
-library(googlesheets4, tidyverse)
+library(tidyverse)
 
-gs4_deauth()
+## Sourcing
 
-# Variables
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/gsheets.R") 
 
-here <- here::here() ## set here file path
-user <- "kctolli" ## set user
-current_year <- lubridate::year(Sys.Date()) ## sys year 
-datapath <- "https://drive.google.com/drive/folders/13pa4_5Shqhr20sFWfhEOWuxXnKcYqJRj?usp=sharing" ## data path for website
-
-# Basic Functions
+## Load Functions
 
 load_libraries <- function(){
   pacman::p_load(tidyverse, pacman, glue, pander, lubridate, knitr, rmarkdown) ## Load Packages
   opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
 }
 
-readcsv <- function(file){return(read_csv(file) %>% na.omit())}
-gsheet <- function(url){return(read_sheet(url) %>% na.omit())}
+# Variables
 
-# Google Sheets Data Frames
-
-solo <- gsheet("https://docs.google.com/spreadsheets/d/1ssrsSZjXRcv4Ylv6qdQABOZMul2GIsGLaJtRrzvitYA/edit#gid=1793356435")
-society <- gsheet("https://docs.google.com/spreadsheets/d/1uX9-huAPB4NhljQ1gg20MF8qxQymxDtlQRZCpjwab7Q/edit#gid=684122786")
-skills <- gsheet("https://docs.google.com/spreadsheets/d/15zrT7H7h0ElvXTdjjYGgx141UmHj3hTkhNc80YM_0Fg/edit#gid=1706649799")
-pos <- gsheet("https://docs.google.com/spreadsheets/d/1abShAJWxWnrEIIbDx3IGbv6fEERrRXGp73gaNpp889c/edit#gid=1221874779")
-highlights <- gsheet("https://docs.google.com/spreadsheets/d/1yVMadV6xJDm9pTY5VjbEeamzvUdH4GzR804npZP6y1s/edit#gid=1033572211")
-entries <- gsheet("https://docs.google.com/spreadsheets/d/1xWg3dkO6oB2Krr24fCuxDsR0aFu8jVw35FGHvvsY5g0/edit#gid=1584869514")
-contact <- gsheet("https://docs.google.com/spreadsheets/d/1TR2Bfxfzh6dWtnAbuhYM6JtU7rWTe_cLW68olas__fk/edit#gid=729993551")
+here <- here::here() ## set here file path
+user <- "kctolli" ## set user
+current_year <- lubridate::year(Sys.Date()) ## sys year 
 
 # R to HTML Functions
 
-print_newline <- function(){pander::pander("\n")}
+print_newline <- function(){pander("\n")}
 print_h1 <- function(h1){pander::pander(glue::glue("# {h1} \n\n\n"))}
 print_h2 <- function(h2){pander::pander(glue::glue("## {h2} \n\n\n"))}
 print_h3 <- function(h3){pander::pander(glue::glue("### {h3} \n\n\n"))}
@@ -44,12 +32,8 @@ print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
 
-# CSS
-w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')}
-bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
-bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
+# R Styles
 
-## Commands
 gray <- function(){pander::pander('style="color:gray;"')}
 white <- function(){pander::pander('style="color:white;"')}
 px0 <- function(){pander::pander('style="padding-left:0px;"')}
@@ -214,7 +198,7 @@ nav <- function(){
   pagebreak <- pagebreak()
   
   pander::pander(glue::glue('
-  <script src="./site_libs/scripts/site.js"></script>
+  <script src="./site_libs/site.js"></script>
   {pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>

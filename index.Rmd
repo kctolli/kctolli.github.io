@@ -5,7 +5,7 @@ editor_options:
 ---
 
 ```{r load_libraries, include=FALSE}
-source("./site_libs/scripts/site.R")
+source("./site_libs/site.R")
 load_libraries()
 file <- "index"
 ```
@@ -18,8 +18,7 @@ print_newline()
 print_h2("About Me")
 pander("BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. 
        I also earned a minor in Computer Engineering and Data Science. 
-       I love to learn new things and solve problems.")
-print_newline()
+       I love to learn new things and solve problems.\n\n")
 ```
 
 <div `r px0()`><span class="tooltipr"><a href="javascript:showhide('me')">A little more about me</a></span><div id="me" `r px20()`>
