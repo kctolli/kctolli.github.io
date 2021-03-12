@@ -5,7 +5,9 @@ gs4_deauth()
 # Variables
 
 here <- here::here() ## set here file path
+user <- "kctolli" ## set user
 current_year <- lubridate::year(Sys.Date()) ## sys year 
+datapath <- "https://drive.google.com/drive/folders/13pa4_5Shqhr20sFWfhEOWuxXnKcYqJRj?usp=sharing" ## data path for websitez
 
 # Basic Functions
 
@@ -18,8 +20,6 @@ readcsv <- function(file){return(read_csv(file) %>% na.omit())}
 gsheet <- function(url){return(read_sheet(url) %>% na.omit())}
 
 # Google Sheets Data Frames
-
-datapath <- "https://drive.google.com/drive/folders/13pa4_5Shqhr20sFWfhEOWuxXnKcYqJRj?usp=sharing" ## Gdrive Path
 
 solo <- gsheet("https://docs.google.com/spreadsheets/d/1ssrsSZjXRcv4Ylv6qdQABOZMul2GIsGLaJtRrzvitYA/edit#gid=1793356435")
 society <- gsheet("https://docs.google.com/spreadsheets/d/1uX9-huAPB4NhljQ1gg20MF8qxQymxDtlQRZCpjwab7Q/edit#gid=684122786")
@@ -42,8 +42,24 @@ print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
 
+nav <- function(){
+  pagebreak <- pagebreak()
+  
+  pander::pander(glue::glue('
+  <script src="./site_libs/scripts/site.js"></script>
+  {pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
+  <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
+  <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
+  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
+  {pagebreak} \n\n\n'))
+}
 
-# R Style
+# CSS
+w3css <- function(){pander::pander('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')}
+bootstrap3 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">')}
+bootstrap4 <- function(){pander::pander('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">')}
+
+## Commands
 gray <- function(){pander::pander('style="color:gray;"')}
 white <- function(){pander::pander('style="color:white;"')}
 px0 <- function(){pander::pander('style="padding-left:0px;"')}
@@ -202,19 +218,7 @@ print_soc <- function(){print(glue::glue_data(society, "- {group} associated wit
 print_highlights <- function(){print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))}
 print_portfolio <- function(){pander::pander('<p class="info">This website is setup as a personal portfolio.</p>')}
 
-# Utilities
-
-nav <- function(){
-  pagebreak <- pagebreak()
-  
-  pander::pander(glue::glue('
-  <script src="./site_libs/site.js"></script>
-  {pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
-  <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
-  <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
-  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
-  {pagebreak} \n\n\n'))
-}
+## Licensing and Copyright
 
 copyright <- function(start){
   if (start <= current_year){
@@ -222,6 +226,11 @@ copyright <- function(start){
   else {str <- glue::glue('{current_year} -- Kyle Tolliver')}}
   else {str <- 'Time Error'}
   pander::pander(glue::glue('<i class="far fa-copyright"></i>{str}'))
+}
+
+user_stats <- function(){
+  pander::pander(glue::glue('<h2>User Stats</h2><div align="center"><img style="max-width:100%;" height="160" align="center"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username={user}&layout=compact&theme=gruvbox" /></div>'))
 }
 
 footer <- function(file){

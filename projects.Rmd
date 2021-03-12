@@ -10,6 +10,10 @@ load_libraries()
 file <- "projects"
 ```
 
+```{r eval=FALSE}
+render_web()
+```
+
 ```{r main}
 nav()
 print_project()

@@ -10,6 +10,10 @@ load_libraries()
 file <- "index"
 ```
 
+```{r eval=FALSE}
+render_web()
+```
+
 ```{r start}
 print_portfolio()
 nav()

@@ -1,5 +1,6 @@
 /*Scripts*/
 
+
 include("https://raw.githubusercontent.com/kctolli/scripting/main/javascript/ajax.js");
 include("https://raw.githubusercontent.com/kctolli/scripting/main/javascript/time.js");
 include("https://raw.githubusercontent.com/kctolli/scripting/main/javascript/form.js");
