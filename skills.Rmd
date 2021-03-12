@@ -493,6 +493,8 @@ Frameworks:
 
 </div></div>
 
+<li>Ruby</li>
+
 <div `r px0()`>
 <span class="tooltipr"><a href="javascript:showhide('php')"><li `r gray()`>PHP</li></a>
 <span class="tooltipRtext">W3 Schools Quiz: 21/25</span></span></div>
@@ -785,6 +787,12 @@ Developed Using:
 <span class="tooltipRtext">W3 Schools Quiz: 23/25</span></span></div> 
 
 </ul>
+
+### Mobile App Development
+
+* Java
+* Kotlin
+* Swift
 
 ### Design Patterns
 
