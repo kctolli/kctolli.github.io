@@ -39,7 +39,7 @@ print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
 print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
 print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
 print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
-print_img <- function(pic){pander::pander(glue::glue('<img src = {pic} alt = "Picture Error" class = "img"> \n\n\n'))}
+print_img <- function(pic){pander::pander(glue::glue('<img src = {pic} alt = "Picture Error"> \n\n\n'))}
 print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
 pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
 
