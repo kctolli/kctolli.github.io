@@ -34,6 +34,13 @@ hr{border-top: 1px solid black;}
 
 .tocify{background-color: white; color: black; font-family: "Times";}
 
+/*
+Data Science Dashboard
+*/
+
+.img {display: block; margin-left: auto; margin-right: auto; width: 125%; align: center; border-radius: 8px;}
+#pic {display:none;padding-left:20px;} 
+
 /* 
 Yaml Styles 
 Needed for Headers
