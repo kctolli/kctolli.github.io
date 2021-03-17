@@ -203,13 +203,14 @@ print_soc <- function(){print(glue::glue_data(society, "- {group} associated wit
 print_highlights <- function(){print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))}
 print_portfolio <- function(){pander::pander('<p class="info">This website is setup as a personal portfolio.</p>')}
 
+alert <- function(msg){pander::pander(glue::glue('"javascript:alert({msg})"'))}
+
 # Utilities
 
 nav <- function(){
   pagebreak <- pagebreak()
   
-  pander::pander(glue::glue('
-  <script src="./site_libs/site.js"></script>
+  pander::pander(glue::glue('<script src="./site_libs/site.js"></script>
   {pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
