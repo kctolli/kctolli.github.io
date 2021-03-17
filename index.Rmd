@@ -14,8 +14,6 @@ file <- "index"
 render_web()
 ```
 
-<!-- <body onload=`r alert('This website is setup as a personal portfolio.')`> -->
-
 ```{r start}
 print_portfolio()
 nav()
@@ -51,5 +49,3 @@ print_highlights()
 print_newline()
 footer(file)
 ```
-
-<!-- </body> -->
