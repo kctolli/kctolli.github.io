@@ -1,0 +1,18 @@
+---
+title: "kctolli.github.io"
+output: github_document
+---
+
+```{r load_libraries, include=FALSE}
+source("./site_libs/site.R")
+load_libraries()
+user <- "kctolli"
+```
+
+* ePortfolio: https://kctolli.github.io/
+* Resume: https://kctolli.github.io/site_libs/resume.html
+
+```{r}
+pander::pander(glue::glue('<a href="https://github.com/{user}/{user}.github.io">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username={user}&repo={user}.github.io&theme=material-palenight" /></a>'))
+```
