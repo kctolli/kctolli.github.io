@@ -223,7 +223,7 @@ copyright <- function(start){
   if (current_year != start) {str <- glue::glue('{start} - {current_year} -- Kyle Tolliver')}
   else {str <- glue::glue('{current_year} -- Kyle Tolliver')}}
   else {str <- 'Time Error'}
-  pander::pander(glue::glue('<i class="far fa-copyright"></i>{str}'))
+  pander::pander(glue::glue('&copy;{str}'))
 }
 
 footer <- function(file){
