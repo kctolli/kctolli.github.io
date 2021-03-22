@@ -362,7 +362,11 @@ div.tocify {
 <p class="info">
 This website is setup as a personal portfolio.
 </p>
-<script src="./site_libs/site.js"></script>
+<script> function showhide(id) {
+    var e = document.getElementById(id);
+    document.getElementById(id).style.display = (document.getElementById(id).style.display == "block") ? "none" : "block";
+  }</script>
+<script> function darkmode() {document.body.classList.toggle("dark-mode");}</script>
 <hr />
 <div style="clear:both;">
 

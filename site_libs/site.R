@@ -209,9 +209,12 @@ alert <- function(msg){pander::pander(glue::glue('"javascript:alert({msg})"'))}
 
 nav <- function(){
   pagebreak <- pagebreak()
+  showhide <- showhide()
+  darkmode <- darkmode()
   
-  pander::pander(glue::glue('<script src="./site_libs/site.js"></script>
-  {pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
+  
+  pander::pander(glue::glue('
+  {showhide}{darkmode}{pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
   <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
@@ -219,9 +222,8 @@ nav <- function(){
 }
 
 copyright <- function(start){
-  if (start <= current_year){
-  if (current_year != start) {str <- glue::glue('{start} - {current_year} -- Kyle Tolliver')}
-  else {str <- glue::glue('{current_year} -- Kyle Tolliver')}}
+  if (start < current_year){str <- glue::glue('{start} - {current_year} -- Kyle Tolliver')}
+  else if (start == current_year) {str <- glue::glue('{current_year} -- Kyle Tolliver')}
   else {str <- 'Time Error'}
   pander::pander(glue::glue('&copy;{str}'))
 }
@@ -242,6 +244,17 @@ footer <- function(file){
   <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
   <div id="copyright" style="display:none;padding-left:20px;">{licence}</div></div></footer>'))
 }
+
+# JavaScript
+
+showhide <- function () {
+  pander::pander('<script> function showhide(id) {
+  	var e = document.getElementById(id);
+  	document.getElementById(id).style.display = (document.getElementById(id).style.display == "block") ? "none" : "block";
+  }</script>')
+}
+
+darkmode <- function(){pander::pander('<script> function darkmode() {document.body.classList.toggle("dark-mode");}</script>')}
 
 # Renders
 
