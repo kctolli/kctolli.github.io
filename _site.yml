@@ -17,9 +17,6 @@ navbar:
     - text: "Resume"
       icon: fa-file-alt
       href: ./site_libs/resume/resume.html 
-  right:
-    - icon: fab fa-github
-      href: https://github.com/kctolli/kctolli.github.io
           
 output_dir: '.'
 
