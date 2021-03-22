@@ -15,8 +15,6 @@ render_web()
 ```
 
 ```{r start}
-# darkmode()
-# showhide()
 print_portfolio()
 nav()
 print_pic("./site_libs/images/me.jpg")
