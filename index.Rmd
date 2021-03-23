@@ -25,8 +25,7 @@ pander("BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering.
        I love to learn new things and solve problems.\n\n")
 ```
 
-<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('me')">
-A little more about me</a></span><div id="me" `r px20()`>
+<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('me')">A little more about me</a></span><div id="me" `r px20()`>
 
 ```{r about}
 print_newline()

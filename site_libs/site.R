@@ -1,54 +1,17 @@
-library(googlesheets4, tidyverse)
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/js.R")
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/html.R")
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/render.R")
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/gsheets.R")
 
-gs4_deauth()
-
-# Variables
+# Variables / Basic Functions
 
 here <- here::here() ## set here file path
-current_year <- lubridate::year(Sys.Date()) ## sys year 
-
-# Basic Functions
+current_year <- lubridate::year(Sys.Date()) ## sys year
 
 load_libraries <- function(){
   pacman::p_load(tidyverse, pacman, glue, pander, lubridate, knitr, rmarkdown) ## Load Packages
   opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
 }
-
-readcsv <- function(file){return(read_csv(file) %>% na.omit())}
-gsheet <- function(url){return(read_sheet(url) %>% na.omit())}
-
-# Google Sheets Data Frames
-
-datapath <- "https://drive.google.com/drive/folders/13pa4_5Shqhr20sFWfhEOWuxXnKcYqJRj?usp=sharing" ## Gdrive Path
-
-solo <- gsheet("https://docs.google.com/spreadsheets/d/1ssrsSZjXRcv4Ylv6qdQABOZMul2GIsGLaJtRrzvitYA/edit#gid=1793356435")
-society <- gsheet("https://docs.google.com/spreadsheets/d/1uX9-huAPB4NhljQ1gg20MF8qxQymxDtlQRZCpjwab7Q/edit#gid=684122786")
-skills <- gsheet("https://docs.google.com/spreadsheets/d/15zrT7H7h0ElvXTdjjYGgx141UmHj3hTkhNc80YM_0Fg/edit#gid=1706649799")
-pos <- gsheet("https://docs.google.com/spreadsheets/d/1abShAJWxWnrEIIbDx3IGbv6fEERrRXGp73gaNpp889c/edit#gid=1221874779")
-highlights <- gsheet("https://docs.google.com/spreadsheets/d/1yVMadV6xJDm9pTY5VjbEeamzvUdH4GzR804npZP6y1s/edit#gid=1033572211")
-entries <- gsheet("https://docs.google.com/spreadsheets/d/1xWg3dkO6oB2Krr24fCuxDsR0aFu8jVw35FGHvvsY5g0/edit#gid=1584869514")
-contact <- gsheet("https://docs.google.com/spreadsheets/d/1TR2Bfxfzh6dWtnAbuhYM6JtU7rWTe_cLW68olas__fk/edit#gid=729993551")
-
-# R to HTML Functions
-
-print_newline <- function(){pander::pander("\n")}
-print_h1 <- function(h1){pander::pander(glue::glue("# {h1} \n\n\n"))}
-print_h2 <- function(h2){pander::pander(glue::glue("## {h2} \n\n\n"))}
-print_h3 <- function(h3){pander::pander(glue::glue("### {h3} \n\n\n"))}
-print_h4 <- function(h4){pander::pander(glue::glue("#### {h4} \n\n\n"))}
-print_h5 <- function(h5){pander::pander(glue::glue("##### {h5} \n\n\n"))}
-print_h6 <- function(h6){pander::pander(glue::glue("###### {h6} \n\n\n"))}
-print_pic <- function(img){pander::pander(glue::glue("![]({img}) \n\n\n"))}
-print_img <- function(pic){pander::pander(glue::glue('<img src = {pic} alt = "Picture Error"> \n\n\n'))}
-print_strong <- function(p){pander::pander(glue::glue('<strong>{p}</strong>'))} 
-pagebreak <- function(){pander::pander('<hr /><div style="clear:both;"></div>')}
-
-
-# R Style
-gray <- function(){pander::pander('style="color:gray;"')}
-white <- function(){pander::pander('style="color:white;"')}
-px0 <- function(){pander::pander('style="padding-left:0px;"')}
-px20 <- function(){pander::pander('style="display:none;padding-left:20px;"')}
 
 # Section Templates
 
@@ -203,15 +166,13 @@ print_soc <- function(){print(glue::glue_data(society, "- {group} associated wit
 print_highlights <- function(){print(glue::glue_data(highlights, "- [{Text}]({Link}) \n"))}
 print_portfolio <- function(){pander::pander('<p class="info">This website is setup as a personal portfolio.</p>')}
 
-alert <- function(msg){pander::pander(glue::glue('"javascript:alert({msg})"'))}
-
 # Utilities
 
 nav <- function(){
   pagebreak <- pagebreak()
   showhide <- showhide()
   darkmode <- darkmode()
-  
+  # frameworks <- frameworks()
   
   pander::pander(glue::glue('
   {showhide}{darkmode}{pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
@@ -243,52 +204,4 @@ footer <- function(file){
   pander::pander(glue::glue('{pagebreak}<footer><div style="padding-left:0px;">
   <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
   <div id="copyright" style="display:none;padding-left:20px;">{licence}</div></div></footer>'))
-}
-
-# JavaScript
-
-showhide <- function () {
-  pander::pander('<script> function showhide(id) {
-  	var e = document.getElementById(id);
-  	document.getElementById(id).style.display = (document.getElementById(id).style.display == "block") ? "none" : "block";
-  }</script>')
-}
-
-darkmode <- function(){pander::pander('<script> function darkmode() {document.body.classList.toggle("dark-mode");}</script>')}
-
-# Renders
-
-## Knit the HTML version of web pages
-render_web <- function(){
-  rmarkdown::render("index.rmd", params = list(pdf_mode = FALSE), output_file = "index.html")
-  rmarkdown::render("pos.rmd", params = list(pdf_mode = FALSE), output_file = "pos.html")
-  rmarkdown::render("projects.rmd", params = list(pdf_mode = FALSE), output_file = "projects.html")
-  rmarkdown::render("skills.rmd", params = list(pdf_mode = FALSE), output_file = "skills.html")
-  rmarkdown::render("work.rmd", params = list(pdf_mode = FALSE), output_file = "work.html")
-}
-
-## Knit the Resume to html and pdf
-render_resume <- function(){
-  file <- "resume" # Resume file name
-  tmp_html <- fs::file_temp(ext = ".html") # Create a temp html file
-  
-  ### Knit the HTML version
-  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = FALSE), output_file = glue::glue("{file}.html"))
-
-  ### Knit the PDF version to temporary html location
-  rmarkdown::render(glue::glue("{file}.rmd"), params = list(pdf_mode = TRUE), output_file = tmp_html)
-
-  ### Convert to PDF using Pagedown
-  pagedown::chrome_print(input = tmp_html, output = glue::glue("{file}.pdf"))
-  
-  file.remove(tmp_html)
-}
-
-## Render Everything
-
-render_all <- function(){
-  render_web()
-  setwd("./site_libs/resume")
-  render_resume()
-  setwd("../..")
 }
