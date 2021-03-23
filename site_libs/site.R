@@ -145,6 +145,18 @@ print_tutor <- function(){
   <li>Lead group and individual appointments and discussions</li></ul>'))
 }
 
+print_ds <- function(){
+  string <- "javascript:showhide('pic')"
+  
+  pander::pander(glue::glue('
+  <div style="padding-left:0px;"><span class="tooltipr"><a href={string} align="center">
+  <img src="https://secure.meetupstatic.com/photos/event/d/7/4/b/600_482695115.jpeg" 
+  alt="Data Science Image" class="img"></a></span>
+  <h4 id="pic" style="display:none;padding-left:20px;">Interdisciplinary field that uses scientific methods, 
+  processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, 
+  and apply knowledge and actionable insights from data across a broad range of application domains.</h4></div>\n\n\n'))
+}
+
 ## Basic Templates
 
 print_contact <- function(file){
@@ -193,8 +205,7 @@ footer <- function(file){
   licence <- pander::pander(glue::glue('<ul>
   <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io).
   <li>Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. </li>
-  <li>Website is developed in [R]({site_libs}site.R) with HTML, CSS and Javascript. </li>
-  </ul>'))
+  <li>Website is developed in [R]({site_libs}site.R) with HTML, CSS and Javascript. </li></ul>'))
 
   pander::pander(glue::glue('{pagebreak}<footer><div style="padding-left:0px;">
   <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
@@ -202,10 +213,7 @@ footer <- function(file){
 }
 
 site_css <- function(){
-  pander::pander('<style>
-/*
-Site Styles
-*/
+  pander::pander('<style>/*Site Styles*/
 
 a {color: blue;}
 ul {text-align: left;}
@@ -224,6 +232,15 @@ hr{border-top: 1px solid black;}
 
 .tocify{background-color: white; color: black; font-family: "Times";}
 
+.img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 125%; 
+  align: center; 
+  border-radius: 8px;
+}
+
 .btn {
   background-color: white;
   border: none;
@@ -237,6 +254,7 @@ hr{border-top: 1px solid black;}
   text-decoration: none;
   display: inline-block;
 }
+
 .dark-mode .btn{background-color: black;}
 .btn:hover {background-color: blue; color: white;}
 </style>')
