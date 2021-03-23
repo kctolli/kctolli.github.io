@@ -12,13 +12,11 @@
 /* Avoid the breaking within a section */
 .blocks {break-inside: avoid;}
 
-/* Make font black */
+/* Make font black & Makes links blue*/
 .pagedjs_sheet {background: white; color: black; font-family: "Helvetica";}
-
 .aside {background: white; color: black; font-family: "Helvetica";}
 .main {background: white; color: black; font-family: "Helvetica";}
 
 body, p, ul {color: black; font-family: "Helvetica";}
 
-/* Makes links blue*/
 a {color: blue;}

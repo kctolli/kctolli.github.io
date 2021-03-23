@@ -22,7 +22,6 @@ output_dir: '.'
 
 output: 
   html_document:
-    css: [./site_libs/site.css]
     highlight: tango
     theme: readable
     toc: true
