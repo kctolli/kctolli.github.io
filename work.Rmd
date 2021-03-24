@@ -10,10 +10,6 @@ load_libraries()
 file <- "work"
 ```
 
-```{r eval=FALSE}
-render_web()
-```
-
 ```{r main}
 nav()
 print_work()

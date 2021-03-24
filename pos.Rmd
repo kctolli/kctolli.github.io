@@ -10,10 +10,6 @@ load_libraries()
 file <- "pos"
 ```
 
-```{r eval=FALSE}
-render_web()
-```
-
 `r nav()`
 
 ## Brigham Young University - Idaho

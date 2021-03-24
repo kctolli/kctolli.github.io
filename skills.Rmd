@@ -10,10 +10,6 @@ load_libraries()
 file <- "skills"
 ```
 
-```{r eval=FALSE}
-render_web()
-```
-
 `r nav()`
 
 ## Computer Engineering
