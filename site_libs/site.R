@@ -157,6 +157,18 @@ print_ds <- function(){
   and apply knowledge and actionable insights from data across a broad range of application domains.</h4></div>\n\n\n'))
 }
 
+print_about <- function(){
+  # pic <- print_pic("./site_libs/images/me.jpg")
+  string <- "javascript:showhide('me')"
+  
+  pander::pander(glue::glue('## About Me \n\n 
+  BYU-Idaho graduate with a Bachelor\'s (BS) in Software Engineering. 
+  I also earned a minor in Computer Engineering and Data Science. 
+  I love to learn new things and solve problems. \n\n
+  <div style="padding-left:0px;"><span class="tooltipr"><a href={string}>
+  A little more about me</a></span><div id="me" style="display:none;padding-left:20px;">\n\n'))
+}
+
 ## Basic Templates
 
 print_contact <- function(file){

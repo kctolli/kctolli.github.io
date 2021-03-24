@@ -14,32 +14,20 @@ file <- "index"
 render_web()
 ```
 
-```{r start}
+```{r main}
 print_portfolio()
 nav()
 print_pic("./site_libs/images/me.jpg")
 print_newline()
-print_h2("About Me")
-pander("BYU-Idaho graduate with a Bachelor's (BS) in Software Engineering. 
-       I also earned a minor in Computer Engineering and Data Science. 
-       I love to learn new things and solve problems.\n\n")
-```
-
-<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('me')">A little more about me</a></span><div id="me" `r px20()`>
-
-```{r about}
+print_about()
 print_newline()
 print_h4("Societies")
 print_soc()
 print_newline()
 print_h4("Top Skills")
 print_skills()
-```
-
-</div></div><br />
-
-```{r main}
 print_newline()
+pander('</div></div><br /> \n\n\n')
 print_h2("Contact Me")
 print_contact(file)
 pagebreak()
