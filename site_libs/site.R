@@ -50,7 +50,7 @@ print_work <- function(section_id = 'experience'){
 print_project <- function(){
   
   section_id = 'projects'
-
+  
   glue_template <- "
 ### {title}
 
