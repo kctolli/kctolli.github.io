@@ -6,7 +6,6 @@ editor_options:
 
 ```{r load_libraries, include=FALSE}
 source("./site_libs/site.R")
-load_libraries()
 file <- "index"
 ```
 
@@ -23,7 +22,7 @@ print_newline()
 print_h4("Top Skills")
 print_skills()
 print_newline()
-pander('</div></div><br /> \n\n\n')
+divbreak()
 print_h2("Contact Me")
 print_contact(file)
 pagebreak()

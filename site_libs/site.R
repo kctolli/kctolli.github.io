@@ -5,14 +5,7 @@ source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/gsheets
 source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/copyright.R")
 source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/templates.R")
 
-# Variables / Basic Functions
-
-here <- here::here() ## set here file path
-
-load_libraries <- function(){
-  pacman::p_load(tidyverse, pacman, glue, pander, lubridate, knitr, rmarkdown) ## Load Packages
-  opts_chunk$set(results = 'asis', echo = FALSE, message = FALSE, warning = FALSE) ## Chunk Displays
-}
+library(pander, glue, tidyverse)
 
 # Section Templates
 
