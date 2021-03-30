@@ -66,8 +66,7 @@ nav <- function(){
   yaml <- yaml_css()
   site <- site_css()
   
-  pander::pander(glue::glue('
-  {site}{yaml}{showhide}{darkmode}{pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
+  pander(glue('{site}{yaml}{showhide}{darkmode}{pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
   <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
@@ -77,15 +76,10 @@ nav <- function(){
 footer <- function(file){
   pagebreak <- pagebreak()
   copyright <- copyright(2020)
-  string <- "javascript:showhide('copyright')"
-  site_libs <- "https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/"
-  
-  licence <- pander::pander(glue::glue('<ul>
-  <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://github.com/kctolli/kctolli.github.io/blob/master/site_libs/GNU.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io).
-  <li>Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. </li>
-  <li>Website is developed in [R]({site_libs}site.R) with HTML, CSS and Javascript. </li></ul>'))
 
-  pander::pander(glue::glue('{pagebreak}<footer><div style="padding-left:0px;">
-  <span class="tooltipr"><a href={string}><p style="color:blue;">{copyright}</p></a></span>
-  <div id="copyright" style="display:none;padding-left:20px;">{licence}</div></div></footer>'))
+  pander(glue('\n\n\n{pagebreak}<footer><div style="padding-left:0px;"><span class="tooltipr"><a href="javascript:showhide(\'copyright\')">
+  <p style="color:blue;">{copyright}</p></a></span><div id="copyright" style="display:none;padding-left:20px;"><ul>
+  <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/LICENSE.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). </li>
+  <li>Website is made using [Rstudio](https://rstudio.com/) with [Rmd](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/{file}.Rmd) and [Yaml](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/_site.yml) files. </li>
+  <li>Website is developed in [R](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/site.R) with HTML, CSS and Javascript. </li></ul></div></div></footer>'))
 }

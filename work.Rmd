@@ -12,13 +12,10 @@ file <- "work"
 ```{r main}
 nav()
 print_work()
-print_newline()
-print_h2("Brigham Young University - Idaho")
-print_newline()
-print_h4("Part-Time")
-print_newline()
-print_h3("Teaching Assistant {.tabset .tabset-fade}")
-print_newline()
+pander('\n\n\n
+## Brigham Young University - Idaho \n\n\n 
+#### Part-Time \n\n\n
+### Teaching Assistant {.tabset .tabset-fade} \n\n\n')
 print_work('ta')
 print_newline()
 print_tutor()

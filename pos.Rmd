@@ -9,18 +9,9 @@ source("./site_libs/site.R")
 file <- "pos"
 ```
 
-`r nav()`
-
-## Brigham Young University - Idaho
-
-I earned a Bachelor's of Science in Software Engineering <br />with a minor in Computer Engineering and Data Science.
-
-<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('diploma')">Diploma</a>
-<span class="tooltipRtext">`r print_strong("2020 Graduate")`<br/>My cumulative GPA was <br/> 3.6 out of 4</span></span>
-<div id="diploma" align="center" `r px20()`>`r print_pic("./site_libs/images/diploma.jpg")`</div></div>
-
-```{r BYUI}
-print_newline()
+```{r main}
+nav()
+print_byui()
 print_h3("Software Engineering (BS)")
 print_pos('SE')
 print_newline()
@@ -39,26 +30,12 @@ print_pos('GMS')
 print_newline()
 print_h4("General")
 print_pos('GE')
-```
-
-## Moorpark High School
-
-<div `r px0()`><span class="tooltipr"><a href="javascript:showhide('hs')">I was able to take some 
-advanced and college level courses in the process of getting my High School Diploma.</a>
-<span class="tooltipRtext">`r print_strong("2017 Graduate")`</span></span><div id="hs" `r px20()`>
-
-```{r HS}
+print_newline()
+print_hs()
 print_pos('HS')
-```
-
-</div></div>
-
-```{r Self}
+divbreak()
 pagebreak()
-print_h2("Solo Learn")
-pander("Certificates Include: \n\n")
-print_newline()
+pander("## Solo Learn \n\n\n Certificates Include: \n\n\n")
 print_solo()
-print_newline()
 footer(file)
 ```
