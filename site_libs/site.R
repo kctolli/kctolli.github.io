@@ -4,6 +4,7 @@ source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/html.R"
 source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/gsheets.R")
 source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/copyright.R")
 source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/templates.R")
+source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/skills.R")
 
 library(pander, glue, tidyverse)
 
@@ -69,14 +70,13 @@ nav <- function(){
   pander(glue('{site}{yaml}{showhide}{darkmode}{pagebreak}<nav class="info"><p>How to navigate this website: </p><ul>
   <li><span style="color:blue;">Blue</span> text - Clickable (Click to see pop up links or new pages)</li>
   <li><span style="color:gray;">Gray</span> text - Hoverable (Hover to get more information)</li></ul>
-  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>
-  {pagebreak} \n\n\n'))
+  <button class="btn" onclick="darkmode()"><i class="fas fa-adjust">Toggle Dark Mode</i></button></nav>{pagebreak} \n\n\n'))
 }
 
 footer <- function(file){
   pagebreak <- pagebreak()
   copyright <- copyright(2020)
-
+  
   pander(glue('\n\n\n{pagebreak}<footer><div style="padding-left:0px;"><span class="tooltipr"><a href="javascript:showhide(\'copyright\')">
   <p style="color:blue;">{copyright}</p></a></span><div id="copyright" style="display:none;padding-left:20px;"><ul>
   <li>[Licensed](https://github.com/kctolli/kctolli.github.io/blob/master/LICENSE) under [GNU Public License v3.0](https://raw.githubusercontent.com/kctolli/kctolli.github.io/master/site_libs/LICENSE.txt) and hosted on [Github](https://github.com/kctolli/kctolli.github.io). </li>

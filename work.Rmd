@@ -12,10 +12,7 @@ file <- "work"
 ```{r main}
 nav()
 print_work()
-pander('\n\n\n
-## Brigham Young University - Idaho \n\n\n 
-#### Part-Time \n\n\n
-### Teaching Assistant {.tabset .tabset-fade} \n\n\n')
+print_byuiwork()
 print_work('ta')
 print_newline()
 print_tutor()
