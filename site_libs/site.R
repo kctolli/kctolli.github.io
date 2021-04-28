@@ -2,9 +2,8 @@ source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/include
 
 # Section Templates
 
-print_work <- function(section_id = 'experience'){
-
-  if (section_id == 'experience'){
+print_work <- function(){
+  section_id = 'experience'
     
   glue_template <- "
 ## {institution}
@@ -18,17 +17,7 @@ print_work <- function(section_id = 'experience'){
 - {description_1}
 - {description_2}
 - {description_3}
-\n\n\n"} else if (section_id == 'ta'){
-  
-  glue_template <- "
-#### {title}
-
-{startmonth} {start} - {endmonth} {end} --- {loc}
-
-- {description_1}
-- {description_2}
-- {description_3}
-\n\n\n"} else {glue_template <- "Section Error"}
+\n\n\n"
 
   section(entries, section_id, glue_template)
 }
