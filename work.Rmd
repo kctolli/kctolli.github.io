@@ -11,7 +11,8 @@ file <- "work"
 
 ```{r main}
 nav()
-print_work()
+print_work("experience")
+print_work("internship")
 print_newline()
 print_byuiwork()
 print_ta()

@@ -2,8 +2,7 @@ source("https://raw.githubusercontent.com/kctolli/scripting/main/Rscript/include
 
 # Section Templates
 
-print_work <- function(){
-  section_id = 'experience'
+print_work <- function(section_id){
     
   glue_template <- "
 ## {institution}
@@ -21,6 +20,8 @@ print_work <- function(){
 
   section(entries, section_id, glue_template)
 }
+
+
 
 print_project <- function(){
   
