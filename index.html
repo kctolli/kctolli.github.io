@@ -13,7 +13,17 @@
     <script>
         $(document).ready(function(){
             // Done when document is ready
-            
+            const secondDelayInMillisec = 1000; // 1 seconds
+            const delaymultiplier = 1; 
+
+            setTimeout(function() {
+                // your code to be executed after delay
+                const link = "https://www.ktolliver.org/";
+                window.alert(`Redirecting to ${link}`);
+                window.location.href = link;
+            }, 
+                secondDelayInMillisec * delaymultiplier
+            );
         });
     </script>  
 </body>
