@@ -11,19 +11,16 @@
     <h1>Github - Index - Hello World</h1>
     
     <script>
-        $(document).ready(function(){
-            // Done when document is ready
-            const secondDelayInMillisec = 1000; // 1 seconds
-            const delaymultiplier = 1; 
-
+        const redirect = (link, delaymultiplier = 1) => {
             setTimeout(function() {
-                // your code to be executed after delay
-                const link = "https://www.ktolliver.org/";
                 window.alert(`Redirecting to ${link}`);
                 window.location.href = link;
-            }, 
-                secondDelayInMillisec * delaymultiplier
-            );
+            }, 1000 /* 1 second */ * delaymultiplier);
+        }
+
+        $(document).ready(function(){
+            // Done when document is ready
+            redirect(`https://github.com/kctolli`);
         });
     </script>  
 </body>
